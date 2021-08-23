@@ -1,0 +1,8 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Charis | Jute Bags"
+theme= "ecom-hugo-theme"
+[params]
+description = "Charis Jute bags is a high quality multipurpose Jute bags manufacturers."
+keywords = "Jute bags, jute, organic bags, shopping jute bags, jute hand bags, mens hand bags, womens hand bag, fashionable hand bags"
+og_image = "/images/ogimage.jpg"
