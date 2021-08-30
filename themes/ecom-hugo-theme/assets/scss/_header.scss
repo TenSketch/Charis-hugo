@@ -1,0 +1,46 @@
+/* navbar */
+header {
+  padding: 1em 0;
+  background: $clr-light;
+  box-shadow: 0 8px 32px 0 $clr-dark;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  //   min-height: 10vh;
+  .container {
+    @include flex(center, normal);
+  }
+}
+.logo {
+  flex-basis: 10%;
+  img {
+    min-width: 5rem;
+  }
+}
+nav{
+
+  ul{
+
+
+    li{
+      
+    }
+  }
+}
+
+.svg-inline--fa {
+  max-width: 30px;
+  aspect-ratio: 1;
+  width: 17px;
+  margin-right: 0.5em;
+}
+
+.nav_item {
+  /* margin-block: 0.5em; */
+  position: relative;
+  display: inline-block;
+  @media (min-width: 991px) {
+    margin-left: 1em;
+  }
+}

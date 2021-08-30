@@ -1,13 +1,89 @@
-{{define "main" }}
-<a href="">hi</a>
+{{define "slider"}}
+ 
+    <!-- SLIDER -->
+    <div class="fg-slider" id="slider-1">
+        <div class="fg-content text-center">
+            <h2>Welcome to the world of Jute Bags.</h2>
+            
+                
+        </div>
+        <img src="img/slider_img1.jpg" alt="">
+    
+        <div class="fg-content text-center">
+            <h2>Charis Jute bags</h2>
+            
+                
+        </div>
+        <img src="/img/slider_img2.jpg" alt="">
+    
+        <div class="fg-content text-center">
+            <h2>Hi There... I'm Charis Jute bag</h2>
+            
+                
+        </div>
+        <img src="/img/slider_img3.jpg" alt="">
+    </div>
 
-{{end }}
+{{end}}
 
-{{define "second" }}
-<a href="">how are you</a>
 
-<img src="/img/slider1.jpg" alt="">
-<img src="/img/slider2.jpg" alt="">
-<img src="/img/slider3.jpg" alt="">
-<img src="/img/slider4.jpg" alt="">
-{{end }}
+{{define "featured_products"}}
+<section class="products featured-products">
+    <div class="container">
+      <h1 class="title_of_page">Jute bags On sale</h1>
+      <div class="container flex">
+        {{ range where .Site.RegularPages "Section" "products"}}
+          {{ partial "product.html" .Params }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{end}}
+
+
+{{define "about"}}
+
+    <!-- About Us- Muskan -->
+    <section class="section-6">
+        <div class="grid-container">
+            <div class="side-img">
+                <img src="/images/aboutus2.png" alt="" class="sidebar">
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h1 class="content-title">About Charis Jute bags</h>
+                        <p>At Charis, we have been selling High quality Jute bags for personal and commercial purposes since 2020. Some of our jute bags are multipurpose shopping bags, hands bags, minimal art embedded bags, office bags, travel bags, purses, etc.</p> 
+                        <br>  
+                        <p>time to say NO to fake eco-friendly plastic bags!</p>
+                </div>
+                <div class="lower-img">
+                    <img src="/images/aboutus.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{end}}
+
+{{define "testimonials"}}
+
+<section class="testimonials">
+    <div class="container">
+    <h1 class="section_title">Testimonials</h1>
+
+        <div class="flex">
+            {{range $index, $val := .Site.Taxonomies.tags.feedback}}
+            <div class="testimonials_card">
+                {{.Content}}
+                <h5>{{.Title}}</h5>
+                <p><em>- {{.Description}}</em></p>
+            </div>
+            {{end}}
+        </div>
+
+    </div>
+
+
+</section>
+
+{{end}}

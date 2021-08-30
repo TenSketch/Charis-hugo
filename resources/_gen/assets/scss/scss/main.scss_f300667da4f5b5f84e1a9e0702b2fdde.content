@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,700&display=swap");
+/* universal selector */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 14px; }
+
+body {
+  line-height: 1.2; }
+
+a {
+  text-decoration: none;
+  color: var(#352c1c);
+  transition: opacity 250ms ease-in; }
+
+a:hover {
+  opacity: 0.85; }
+
+ul {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+h1,
+h2 {
+  font-family: "Petit Formal Script", cursive;
+  font-weight: bold; }
+
+.container {
+  max-width: 1200px;
+  min-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid; }
+
+/* navbar */
+header {
+  padding: 1em 0;
+  background: #f8f5f2;
+  box-shadow: 0 8px 32px 0 #352c1c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: normal; }
+
+.logo {
+  flex-basis: 10%; }
+  .logo img {
+    min-width: 5rem; }
+
+.svg-inline--fa {
+  max-width: 30px;
+  aspect-ratio: 1;
+  width: 17px;
+  margin-right: 0.5em; }
+
+.nav_item {
+  /* margin-block: 0.5em; */
+  position: relative;
+  display: inline-block; }
+  @media (min-width: 991px) {
+    .nav_item {
+      margin-left: 1em; } }
+/*# sourceMappingURL=index.019ef83c.css.map */
+.products .buy-button {
+  width: 90%;
+  margin: 5%;
+  padding: 0.5rem;
+  font-size: 120%;
+  border: none;
+  color: white;
+  background-color: #9b8055;
+  cursor: pointer; }
+
+.products .buy-button:hover {
+  background-color: #9b8055c4; }

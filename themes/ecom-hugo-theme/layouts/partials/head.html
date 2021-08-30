@@ -35,7 +35,13 @@
     <meta property="og:image:secure_url" content="{{ .Site.Params.og_image | absURL }}" />
     {{ end }}
     <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- snipcart stylsheet -->
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
+    {{ $sass := resources.Get "scss/main.scss" }}
+    {{ $style := $sass | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-    
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+
 </head>
