@@ -3,7 +3,9 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        
+
+        {{- block "slider" . }}{{- end }}
+        {{- block "about" . }}{{- end }}
         <!-- {{- block "featured_products" . }}{{- end }} -->
 <!-- {{ partial "product_single.html" . }} -->
 <!-- {{- block "testimonials" . }}{{- end }} -->
