@@ -1,77 +1,57 @@
 {{define "slider"}}
- 
-    <!-- SLIDER -->
-    <div class="fg-slider" id="slider-1">
-        <div class="fg-content text-center">
-            <h2>Welcome to the world of Jute Bags.</h2>
-            
-                
-        </div>
-        <img src="img/slider_img1.jpg" alt="">
-    
-        <div class="fg-content text-center">
-            <h2>Charis Jute bags</h2>
-            
-                
-        </div>
-        <img src="/img/slider_img2.jpg" alt="">
-    
-        <div class="fg-content text-center">
-            <h2>Hi There... I'm Charis Jute bag</h2>
-            
-                
-        </div>
-        <img src="/img/slider_img3.jpg" alt="">
+<!-- SLIDER -->
+<div class="fg-slider" id="slider-1">
+    <div class="fg-content text-center">
+        <h2>Welcome to the world of Jute Bags.</h2>
     </div>
-
+    <img src="./images/slider1.jpg" alt="">
+    <div class="fg-content text-center">
+        <h2>Charis Jute bags</h2>
+    </div>
+    <img src="./images/slider4.jpg" alt="">
+    <div class="fg-content text-center">
+        <h2>Hi There... I'm Charis Jute bag</h2>
+    </div>
+    <img src="./images/slider3.jpg" alt="">
+</div>
 {{end}}
-
 
 {{define "featured_products"}}
 <section class="products featured-products">
     <div class="container">
-      <h1 class="title_of_page">Jute bags On sale</h1>
-      <div class="container flex">
-        {{ range where .Site.RegularPages "Section" "products"}}
-          {{ partial "product.html" .Params }}
-        {{ end }}
-      </div>
+        <h1 class="title_of_page">Jute bags On sale</h1>
+        <div class="container flex">
+            {{ range where .Site.RegularPages "Section" "products"}}
+            {{ partial "product.html" .Params }}
+            {{ end }}
+        </div>
     </div>
-  </section>
+</section>
 {{end}}
 
-
 {{define "about"}}
-
-    <!-- About Us- Muskan -->
-    <section class="section-6">
-        <div class="grid-container">
-            <div class="side-img">
-                <img src="/images/aboutus2.png" alt="" class="sidebar">
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h1 class="content-title">About Charis Jute bags</h>
-                        <p>At Charis, we have been selling High quality Jute bags for personal and commercial purposes since 2020. Some of our jute bags are multipurpose shopping bags, hands bags, minimal art embedded bags, office bags, travel bags, purses, etc.</p> 
-                        <br>  
-                        <p>time to say NO to fake eco-friendly plastic bags!</p>
-                </div>
-                <div class="lower-img">
-                    <img src="/images/aboutus.png" alt="">
-                </div>
-            </div>
+<section class="about">
+    <div class="container">
+        <div class="about_img">
+            <img src="./images/aboutus.jpg" alt="Charis jute bag pic">
         </div>
-    </section>
-
+        <div class="about_text">
+            <h1>About us</h1>
+            <p>At Charis, we have been selling High quality Jute bags for personal and commercial purposes since 2020.
+                Some of our jute bags are multipurpose shopping bags, hands bags, minimal art embedded bags, office
+                bags, travel bags, purses, etc.</p>
+            <h4>It is time to say NO to fake eco-friendly plastic bags!</h4>
+            <a href="#" class="btn">Know More</a>
+        </div>
+    </div>
+</section>
 {{end}}
 
 {{define "testimonials"}}
-
 <section class="testimonials">
     <div class="container">
-    <h1 class="section_title">Testimonials</h1>
-
-        <div class="flex">
+        <h1>Testimonials</h1>
+        <div class="testimonial_flex">
             {{range $index, $val := .Site.Taxonomies.tags.feedback}}
             <div class="testimonials_card">
                 {{.Content}}
@@ -80,10 +60,6 @@
             </div>
             {{end}}
         </div>
-
     </div>
-
-
 </section>
-
 {{end}}
