@@ -1,0 +1,93 @@
+[
+{
+    "description" : "A portable jute carry bag for shopping",
+    "id" : "Be_Happy_carry_bag",
+    "image" : "/uploads/be_happy_carry_bag.png",
+    "name" : "Be Happy carry bag",
+    "product_del_price" : "999",
+    "product_price" : "499",
+    "product_url" : ""
+},
+{
+    "description" : "A portable jute hand bag for men",
+    "id" : "Gents_hand_bag",
+    "image" : "/uploads/Gents_hand_bag.png",
+    "name" : "Gents hand bag",
+    "product_del_price" : "",
+    "product_price" : "599",
+    "product_url" : ""
+},
+{
+    "description" : "A thoughtful gift bag for giveaway",
+    "id" : "gift_giveaway_bag",
+    "image" : "/uploads/gift-_giveaway_bag.png",
+    "name" : "Gift giveaway bag",
+    "product_del_price" : "",
+    "product_price" : "599",
+    "product_url" : ""
+},
+{
+    "description" : "A jute file for organizing documents",
+    "id" : "Jute_file",
+    "image" : "/uploads/Jute_file.png",
+    "name" : "Jute file",
+    "product_del_price" : "",
+    "product_price" : "299",
+    "product_url" : ""
+},
+{
+    "description" : "A jute hand and side bag for everyone",
+    "id" : "Jute_Hand_bag",
+    "image" : "/uploads/Jute_Hand_bag.png",
+    "name" : "Jute Hand bag",
+    "product_del_price" : "",
+    "product_price" : "599",
+    "product_url" : ""
+},
+{
+    "description" : "A classy jute purse for woman",
+    "id" : "jute_purse",
+    "image" : "/uploads/jute_purse.png",
+    "name" : "Jute purse",
+    "product_del_price" : "",
+    "product_price" : "599",
+    "product_url" : ""
+},
+{
+    "description" : "A portable backpack for students",
+    "id" : "Jute_School_bag",
+    "image" : "/uploads/jute_school_bag.png",
+    "name" : "Jute School bag",
+    "product_del_price" : "1099",
+    "product_price" : "899",
+    "product_url" : ""
+},
+{
+    "description" : "A portable jute bag for travelling",
+    "id" : "Jute_Small_Travel_bag",
+    "image" : "/uploads/Jute_Small_Travel_bag.png",
+    "name" : "Jute Small Travel bag",
+    "product_del_price" : "999",
+    "product_price" : "699",
+    "product_url" : ""
+},
+{
+    "description" : "A portable jute carry bag for shopping",
+    "id" : "Shopping_Jute_bag",
+    "image" : "/uploads/shopping_jute_bag.png",
+    "name" : "Shopping Jute bag",
+    "product_del_price" : "",
+    "product_price" : "499",
+    "product_url" : ""
+    
+},
+{
+    "description" : "A classy jute purse for woman",
+    "id" : "Women___Style",
+    "image" : "/uploads/women___style.png",
+    "name" : "Women Style",
+    "product_del_price" : "599",
+    "product_price" : "599",
+    "product_url" : ""
+}
+]

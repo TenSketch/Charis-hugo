@@ -21,8 +21,14 @@
     <div class="container">
         <h1 class="title_of_page">Jute bags On sale</h1>
         <div class="container flex">
-            {{ range where .Site.RegularPages "Section" "products"}}
+            <!-- for .md -->
+            <!-- {{ range where .Site.RegularPages "Section" "products"}}
             {{ partial "product.html" .Params }}
+            {{ end }} -->
+            
+            <!-- for json -->
+            {{ range .Site.Data.products }}
+            {{ partial "product.html" . }}
             {{ end }}
         </div>
     </div>
