@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
+{{- partial "head.html" . -}}
 
-        {{- block "slider" . }}{{- end }}
-        {{- block "about" . }}{{- end }}
-        <!-- {{- block "featured_products" . }}{{- end }} -->
-<!-- {{ partial "product_single.html" . }} -->
-<!-- {{- block "testimonials" . }}{{- end }} -->
-        
-        <!-- {{- partial "footer.html" . -}} -->
-    </body>
-    <script src="./js/app.js"></script>
+<body>
+    {{- partial "header.html" . -}}
+
+    {{- block "slider" . }}{{- end }}
+    <!-- {{- block "featured_products" . }}{{- end }} -->
+    {{- block "about" . }}{{- end }}
+
+    {{- block "testimonials" . }}{{- end }}
+    {{- partial "scripts.html" . -}}
+
+</body>
+
 </html>
-

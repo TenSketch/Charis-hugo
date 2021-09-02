@@ -7,7 +7,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 10;
-  min-height: 10vh;
+  // min-height: 10vh;
   .container {
     @include flex(center, normal);
   }
@@ -22,11 +22,19 @@ header {
     aspect-ratio: 1;
     width: 17px;
     margin-right: 0.5em;
-  }  
-  nav{
+    display: block;
+    @media (min-width: 991px) {
+      // display: unset;
+    }
+  }
+  nav {
     width: 100%;
     @include flex(center, normal);
-  
+    a {
+      color: $clr-primary;
+      text-decoration: none;
+    }
+
     .nav_list {
       position: absolute;
       top: -1000%;
@@ -37,31 +45,38 @@ header {
       padding: 1em;
       // box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
       li {
-        margin-block: 0.5em;
         position: relative;
-        a {
-          color: $clr-primary;
-          text-decoration: none;
+        margin-block: 1.5em;
+        text-align: right;
+        @media (min-width: 991px) {
+          text-align: unset;
+          margin-block: 0;
         }
       }
     }
     .nav_list.active {
-      top: 10vh;
+      top: 100%;
       transition: all 400ms ease;
     }
     .nav_icons {
-      position: absolute;
-      right: 55px;
+      // position: absolute;
+      // right: 55px;
       gap: 1em;
-      list-style: none;
+      // list-style: none;
+      // gap: .5em;
+  margin-left: auto;
+  margin-right: 2.5em;
+  @media(min-width: 991px){
+    margin-right: 0;
+  }
       @include flex(center, normal);
-      img{
+      img {
         display: unset;
       }
-      span{
+      span {
         display: none;
       }
-      .nav_dropdown{
+      .nav_dropdown {
         .dropdown-menu {
           display: none;
           position: absolute;
@@ -69,7 +84,7 @@ header {
           min-width: 158px;
           z-index: 1;
           left: 0;
-          a{
+          a {
             text-decoration: none;
             color: $clr-primary;
             display: flex;
@@ -81,20 +96,28 @@ header {
       .dropdown-menu a:hover {
         background-color: $clr-primary;
         color: $clr-light;
-      }      
+      }
       .nav_dropdown:hover .dropdown-menu {
         display: block;
         background-color: #fff;
       }
     }
-  
+
     @media (min-width: 991px) {
-      .nav_list{
+      .nav_list {
         margin-left: 1em;
         position: relative;
-        @include flex(center, space-around);
+        @include flex(center, flex-start);
+        margin-block: 0;
+        gap: 1.5em;
       }
-      .nav_icons{
+      .nav_icons {
+        & > div{
+          a{
+            @include flex(flex-start, normal);
+            gap: .5em;
+          }
+        }
         span {
           display: inline-block;
         }
@@ -104,7 +127,7 @@ header {
   .nav__toggle {
     display: block;
     position: absolute;
-    right: 20px;
+    right: 0;
     width: 25px;
     height: 25px;
     cursor: pointer;
@@ -112,6 +135,7 @@ header {
     background: none;
     color: inherit;
     border: none;
+    transition: all 400ms ease;
     .bar1,
     .bar2,
     .bar3 {
@@ -122,15 +146,15 @@ header {
       transition: 0.4s;
     }
     .bar1.change {
-      -webkit-transform: rotate(-45deg) translate(-4px, 4px);
-      transform: rotate(-45deg) translate(-4px, 4px);
+      transform: rotate(-70deg) translate(-9px, -5px);
+      width: 70%;
     }
     .bar2.change {
-      opacity: 0;
+      transform: translateY(10px);
     }
     .bar3.change {
-      -webkit-transform: rotate(45deg) translate(-4px, -4px);
-      transform: rotate(45deg) translate(-4px, -4px);
+      transform: rotate(70deg) translate(-2px, -9px);
+      width: 70%;
     }
     @media (min-width: 991px) {
       display: none;
@@ -140,6 +164,4 @@ header {
     position: fixed;
     right: 20px;
   }
-  
 }
-

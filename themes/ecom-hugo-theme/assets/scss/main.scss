@@ -7,7 +7,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
+  // margin: 0;
   padding: 0;
 }
 html {
@@ -15,7 +15,8 @@ html {
   font-size: 14px;
 }
 body {
-  line-height: 1.2;
+  margin: 0;
+  line-height: 1.5;
 }
 a {
   text-decoration: none;
@@ -38,16 +39,24 @@ h2 {
   font-family: "Petit Formal Script", cursive;
   font-weight: bold;
 }
+section{
+  padding-block: 10%;
+}
 .container {
-  max-width: 1200px;
-  min-width: 80%;
+  max-width: 80%;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
   // border: 2px solid;
 }
+.txt-center{
+  text-align: center;
+}
 @import "header";
 @import "slider";
 @import "about";
+@import "testimonials";
+
 
 /*# sourceMappingURL=index.019ef83c.css.map */
 
