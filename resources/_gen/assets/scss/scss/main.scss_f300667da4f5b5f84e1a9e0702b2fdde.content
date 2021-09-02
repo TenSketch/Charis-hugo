@@ -112,6 +112,8 @@ header {
         display: unset; }
       header nav .nav_icons span {
         display: none; }
+      header nav .nav_icons .cart a {
+        display: flex; }
       header nav .nav_icons .nav_dropdown .dropdown-menu {
         display: none;
         position: absolute;
@@ -548,6 +550,43 @@ header {
   /* margin-top: 2em; */ }
   .testimonials_card h5 {
     margin-block: 1em; }
+
+.footer {
+  background-color: #352c1c;
+  color: #f8f5f2;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  margin: 0; }
+
+.col-1 li a {
+  color: #f8f5f2; }
+
+.footer h3 {
+  font-size: 1.5rem; }
+
+.social-links a {
+  width: 32px;
+  height: 32px;
+  margin: 0 0.2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: all 0.5s ease;
+  color: white; }
+
+.social-links a:hover {
+  background: #000;
+  border-color: transparent;
+  color: #fff; }
+
+@media (min-width: 700px) {
+  .footer {
+    flex-direction: row; }
+  .col {
+    min-width: 25%;
+    padding: 2rem; }
+  .col-1, .col-2, .col-3 {
+    border-right: solid 1.5px #f8f5f2; } }
 
 /*# sourceMappingURL=index.019ef83c.css.map */
 .products .buy-button {

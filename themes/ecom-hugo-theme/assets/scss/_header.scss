@@ -59,16 +59,17 @@ header {
       transition: all 400ms ease;
     }
     .nav_icons {
+
       // position: absolute;
       // right: 55px;
       gap: 1em;
       // list-style: none;
       // gap: .5em;
-  margin-left: auto;
-  margin-right: 2.5em;
-  @media(min-width: 991px){
-    margin-right: 0;
-  }
+      margin-left: auto;
+      margin-right: 2.5em;
+      @media(min-width: 991px){
+        margin-right: 0;
+      }
       @include flex(center, normal);
       img {
         display: unset;
@@ -76,6 +77,9 @@ header {
       span {
         display: none;
       }
+      .cart{ a{
+        display: flex;
+      }}
       .nav_dropdown {
         .dropdown-menu {
           display: none;
