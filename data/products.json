@@ -6,7 +6,7 @@
     "name" : "Be Happy carry bag",
     "product_del_price" : "999",
     "product_price" : "499",
-    "product_url" : ""
+    "product_url" : "/"
 },
 {
     "description" : "A portable jute hand bag for men",
@@ -15,7 +15,7 @@
     "name" : "Gents hand bag",
     "product_del_price" : "",
     "product_price" : "599",
-    "product_url" : ""
+    "product_url" : "/"
 },
 {
     "description" : "A thoughtful gift bag for giveaway",
@@ -24,7 +24,7 @@
     "name" : "Gift giveaway bag",
     "product_del_price" : "",
     "product_price" : "599",
-    "product_url" : ""
+    "product_url" : "/"
 },
 {
     "description" : "A jute file for organizing documents",
@@ -33,7 +33,7 @@
     "name" : "Jute file",
     "product_del_price" : "",
     "product_price" : "299",
-    "product_url" : ""
+    "product_url" : "/"
 },
 {
     "description" : "A jute hand and side bag for everyone",
@@ -42,7 +42,7 @@
     "name" : "Jute Hand bag",
     "product_del_price" : "",
     "product_price" : "599",
-    "product_url" : ""
+    "product_url" : "/"
 },
 {
     "description" : "A classy jute purse for woman",
@@ -51,7 +51,7 @@
     "name" : "Jute purse",
     "product_del_price" : "",
     "product_price" : "599",
-    "product_url" : ""
+    "product_url" : "/"
 },
 {
     "description" : "A portable backpack for students",
@@ -60,7 +60,7 @@
     "name" : "Jute School bag",
     "product_del_price" : "1099",
     "product_price" : "899",
-    "product_url" : ""
+    "product_url" : "/"
 },
 {
     "description" : "A portable jute bag for travelling",
@@ -69,7 +69,7 @@
     "name" : "Jute Small Travel bag",
     "product_del_price" : "999",
     "product_price" : "699",
-    "product_url" : ""
+    "product_url" : "/"
 },
 {
     "description" : "A portable jute carry bag for shopping",
@@ -78,7 +78,7 @@
     "name" : "Shopping Jute bag",
     "product_del_price" : "",
     "product_price" : "499",
-    "product_url" : ""
+    "product_url" : "/"
     
 },
 {
@@ -88,6 +88,6 @@
     "name" : "Women Style",
     "product_del_price" : "599",
     "product_price" : "599",
-    "product_url" : ""
+    "product_url" : "/"
 }
 ]

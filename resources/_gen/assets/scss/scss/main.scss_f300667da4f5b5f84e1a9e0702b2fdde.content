@@ -114,13 +114,16 @@ header {
         display: none; }
       header nav .nav_icons .cart a {
         display: flex; }
+      header nav .nav_icons .cart .price {
+        display: none; }
+      header nav .nav_icons .cart:hover .price {
+        display: block; }
       header nav .nav_icons .nav_dropdown .dropdown-menu {
         display: none;
         position: absolute;
         background-color: #f8f5f2;
         min-width: 158px;
-        z-index: 1;
-        left: 0; }
+        z-index: 1; }
         header nav .nav_icons .nav_dropdown .dropdown-menu a {
           text-decoration: none;
           color: #9b8055;

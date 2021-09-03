@@ -77,9 +77,17 @@ header {
       span {
         display: none;
       }
-      .cart{ a{
+      .cart{ 
+        a{
         display: flex;
-      }}
+        }
+        .price{
+          display: none;
+        }
+      }
+      .cart:hover .price{
+        display: block;
+      }
       .nav_dropdown {
         .dropdown-menu {
           display: none;
@@ -87,7 +95,7 @@ header {
           background-color: $clr-light;
           min-width: 158px;
           z-index: 1;
-          left: 0;
+          // left: 0;
           a {
             text-decoration: none;
             color: $clr-primary;
