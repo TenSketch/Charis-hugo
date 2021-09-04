@@ -22,14 +22,14 @@
         <h1 class="title_of_page">Jute bags On sale</h1>
         <div class="container flex">
             <!-- for .md -->
-            <!-- {{ range where .Site.RegularPages "Section" "products"}}
+            {{ range where .Site.RegularPages "Section" "products"}}
             {{ partial "product.html" .Params }}
-            {{ end }} -->
+            {{ end }}
             
             <!-- for json -->
-            {{ range .Site.Data.products }}
+            <!-- {{ range .Site.Data.products }}
             {{ partial "product.html" . }}
-            {{ end }}
+            {{ end }} -->
         </div>
     </div>
 </section>
@@ -169,6 +169,48 @@
     </style>
 {{end}}
 
+{{define "women_n_style"}}
+<section class="products featured_products">
+  <div class="conta">
+    <h1 class="title_of_page">Women 'N' Style</h1>
+    <h4>Trendy and stylish jute bags customised for women. </h4>
+    <div class="container flex">
+      {{range $index, $val := .Site.Taxonomies.categories.women_n_style}}
+      {{ partial "product.html" .Params }}
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+
+{{define "Customized_hand_bags"}}
+<section class="products featured_products">
+  <div class="conta">
+    <h1 class="title_of_page">Customized hand bags</h1>
+    <h4>Designer hand bags custom made according your requirements.</h4>
+    <div class="container flex">
+      {{range $index, $val := .Site.Taxonomies.categories.customized_hand_bags}}
+      {{ partial "product.html" .Params }}
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+
+{{define "Multipurpose_Jute_bags"}}
+<section class="products featured_products">
+  <div class="conta">
+    <h1 class="title_of_page">Multipurpose Jute bags</h1>
+    <h4>Gorgeous jute bags suitable for shopping, travel, storage and much more.</h4>
+    <div class="container flex">
+      {{range $index, $val := .Site.Taxonomies.categories.multipurpose_jute_bags}}
+      {{ partial "product.html" .Params }}
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+
 {{define "about"}}
 <section class="about">
     <div class="container">
@@ -203,6 +245,7 @@
     </div>
 </section>
 {{end}}
+
 {{define "footer"}}
 <section class="footer">
         <div class="col col-1">
