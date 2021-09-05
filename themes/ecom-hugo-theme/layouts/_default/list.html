@@ -4,7 +4,7 @@
     <div class="fg-content text-center">
         <h2>Welcome to the world of Jute Bags.</h2>
     </div>
-    <img src="./images/slider1.jpg" alt="">
+    <img src="./uploads/women-N-style3.jpg" alt="">
     <div class="fg-content text-center">
         <h2>Charis Jute bags</h2>
     </div>
@@ -17,164 +17,35 @@
 {{end}}
 
 {{define "featured_products"}}
-<section class="products featured_products">
-    <div class="conta">
-        <h1 class="title_of_page">Jute bags On sale</h1>
-        <div class="container flex">
+<section class="products">
+  <div class="container">
+
+        <h1>Jute bags On sale</h1>
+        <!-- <h4>Introductory offer on selected jute bags upto 50%</h4> -->
+        <div class="product_wrapper">
+          
             <!-- for .md -->
-            {{ range where .Site.RegularPages "Section" "products"}}
+            <!-- {{ range where .Site.RegularPages "Section" "products"}}
             {{ partial "product.html" .Params }}
-            {{ end }}
-            
-            <!-- for json -->
-            <!-- {{ range .Site.Data.products }}
-            {{ partial "product.html" . }}
             {{ end }} -->
-        </div>
+          
+            <!-- for json -->
+            {{ range .Site.Data.products }}
+            {{ partial "product.html" . }}
+            {{ end }}
+        
     </div>
 </section>
-<style>
-    .featured_products {
-      padding-block: 5rem;
-    }
-    .featured_products .flex {
-      display: flex;
-      justify-content: center;
-      gap: 1em;
-      flex-wrap: wrap;
-    }
-    .featured_products .container {
-      /* width: min(1200px, 80%); */
-      width: min(1200px, 100%);
-      margin: 0 auto;
-    }
-    .featured_products .card {
-      cursor: pointer;
-      transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
-      /* border: 1px solid #dedede; */
-      border-radius: 10px;
-      /* width: 15rem; */
-      /* padding: 1rem; */
-      width: 7rem;
-      padding: .5rem;
-    }
-    .featured_products .card:hover {
-      /* box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%); */
-      box-shadow: 0 10px 5px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
-    }
-    .featured_products .info h3 {
-      font-size: 1rem;
-      margin-block: 0.5em;
-      color: #1b160e;
-      font-weight: lighter;
-      transition: all 0.75s ease-out;
-      text-align: center;
-      /* font-size: 1.4ch; */
-      font-size: 1.2ch;
-    }
-    .featured_products .info p {
-      transition: all 0.95s ease-out;
-      text-align: center;
-      color: #9b8055;
-      /* font-size: min(1.4rem, 7vw); */
-      font-size: min(1rem, 7vw);
-    }
-    .product__price {
-      text-align: center;
-    }
-    .featured_products .MRP {
-      transition: all 0.75s ease-out;
-      height: 100%;
-      align-items: center;
-    }
-    .featured_products .bags {
-      max-width: 20rem;
-      display: flex;
-      justify-content: center;
-    }
-    .featured_products .bags img {
-      z-index: 2;
-      transition: all 0.75s ease-out;
-      /* filter: drop-shadow(30px 10px 4px #9b8055); */
-      /* max-width: 70%; */
-      /* filter: drop-shadow(0 -2mm 2mm rgb(114, 92, 51)); */
-      max-width: 100%;
-      filter: drop-shadow(0 -.5mm .5mm rgb(114, 92, 51));
-    }
-    .featured_products .icon {
-      transition: all 0.75s ease-out;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .featured_products .icon img {
-      /* width: 30px; */
-    }
-    .featured_products .icon img:hover{
-      /* border: 1.5px solid #fff2;
-      border-radius: 50%; */
-    }
-    @media (min-width: 300px){
-      .featured_products .card {
-        width: 8rem;
-      }
-    }
-    @media (min-width: 400px){
-      .featured_products .card {
-        width: 10rem;
-      }
-    }
-    @media (min-width: 500px){
-      .featured_products .container{
-        width: min(1200px, 90%);
-      }
-      .featured_products .card {
-        width: 12rem;
-      }
-      .featured_products .info h3 {
-        font-size: 1.4ch;
-      }
-      .featured_products .info p {
-          font-size: min(1.4rem, 7vw);
-      }
-    }
-    @media (min-width: 600px){
-      .featured_products .card {
-        width: 15rem;
-        padding: 1rem;
-      }
-    }
-    @media (min-width: 800px){
-      .featured_products .flex {
-        flex-wrap: nowrap;
-      }
-    .featured_products .flex {
-        display: flex;
-        justify-content: unset;
-        /* gap: 1em; */
-        flex-wrap: wrap;
-    }
-    .featured_products .container {
-        width: min(100em, 95%);
-        margin: 0 auto;
-    }
-    .featured_products .bags img {
-      max-width: 70%;
-    }
-    .featured_products .card:hover {
-      box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
-    }
-    }
-    
-    </style>
+
 {{end}}
 
 {{define "women_n_style"}}
-<section class="products featured_products">
-  <div class="conta">
-    <h1 class="title_of_page">Women 'N' Style</h1>
-    <h4>Trendy and stylish jute bags customised for women. </h4>
-    <div class="container flex">
+<section class="products">
+  <div class="container">
+    <h1>Women 'N' Style</h1>
+    <h4>Trendy and stylish jute bags customised for women.</h4>
+    <div class="product_wrapper">
+    
       {{range $index, $val := .Site.Taxonomies.categories.women_n_style}}
       {{ partial "product.html" .Params }}
       {{end}}
@@ -184,11 +55,11 @@
 {{end}}
 
 {{define "Customized_hand_bags"}}
-<section class="products featured_products">
-  <div class="conta">
-    <h1 class="title_of_page">Customized hand bags</h1>
+<section class="products">
+  <div class="container">
+    <h1>Customized hand bags</h1>
     <h4>Designer hand bags custom made according your requirements.</h4>
-    <div class="container flex">
+    <div class="product_wrapper">
       {{range $index, $val := .Site.Taxonomies.categories.customized_hand_bags}}
       {{ partial "product.html" .Params }}
       {{end}}
@@ -198,11 +69,11 @@
 {{end}}
 
 {{define "Multipurpose_Jute_bags"}}
-<section class="products featured_products">
-  <div class="conta">
-    <h1 class="title_of_page">Multipurpose Jute bags</h1>
+<section class="products">
+  <div class="container">
+    <h1>Multipurpose Jute bags</h1>
     <h4>Gorgeous jute bags suitable for shopping, travel, storage and much more.</h4>
-    <div class="container flex">
+    <div class="product_wrapper">
       {{range $index, $val := .Site.Taxonomies.categories.multipurpose_jute_bags}}
       {{ partial "product.html" .Params }}
       {{end}}
@@ -246,45 +117,3 @@
 </section>
 {{end}}
 
-{{define "footer"}}
-<section class="footer">
-        <div class="col col-1">
-            <h3>Information</h3>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Testimonials</a></li>            
-        </ul>
-        </div>
-        <div class="col col-2">
-                <h3>Why buy from us</h3>
-                <p>BagIt- a eco friendly Jute Bag from Charis can help you do your part to this environment in reducing using of plastic bags.</p>
-        </div>
-        <div class="col col-3">
-            <h3>Address</h3>
-            <p>Charis Jute bags
-                Century Park East Suite 803,
-                Los Angeles,
-                +44 (0) 207 543 5478</p>
-        </div>
-        <div class="col Follow us">
-            <div class="social-links">
-                <h3>Share At</h3>
-                <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-pinterest"></i>
-                </a>
-            </div>  
-        </div>
-</section>
-{{end}}
