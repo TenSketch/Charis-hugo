@@ -7,7 +7,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  // margin: 0;
+  margin: 0;
   padding: 0;
 }
 html {
@@ -20,7 +20,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: var($clr-dark);
+  color: $clr-dark;
   transition: opacity 250ms ease-in;
 }
 a:hover {
@@ -40,7 +40,7 @@ h2 {
   font-weight: bold;
 }
 section{
-  padding-block: 10%;
+  padding-block: 7%;
 }
 .container {
   max-width: 80%;
@@ -52,27 +52,41 @@ section{
 .txt-center{
   text-align: center;
 }
-@import "header";
-@import "slider";
-@import "about";
-@import "testimonials";
-
-
-/*# sourceMappingURL=index.019ef83c.css.map */
-
-.products {
-  .buy-button {
-    width: 90%;
-    margin: 5%;
-    padding: 0.5rem;
-    font-size: 120%;
-    border: none;
-    color: white;
-    background-color: #9b8055;
-    cursor: pointer;
-  }
-  .buy-button:hover {
-    background-color: #9b8055c4;
-  }
+.flex-col{
+  flex-direction: column;
 }
+.flex-wrap{
+  flex-wrap: wrap
+}
+.grid{
+  display: grid;
+  place-items: center;
+}
+.btn{
+  display: inline-block;
+  padding: .5em 1em;
+  font-size: 1.1rem;
+  margin-top: .7em;
+  background: $clr-dark;
+  color: $clr-light;
+  border-radius: 30px;
+
+}
+.my-1{
+  margin-block: 1em;
+
+}
+.p-1{
+  padding: 1em;
+
+}
+@import "components/header";
+@import "components/slider";
+@import "components/products_list";
+@import "components/about";
+@import "components/testimonials";
+@import "components/footer";
+
+
+
 

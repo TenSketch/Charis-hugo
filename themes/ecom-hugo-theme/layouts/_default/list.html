@@ -4,7 +4,7 @@
     <div class="fg-content text-center">
         <h2>Welcome to the world of Jute Bags.</h2>
     </div>
-    <img src="./images/slider1.jpg" alt="">
+    <img src="./uploads/women-N-style3.jpg" alt="">
     <div class="fg-content text-center">
         <h2>Charis Jute bags</h2>
     </div>
@@ -17,15 +17,68 @@
 {{end}}
 
 {{define "featured_products"}}
-<section class="products featured-products">
-    <div class="container">
-        <h1 class="title_of_page">Jute bags On sale</h1>
-        <div class="container flex">
-            {{ range where .Site.RegularPages "Section" "products"}}
+<section class="products">
+  <div class="container">
+
+        <h1>Jute bags On sale</h1>
+        <!-- <h4>Introductory offer on selected jute bags upto 50%</h4> -->
+        <div class="product_wrapper">
+          
+            <!-- for .md -->
+            <!-- {{ range where .Site.RegularPages "Section" "products"}}
             {{ partial "product.html" .Params }}
+            {{ end }} -->
+          
+            <!-- for json -->
+            {{ range .Site.Data.products }}
+            {{ partial "product.html" . }}
             {{ end }}
-        </div>
+        
     </div>
+</section>
+
+{{end}}
+
+{{define "women_n_style"}}
+<section class="products">
+  <div class="container">
+    <h1>Women 'N' Style</h1>
+    <h4>Trendy and stylish jute bags customised for women.</h4>
+    <div class="product_wrapper">
+    
+      {{range $index, $val := .Site.Taxonomies.categories.women_n_style}}
+      {{ partial "product.html" .Params }}
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+
+{{define "Customized_hand_bags"}}
+<section class="products">
+  <div class="container">
+    <h1>Customized hand bags</h1>
+    <h4>Designer hand bags custom made according your requirements.</h4>
+    <div class="product_wrapper">
+      {{range $index, $val := .Site.Taxonomies.categories.customized_hand_bags}}
+      {{ partial "product.html" .Params }}
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+
+{{define "Multipurpose_Jute_bags"}}
+<section class="products">
+  <div class="container">
+    <h1>Multipurpose Jute bags</h1>
+    <h4>Gorgeous jute bags suitable for shopping, travel, storage and much more.</h4>
+    <div class="product_wrapper">
+      {{range $index, $val := .Site.Taxonomies.categories.multipurpose_jute_bags}}
+      {{ partial "product.html" .Params }}
+      {{end}}
+    </div>
+  </div>
 </section>
 {{end}}
 
@@ -63,3 +116,4 @@
     </div>
 </section>
 {{end}}
+

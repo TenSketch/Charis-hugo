@@ -1,37 +1,15 @@
+<div class="product_card">
 
-
-  <div class="product">
-    <div class="product__box card">
-      <div class="bags"><img class="product__image" src="{{ .image }}" alt=""></div>
-        <div class="info">
-          <p class="product__name title">{{ .name }}</p>
-          <h3 class="product__description">{{ .description }}</h3>
-            <div class="product__price MRP">
-              <h4>₹ {{ .product_price }}/-</h4>
-              <!-- <h3><del>₹ {{ .product_del_price }}/-</del></h3> -->
-            </div>
-            <div class="icon">
-                <a href="#" class="snipcart-add-item"               
-                  data-item-id="{{ .id }}"
-                  data-item-name="{{ .name }}"
-                  data-item-price="{{ .product_price }}"
-                  data-item-url="{{ .product_url }}"
-                  data-item-description="{{ .description }}">
-                  <!-- <img src="images/manav/cart.png" alt="cart"> -->
-                </a>
-            <!-- </div> -->
-  
-            <!-- <button
-              class="snipcart-add-item buy-button snipcart-checkout"
-              data-item-id="{{ .id }}"
-              data-item-name="{{ .name }}"
-              data-item-price="{{ .product_price }}"
-              data-item-url="{{ .product_url }}"
-              data-item-description="{{ .description }}">
-              Buy now
-            </button> -->
-            </div>
-        </div>
-    </div>
+  <div class="product_img"><img src="{{.image}}" alt="{{.Name}}"></div>
+  <div class="product_txt">
+    <h4>{{.name}}</h4>
+    <p class="desc">{{.description}}</p>
+    <p class="price">₹ {{.product_price}}/-</p>
+    <a href="#" class="snipcart-add-item btn btn-dark" data-item-id="{{ .id }}" data-item-name="{{ .name }}"
+      data-item-price="{{ .product_price }}" data-item-url="{{ .product_url }}"
+      data-item-description="{{ .description }}">
+      Add to bag
+    </a>
   </div>
 
+</div>

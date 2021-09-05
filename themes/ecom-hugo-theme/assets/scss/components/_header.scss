@@ -59,22 +59,34 @@ header {
       transition: all 400ms ease;
     }
     .nav_icons {
+
       // position: absolute;
       // right: 55px;
       gap: 1em;
       // list-style: none;
       // gap: .5em;
-  margin-left: auto;
-  margin-right: 2.5em;
-  @media(min-width: 991px){
-    margin-right: 0;
-  }
+      margin-left: auto;
+      margin-right: 2.5em;
+      @media(min-width: 991px){
+        margin-right: 0;
+      }
       @include flex(center, normal);
       img {
         display: unset;
       }
       span {
         display: none;
+      }
+      .cart{ 
+        a{
+        display: flex;
+        }
+        .price{
+          display: none;
+        }
+      }
+      .cart:hover .price{
+        display: block;
       }
       .nav_dropdown {
         .dropdown-menu {
@@ -83,7 +95,7 @@ header {
           background-color: $clr-light;
           min-width: 158px;
           z-index: 1;
-          left: 0;
+          // left: 0;
           a {
             text-decoration: none;
             color: $clr-primary;
