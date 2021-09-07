@@ -7,5 +7,5 @@ product_del_price = "999"
 product_price = "499"
 product_url = ""
 
-categories = ["women_n_style"]
+categories = "women_n_style"
 +++

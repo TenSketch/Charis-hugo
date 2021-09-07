@@ -2,7 +2,7 @@
 description = "A shine jute carry bag for women"
 id = "shine"
 image = "/uploads/women_n_style/shine.jpg"
-categories = ["women_n_style"]
+categories = "women_n_style"
 name = "women n style shine"
 product_del_price = "999"
 product_price = "499"

@@ -33,6 +33,8 @@
             {{ range .Site.Data.products }}
             {{ partial "product.html" . }}
             {{ end }}
+            <a class="nav-link" href="{{ "products/" | absURL }}" style="color: black;">All</a>
+
         
     </div>
 </section>
