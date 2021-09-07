@@ -2,7 +2,7 @@
 
   <div class="product_img"><img src="{{.image}}" alt="{{.Name}}"></div>
   <div class="product_txt">
-    <h4>{{.name}}</h4>
+    <a  href="{{ .RelPermalink }}"><h4>{{.name}}</h4></a>
     <p class="desc">{{.description}}</p>
     <p class="price">₹ {{.product_price}}/-</p>
     <a href="#" class="snipcart-add-item btn btn-dark" data-item-id="{{ .id }}" data-item-name="{{ .name }}"
