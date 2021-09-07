@@ -1,7 +1,3 @@
-{{ define "main" }}
-{{ partial "products/list/product-list.html" . }} 
-{{ end }}
-
 {{define "slider"}}
 <!-- SLIDER -->
 <div class="fg-slider" id="slider-1">
@@ -35,7 +31,7 @@
           
             <!-- for json -->
             {{ range .Site.Data.products }}
-            {{ partial "product.html" . }}
+            {{ partial "products/list/product-list.html" . }} 
             {{ end }}
         
     </div>
