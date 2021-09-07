@@ -11,6 +11,8 @@
     </section>
 
     <section class="products_list">
-        
+        {{ range where .Site.RegularPages "Section" "products"}}
+        {{ partial "product.html" .Params }}
+        {{ end }}
     </section>
 {{end}}

@@ -25,14 +25,14 @@
         <div class="product_wrapper">
           
             <!-- for .md -->
-            <!-- {{ range where .Site.RegularPages "Section" "products"}}
+            {{ range where .Site.RegularPages "Section" "products"}}
             {{ partial "product.html" .Params }}
-            {{ end }} -->
+            {{ end }}
           
             <!-- for json -->
-            {{ range .Site.Data.products }}
+            <!-- {{ range .Site.Data.products }}
             {{ partial "product.html" . }}
-            {{ end }}
+            {{ end }} -->
             <a class="nav-link" href="{{ "products/" | absURL }}" style="color: black;">All</a>
 
         
