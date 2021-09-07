@@ -7,5 +7,6 @@ name = "women n style shine"
 product_del_price = "999"
 product_price = "499"
 product_url = ""
+title = "shine"
 
 +++

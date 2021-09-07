@@ -5,14 +5,22 @@
         display: grid;
         place-items: center;
     }
+
 </style>
     <section class="products_header">
         <h1>Explore the world of Charis Jute bags </h1>
     </section>
 
     <section class="products_list">
-        {{ range where .Site.RegularPages "Section" "products"}}
-        {{ partial "product.html" .Params }}
+        <h1>{{ .Title }}</h1>
+        {{ range .Pages }}
+            {{ range where .Site.RegularPages "Section" "products"}}
+        <a href={{.Permalink}}>
+
+            {{ partial "product.html" .Params }}
+        </a>
+
+            {{ end }}
         {{ end }}
     </section>
 {{end}}

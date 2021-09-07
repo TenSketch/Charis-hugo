@@ -6,5 +6,6 @@ name = "Gents hand bag"
 product_del_price = ""
 product_price = "599"
 product_url = ""
+title = "Gents_hand_bag"
 
 +++

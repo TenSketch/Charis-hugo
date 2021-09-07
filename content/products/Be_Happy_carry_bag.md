@@ -6,5 +6,6 @@ name = "Be Happy carry bag"
 product_del_price = "999"
 product_price = "499"
 product_url = ""
+title = "Be_Happy_carry_bag"
 
 +++
