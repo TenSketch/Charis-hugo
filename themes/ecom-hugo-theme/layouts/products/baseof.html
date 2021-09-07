@@ -4,8 +4,9 @@
 
 <body>
     {{- partial "header.html" . -}}
-    {{ block "all_products" . }} {{end}}
-    
+    <!-- {{ block "all_products" . }} {{end}} -->
+    {{- block "featured_products" . }}{{- end }}
+
     {{- partial "footer.html" . -}}
     {{- partial "scripts.html" . -}}
 

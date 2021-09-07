@@ -1,26 +1,16 @@
-{{define "all_products"}}
-<style>
-    .products_header{
-        min-height: 60vh;
-        display: grid;
-        place-items: center;
-    }
-
-</style>
-    <section class="products_header">
-        <h1>Explore the world of Charis Jute bags </h1>
-    </section>
-
-    <section class="products_list">
-        <h1>{{ .Title }}</h1>
-        {{ range .Pages }}
-            {{ range where .Site.RegularPages "Section" "products"}}
+{{define "featured_products"}}
+<section class="products">
+  <div class="container">
+    <h1>Jute bags On sale</h1>
+    <!-- <h4>Introductory offer on selected jute bags upto 50%</h4> -->
+    <div class="product_wrapper">
+      <!-- for .md -->
+      {{ range where .Site.RegularPages "Section" "products"}}
         <a href={{.Permalink}}>
-
-            {{ partial "product.html" .Params }}
+          {{ partial "product.html" .Params }}
         </a>
-
-            {{ end }}
-        {{ end }}
-    </section>
+      {{ end }}
+    </div>
+  </div>
+</section>
 {{end}}
