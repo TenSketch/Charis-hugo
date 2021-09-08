@@ -48,7 +48,9 @@
     <div class="product_wrapper">
     
       {{range $index, $val := .Site.Taxonomies.categories.women_n_style}}
+      <a href={{.Permalink}}>
       {{ partial "product.html" .Params }}
+      </a>
       {{end}}
     </div>
   </div>
@@ -62,7 +64,9 @@
     <h4>Designer hand bags custom made according your requirements.</h4>
     <div class="product_wrapper">
       {{range $index, $val := .Site.Taxonomies.categories.customized_hand_bags}}
-      {{ partial "product.html" .Params }}
+        <a href={{.Permalink}}>
+        {{ partial "product.html" .Params }}
+        </a>
       {{end}}
     </div>
   </div>
@@ -76,7 +80,9 @@
     <h4>Gorgeous jute bags suitable for shopping, travel, storage and much more.</h4>
     <div class="product_wrapper">
       {{range $index, $val := .Site.Taxonomies.categories.multipurpose_jute_bags}}
-      {{ partial "product.html" .Params }}
+      <a href={{.Permalink}}>
+        {{ partial "product.html" .Params }}
+      </a>
       {{end}}
     </div>
   </div>

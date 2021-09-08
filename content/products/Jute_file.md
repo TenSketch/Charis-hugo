@@ -6,6 +6,7 @@ name = "Jute file"
 product_del_price = ""
 product_price = "299"
 product_url = ""
+categories = [ "All"]
 title = "Jute_file"
 
 +++

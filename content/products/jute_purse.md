@@ -6,6 +6,7 @@ name = "Jute purse"
 product_del_price = ""
 product_price = "599"
 product_url = ""
+categories = [ "All"]
 title = "jute_purse"
 
 +++
