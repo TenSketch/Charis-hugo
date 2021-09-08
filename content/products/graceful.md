@@ -8,4 +8,6 @@ product_price = "499"
 product_url = ""
 
 categories = "women_n_style"
+title = "graceful"
+
 +++
