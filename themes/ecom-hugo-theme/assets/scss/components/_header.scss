@@ -10,18 +10,20 @@ header {
   // min-height: 10vh;
   .container {
     @include flex(center, normal);
+    width: 1000px;
+    max-width: 90%;
   }
   .logo {
     flex-basis: 10%;
     img {
-      min-width: 5rem;
+      min-width: 7rem;
     }
   }
   .svg-inline--fa {
     max-width: 30px;
     aspect-ratio: 1;
     width: 17px;
-    margin-right: 0.5em;
+    // margin-right: 0.5em;
     display: block;
     @media (min-width: 991px) {
       // display: unset;

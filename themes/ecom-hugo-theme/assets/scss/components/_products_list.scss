@@ -47,11 +47,11 @@
 }
 .desc{
     @extend .my-1;
-
+    font-family: $font-petit;
 }
 .price{
-    color: $clr-dark;
-    font-weight: bold;
+    color: $clr-primary-dark;
+    font-weight: 500;
     font-size: 1.2rem;
 }
 
