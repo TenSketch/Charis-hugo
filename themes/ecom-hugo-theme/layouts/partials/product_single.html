@@ -5,7 +5,7 @@
       <div class="product-imgs">
           <div class="img-display">
               <div class="img-showcase">
-                  <img src="./images/png/Be_Happy_carry_bag.png" alt="Be_Happy_carry_bag">
+                  <img src="{{ .image }}" alt="Be_Happy_carry_bag">
                   <img src="./images/png/Gift _Giveaway_Bag.png" alt="Be_Happy_carry_bag">
                   <img src="./images/png/Jute_Purse.png" alt="Be_Happy_carry_bag">
                   <img src="./images/png/Shopping_Jute_bag.png" alt="Be_Happy_carry_bag">
@@ -56,8 +56,8 @@
 
           </div> -->
           <div class="product-price">
-              <p class="last-price">Old price: <span>Rs 999</span></p>
-              <p class="new-price">New price: <span>Rs 799(20% off)</span></p>
+              <p class="last-price">Old price: <span>₹{{ .product_price }}/-</span></p>
+              <p class="new-price">New price: <span>₹{{ .product_del_price }}/-</span></p>
           </div>
           <div class="quantity">
               <button class="btn minus-btn disabled" type="button">-</button>

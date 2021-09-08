@@ -600,3 +600,68 @@ header {
   .col {
     min-width: 25%;
     padding: 2rem; } }
+
+.portfolio_section {
+  padding: 30px 0;
+  color: #333; }
+  .portfolio_section .top-side {
+    text-align: center; }
+    .portfolio_section .top-side .title {
+      font-weight: 500;
+      font-size: 15px;
+      display: inline-block; }
+      .portfolio_section .top-side .title::after {
+        content: '';
+        display: block;
+        width: 50%;
+        border-bottom: 1px solid #494949;
+        margin: 8px auto; }
+    .portfolio_section .top-side h2 {
+      font-weight: 700; }
+  .portfolio_section.portfolio .filters {
+    text-align: center;
+    margin-top: 50px; }
+    .portfolio_section.portfolio .filters ul {
+      padding: 0; }
+      .portfolio_section.portfolio .filters ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 20px 30px;
+        cursor: pointer;
+        position: relative; }
+        .portfolio_section.portfolio .filters ul li::after {
+          content: '';
+          display: block;
+          width: calc(0% - 60px);
+          position: absolute;
+          height: 2px;
+          background: #333;
+          transition: width 350ms ease-out; }
+          .portfolio_section.portfolio .filters ul li::after:hover::after {
+            width: calc(100% - 60px);
+            transition: width 350ms ease-out; }
+          .portfolio_section.portfolio .filters ul li::after.active::after {
+            width: calc(100% - 60px); }
+    .portfolio_section.portfolio .filters .filters-content {
+      margin-top: 50px; }
+      .portfolio_section.portfolio .filters .filters-content .show {
+        opacity: 1;
+        visibility: visible;
+        transition: all 350ms; }
+      .portfolio_section.portfolio .filters .filters-content .hide {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 350ms; }
+      .portfolio_section.portfolio .filters .filters-content .item {
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 30px; }
+        .portfolio_section.portfolio .filters .filters-content .item .p-inner {
+          padding: 20px 30px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+          .portfolio_section.portfolio .filters .filters-content .item .p-inner h5 {
+            font-size: 15px; }
+          .portfolio_section.portfolio .filters .filters-content .item .p-inner .cat {
+            font-size: 13px; }
+        .portfolio_section.portfolio .filters .filters-content .item img {
+          width: 100%; }
