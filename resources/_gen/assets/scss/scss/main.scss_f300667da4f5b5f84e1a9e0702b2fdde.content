@@ -603,7 +603,8 @@ header {
 
 .portfolio_section {
   padding: 30px 0;
-  color: #333; }
+  color: #333;
+  padding-top: 15vh; }
   .portfolio_section .top-side {
     text-align: center; }
     .portfolio_section .top-side .title {

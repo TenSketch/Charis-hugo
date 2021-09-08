@@ -1,23 +1,6 @@
-{{define "featured_products"}}
-<section class="products">
-  <div class="container">
-    <!-- <h1>Jute bags On sale</h1> -->
-    <!-- <h4>Introductory offer on selected jute bags upto 50%</h4> -->
-    <div class="product_wrapper">
-      <!-- for .md -->
-      {{ range where .Site.RegularPages "Section" "products"}}
-        <a href={{.Permalink}}>
-          {{ partial "product.html" .Params }}
-        </a>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{end}}
-
 {{define "portfolio"}}
 <section class="portfolio portfolio_section">
-  <div class="container">
+  <div class="portfolio_container">
     <div class="top-side">
       <h4 class="title">{{ .Site.Title }}</h4>
       <h2>{{ .Title }}</h2>
@@ -37,38 +20,59 @@
       <div class="row grid">
         <div class="col-sm-4 all featured_products">
           <div class="portfolio_item">
-            <img src="https://i.picsum.photos/id/923/1000/1200.jpg?hmac=aTXp3_sl8AMqNddbsjWOIy6R8-RCLWB5GoFrQUWIusA" alt="Work 1">
-            <div class="p-inner">
-              <h5>Featured products</h5>
-              <div class="cat">Featured products</div>
-            </div>
+            {{ range where .Site.RegularPages "Section" "products"}}
+            <a href={{.Permalink}}>
+              <!-- <img src="https://i.picsum.photos/id/923/1000/1200.jpg?hmac=aTXp3_sl8AMqNddbsjWOIy6R8-RCLWB5GoFrQUWIusA" alt="Work 1">
+              <div class="p-inner">
+                <h5>Featured products</h5>
+                <div class="cat">Featured products</div>
+              </div> -->
+              {{ partial "product2.html" .Params }}
+            </a>
+          {{ end }}
+          
           </div>
         </div>
         <div class="col-sm-4 all women_n_style">
           <div class="portfolio_item">
-            <img src="https://i.picsum.photos/id/1014/1000/1600.jpg?hmac=J7nIoCc0sqwy89muMNzuYWzK3UcBlAAraWUGR1r6X4U" alt="Work 1">
+            <!-- <img src="https://i.picsum.photos/id/1014/1000/1600.jpg?hmac=J7nIoCc0sqwy89muMNzuYWzK3UcBlAAraWUGR1r6X4U" alt="Work 1">
             <div class="p-inner">
               <h5>Women 'N' Style</h5>
               <div class="cat">Women 'N' Style</div>
-            </div>
+            </div> -->
+            {{range $index, $val := .Site.Taxonomies.categories.women_n_style}}
+              <a href={{.Permalink}}>
+                {{ partial "product.html" .Params }}
+              </a>
+            {{end}}
           </div>
         </div>
         <div class="col-sm-4 all Multipurpose_Jute_bags">
           <div class="portfolio_item">
-            <img src="https://i.picsum.photos/id/1081/1000/1400.jpg?hmac=OhhXp4iAtTJQcx6fx3dehRJ7R3YjEqDcxow-sj6z0sc" alt="Work 1">
+            <!-- <img src="https://i.picsum.photos/id/1081/1000/1400.jpg?hmac=OhhXp4iAtTJQcx6fx3dehRJ7R3YjEqDcxow-sj6z0sc" alt="Work 1">
             <div class="p-inner">
               <h5>Multipurpose Jute bags</h5>
               <div class="cat">Multipurpose Jute bags</div>
-            </div>
+            </div> -->
+            {{range $index, $val := .Site.Taxonomies.categories.multipurpose_jute_bags}}
+              <a href={{.Permalink}}>
+                {{ partial "product.html" .Params }}
+              </a>
+            {{end}}
           </div>
         </div>
         <div class="col-sm-4 all Customized_hand_bags">
           <div class="portfolio_item">
-            <img src="https://i.picsum.photos/id/267/1200/1400.jpg?hmac=3rlhklmRH3kQvtK87L57l5ewC9WGL5pF8d7xQhb82bg" alt="Work 1">
+            <!-- <img src="https://i.picsum.photos/id/267/1200/1400.jpg?hmac=3rlhklmRH3kQvtK87L57l5ewC9WGL5pF8d7xQhb82bg" alt="Work 1">
             <div class="p-inner">
               <h5>Customized hand bags</h5>
               <div class="cat">Customized hand bags</div>
-            </div>
+            </div> -->
+            {{range $index, $val := .Site.Taxonomies.categories.customized_hand_bags}}
+              <a href={{.Permalink}}>
+                {{ partial "product.html" .Params }}
+              </a>
+            {{end}}
           </div>
         </div>
         
