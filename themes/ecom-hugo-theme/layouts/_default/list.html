@@ -25,7 +25,12 @@
         <div class="product_wrapper">
           
             <!-- for .md -->
-            {{ range where .Site.RegularPages "Section" "products"}}
+            <!-- {{ range where .Site.RegularPages "Section" "products"}}
+              <a href={{.Permalink}}>
+                {{ partial "product.html" .Params }}
+              </a>
+            {{ end }} -->
+            {{range $index, $val := .Site.Taxonomies.categories.featured}}
               <a href={{.Permalink}}>
                 {{ partial "product.html" .Params }}
               </a>

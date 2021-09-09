@@ -20,14 +20,14 @@
       <div class="row grid">
         <div class="col-sm-4 all featured_products">
           <div class="portfolio_item">
-            {{ range where .Site.RegularPages "Section" "products"}}
+            {{range $index, $val := .Site.Taxonomies.categories.featured}}
             <a href={{.Permalink}}>
               <!-- <img src="https://i.picsum.photos/id/923/1000/1200.jpg?hmac=aTXp3_sl8AMqNddbsjWOIy6R8-RCLWB5GoFrQUWIusA" alt="Work 1">
               <div class="p-inner">
                 <h5>Featured products</h5>
                 <div class="cat">Featured products</div>
               </div> -->
-              {{ partial "product2.html" .Params }}
+              {{ partial "product.html" .Params }}
             </a>
           {{ end }}
           
