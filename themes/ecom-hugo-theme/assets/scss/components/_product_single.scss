@@ -93,48 +93,91 @@
             // .product-price span{
             //     font-weight: 300;
             // }
-            .product-detail h2{
+            .product-detail
+            {
+                 h2{
                 text-transform: capitalize;
                 color: #12263a;
                 padding: 0.4rem;
-            }
-            .product-detail p{
+                 }
+                p{
                 font-size: 0.9rem;
                 padding: 0.3rem;
                 opacity: 0.8;
-            }
-            .product-detail ul{
+                }
+                ul{
                 margin: 1rem 0;
                 font-size: 0.9rem;
-                .product-detail ul li{
+                ul li{
                     margin: 0;
                     list-style: none;
                     padding-left: 0.35rem;
                     margin: 0.4rem 0;
                     font-weight: 600;
                     opacity: 0.9;
-                    .product-detail ul li span{
+                ul li span{
                         font-weight: 400;
                     }
                 }
+            }
+            }
+            .purchase-info{
+                margin: 1.5rem 0;
+                .purchase-info input,
+             .btn{
+                border: 1.5px solid #ddd;
+                border-radius: 25px;
+                text-align: center;
+                padding: 0.45rem 0.8rem;
+                outline: 0;
+                margin-right: 0.2rem;
+                margin-bottom: 1rem;
+                cursor: pointer;
+                color: white;
+                width: 170px;
+                height: 45px;
+                border: none;
+                &:first-of-type{
+                    background: #f7e709;
+                }
+                &:last-of-type{
+                    background: #fa9d11;
+                }
+                &:hover{
+                    opacity: 0.9;
+                }
+             }
+            
+            }
+            .socia-links{
+                display: flex;
+                align-items: center;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    /* color: #000; */
+                    border: 1px solid #000;
+                    margin: 0 0.2rem;
+                    border-radius: 50%;
+                    text-decoration: none;
+                    font-size: 0.8rem;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        background: #000;
+                        border-color: transparent;
+                        color: #fff;
+                    }
+                }
+                
             }
         
         }
     }
 }
 
-// .product-content{
-//     margin-top: 10rem;
-//     padding-top: 2em;
-// }
-/* .card-wrapper{
-    max-width: 1100px;
-    margin: 0 auto;
-} */
-// img{
-//     width: 100%;
-//     display: block;
-// }
 
 
 
@@ -150,58 +193,8 @@
 
 
 
-.purchase-info{
-    margin: 1.5rem 0;
-}
-.purchase-info input,
-.purchase-info btn{
-    border: 1.5px solid #ddd;
-    border-radius: 25px;
-    text-align: center;
-    padding: 0.45rem 0.8rem;
-    outline: 0;
-    margin-right: 0.2rem;
-    margin-bottom: 1rem;
-}
-.purchase-info input{
-    width: 90px;
-}
-.purchase-info .btn{
-    cursor: pointer;
-    color: white;
-    width: 170px;
-    height: 45px;
-    border: none;
-}
-.purchase-info .btn:first-of-type{
-    background: #f7e709;
-}
-.purchase-info .btn:last-of-type{
-    background: #fa9d11;
-}
-.purchase-info .btn:hover{
-    opacity: 0.9;
-}
-.socia-links{
-    display: flex;
-    align-items: center;
-}
-.socia-links a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    /* color: #000; */
-    border: 1px solid #000;
-    margin: 0 0.2rem;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 0.8rem;
-    transition: all 0.5s ease;
-}
-.socia-links a:hover{
-    background: #000;
-    border-color: transparent;
-    color: #fff;
-}
+
+
+
+
+

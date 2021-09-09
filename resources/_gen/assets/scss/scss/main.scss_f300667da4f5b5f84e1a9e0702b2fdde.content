@@ -748,71 +748,57 @@ header {
       .card-wrapper .product-single .product-content .product-detail ul {
         margin: 1rem 0;
         font-size: 0.9rem; }
-        .card-wrapper .product-single .product-content .product-detail ul .product-detail ul li {
+        .card-wrapper .product-single .product-content .product-detail ul ul li {
           margin: 0;
           list-style: none;
           padding-left: 0.35rem;
           margin: 0.4rem 0;
           font-weight: 600;
           opacity: 0.9; }
-          .card-wrapper .product-single .product-content .product-detail ul .product-detail ul li .product-detail ul li span {
+          .card-wrapper .product-single .product-content .product-detail ul ul li ul li span {
             font-weight: 400; }
-
-/* .card-wrapper{
-    max-width: 1100px;
-    margin: 0 auto;
-} */
-.purchase-info {
-  margin: 1.5rem 0; }
-
-.purchase-info input,
-.purchase-info btn {
-  border: 1.5px solid #ddd;
-  border-radius: 25px;
-  text-align: center;
-  padding: 0.45rem 0.8rem;
-  outline: 0;
-  margin-right: 0.2rem;
-  margin-bottom: 1rem; }
-
-.purchase-info input {
-  width: 90px; }
-
-.purchase-info .btn {
-  cursor: pointer;
-  color: white;
-  width: 170px;
-  height: 45px;
-  border: none; }
-
-.purchase-info .btn:first-of-type {
-  background: #f7e709; }
-
-.purchase-info .btn:last-of-type {
-  background: #fa9d11; }
-
-.purchase-info .btn:hover {
-  opacity: 0.9; }
-
-.socia-links {
-  display: flex;
-  align-items: center; }
-
-.socia-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  /* color: #000; */
-  border: 1px solid #000;
-  margin: 0 0.2rem;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 0.8rem;
-  transition: all 0.5s ease; }
-
-.socia-links a:hover {
-  background: #000;
-  border-color: transparent;
-  color: #fff; }
+      .card-wrapper .product-single .product-content .purchase-info {
+        margin: 1.5rem 0; }
+        .card-wrapper .product-single .product-content .purchase-info .purchase-info input,
+        .card-wrapper .product-single .product-content .purchase-info .btn {
+          border: 1.5px solid #ddd;
+          border-radius: 25px;
+          text-align: center;
+          padding: 0.45rem 0.8rem;
+          outline: 0;
+          margin-right: 0.2rem;
+          margin-bottom: 1rem;
+          cursor: pointer;
+          color: white;
+          width: 170px;
+          height: 45px;
+          border: none; }
+          .card-wrapper .product-single .product-content .purchase-info .purchase-info input:first-of-type,
+          .card-wrapper .product-single .product-content .purchase-info .btn:first-of-type {
+            background: #f7e709; }
+          .card-wrapper .product-single .product-content .purchase-info .purchase-info input:last-of-type,
+          .card-wrapper .product-single .product-content .purchase-info .btn:last-of-type {
+            background: #fa9d11; }
+          .card-wrapper .product-single .product-content .purchase-info .purchase-info input:hover,
+          .card-wrapper .product-single .product-content .purchase-info .btn:hover {
+            opacity: 0.9; }
+      .card-wrapper .product-single .product-content .socia-links {
+        display: flex;
+        align-items: center; }
+        .card-wrapper .product-single .product-content .socia-links a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
+          /* color: #000; */
+          border: 1px solid #000;
+          margin: 0 0.2rem;
+          border-radius: 50%;
+          text-decoration: none;
+          font-size: 0.8rem;
+          transition: all 0.5s ease; }
+          .card-wrapper .product-single .product-content .socia-links a:hover {
+            background: #000;
+            border-color: transparent;
+            color: #fff; }
