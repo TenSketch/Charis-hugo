@@ -2,14 +2,16 @@
 <html lang="en">
     {{- partial "head.html" . -}}
 <head>
-    
     <title>{{ .Title }}</title>
 </head>
 <body>
-    <h1>{{ .Title }}</h1>
+    {{- partial "header.html" . -}}
+
+    <!-- <h1>{{ .Title }}</h1>
     <h4>{{ .Name }}</h4>
-    <p class="desc">{{.Description}}</p>
+    <p class="desc">{{.Description}}</p> -->
     {{ partial "product_single.html" .Params }}
+    {{- partial "scripts.html" . -}}
 </div>
 </body>
 </html>

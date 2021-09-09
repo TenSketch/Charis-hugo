@@ -1,7 +1,7 @@
 
 
 .card-wrapper{
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
             flex-direction: column;
             justify-content: center;
             margin: 3rem;
-            margin-top: 9rem;
+            margin-top: 7rem;
             .img-display{
                 overflow: hidden;
                 .img-showcase{
@@ -90,9 +90,6 @@
                 }
 
             }
-            // .product-price span{
-            //     font-weight: 300;
-            // }
             .product-detail
             {
                  h2{
@@ -174,6 +171,9 @@
                 
             }
         
+        }
+        @media (max-width: 760px) {
+            grid-template-columns: 1fr;
         }
     }
 }

@@ -66,7 +66,9 @@
           </div>
           <div class="purchase-info">
               <!-- <input type="number" min="0" value="1"> -->
-              <button type="button" class="btn">
+              <button type="button" class="snipcart-add-item btn" data-item-id="{{ .id }}" data-item-name="{{ .name }}"
+              data-item-price="{{ .product_price }}" data-item-url="{{ .product_url }}"
+              data-item-description="{{ .description }}">
                   Add to cart <i class="fas fa-shopping-cart"></i>
               </button>
               <button type="button" class="btn">Buy Now</button>

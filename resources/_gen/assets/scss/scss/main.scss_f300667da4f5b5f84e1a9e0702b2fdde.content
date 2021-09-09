@@ -668,7 +668,6 @@ header {
           width: 100%; }
 
 .card-wrapper {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -681,7 +680,7 @@ header {
       flex-direction: column;
       justify-content: center;
       margin: 3rem;
-      margin-top: 9rem; }
+      margin-top: 7rem; }
       .card-wrapper .product-single .product-imgs .img-display {
         overflow: hidden; }
         .card-wrapper .product-single .product-imgs .img-display .img-showcase {
@@ -802,3 +801,6 @@ header {
             background: #000;
             border-color: transparent;
             color: #fff; }
+    @media (max-width: 760px) {
+      .card-wrapper .product-single {
+        grid-template-columns: 1fr; } }
