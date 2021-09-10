@@ -7,9 +7,13 @@
 <body>
     {{- partial "header.html" . -}}
 
-    <!-- <h1>{{ .Title }}</h1>
-    <h4>{{ .Name }}</h4>
-    <p class="desc">{{.Description}}</p> -->
+    <div class="product-slider">
+        {{ range .Params.Images }}
+        <div data-image="{{ .image | absURL }}">
+          <img class="img-fluid w-100" src="{{ .image | absURL }}" alt="product-img">
+        </div>
+        {{ end }}
+      </div>
     {{ partial "product_single.html" .Params }}
     {{- partial "scripts.html" . -}}
 </div>
