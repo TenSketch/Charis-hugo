@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>awesome</title>
+      <link>/products/awesome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/products/awesome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Be_Happy_carry_bag</title>
       <link>/products/be_happy_carry_bag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -16,43 +25,43 @@
     </item>
     
     <item>
-      <title></title>
-      <link>/products/customized_hand_bags/custom1/</link>
+      <title>custom1</title>
+      <link>/products/customized_hand_bags1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/customized_hand_bags/custom1/</guid>
+      <guid>/products/customized_hand_bags1/</guid>
       <description></description>
     </item>
     
     <item>
-      <title></title>
-      <link>/products/customized_hand_bags/custom2/</link>
+      <title>custom2</title>
+      <link>/products/customized_hand_bags2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/customized_hand_bags/custom2/</guid>
+      <guid>/products/customized_hand_bags2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title></title>
-      <link>/products/customized_hand_bags/custom3/</link>
+      <title>custom3</title>
+      <link>/products/customized_hand_bags3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/customized_hand_bags/custom3/</guid>
+      <guid>/products/customized_hand_bags3/</guid>
       <description></description>
     </item>
     
     <item>
-      <title></title>
-      <link>/products/customized_hand_bags/custom4/</link>
+      <title>custom4</title>
+      <link>/products/customized_hand_bags4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/customized_hand_bags/custom4/</guid>
+      <guid>/products/customized_hand_bags4/</guid>
       <description></description>
     </item>
     
     <item>
-      <title></title>
+      <title>Gents_hand_bag</title>
       <link>/products/gents_hand_bag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -61,7 +70,7 @@
     </item>
     
     <item>
-      <title></title>
+      <title>gift_giveaway_bag</title>
       <link>/products/gift_giveaway_bag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -70,7 +79,16 @@
     </item>
     
     <item>
-      <title></title>
+      <title>graceful</title>
+      <link>/products/graceful/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/products/graceful/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jute_file</title>
       <link>/products/jute_file/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -79,7 +97,7 @@
     </item>
     
     <item>
-      <title></title>
+      <title>Jute_Hand_bag</title>
       <link>/products/jute_hand_bag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -88,7 +106,7 @@
     </item>
     
     <item>
-      <title></title>
+      <title>jute_purse</title>
       <link>/products/jute_purse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -97,7 +115,7 @@
     </item>
     
     <item>
-      <title></title>
+      <title>Jute_School_bag</title>
       <link>/products/jute_school_bag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -106,7 +124,7 @@
     </item>
     
     <item>
-      <title></title>
+      <title>Jute_Small_Travel_bag</title>
       <link>/products/jute_small_travel_bag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -115,43 +133,52 @@
     </item>
     
     <item>
-      <title></title>
-      <link>/products/multipurpose_jute_bags/multipurpose_jute_bags1/</link>
+      <title>multipurpose_jute_bags1</title>
+      <link>/products/multipurpose_jute_bags1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/multipurpose_jute_bags/multipurpose_jute_bags1/</guid>
+      <guid>/products/multipurpose_jute_bags1/</guid>
       <description></description>
     </item>
     
     <item>
-      <title></title>
-      <link>/products/multipurpose_jute_bags/multipurpose_jute_bags2/</link>
+      <title>multipurpose_jute_bags2</title>
+      <link>/products/multipurpose_jute_bags2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/multipurpose_jute_bags/multipurpose_jute_bags2/</guid>
+      <guid>/products/multipurpose_jute_bags2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title></title>
-      <link>/products/multipurpose_jute_bags/multipurpose_jute_bags3/</link>
+      <title>multipurpose_jute_bags3</title>
+      <link>/products/multipurpose_jute_bags3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/multipurpose_jute_bags/multipurpose_jute_bags3/</guid>
+      <guid>/products/multipurpose_jute_bags3/</guid>
       <description></description>
     </item>
     
     <item>
-      <title></title>
-      <link>/products/multipurpose_jute_bags/multipurpose_jute_bags4/</link>
+      <title>multipurpose_jute_bags4</title>
+      <link>/products/multipurpose_jute_bags4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/multipurpose_jute_bags/multipurpose_jute_bags4/</guid>
+      <guid>/products/multipurpose_jute_bags4/</guid>
       <description></description>
     </item>
     
     <item>
-      <title></title>
+      <title>shine</title>
+      <link>/products/shine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/products/shine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shopping_Jute_bag</title>
       <link>/products/shopping_jute_bag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -160,38 +187,11 @@
     </item>
     
     <item>
-      <title></title>
+      <title>Women___Style</title>
       <link>/products/women___style/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/products/women___style/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/products/women_n_style/awesome/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/products/women_n_style/awesome/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/products/women_n_style/graceful/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/products/women_n_style/graceful/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/products/women_n_style/shine/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/products/women_n_style/shine/</guid>
       <description></description>
     </item>
     

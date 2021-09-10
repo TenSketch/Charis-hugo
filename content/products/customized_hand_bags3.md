@@ -1,6 +1,6 @@
 +++
 id = "custom3"
-image = "/uploads/customized_hand_bags/custom3.jpg"
+image = "/uploads/customized_hand_bags/customized3.jpg"
 name = "customized hand bags"
 description = "jute hand bags made according to your requirements"
 product_del_price = "999"

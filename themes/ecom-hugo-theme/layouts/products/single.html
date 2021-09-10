@@ -7,12 +7,12 @@
 <body>
     {{- partial "header.html" . -}}
 
-    <div class="product-slider">
+    <!-- <div class="product-slider">
         {{ range .Params.Images }}
         <div data-image="{{ .image | absURL }}">
           <img class="img-fluid w-100" src="{{ .image | absURL }}" alt="product-img">
         </div>
-        {{ end }}
+        {{ end }} -->
       </div>
     {{ partial "product_single.html" .Params }}
     {{- partial "scripts.html" . -}}
