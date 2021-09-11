@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+    {{- partial "head.html" . -}}
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }}</title>
 </head>
 <body>
-    <h1>{{ .Title }}</h1>
-    <h4>{{ .Name }}</h4>
-    <p class="desc">{{.Description}}</p>
+    {{- partial "header.html" . -}}
+
+    <!-- <div class="product-slider">
+        {{ range .Params.Images }}
+        <div data-image="{{ .image | absURL }}">
+          <img class="img-fluid w-100" src="{{ .image | absURL }}" alt="product-img">
+        </div>
+        {{ end }} -->
+      </div>
     {{ partial "product_single.html" .Params }}
+    {{- partial "scripts.html" . -}}
 </div>
 </body>
 </html>
