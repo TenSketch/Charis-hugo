@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
 }
+// tag selectors
 html {
   scroll-behavior: smooth;
   font-size: 14px;
@@ -46,6 +47,7 @@ h2 {
 section{
   padding-block: 7%;
 }
+// utility classes
 .container {
   max-width: 80%;
   width: 1200px;

@@ -1,6 +1,6 @@
 +++
 id = "multipurpose_jute_bags3"
-image = "/uploads/multipurpose_jute_bags/3.jpg"
+image = "/images/multipurpose_jute_bags/3.jpg"
 name = "multipurpose jute bags"
 description = "jute multipurpose bags for versatile use"
 product_del_price = "999"

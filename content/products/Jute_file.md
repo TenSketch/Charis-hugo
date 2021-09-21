@@ -1,7 +1,7 @@
 +++
 description = "A jute file for organizing documents"
 id = "Jute_file"
-image = "/uploads/Jute_file.png"
+image = "/images/Jute_file.png"
 name = "Jute file"
 product_del_price = ""
 product_price = "299"
