@@ -1,0 +1,11 @@
+<button class="snipcart-add-item btn btn-dark" 
+        data-item-id="{{ .Params.ProductID }}"
+        data-item-name="{{ .Title }}" 
+        {{ range first 1 .Params.Images }} 
+        data-item-image="{{ .image | absURL }}"
+        {{ end }} 
+        data-item-price="{{ .Params.Price }}" 
+        data-item-url="{{ .Permalink }}" 
+        data-item-description="{{ .Description }}">
+        Add to bag
+</button>

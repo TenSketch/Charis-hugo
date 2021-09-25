@@ -1,16 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }}</title>
-</head>
-<body>
-    <h1>{{ .Title }}</h1>
-    <h4>{{ .Name }}</h4>
-    <p class="desc">{{.Description}}</p>
-    {{ partial "product_single.html" .Params }}
-</div>
-</body>
-</html>
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<section class="product_single">
+  <div class="container">
+    <div class="product-image">
+      <!-- product image slider -->
+      <div class="product-slider">
+        {{ range .Params.Images }}
+        <div data-image="{{ .image | absURL }}">
+          <img class="w-100" src="{{ .image | absURL }}" alt="{{ .Name }}">
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    <div class="product-desc">
+      <h4>{{ .Title }}</h4>
+      <!-- rating star -->
+      {{ if site.Params.rating.enable }}
+      <div class="rw-ui-container"></div>
+      {{ end }}
+      {{ partial "partials/products/price.html" . }}
+
+      <h5>Short Description</h5>
+      <p>{{ .Params.ShortDescription | markdownify }}</p>
+      {{ partial "partials/products/add-to-cart-btn.html" . }}
+    </div>
+
+  </div>
+</section>
+
+{{ partial "cta.html" . }}
+
+{{ end }}

@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-image: /img/.jpg
+image: /images/.jpg
 draft: false
 ---
 

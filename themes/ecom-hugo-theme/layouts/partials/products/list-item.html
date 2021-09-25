@@ -1,0 +1,13 @@
+<div class="card txt-center">
+    <a href="{{ .Permalink }}">
+        {{ range first 1 .Params.Images }}
+        <img src="{{ .image | absURL }}" alt="{{ .Title }}">
+        {{ end }}
+    </a>
+    <div class="card-body">
+        <a href="{{ .Permalink }}" class="card-title">{{ .Title }}</a>
+        <p>{{ .Params.Description }}</p>
+        {{ partial "partials/products/price.html" . }}
+        {{ partial "partials/products/add-to-cart-btn.html" . }}
+    </div>
+</div>

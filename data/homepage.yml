@@ -61,33 +61,23 @@ material:
 ########################### Advantage #########################
 advantage:
   enable : true
-  title : "Advantages Of Using <br> Our Product"
+  title : "Highlights of Chari Jute bags"
   subtitle : "Lorem ipsum dolor sit amet, da decal consetetur<br> sadipscing elitr, sed diam nonumya eirmod"
   image : "images/advantage.png"
   advantageList:
     # advantage list loop
-    - listItem : "Extremely lightweight"
-    - listItem : "Excellent breathability"
-    - listItem : "Can increase Cell activation"
-    - listItem : "Glowing Skin In 7 Days"
-    - listItem : "Increasing Glow Of Face"
-    - listItem : "More Beautiful Face Skin"
-
-
-######################## Promo Video ##########################
-video:
-  enable : true
-  title : "How To Use This Product?"
-  content : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
-  videoThumb : "images/video-thumb.jpg"
-  videoURL : "https://www.youtube.com/embed/wf4F2-9UXUo"
+    - listItem : "Extremely durable"
+    - listItem : "Excellent quality"
+    - listItem : "Higher rope density"
+    - listItem : "Attractive design"
+    # - listItem : "Increasing Glow Of Face"
+    # - listItem : "More Beautiful Face Skin"
 
 
 ######################## Products #############################
 products:
   enable : true
-  title : "Products List"
+  title : "Featured products"
   # product item comes from "content/products"
 
 
@@ -97,24 +87,24 @@ testimonial:
   title : "What People Are Saying <br> About Our Product"
   testimonialItem:
     # testimonial item loop
-    - name : "Angelo Perara"
+    - name : "Richard Cooper"
       image : "images/clients/client-1.jpg" # size 100px*100px
-      designation : "CEO, Dialogue Broad Band"
-      content : "Lorem ipsum dolor sit amet, <br> consetetur sadipscing elitr, diam <br> nonumy eirmod tempor"
+      designation : "Marketing Analyst, Dialogue Broad Band"
+      content : "I am quite picky about my bags. When my friend told me about fashion bags from Charis Bags, I didn't pay much attention. Well, it was my birthday last night, and she gave me one of those bags as a gift. I can't explain how much I loved it. I thanked my friend a lot and now it's time to thank you too Charis Bags."
       rating : "five" # rating star, one to five
       
     # testimonial item loop
-    - name : "Riya Ventila"
+    - name : "Rachel Poehler"
       image : "images/clients/client-2.jpg" # size 100px*100px
-      designation : "CEO, Dialogue Broad Band"
-      content : "Lorem ipsum dolor sit amet, <br> consetetur sadipscing elitr, diam <br> nonumy eirmod tempor"
-      rating : "three" # rating star, one to five
+      designation : "Teacher, Iluminate International School"
+      content : "I always prefer to have unique bags. Not all fashion bags are up to my taste, but I am glad to accept that I have fallen for Charis Bags. Their customized bags are simply marvelous. It’s eco-friendly, and so trendy.I can't explain how much I loved it. I thanked my friend a lot and now it's time to thank you too Charis Bags."
+      rating : "four" # rating star, one to five
       
     # testimonial item loop
-    - name : "john Doe"
+    - name : "R Kavita Daga"
       image : "images/clients/client-3.jpg" # size 100px*100px
-      designation : "CEO, Dialogue Broad Band"
-      content : "Lorem ipsum dolor sit amet, <br> consetetur sadipscing elitr, diam <br> nonumy eirmod tempor"
+      designation : "Business Analyst, TenSketch"
+      content : "I love my planet earth and I am going to do anything for it. I do campaigns and write journals about greener and less toxic world. Jute bags are part of my life, but the bags from the Charis Bag's made me happy, because it’s not just eco-friendly but also stylish. I can't explain how much I loved it. I thanked my friend a lot."
       rating : "five" # rating star, one to five
       
     # testimonial item loop

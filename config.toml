@@ -1,7 +1,8 @@
 ######################## default configuration ####################
 
 baseURL = "/"
-languageCode = "en"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
 title = "Charis | Jute Bags | Buy high quality jute bags"
 theme= "ecom-hugo-theme"
 summaryLength = "20"
@@ -12,7 +13,16 @@ og_image = "/images/ogimage.jpg"
 description = "Charis Jute bags is a high quality multipurpose Jute bags manufacturers."
 keywords = "Jute bags, jute, organic bags, shopping jute bags, jute hand bags, mens hand bags, womens hand bag, fashionable hand bags"
 author = "TenSketch"
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
 
+  [languages.ae]
+    languageName = "Arabic"
+    languageCode = "ae"
+    weight = 2
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
 # Contact Information
