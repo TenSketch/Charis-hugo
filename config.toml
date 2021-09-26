@@ -40,18 +40,18 @@ currencySymbol = "$"
 [menu]
 
   [[menu.main]]
-  name = "Products"
-  URL = "products"
+  name = "About us"
+  URL = "about-us"
   weight = 1
 
   [[menu.main]]
-  name = "Blog"
-  URL = "blog"
+  name = "Jute bags"
+  URL = "jute_bags"
   weight = 2
 
   [[menu.main]]
-  name = "FAQ"
-  URL = "faq"
+  name = "Gifts"
+  URL = "gifts"
   weight = 3
 
   [[menu.main]]
