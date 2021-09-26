@@ -1,16 +1,19 @@
 
     <header>
         <div class="container">
-            <a href="#" class="logo">
-                <img src="/images/Charish-logo.png" alt="Charis">
+            <a href="{{ site.BaseURL }}" class="logo">
+                <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}">
             </a>
 
             <nav>
                 <ul class="nav_list">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Jute bags</a></li>
-                    <li><a href="#">Gifts</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    {{ range site.Menus.main }}
+                    <li>
+                        <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+                    </li>
+                    
+                    {{end}}
+
                 </ul>
 
                 <div class="nav_icons ">

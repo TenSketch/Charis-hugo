@@ -8,7 +8,7 @@ theme= "ecom-hugo-theme"
 summaryLength = "20"
 
 [params]
-logo = "images/logo.png"
+logo = "images/Charis_CT-logo.png"
 og_image = "/images/ogimage.jpg"
 description = "Charis Jute bags is a high quality multipurpose Jute bags manufacturers."
 keywords = "Jute bags, jute, organic bags, shopping jute bags, jute hand bags, mens hand bags, womens hand bag, fashionable hand bags"
@@ -35,3 +35,26 @@ copyright = "| Copyright &copy; 2021 [Charis](https://charisjutebags.com) All Ri
 snipcartApiKey = "YourAPIkey"
 currencySymbol = "$"
 
+
+############################## navigation ###############################
+[menu]
+
+  [[menu.main]]
+  name = "Products"
+  URL = "products"
+  weight = 1
+
+  [[menu.main]]
+  name = "Blog"
+  URL = "blog"
+  weight = 2
+
+  [[menu.main]]
+  name = "FAQ"
+  URL = "faq"
+  weight = 3
+
+  [[menu.main]]
+  name = "Contact"
+  URL = "contact"
+  weight = 4
