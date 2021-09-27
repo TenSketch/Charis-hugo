@@ -9,7 +9,7 @@ header {
   z-index: 10;
   // min-height: 10vh;
   .container {
-    @include flex(center, normal);
+    @include flex(center, normal, nowrap);
     width: 1000px;
     max-width: 90%;
   }
@@ -31,7 +31,7 @@ header {
   }
   nav {
     width: 100%;
-    @include flex(center, normal);
+    @include flex(center, normal, nowrap);
     a {
       color: $clr-primary;
       text-decoration: none;
@@ -72,7 +72,7 @@ header {
       @media(min-width: 991px){
         margin-right: 0;
       }
-      @include flex(center, normal);
+      @include flex(center, normal, nowrap);
       img {
         display: unset;
       }
@@ -121,14 +121,14 @@ header {
       .nav_list {
         margin-left: 1em;
         position: relative;
-        @include flex(center, flex-start);
+        @include flex(center, flex-start, nowrap);
         margin-block: 0;
         gap: 1.5em;
       }
       .nav_icons {
         & > div{
           a{
-            @include flex(flex-start, normal);
+            @include flex(flex-start, normal,nowrap);
             gap: .5em;
           }
         }

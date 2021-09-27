@@ -9,10 +9,13 @@ $font-poppins: 'Poppins', sans-serif;
 
 // HSL Theming
 // clr-primary
-$clr-primary-800: hsl(37, 29%, 47%);
-$clr-primary-600: hsl(37, 29%, 27%);
-$clr-primary-400: hsl(37, 29%, 17%);
-$clr-primary-200: hsl(37, 29%, 07%);
+$clr-primary-200: hsl(37, 29%, 47%);
+$clr-primary-400: hsl(37, 29%, 30%);
+$clr-primary-600: hsl(37, 29%, 20%);
+$clr-primary-800: hsl(37, 29%, 10%);
 
-// clr-secondary
-$clr-secondary-800: #0E1A42;
+// clr-primary-alpha
+$clr-primary-200--hsla: hsla(37, 29%, 47%, .7);
+$clr-primary-400--hsla: hsla(37, 29%, 30%, .7);
+$clr-primary-600--hsla: hsla(37, 29%, 20%, .7);
+$clr-primary-800--hsla: hsla(37, 29%, 10%, .7);

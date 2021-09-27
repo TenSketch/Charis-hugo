@@ -87,7 +87,7 @@
   <div class="container">
     <div class="content">
       <h2>{{ .title | markdownify }}</h2>
-      <p>{{ .subtitle | markdownify }}</p>
+      <h3>{{ .subtitle | markdownify }}</h3>
       <ul>
         {{ range .advantageList }}
         <li>{{ .listItem }}</li>
@@ -130,7 +130,7 @@
     <div class="testimonials_card txt-center">
       <img src="{{ .image | absURL }}" class="client-img" alt="{{ .name | markdownify }}">
       <p class="quoted">{{ .content | markdownify }}</p>
-      <h6>{{ .name | markdownify }}</h6>
+      <h4>{{ .name | markdownify }}</h4>
       <small>{{ .designation | markdownify }}</small>
       <ul class="list-inline rating {{ .rating | lower }} mt-3">
         <li class="list-inline-item mx-0"><i class="ti-star"></i></li>

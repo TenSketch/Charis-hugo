@@ -12,7 +12,29 @@
 }
 .advantage{
     color: $clr-light;
-    background: $clr-dark url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg) center fixed no-repeat;
+    background: $clr-primary-800--hsla url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg) center fixed no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
+    .content{
+        ul{
+            li{
+                @extend .my-1;
+                // list-style-image: url(/images/svg/hand-point-right-regular.svg);
+                position: relative;
+                padding-left: 1.5em;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    background: url(/images/svg/hand-point-right-regular.svg) center no-repeat;
+                    background-size: cover;
+                    top: 0;
+                    left: 0;
+                    display: inline-block;
+                    height: 1.2em;
+                    aspect-ratio: 1;
+                    filter: invert(1)
+                }
+            }
+        }
+    }
 }

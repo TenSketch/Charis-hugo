@@ -49,7 +49,7 @@ section{
 }
 // utility classes
 .container {
-  max-width: 80%;
+  max-width: 90%;
   width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -64,6 +64,9 @@ section{
 .flex-wrap{
   flex-wrap: wrap
 }
+.gap-1{
+  gap: 1em;
+}
 .grid{
   display: grid;
   place-items: center;
@@ -75,7 +78,8 @@ section{
   margin-top: .7em;
   background: $clr-dark;
   color: $clr-light;
-  border-radius: 30px;
+  // border-radius: 30px;
+  border: none;
 
 }
 .my-1{
@@ -101,7 +105,7 @@ section{
 }
 @import "components/header";
 @import "components/homePage";
-@import "components/products_list";
+@import "components/products-list";
 @import "components/about";
 @import "components/testimonials";
 @import "components/footer";
@@ -111,7 +115,7 @@ section{
 
 .content{
   @extend .mt-4;
-  p{
+  h2,h3,p{
     @extend .my-1
 
   }

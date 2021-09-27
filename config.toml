@@ -13,16 +13,7 @@ og_image = "images/ogimage.jpg"
 description = "Charis Jute bags is a high quality multipurpose Jute bags manufacturers."
 keywords = "Jute bags, jute, organic bags, shopping jute bags, jute hand bags, mens hand bags, womens hand bag, fashionable hand bags"
 author = "TenSketch"
-[languages]
-  [languages.en]
-    languageName = "English"
-    languageCode = "en-us"
-    weight = 1
 
-  [languages.ae]
-    languageName = "Arabic"
-    languageCode = "ae"
-    weight = 2
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
 # Contact Information
@@ -33,8 +24,18 @@ location = "Chennai, India"
 copyright = "| Copyright &copy; 2021 [Charis](https://charisjutebags.com) All Rights Reserved |"
 # Snipcart Credentials
 snipcartApiKey = "YourAPIkey"
-currencySymbol = "$"
+currencySymbol = "Rs. "
 
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
+
+  [languages.ae]
+    languageName = "Arabic"
+    languageCode = "ae"
+    weight = 2
 
 ############################## navigation ###############################
 [menu]

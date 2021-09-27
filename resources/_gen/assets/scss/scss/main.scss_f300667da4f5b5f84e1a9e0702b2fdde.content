@@ -42,21 +42,24 @@ section {
   padding-block: 8rem; }
 
 .container {
-  max-width: 80%;
+  max-width: 90%;
   width: 1200px;
   margin: 0 auto;
   position: relative; }
 
-.txt-center, .testimonials h1, .product_card {
+.txt-center, .testimonials h1, .products .container h2 {
   text-align: center; }
 
-.flex-col, .product_card {
+.flex-col, .products .container .card .card-body, .products .container .card {
   flex-direction: column; }
 
 .flex-wrap {
   flex-wrap: wrap; }
 
-.grid, .product_card {
+.gap-1, .products .container {
+  gap: 1em; }
+
+.grid {
   display: grid;
   place-items: center; }
 
@@ -67,9 +70,9 @@ section {
   margin-top: .7em;
   background: #352c1c;
   color: #f8f5f2;
-  border-radius: 30px; }
+  border: none; }
 
-.my-1, .content p, .footer li, .desc, .product_card {
+.my-1, .content h2, .content h3, .content p, .footer li, .advantage .content ul li {
   margin-block: 1em; }
 
 .mt-1 {
@@ -84,7 +87,7 @@ section {
 .mt-4, .content {
   margin-top: 4em; }
 
-.p-1, .product_card {
+.p-1 {
   padding: 1em; }
 
 /* navbar */
@@ -100,6 +103,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: normal;
+    flex-wrap: nowrap;
     width: 1000px;
     max-width: 90%; }
   header .logo {
@@ -115,7 +119,8 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: normal; }
+    justify-content: normal;
+    flex-wrap: nowrap; }
     header nav a {
       color: #9b8055;
       text-decoration: none; }
@@ -144,7 +149,8 @@ header {
       margin-right: 2.5em;
       display: flex;
       align-items: center;
-      justify-content: normal; }
+      justify-content: normal;
+      flex-wrap: nowrap; }
       @media (min-width: 991px) {
         header nav .nav_icons {
           margin-right: 0; } }
@@ -183,12 +189,14 @@ header {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        flex-wrap: nowrap;
         margin-block: 0;
         gap: 1.5em; }
       header nav .nav_icons > div a {
         display: flex;
         align-items: flex-start;
         justify-content: normal;
+        flex-wrap: nowrap;
         gap: .5em; }
       header nav .nav_icons span {
         display: inline-block; } }
@@ -237,61 +245,82 @@ header {
 
 .advantage {
   color: #f8f5f2;
-  background: #352c1c url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg) center fixed no-repeat;
+  background: rgba(33, 27, 18, 0.7) url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg) center fixed no-repeat;
   background-size: cover;
   background-blend-mode: multiply; }
+  .advantage .content ul li {
+    position: relative;
+    padding-left: 1.5em; }
+    .advantage .content ul li::before {
+      position: absolute;
+      content: '';
+      background: url(/images/svg/hand-point-right-regular.svg) center no-repeat;
+      background-size: cover;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      height: 1.2em;
+      aspect-ratio: 1;
+      filter: invert(1); }
 
 .products .container {
-  max-width: 100%;
-  width: auto;
-  padding-inline: 5%; }
-
-.product_card {
-  flex-basis: 50%;
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  transition: all 250ms ease-in;
-  min-height: 25rem; }
-  .product_card img {
-    max-width: 80%;
-    margin: auto; }
-  .product_card:hover {
-    background: rgba(248, 245, 242, 0.35);
-    box-shadow: 0 0 15px 5px rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(2.5px);
-    -webkit-backdrop-filter: blur(2.5px);
-    border-radius: 10px; }
-
-@media (min-width: 600px) {
-  .product_card {
-    flex-basis: 25%; } }
-
-.desc {
-  font-family: "Petit Formal Script", cursive; }
-
-.price {
-  color: #7a6543;
-  font-weight: 500;
-  font-size: 1.2rem; }
-
-.product_wrapper {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  position: relative; }
-
-.product_wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: normal;
+  justify-content: space-around;
   flex-wrap: wrap; }
+  .products .container h2 {
+    flex-basis: 100%;
+    font-size: 2rem; }
+  .products .container .card {
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-basis: 40%; }
+    @media (min-width: 768px) {
+      .products .container .card {
+        flex-basis: 30%; } }
+    @media (min-width: 991px) {
+      .products .container .card {
+        flex-basis: 15%; } }
+    .products .container .card .card-head {
+      flex-basis: 40%;
+      align-self: center; }
+      .products .container .card .card-head a {
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: flex-end; }
+    .products .container .card .card-body {
+      min-height: 15rem;
+      flex-basis: 40%;
+      display: flex;
+      align-items: normal;
+      justify-content: space-between;
+      flex-wrap: nowrap; }
+      .products .container .card .card-body .card-title {
+        height: 100%;
+        display: grid;
+        place-items: center; }
+        .products .container .card .card-body .card-title a {
+          font-size: 1.3rem;
+          color: #211b12; }
+      .products .container .card .card-body .card-desc {
+        height: 100%;
+        display: grid;
+        place-items: center;
+        font-family: "Petit Formal Script", cursive; }
+      .products .container .card .card-body .price s {
+        font-size: smaller; }
+      .products .container .card .card-body .price span {
+        font-weight: 600; }
 
 @media (min-width: 991px) {
   .about .container {
     display: flex;
     align-items: center;
-    justify-content: space-between; } }
+    justify-content: space-between;
+    flex-wrap: nowrap; } }
 
 .about .about_text {
   width: 100%;
@@ -326,6 +355,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
     gap: 2.5em;
     flex-wrap: wrap;
     margin-block: 2em; }
@@ -348,7 +378,8 @@ header {
     .footer .container {
       display: flex;
       align-items: flex-start;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      flex-wrap: nowrap; } }
 .col-1 li a {
   color: #f8f5f2; }
 

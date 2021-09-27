@@ -61,8 +61,8 @@ material:
 ########################### Advantage #########################
 advantage:
   enable : true
-  title : "Highlights of Chari Jute bags"
-  subtitle : "Lorem ipsum dolor sit amet, da decal consetetur<br> sadipscing elitr, sed diam nonumya eirmod"
+  title : "Highlights of Charis Jute bags"
+  subtitle : "Our bags environmental friendly"
   image : "images/advantage.png"
   advantageList:
     # advantage list loop

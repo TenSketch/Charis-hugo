@@ -1,0 +1,72 @@
+.products {
+  //   background: $clr-primary-600--hsla;
+
+  .container {
+    @include flex(normal, space-around, wrap);
+    @extend .gap-1;
+    h2 {
+      flex-basis: 100%;
+      @extend .txt-center;
+      font-size: 2rem;
+    }
+    .card {
+      // min-height: 20rem;
+      @include flex(normal, space-between, nowrap);
+      @extend .flex-col;
+    //   border: 1px solid;
+      flex-basis: 40%;
+
+      @media (min-width: 768px) {
+        flex-basis: 30%;
+      }
+      @media (min-width: 991px) {
+        flex-basis: 15%;
+      }
+      .card-head {
+        // min-height: 10rem;
+        flex-basis: 40%;
+        // background-color: greenyellow;
+        align-self: center;
+
+        a {
+          height: 100%;
+          // display: block;
+          margin: auto;
+          display: flex;
+          align-items: flex-end;
+        }
+      }
+      .card-body {
+        min-height: 15rem;
+        flex-basis: 40%;
+        // background-color: hotpink;
+        @include flex(normal, space-between, nowrap);
+        @extend .flex-col;
+        .card-title {
+          height: 100%;
+          display: grid;
+          place-items: center;
+          a {
+            font-size: 1.3rem;
+            color: $clr-primary-800;
+            // font-weight: bold;
+          }
+        }
+        .card-desc {
+          height: 100%;
+          display: grid;
+          place-items: center;
+          font-family: "Petit Formal Script", cursive;
+        }
+        .price{
+            s{
+                font-size: smaller;
+            }
+            span{
+                font-weight: 600;
+            }
+        }
+      }
+    }
+  }
+}
