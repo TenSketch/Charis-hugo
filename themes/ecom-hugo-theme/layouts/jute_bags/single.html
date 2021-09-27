@@ -77,7 +77,7 @@
     document.addEventListener( 'DOMContentLoaded', function () {
       var secondarySlider = new Splide( '#secondary-slider', {
         fixedWidth  : 100,
-        height      : 60,
+        height      : 80,
         gap         : 10,
         cover       : true,
         isNavigation: true,
@@ -92,7 +92,7 @@
       
       var primarySlider = new Splide( '#primary-slider', {
         type       : 'fade',
-        heightRatio: 0.5,
+        heightRatio: 0.8,
         pagination : false,
         arrows     : false,
         cover      : false,
@@ -103,7 +103,8 @@
     </script>
     <style>
       .splide__slide img{
-        width: 25%;
+        width: 80%;
+        margin: 0 auto;
       }
       .container{
         display: flex;
