@@ -5,16 +5,32 @@
 <section class="section pt-0">
   <div class="container">
     <div class="row">
-      <div class="col-lg-5 mb-4 mb-lg-0">
+      <div class="col-lg-5 mb-4 mb-lg-0 splide" id="primary-slider">
         <!-- product image slider -->
-        <div class="product-slider">
-          {{ range .Params.Images }}
-          <div data-image="{{ .image | absURL }}">
-            <img class="img-fluid w-100" src="{{ .image | absURL }}" alt="product-img">
-          </div>
-          {{ end }}
+        <div class="product-slider splide__track">
+          <ul class="splide__list">
+            {{ range .Params.Images }}
+            <li class="splide__slide" data-image="{{ .image | absURL }}">
+              <img class="img-fluid w-100" src="{{ .image | absURL }}" alt="product-img">
+            </li>
+            {{ end }}
+          </ul>
         </div>
       </div>
+      <!-- thumbnail  -->
+      <div id="secondary-slider" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list" >
+          {{ range .Params.Images }}
+            <li class="splide__slide" data-image="{{ .image | absURL }}">
+              <img src="{{ .image | absURL }}">
+            </li>
+          {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-lg-5 offset-lg-1">
         <h4 class="font-weight-medium">{{ .Title }}</h4>
         <!-- rating star -->
@@ -57,6 +73,43 @@
       </div>
     </div>
   </div>
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+      var secondarySlider = new Splide( '#secondary-slider', {
+        fixedWidth  : 100,
+        height      : 80,
+        gap         : 10,
+        cover       : true,
+        isNavigation: true,
+        focus       : 'center',
+        breakpoints : {
+          '600': {
+            fixedWidth: 66,
+            height    : 40,
+          }
+        },
+      } ).mount();
+      
+      var primarySlider = new Splide( '#primary-slider', {
+        type       : 'fade',
+        heightRatio: 0.8,
+        pagination : false,
+        arrows     : false,
+        cover      : false,
+      } ); // do not call mount() here.
+      
+      primarySlider.sync( secondarySlider ).mount();
+    } );
+    </script>
+    <style>
+      .splide__slide img{
+        width: 80%;
+        margin: 0 auto;
+      }
+      .container{
+        display: flex;
+      }
+    </style>
 </section>
 
 {{ partial "cta.html" . }}
