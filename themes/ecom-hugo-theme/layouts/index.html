@@ -38,6 +38,7 @@
     <div class="content">
       <h2>{{ .title }}</h2>
       <p>{{ .content }}</p>
+      <h4>{{ .subtitle }} </h4>
     </div>
   </div>
 </section>
@@ -87,7 +88,7 @@
     <div class="content">
       <h2>{{ .title | markdownify }}</h2>
       <p>{{ .subtitle | markdownify }}</p>
-      <ul style="columns: 2;">
+      <ul>
         {{ range .advantageList }}
         <li>{{ .listItem }}</li>
         {{ end }}

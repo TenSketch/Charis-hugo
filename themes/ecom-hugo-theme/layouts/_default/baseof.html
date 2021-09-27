@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" lang="{{ .Language }}">
-{{- partial "head.html" . -}}
+{{ partial "head.html" . }}
 
 <body>
-    {{- partial "header.html" . -}}
+    {{ partial "header.html" . }}
 
     {{- block "main" . }}{{- end }}
-    <!-- {{- block "featured_products" . }}{{- end }}
-
-    {{- block "women_n_style" . }}{{- end }}
-    {{- block "Customized_hand_bags" . }}{{- end }}
-    {{- block "Multipurpose_Jute_bags" . }}{{- end }}
-    {{- block "about" . }}{{- end }}
-
-    {{- block "all" . }}{{- end }}
-
-    {{- block "testimonials" . }}{{- end }} -->
+   
     {{- partial "footer.html" . -}}
     {{- partial "scripts.html" . -}}
 

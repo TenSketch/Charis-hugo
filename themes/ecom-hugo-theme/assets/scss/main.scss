@@ -45,7 +45,7 @@ h2 {
 
 }
 section{
-  padding-block: 7%;
+  padding-block: 8rem;
 }
 // utility classes
 .container {
@@ -82,12 +82,25 @@ section{
   margin-block: 1em;
 
 }
+.mt-1{
+  margin-top: 1em
+}
+.mt-2{
+  margin-top: 2em
+}
+.mt-3{
+  margin-top: 3em
+}
+.mt-4{
+  margin-top: 4em
+}
+
 .p-1{
   padding: 1em;
 
 }
 @import "components/header";
-// @import "components/slider";
+@import "components/homePage";
 @import "components/products_list";
 @import "components/about";
 @import "components/testimonials";
@@ -96,4 +109,10 @@ section{
 
 
 
+.content{
+  @extend .mt-4;
+  p{
+    @extend .my-1
 
+  }
+}

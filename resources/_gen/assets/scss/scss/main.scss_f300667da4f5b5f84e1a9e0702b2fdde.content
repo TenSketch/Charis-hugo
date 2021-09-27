@@ -39,7 +39,7 @@ h2 {
   font-weight: 300; }
 
 section {
-  padding-block: 7%; }
+  padding-block: 8rem; }
 
 .container {
   max-width: 80%;
@@ -69,8 +69,20 @@ section {
   color: #f8f5f2;
   border-radius: 30px; }
 
-.my-1, .footer li, .desc, .product_card {
+.my-1, .content p, .footer li, .desc, .product_card {
   margin-block: 1em; }
+
+.mt-1 {
+  margin-top: 1em; }
+
+.mt-2 {
+  margin-top: 2em; }
+
+.mt-3 {
+  margin-top: 3em; }
+
+.mt-4, .content {
+  margin-top: 4em; }
 
 .p-1, .product_card {
   padding: 1em; }
@@ -78,8 +90,8 @@ section {
 /* navbar */
 header {
   padding: 1em;
-  background: #f8f5f2;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #fff;
+  box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
   position: fixed;
   top: 0;
   width: 100%;
@@ -112,8 +124,9 @@ header {
       top: -1000%;
       right: 0;
       width: 50% !important;
-      background: #f8f5f2;
-      padding: 1em; }
+      background: #fff;
+      padding: 1em;
+      box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37); }
       header nav .nav_list li {
         position: relative;
         margin-block: 1.5em;
@@ -123,7 +136,7 @@ header {
             text-align: unset;
             margin-block: 0; } }
     header nav .nav_list.active {
-      top: 100%;
+      top: 10vh;
       transition: all 400ms ease; }
     header nav .nav_icons {
       gap: 1em;
@@ -213,6 +226,20 @@ header {
   header .nav__toggle.active {
     position: fixed;
     right: 20px; }
+
+.banner {
+  background-color: #f8f5f2;
+  text-align: center; }
+  .banner .image img {
+    filter: drop-shadow(0 15px 5px #352c1c);
+    max-width: 60%;
+    margin: auto; }
+
+.advantage {
+  color: #f8f5f2;
+  background: #352c1c url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg) center fixed no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply; }
 
 .products .container {
   max-width: 100%;
