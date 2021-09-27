@@ -47,7 +47,7 @@ section {
   margin: 0 auto;
   position: relative; }
 
-.txt-center, .testimonials h1, .products .container h2 {
+.txt-center, .testimonials .container h2, .products .container h2 {
   text-align: center; }
 
 .flex-col, .products .container .card .card-body, .products .container .card {
@@ -72,7 +72,7 @@ section {
   color: #f8f5f2;
   border: none; }
 
-.my-1, .content h2, .content h3, .content p, .footer li, .advantage .content ul li {
+.my-1, .content h2, .content h3, .content p, .footer li, .testimonials .container .testimonials_card h4, .advantage .content ul li {
   margin-block: 1em; }
 
 .mt-1 {
@@ -130,8 +130,7 @@ header {
       right: 0;
       width: 50% !important;
       background: #fff;
-      padding: 1em;
-      box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37); }
+      padding: 1em; }
       header nav .nav_list li {
         position: relative;
         margin-block: 1.5em;
@@ -349,28 +348,30 @@ header {
 
 .testimonials {
   background-color: #c5b396; }
-  .testimonials .testimonial_flex {
+  .testimonials .container {
     /* flex-direction: column; */
     /* justify-content: space-around; */
     display: flex;
-    align-items: center;
+    align-items: normal;
     justify-content: center;
     flex-wrap: nowrap;
     gap: 2.5em;
     flex-wrap: wrap;
     margin-block: 2em; }
-
-.testimonials_card {
-  padding: 1.5em;
-  max-width: 20rem;
-  /* aspect-ratio: 1/1.2; */
-  border-radius: 10px;
-  background: #C5B396;
-  box-shadow: 20px -20px 60px #a79880, -20px 20px 60px #e3cead;
-  /* margin-top: 2em; */ }
-  .testimonials_card h5 {
-    margin-block: 1em; }
-
+    .testimonials .container h2 {
+      flex-basis: 100%; }
+    .testimonials .container .testimonials_card {
+      padding: 1.5em;
+      border-radius: 10px;
+      background: #c5b396;
+      box-shadow: 20px -20px 60px #a79880, -20px 20px 60px #e3cead;
+      /* margin-top: 2em; */ }
+      @media (min-width: 768px) {
+        .testimonials .container .testimonials_card {
+          flex-basis: 40%; } }
+      @media (min-width: 991px) {
+        .testimonials .container .testimonials_card {
+          flex-basis: 20%; } }
 .footer {
   background-color: #352c1c;
   color: #f8f5f2; }
