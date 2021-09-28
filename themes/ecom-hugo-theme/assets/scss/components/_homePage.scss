@@ -1,15 +1,34 @@
 .banner{
     background-color: $clr-light;
+}
+
+.banner, .about{
+    
     text-align: center;
+
+    .container{
+        @media(min-width:768px){
+            @include flex(center, center, wrap);
+            text-align: left;
+        }
+    }
     .image{
+        flex-basis: 50%;
         img{
             filter: drop-shadow(0 15px 5px $clr-dark);
             max-width: 60%;
             margin: auto;
         }
     }
+    .content{
+        flex-basis: 50%;
+    }
 
 }
+
+
+
+
 .advantage{
     color: $clr-light;
     background: $clr-primary-800--hsla url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg) center fixed no-repeat;

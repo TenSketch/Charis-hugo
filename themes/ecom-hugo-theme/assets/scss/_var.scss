@@ -2,7 +2,7 @@
 $clr-primary: hsl(37, 29%, 47%);
 $clr-primary-dark: hsl(37, 29%, 37%);
 $clr-primary-light: hsl(37, 29%, 67%);
-$clr-light: hsl(30, 30%, 96%);
+$clr-light: hsl(37, 29%, 87%);
 $clr-dark: hsl(38, 31%, 16%);
 $font-petit: "Petit Formal Script", cursive;
 $font-poppins: 'Poppins', sans-serif;
@@ -12,10 +12,13 @@ $font-poppins: 'Poppins', sans-serif;
 $clr-primary-200: hsl(37, 29%, 47%);
 $clr-primary-400: hsl(37, 29%, 30%);
 $clr-primary-600: hsl(37, 29%, 20%);
-$clr-primary-800: hsl(37, 29%, 10%);
+$clr-primary-800: hsl(36, 29%, 10%);
 
 // clr-primary-alpha
 $clr-primary-200--hsla: hsla(37, 29%, 47%, .7);
 $clr-primary-400--hsla: hsla(37, 29%, 30%, .7);
 $clr-primary-600--hsla: hsla(37, 29%, 20%, .7);
 $clr-primary-800--hsla: hsla(37, 29%, 10%, .7);
+
+// btn
+// $clr-accent: hsl(226, 65%, 16%);

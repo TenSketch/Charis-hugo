@@ -4,6 +4,7 @@ banner:
   title : "Charis Jute bags"
   content : "High quality jute bags for all needs- Shopping, travel, office, hand bags, school bags and much more!"
   image : "images/Charis_CT-logo.png"
+  image_1 : "images/Organic/Organic-Jute-bags-1.jpg"
   # button
   button:
     enable : true
@@ -80,6 +81,11 @@ products:
   title : "Featured products"
   # product item comes from "content/products"
 
+  ######################## organic #############################
+organic:
+  enable : true
+  title : "Organic jute bags"
+  # product item comes from "content/products"
 
 ########################## Testimonial ########################
 testimonial:

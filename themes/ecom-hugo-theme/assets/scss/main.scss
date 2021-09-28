@@ -49,6 +49,7 @@ section{
 }
 // utility classes
 .container {
+  // width: min(1200px, 90%);
   max-width: 90%;
   width: 1200px;
   margin: 0 auto;
@@ -67,20 +68,71 @@ section{
 .gap-1{
   gap: 1em;
 }
+.gap-2{
+  gap: 2em;
+}
+.gap-3{
+  gap: 3em;
+}
 .grid{
   display: grid;
   place-items: center;
 }
-.btn{
+.btn {
+  color: var(--btn-clr, black);
+  border: 2px solid var(--btn-clr, black);
+  border-radius: 3%;
+  position: relative;
+  isolation: isolate;
   display: inline-block;
-  padding: .5em 1em;
-  font-size: 1.1rem;
-  margin-top: .7em;
-  background: $clr-dark;
-  color: $clr-light;
-  // border-radius: 30px;
-  border: none;
+  padding: .5em 1.5em;
+  background: 0;
+  font-family: inherit;
+  text-decoration: none;
+  line-height: inherit;
+  transition: color 300ms linear;
+}
 
+.btn-teal {
+  --btn-clr: hsl(226, 65%, 16%);;
+  --transform-origin: bottom;
+}
+
+.btn-purple {
+  --btn-clr: purple;
+  --transform-origin: top;
+}
+
+.btn-primary {
+  --btn-clr: hsl(226, 65%, 16%);
+  margin-bottom: 3em;
+}
+
+.btn:hover,
+.btn:focus { 
+  color: white;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--btn-clr);
+  transform: scale(1, 0);
+  transform-origin: var(--transform-origin, center);
+  transition: transform 300ms ease;
+}
+
+
+.btn:hover::after {
+  transform: scale(1, 1);
+}
+
+
+
+.btn-primary{
+  
 }
 .my-1{
   margin-block: 1em;
@@ -117,7 +169,7 @@ section{
 .content{
   @extend .mt-4;
   h2,h3,p{
-    @extend .my-1
+    @extend .my-1;
 
   }
 }

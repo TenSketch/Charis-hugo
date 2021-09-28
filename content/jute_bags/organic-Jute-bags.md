@@ -17,7 +17,7 @@ shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
 productID: "6"
 
 # type must be "jute_bags"
-type: "jute_bags"
+type: "organic"
 
 # product Images
 # first image will be shown in the product page
