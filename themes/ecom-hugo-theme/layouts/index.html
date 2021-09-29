@@ -7,10 +7,10 @@
 {{ with site.Data.homepage.banner }}
 <section class="banner">
   <div class="container">
-    <div class="image">
+    <div class="image" data-aos="fade-down">
       <img src="{{ .image_1 | absURL }}" alt="{{.label}}">
     </div>
-    <div class="content">
+    <div class="content"data-aos="fade-left">
       <h1>{{ .title }}</h1>
       <p>{{ .content }}</p>
       {{ if .button.enable }}

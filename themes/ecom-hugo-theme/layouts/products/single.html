@@ -2,33 +2,11 @@
 
 {{ partial "page-title.html" . }}
 
-<section class="product_single">
-  <div class="container">
-    <div class="product-image">
-      <!-- product image slider -->
-      <div class="product-slider">
-        {{ range .Params.Images }}
-        <div data-image="{{ .image | absURL }}">
-          <img class="w-100" src="{{ .image | absURL }}" alt="{{ .Name }}">
-        </div>
-        {{ end }}
-      </div>
-    </div>
-    <div class="product-desc">
-      <h4>{{ .Title }}</h4>
-      <!-- rating star -->
-      {{ if site.Params.rating.enable }}
-      <div class="rw-ui-container"></div>
-      {{ end }}
-      {{ partial "partials/products/price.html" . }}
 
-      <h5>Short Description</h5>
-      <p>{{ .Params.ShortDescription | markdownify }}</p>
-      {{ partial "partials/products/add-to-cart-btn.html" . }}
-    </div>
-
-  </div>
-</section>
+<img id="featured" src="/images/Artistic_Jute_bags/Minimal/1.jpg" alt="">
+<img class="thumbnail active" src="/images/Artistic_Jute_bags/Minimal/1.jpg" alt="">
+<img class="thumbnail" src="/images/Artistic_Jute_bags/Minimal/2.jpg" alt="">
+<img class="thumbnail" src="/images/Artistic_Jute_bags/Minimal/3.jpg" alt="">
 
 {{ partial "cta.html" . }}
 

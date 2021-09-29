@@ -374,6 +374,26 @@ header {
       .products .container .card .card-body .price span {
         font-weight: 600; }
 
+#featured {
+  max-height: 600px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 1px solid; }
+
+.thumbnail {
+  max-height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 1px solid;
+  margin: 1em;
+  opacity: .5;
+  transition: opacity 250ms ease-in-out; }
+  .thumbnail:hover {
+    opacity: 1; }
+
+.active {
+  opacity: 1; }
+
 .testimonials {
   background-color: #c5b396; }
   .testimonials .container {

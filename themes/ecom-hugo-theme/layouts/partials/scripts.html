@@ -1,10 +1,15 @@
-<!-- <script src="./js/slider_parallax.js"></script> -->
+
 <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
 <div hidden id="snipcart" data-api-key="NjEzM2EwZWEtZjRkNC00MTkzLWJkMDUtOTQ4MTgxMTVhOTQ3NjM3Mzc1ODIwMjE1Mjg1NDE5" data-config-add-product-behavior="none"></div>
 {{ "<!-- Main Script -->" | safeHTML }}
-{{ $script := resources.Get "js/navbar.js" | minify}}
+{{ $script := resources.Get "js/app.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
 <!-- data-autopop="false" -->
 <!-- data-config-modal-style="side"  -->
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
