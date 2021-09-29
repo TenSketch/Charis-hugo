@@ -1,3 +1,31 @@
+.swiper {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: $clr-primary;
+
+    /* Center slide text vertically */
+
+    display: flex;
+  
+    justify-content: center;
+
+    align-items: center;
+    img {
+        // display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  }
+
+  
+
+
 .banner{
     background-color: $clr-light;
 }

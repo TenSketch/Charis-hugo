@@ -10,8 +10,6 @@ header {
   // min-height: 10vh;
   .container {
     @include flex(center, normal, nowrap);
-    width: 1000px;
-    max-width: 90%;
   }
   .logo {
     flex-basis: 10%;
