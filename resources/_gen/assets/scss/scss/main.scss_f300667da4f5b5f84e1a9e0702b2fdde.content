@@ -283,15 +283,12 @@ header {
   min-height: 80vh;
   cursor: grab;
   /* Center slide text vertically */
-  background: #9b8055;
+  background: #e7e0d4;
+  color: #0e1b43;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap; }
-  .swiper-slide .image {
-    flex-basis: 40%; }
-  .swiper-slide .content {
-    flex-basis: 40%; }
 
 .swiper-pagination-bullet {
   background: #fff;
@@ -312,22 +309,22 @@ header {
 .banner {
   background-color: #e7e0d4; }
 
-.banner, .about {
+.swiper-slide, .banner, .about {
   text-align: center; }
   @media (min-width: 768px) {
-    .banner .container, .about .container {
+    .swiper-slide .container, .banner .container, .about .container {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
       text-align: left; } }
-  .banner .image, .about .image {
+  .swiper-slide .image, .banner .image, .about .image {
     flex-basis: 40%;
     display: grid;
     place-items: center; }
-    .banner .image img, .about .image img {
+    .swiper-slide .image img, .banner .image img, .about .image img {
       filter: drop-shadow(0 15px 5px #352c1c); }
-  .banner .content, .about .content {
+  .swiper-slide .content, .banner .content, .about .content {
     flex-basis: 40%; }
 
 .advantage {

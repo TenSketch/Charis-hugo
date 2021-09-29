@@ -12,16 +12,9 @@
     cursor: grab;
     /* Center slide text vertically */
     // flex-shrink: 1;
-    background: $clr-primary;
-
+    background: $clr-light;
+    color: $clr-accent;
     @include flex(center, space-around, wrap);
-    .image{
-        flex-basis: 40%;
-        
-    }
-    .content{
-        flex-basis: 40%;
-    }
 
   }
   
@@ -47,7 +40,7 @@
     background-color: $clr-light;
 }
 
-.banner, .about{
+.swiper-slide, .banner, .about{
     
     text-align: center;
 
