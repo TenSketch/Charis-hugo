@@ -42,10 +42,12 @@
     }
     .image{
         flex-basis: 50%;
+        display: grid;
+        place-items: center;
         img{
             filter: drop-shadow(0 15px 5px $clr-dark);
             max-width: 60%;
-            margin: auto;
+            // margin: auto;
         }
     }
     .content{

@@ -303,11 +303,12 @@ header {
       flex-wrap: wrap;
       text-align: left; } }
   .banner .image, .about .image {
-    flex-basis: 50%; }
+    flex-basis: 50%;
+    display: grid;
+    place-items: center; }
     .banner .image img, .about .image img {
       filter: drop-shadow(0 15px 5px #352c1c);
-      max-width: 60%;
-      margin: auto; }
+      max-width: 60%; }
   .banner .content, .about .content {
     flex-basis: 50%; }
 
