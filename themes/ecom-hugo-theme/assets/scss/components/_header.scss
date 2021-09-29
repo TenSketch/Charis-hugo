@@ -1,8 +1,8 @@
 /* navbar */
 header {
   padding: 1em;
-  background: #fff;
-  box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
+  background: transparent;
+  // box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
   position: fixed;
   top: 0;
   width: 100%;
@@ -31,7 +31,7 @@ header {
     width: 100%;
     @include flex(center, normal, nowrap);
     a {
-      color: $clr-primary;
+      color: $clr-accent;
       text-decoration: none;
     }
 
@@ -40,7 +40,7 @@ header {
       top: -1000%;
       right: 0;
       width: 50% !important;
-      background: #fff;
+      // background: #fff;
       // z-index: -1;
       padding: 1em;
       // box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);

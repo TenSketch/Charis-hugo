@@ -16,8 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  overflow-x: hidden;
-  padding-top: 13vh; }
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
@@ -134,8 +133,7 @@ section {
 /* navbar */
 header {
   padding: 1em;
-  background: #fff;
-  box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
+  background: transparent;
   position: fixed;
   top: 0;
   width: 100%;
@@ -161,14 +159,13 @@ header {
     justify-content: normal;
     flex-wrap: nowrap; }
     header nav a {
-      color: #9b8055;
+      color: #0e1b43;
       text-decoration: none; }
     header nav .nav_list {
       position: absolute;
       top: -1000%;
       right: 0;
       width: 50% !important;
-      background: #fff;
       padding: 1em; }
       header nav .nav_list li {
         position: relative;
@@ -280,10 +277,9 @@ header {
 .swiper-slide {
   text-align: center;
   background: #fff;
-  min-height: 80vh;
+  min-height: 90vh;
   cursor: grab;
   /* Center slide text vertically */
-  background: #e7e0d4;
   color: #0e1b43;
   display: flex;
   align-items: center;
