@@ -2,6 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ae"
+                href="/ae/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ae"
+                href="/ae/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url><url>
+    <loc>/slider/slider1/</loc>
+    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
+  </url><url>
+    <loc>/slider/slider2/</loc>
+    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
+  </url><url>
+    <loc>/slider/slider3/</loc>
+    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
+  </url><url>
+    <loc>/slider/slider4/</loc>
+    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
+  </url><url>
+    <loc>/categories/slider/</loc>
+    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
+  </url><url>
+    <loc>/slider/</loc>
+    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
+  </url><url>
     <loc>/products/</loc>
     <lastmod>2021-09-14T11:22:16+06:00</lastmod>
   </url><url>
@@ -16,19 +60,6 @@
   </url><url>
     <loc>/products/beauty-womens-jute-bag/</loc>
     <lastmod>2021-09-14T11:22:16+06:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2021-09-14T11:22:16+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ae"
-                href="/ae/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
   </url><url>
     <loc>/jute_bags/gorgeous-womens-jute-bag/</loc>
     <lastmod>2021-09-14T11:22:16+06:00</lastmod>
@@ -61,18 +92,6 @@
     <lastmod>2021-09-14T11:22:16+06:00</lastmod>
   </url><url>
     <loc>/about-us/</loc>
-  </url><url>
-    <loc>/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ae"
-                href="/ae/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/"
-                />
   </url><url>
     <loc>/tags/</loc>
     <xhtml:link
