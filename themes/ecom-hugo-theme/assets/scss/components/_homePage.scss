@@ -15,7 +15,7 @@
     cursor: grab;
     /* Center slide text vertically */
     // flex-shrink: 1;
-    background: $clr-light;
+    // background: $clr-light;
 
     color: $clr-accent;
     @include flex(center, center, nowrap);

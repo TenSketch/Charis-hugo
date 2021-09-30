@@ -286,7 +286,6 @@ header {
   min-height: 90vh;
   cursor: grab;
   /* Center slide text vertically */
-  background: #e7e0d4;
   color: #0e1b43;
   display: flex;
   align-items: center;
