@@ -15,10 +15,17 @@
     cursor: grab;
     /* Center slide text vertically */
     // flex-shrink: 1;
-    // background: $clr-light;
+    background: $clr-light;
 
     color: $clr-accent;
-    @include flex(center, space-around, wrap);
+    @include flex(center, center, nowrap);
+    .image{
+        max-width: 70%;
+        margin: auto;
+        @media(min-width:768px){
+            max-width: 100%;
+        }
+    }
 
   }
   

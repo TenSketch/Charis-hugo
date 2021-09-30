@@ -1,13 +1,20 @@
 /* navbar */
 header {
   padding: 1em;
-  background: transparent;
+  
   // box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
   // min-height: 10vh;
+  background-color: transparent;
+  transition: background-color 250ms; /* control how smooth the background changes */
+
+  &.scrolled {
+    background-color: $clr-light !important;
+    // transition: background-color 200ms linear;
+  }
   .container {
     @include flex(center, normal, nowrap);
   }
@@ -42,11 +49,11 @@ header {
       width: 50% !important;
       // background: #fff;
       // z-index: -1;
-      padding: 1em;
+      padding-right: 1.5em;
       // box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
       li {
         position: relative;
-        margin-block: 1.5em;
+        margin-block: 3em;
         text-align: right;
         @media (min-width: 991px) {
           text-align: unset;
@@ -55,8 +62,10 @@ header {
       }
     }
     .nav_list.active {
-      top: 10vh;
+      top: 7vh;
       transition: all 400ms ease;
+      background: $clr-light;
+      height: 50vh;
     }
     .nav_icons {
 
@@ -152,7 +161,7 @@ header {
     .bar2,
     .bar3 {
       display: block;
-      background: $clr-primary;
+      background: $clr-accent; 
       height: 3px;
       margin: 3px auto;
       transition: 0.4s;

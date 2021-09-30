@@ -42,8 +42,8 @@ section {
   padding-block: 8rem; }
 
 .container {
-  max-width: 90%;
-  width: 1200px;
+  max-width: 85%;
+  width: 1100px;
   margin: 0 auto;
   position: relative; }
 
@@ -133,11 +133,15 @@ section {
 /* navbar */
 header {
   padding: 1em;
-  background: transparent;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10; }
+  z-index: 10;
+  background-color: transparent;
+  transition: background-color 250ms;
+  /* control how smooth the background changes */ }
+  header.scrolled {
+    background-color: #e7e0d4 !important; }
   header .container {
     display: flex;
     align-items: center;
@@ -166,18 +170,20 @@ header {
       top: -1000%;
       right: 0;
       width: 50% !important;
-      padding: 1em; }
+      padding-right: 1.5em; }
       header nav .nav_list li {
         position: relative;
-        margin-block: 1.5em;
+        margin-block: 3em;
         text-align: right; }
         @media (min-width: 991px) {
           header nav .nav_list li {
             text-align: unset;
             margin-block: 0; } }
     header nav .nav_list.active {
-      top: 10vh;
-      transition: all 400ms ease; }
+      top: 7vh;
+      transition: all 400ms ease;
+      background: #e7e0d4;
+      height: 50vh; }
     header nav .nav_icons {
       gap: 1em;
       margin-left: auto;
@@ -251,7 +257,7 @@ header {
     header .nav__toggle .bar2,
     header .nav__toggle .bar3 {
       display: block;
-      background: #9b8055;
+      background: #0e1b43;
       height: 3px;
       margin: 3px auto;
       transition: 0.4s; }
@@ -280,12 +286,18 @@ header {
   min-height: 90vh;
   cursor: grab;
   /* Center slide text vertically */
+  background: #e7e0d4;
   color: #0e1b43;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-
+  justify-content: center;
+  flex-wrap: nowrap; }
+  .swiper-slide .image {
+    max-width: 70%;
+    margin: auto; }
+    @media (min-width: 768px) {
+      .swiper-slide .image {
+        max-width: 100%; } }
 .swiper-pagination-bullet {
   background: #fff;
   opacity: 1;
@@ -366,10 +378,7 @@ header {
       -webkit-backdrop-filter: blur(2.5px); }
     @media (min-width: 768px) {
       .products .container .card {
-        flex-basis: 30%; } }
-    @media (min-width: 991px) {
-      .products .container .card {
-        flex-basis: 15%; } }
+        flex-basis: 20%; } }
     .products .container .card .card-head {
       flex-basis: 40%;
       align-self: center; }
