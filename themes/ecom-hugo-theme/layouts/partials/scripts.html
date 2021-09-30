@@ -1,6 +1,3 @@
-{ "<!-- Main Script -->" | safeHTML }}
-{{ $script := resources.Get "js/app.js" | minify}}
-<script src="{{ $script.Permalink }}"></script>
 
 <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
 <div hidden id="snipcart" data-api-key="NjEzM2EwZWEtZjRkNC00MTkzLWJkMDUtOTQ4MTgxMTVhOTQ3NjM3Mzc1ODIwMjE1Mjg1NDE5" data-config-add-product-behavior="none"></div>
@@ -28,7 +25,7 @@
 
 </script>
 
-{
+
 <!-- data-autopop="false" -->
 <!-- data-config-modal-style="side"  -->
 
@@ -40,3 +37,6 @@
   </script>
 
 
+{{ "<!-- Main Script -->" | safeHTML }}
+{{ $script := resources.Get "js/app.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
