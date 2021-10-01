@@ -124,7 +124,7 @@ section {
 .mt-3 {
   margin-top: 3em; }
 
-.mt-4 {
+.mt-4, .content {
   margin-top: 4em; }
 
 .mb-1, .products .container .card .card-body .price, .products .container .card .card-body .card-title, h1,
@@ -559,3 +559,7 @@ header {
             font-size: 13px; }
         .portfolio_section.portfolio .filters .filters-content .item img {
           width: 100%; }
+
+@media (min-width: 768px) {
+  .content {
+    margin-top: 0; } }
