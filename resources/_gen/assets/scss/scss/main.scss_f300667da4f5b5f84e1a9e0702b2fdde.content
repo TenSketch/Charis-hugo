@@ -90,8 +90,7 @@ section {
   --transform-origin: top; }
 
 .btn-primary {
-  --btn-clr: hsl(226, 65%, 16%);
-  margin-bottom: 3em; }
+  --btn-clr: hsl(226, 65%, 16%); }
 
 .btn:hover,
 .btn:focus {
