@@ -75,7 +75,7 @@
     {{ with site.Data.homepage.products }}
     <h2>{{ .title | markdownify }}</h2>
     {{ end }}
-    {{ range first 4 (where site.RegularPages "Type" "jute_bags") }}
+    {{ range (where site.RegularPages "Type" "jute_bags-home") }}
     {{ partial "partials/products/list-item.html" . }}
     {{ end }}
   </div>

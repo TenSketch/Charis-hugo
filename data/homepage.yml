@@ -83,7 +83,7 @@ advantage:
 ######################## Products #############################
 products:
   enable : true
-  title : "Featured products"
+  title : "Our trending products"
   # product item comes from "content/products"
 
   ######################## organic #############################

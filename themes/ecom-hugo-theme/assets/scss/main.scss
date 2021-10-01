@@ -43,7 +43,7 @@ h1,
 h2 {
   // font-family: "Petit Formal Script", cursive;
   font-weight: 300;
-
+@extend .mb-1
 }
 section{
   padding-block: 8rem;
@@ -90,11 +90,15 @@ section{
   padding: .5em 1em;
   background: 0;
   transition: color 300ms linear;
+  cursor: pointer;
 }
 
 .btn-teal {
   --btn-clr: hsl(226, 65%, 16%);;
   --transform-origin: bottom;
+      @extend .flex-col;
+      width: 70%;
+      margin-inline:auto;
 }
 
 .btn-purple {
@@ -103,6 +107,7 @@ section{
 }
 
 .btn-primary {
+  
   --btn-clr: hsl(226, 65%, 16%);
   // margin-bottom: 3em;
 }
@@ -128,11 +133,6 @@ section{
   transform: scale(1, 1);
 }
 
-
-
-.btn-primary{
-  
-}
 .my-1{
   margin-block: 1em;
 

@@ -12,7 +12,7 @@ header {
   transition: background-color 250ms; /* control how smooth the background changes */
 
   &.scrolled {
-    background-color: $clr-light !important;
+    background-color: $clr-primary-light-opacity !important;
     animation: fadeInDown 500ms linear 250ms forwards;
     // transition: background-color 200ms linear;
   }
@@ -28,9 +28,9 @@ header {
     @include flex(center, normal, nowrap);
   }
   .logo {
-    flex-basis: 10%;
+    flex-basis: 15%;
     img {
-      min-width: 7rem;
+      min-width: 8rem;
     }
   }
   .svg-inline--fa {
@@ -135,7 +135,7 @@ header {
 
     @media (min-width: 991px) {
       .nav_list {
-        margin-left: 1em;
+        margin-left: 2em;
         position: relative;
         @include flex(center, flex-start, nowrap);
         margin-block: 0;
