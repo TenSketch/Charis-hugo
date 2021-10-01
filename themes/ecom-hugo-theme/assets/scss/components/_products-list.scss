@@ -2,7 +2,7 @@
   //   background: $clr-primary-600--hsla;
 
   .container {
-    @include flex(normal, normal, wrap);
+    @include flex(normal, space-between, wrap);
     // @extend .gap-1;
     max-width: 90%;
     h2 {
@@ -15,7 +15,7 @@
       // min-height: 20rem;
       @include flex(center, center, nowrap);
       @extend .flex-col;
-      @extend .gap-3;
+      @extend .gap-2;
       // border: 1px solid;
       flex: 35%;
       @media (min-width: 768px) {
@@ -23,7 +23,7 @@
       }
 
       .card-head {
-        min-height: 5rem;
+        // min-height: 5rem;
         flex: 80%;
         // background-color: greenyellow;
         // align-self: center;
@@ -43,15 +43,16 @@
         }
       }
       .card-body {
-        // min-height: 15rem;
+        min-height: 10rem;
         flex: 20%;
         // background-color: hotpink;
-        @include flex(normal, space-between, nowrap);
+        @include flex(normal, center, nowrap);
         @extend .flex-col;
         .card-title {
-          height: 100%;
-          display: grid;
-          place-items: center;
+          // height: 100%;
+          // display: grid;
+          // place-items: center;
+          @extend .mb-1;
           a {
             font-size: 1.05rem;
             color: $clr-accent-400;
@@ -61,12 +62,12 @@
             }
           }
         }
-        .card-desc {
-          height: 100%;
-          display: grid;
-          place-items: center;
-          font-family: "Petit Formal Script", cursive;
-        }
+        // .card-desc {
+        //   height: 100%;
+        //   display: grid;
+        //   place-items: center;
+        //   font-family: "Petit Formal Script", cursive;
+        // }
         .price {
           @extend .mb-1;
           s {

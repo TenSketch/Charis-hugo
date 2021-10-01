@@ -55,10 +55,12 @@
         @media(min-width:768px){
             @include flex(center, space-between, wrap);
             text-align: left;
+            gap: 3em;
         }
     }
     .image{
-        flex-basis: 40%;
+        // flex-basis: 40%;
+        flex: 1;
         display: grid;
         place-items: center;
         img{
@@ -71,7 +73,8 @@
         }
     }
     .content{
-        flex-basis: 40%;
+        // flex-basis: 40%;
+        flex: 1;
     }
 
 }

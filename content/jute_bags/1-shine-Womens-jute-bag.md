@@ -1,5 +1,5 @@
 ---
-title: "Shine Womens jute bag"
+title: "Shine"
 date: 2021-09-14T11:22:16+06:00
 draft: false
 
