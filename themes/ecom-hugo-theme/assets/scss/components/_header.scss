@@ -13,7 +13,16 @@ header {
 
   &.scrolled {
     background-color: $clr-light !important;
+    animation: fadeInDown 500ms linear 250ms forwards;
     // transition: background-color 200ms linear;
+  }
+  @keyframes fadeInDown {
+    0%{
+      top: -100px;
+    }
+    100%{
+      top: 0;
+    }
   }
   .container {
     @include flex(center, normal, nowrap);

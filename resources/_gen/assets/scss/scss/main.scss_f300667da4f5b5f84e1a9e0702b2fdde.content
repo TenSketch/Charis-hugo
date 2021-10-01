@@ -142,7 +142,14 @@ header {
   transition: background-color 250ms;
   /* control how smooth the background changes */ }
   header.scrolled {
-    background-color: #e7e0d4 !important; }
+    background-color: #e7e0d4 !important;
+    animation: fadeInDown 500ms linear 250ms forwards; }
+
+@keyframes fadeInDown {
+  0% {
+    top: -100px; }
+  100% {
+    top: 0; } }
   header .container {
     display: flex;
     align-items: center;
