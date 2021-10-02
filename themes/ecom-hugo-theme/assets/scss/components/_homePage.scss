@@ -1,112 +1,128 @@
 .swiper-container {
-    width: 100%;
-    height: 100%;
-    // border-radius: 4px;
-    // border: 3px solid #000;
-    // padding-top: 1em;
-//   box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
+  width: 100%;
+  height: 100%;
+  // border-radius: 4px;
+  // border: 3px solid #000;
+  // padding-top: 1em;
+  //   box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
+}
+.swiper-slide {
+  text-align: center;
+  // font-size: 32px;
+  background: #fff;
+  min-height: 90vh;
+  cursor: grab;
+  /* Center slide text vertically */
+  // flex-shrink: 1;
+  // background: $clr-light;
 
+  color: $clr-accent;
+  @include flex(center, center, nowrap);
+  .image {
   }
-  .swiper-slide {
-    text-align: center;
-    // font-size: 32px;
-    background: #fff;
-    min-height: 90vh;
-    cursor: grab;
-    /* Center slide text vertically */
-    // flex-shrink: 1;
-    // background: $clr-light;
-
-    color: $clr-accent;
-    @include flex(center, center, nowrap);
-    .image{
-       
-    }
-
-  }
-  
-  .swiper-pagination-bullet {
-      background: #fff;
-      opacity: 1;
-      border: 2px solid #000;
-  }
-  .swiper-pagination-bullet-active {
-      background: #000;
-  }
-  
-  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-      background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2027%2044%27%3E%3Cpath%20d%3D%27M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z%27%20fill%3D%27%23000%27%2F%3E%3C%2Fsvg%3E);
-    left: 1.5rem;
-  }
-  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-      background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2027%2044%27%3E%3Cpath%20d%3D%27M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z%27%20fill%3D%27%23000%27%2F%3E%3C%2Fsvg%3E);
-      right: 1.5rem;
-  }
-
-.banner{
-    background-color: $clr-light;
 }
 
-.swiper-slide, .banner, .about{
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1;
+  border: 2px solid #000;
+}
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2027%2044%27%3E%3Cpath%20d%3D%27M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z%27%20fill%3D%27%23000%27%2F%3E%3C%2Fsvg%3E);
+  left: 1.5rem;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2027%2044%27%3E%3Cpath%20d%3D%27M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z%27%20fill%3D%27%23000%27%2F%3E%3C%2Fsvg%3E);
+  right: 1.5rem;
+}
+
+.banner {
+  background-color: $clr-light;
+}
+
+.swiper-slide,
+.banner,
+.about {
+  text-align: center;
+
+  .container {
+    @media (min-width: 768px) {
+      @include flex(center, space-between, wrap);
+      text-align: left;
+      gap: 3em;
+    }
+  }
+  .image {
+    // flex-basis: 40%;
+    flex: 1;
+    display: grid;
+    place-items: center;
+    img {
+      filter: drop-shadow(0 15px 5px $clr-dark);
+      max-width: 70%;
+      margin: auto;
+      @media (min-width: 768px) {
+        max-width: 100%;
+      }
+    }
+  }
+  .content {
+    // flex-basis: 40%;
+    flex: 1;
+  }
+}
+
+#home_prod {
+  .card {
+      .btn{
+      transition: visibility 250ms ease-in-out;
+
+          visibility: hidden;
+      }
+      &:hover{
+        .btn{
+            visibility: visible;
+        }   
+      }
+
     
-    text-align: center;
-
-    .container{
-        @media(min-width:768px){
-            @include flex(center, space-between, wrap);
-            text-align: left;
-            gap: 3em;
-        }
-    }
-    .image{
-        // flex-basis: 40%;
-        flex: 1;
-        display: grid;
-        place-items: center;
-        img{
-            filter: drop-shadow(0 15px 5px $clr-dark);
-            max-width: 70%;
-            margin: auto;
-            @media(min-width:768px){
-                max-width: 100%;
-            }
-        }
-    }
-    .content{
-        // flex-basis: 40%;
-        flex: 1;
-    }
-
+}
 }
 
-
-
-
-.advantage{
-    color: $clr-light;
-    background: $clr-primary-800--hsla url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg) center fixed no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    .content{
-        ul{
-            li{
-                @extend .my-1;
-                // list-style-image: url(/images/svg/hand-point-right-regular.svg);
-                position: relative;
-                padding-left: 1.5em;
-                &::before{
-                    position: absolute;
-                    content: '';
-                    background: url(/images/svg/hand-point-right-regular.svg) center no-repeat;
-                    background-size: cover;
-                    top: 0;
-                    left: 0;
-                    display: inline-block;
-                    height: 1.2em;
-                    aspect-ratio: 1;
-                    filter: invert(1)
-                }
-            }
+.advantage {
+  color: $clr-light;
+  background: $clr-primary-800--hsla
+    url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg) center fixed
+    no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  .content {
+    ul {
+      li {
+        @extend .my-1;
+        // list-style-image: url(/images/svg/hand-point-right-regular.svg);
+        position: relative;
+        padding-left: 1.5em;
+        &::before {
+          position: absolute;
+          content: "";
+          background: url(/images/svg/hand-point-right-regular.svg) center
+            no-repeat;
+          background-size: cover;
+          top: 0;
+          left: 0;
+          display: inline-block;
+          height: 1.2em;
+          aspect-ratio: 1;
+          filter: invert(1);
         }
+      }
     }
+  }
 }

@@ -16,8 +16,8 @@ shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
 #product ID
 productID: "4"
 
-# type must be "jute_bags-home"
-type: "jute_bags-home"
+# type must be "jute_bags"
+type: "jute_bags"
 
 # product Images
 # first image will be shown in the product page

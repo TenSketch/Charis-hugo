@@ -2,125 +2,40 @@
 
 {{ partial "page-title.html" . }}
 
-<section class="section">
+<section class="prod-desc-section">
   <div class="container">
-    <div class="row">
-      <div class="splide" id="primary-slider">
-        <!-- product image slider -->
-        <div class="product-slider splide__track">
-          <ul class="splide__list">
-            {{ range .Params.Images }}
-            <li class="splide__slide" data-image="{{ .image | absURL }}">
-              <img class="img-fluid w-100" src="{{ .image | absURL }}" alt="{{.Name}}">
-            </li>
-            {{ end }}
-          </ul>
+    <div class="prod-image">
+      <div class="product-slider">
+        {{ range .Params.images }}
+        <div data-image="{{ .image | absURL }}">
+          <img class="prod-img" src="{{ .image | absURL }}" alt="{{ .image }}">
         </div>
-      </div>
-      <!-- thumbnail  -->
-      <div id="secondary-slider" class="splide">
-        <div class="splide__track">
-          <ul class="splide__list" >
-          {{ range .Params.Images }}
-            <li class="splide__slide" data-image="{{ .image | absURL }}">
-              <img src="{{ .image | absURL }}">
-            </li>
-          {{ end }}
-          </ul>
-        </div>
+        {{ end }}
       </div>
     </div>
-    <div class="row">
-      <div class="">
-        <h4 class="font-weight-medium">{{ .Title }}</h4>
+
+    <div class="prod-details">
+      <div class="prod-head">
+        <h4>{{ .Title }}</h4>
         <!-- rating star -->
         {{ if site.Params.rating.enable }}
         <div class="rw-ui-container"></div>
         {{ end }}
-        <div class="my-4">
-          {{ if .Params.PriceBefore }}
-          <s>{{ site.Params.currencySymbol }}{{ .Params.PriceBefore }}</s>
-          {{ end }}
-          <span class="lead text-primary font-weight-medium">{{ site.Params.currencySymbol }}{{ .Params.Price }}</span>
-        </div>
-        <h5>Short Description</h5>
-        <p>{{ .Params.ShortDescription | markdownify }}</p>
-        <button class="snipcart-add-item btn btn-primary" data-item-id="{{ .Params.ProductID }}"
-          data-item-name="{{ .Title }}" {{ range first 1 .Params.Images }} data-item-image="{{ .image | absURL }}"
-          {{ end }} data-item-price="{{ .Params.Price }}" data-item-url="{{ .Permalink }}" data-item-description="{{ .Description }}">
-          Add to cart
-        </button>
+        {{ partial "partials/products/price.html" . }}
       </div>
-    
+      <div class="prod-desc">
+        <p>{{ .Params.ShortDescription | markdownify }}</p>
+        {{ partial "partials/products/add-to-cart-btn.html" . }}
+
+      </div>
+
     </div>
   </div>
-  <script>
-    document.addEventListener( 'DOMContentLoaded', function () {
-      var secondarySlider = new Splide( '#secondary-slider', {
-        fixedWidth  : 100,
-        height      : 80,
-        gap         : 10,
-        cover       : true,
-        isNavigation: true,
-        focus       : 'center',
-        breakpoints : {
-          '600': {
-            fixedWidth: 66,
-            height    : 40,
-          }
-        },
-      } ).mount();
-      
-      var primarySlider = new Splide( '#primary-slider', {
-        type       : 'fade',
-        heightRatio: 0.8,
-        pagination : false,
-        arrows     : false,
-        cover      : false,
-      } ); // do not call mount() here.
-      
-      primarySlider.sync( secondarySlider ).mount();
-    } );
-    </script>
-    <style>
-      .splide__slide img{
-        width: 80%;
-        margin: 0 auto;
-      }
-      .container{
-        display: flex;
-      }
-    </style>
+
 </section>
 
 {{ partial "cta.html" . }}
 
-<section class="product_single">
-  <div class="container">
-    <div class="product-image">
-      <!-- product image slider -->
-      <div class="product-slider">
-        {{ range .Params.Images }}
-        <div data-image="{{ .image | absURL }}">
-          <img class="w-100" src="{{ .image | absURL }}" alt="{{ .Name }}">
-        </div>
-        {{ end }}
-      </div>
-    </div>
-    <div class="product-desc">
-      <h4>{{ .Title }}</h4>
-      <!-- rating star -->
-      {{ if site.Params.rating.enable }}
-      <div class="rw-ui-container"></div>
-      {{ end }}
-      {{ partial "partials/products/price.html" . }}
 
-      <h5>Short Description</h5>
-      <p>{{ .Params.ShortDescription | markdownify }}</p>
-      {{ partial "partials/products/add-to-cart-btn.html" . }}
-    </div>
-
-  </div>
-</section>
 
 {{ end }}

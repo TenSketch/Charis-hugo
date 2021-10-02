@@ -37,6 +37,21 @@ currencySymbol = "Rs. "
     languageCode = "ae"
     weight = 2
 
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+    [[params.plugins.css]]
+  link = "plugins/slick/slick.css"
+
+
+  # JS Plugins
+  [[params.plugins.js]]
+  link = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  link = "plugins/slick/slick.min.js"
+  
+
 ############################## navigation ###############################
 [menu]
 

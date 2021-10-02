@@ -5,26 +5,26 @@
 <div class="swiper-container">
   <div class="swiper-wrapper">
     {{ range $index, $val := .Site.Taxonomies.categories.slider }}
-      <!-- <div class="swiper-slide">
+    <!-- <div class="swiper-slide">
         <img src="{{.Page.Params.image}}" alt="{{.Name}}">
       </div> -->
-      <div class="swiper-slide">
-        <div class="container">
-          <div class="image" data-aos="fade-down">
-            <img src="{{.Page.Params.image}}" alt="{{.Name}}">
-          </div>
-          <div class="content" data-aos="fade-left">
-            <h1>{{ .Title }}</h1>
-            <p>{{ .Description }}</p>
-          
-          
-            <a href="{{ .Page.Params.link }}" class="btn btn-primary">{{ .Page.Params.button }}</a>
-          
-          
-          
-          </div>
+    <div class="swiper-slide">
+      <div class="container">
+        <div class="image" data-aos="fade-down">
+          <img src="{{.Page.Params.image}}" alt="{{.Name}}">
+        </div>
+        <div class="content" data-aos="fade-left">
+          <h1>{{ .Title }}</h1>
+          <p>{{ .Description }}</p>
+
+
+          <a href="{{ .Page.Params.link }}" class="btn btn-primary">{{ .Page.Params.button }}</a>
+
+
+
         </div>
       </div>
+    </div>
     {{end}}
 
   </div>
@@ -70,12 +70,12 @@
 
 <!-- products homepage -->
 {{ if site.Data.homepage.products.enable }}
-<section class="products">
+<section id="home_prod" class="products">
   <div class="container">
     {{ with site.Data.homepage.products }}
     <h2>{{ .title | markdownify }}</h2>
     {{ end }}
-    {{ range (where site.RegularPages "Type" "jute_bags-home") }}
+    {{ range (where site.RegularPages "Type" "jute_bags") }}
     {{ partial "partials/products/list-item.html" . }}
     {{ end }}
   </div>
