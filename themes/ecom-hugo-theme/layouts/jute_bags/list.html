@@ -1,17 +1,10 @@
-{{define "main"}}
-
-<style>
-section{
-    padding-top: 10rem;
-}
-    
-</style>
-
-<section>
-
+{{ define "main" }}
+{{ partial "page-title.html" . }}
+<section class="products">
+  <div class="container">
+    {{ range .Data.Pages }}
+      {{ partial "partials/products/list-item.html" . }}
+    {{ end }}
+  </div>
 </section>
-
-products list all
-
-
-{{end}}
+{{ end }}

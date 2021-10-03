@@ -43,13 +43,9 @@
     <!-- snipcart stylsheet -->
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   
     
-    {{ "<!-- Plugins -->" | safeHTML }}
-    {{ range site.Params.plugins.css }}
-    <link rel="stylesheet" href="{{ .link | absURL }}">
-    {{ end }}
-        {{ "<!-- Main Stylesheet -->" | safeHTML }}
+    {{ "<!-- Main Stylesheet -->" | safeHTML }}
     {{ $style := resources.Get "scss/main.scss" | toCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>

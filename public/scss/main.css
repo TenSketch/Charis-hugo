@@ -56,13 +56,13 @@ section {
 .flex-wrap {
   flex-wrap: wrap; }
 
-.gap-1 {
+.gap-1, .products .container {
   gap: 1em; }
 
 .gap-2, .products .container .card {
   gap: 2em; }
 
-.gap-3 {
+.gap-3, .prod_details .container {
   gap: 3em; }
 
 .grid {
@@ -127,9 +127,9 @@ section {
 .mt-4, .content {
   margin-top: 4em; }
 
-.mb-1, .products .container .card .card-body .price, .products .container .card .card-body .card-title, h1,
+.mb-1, .prod_details .container .prod_details-desc .prod_details-desc--content p, .prod_details .container .prod_details-desc .prod_details-desc--header .price, .products .container .card .card-body .price, .products .container .card .card-body .card-title, h1,
 h2 {
-  margin-bottom: 1em; }
+  margin-bottom: 1rem; }
 
 .p-1 {
   padding: 1em; }
@@ -390,7 +390,7 @@ header {
 .products .container {
   display: flex;
   align-items: normal;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   max-width: 90%; }
   .products .container h2 {
@@ -420,12 +420,12 @@ header {
       min-height: 10rem;
       flex: 20%;
       display: flex;
-      align-items: normal;
+      align-items: center;
       justify-content: center;
       flex-wrap: nowrap; }
       .products .container .card .card-body .card-title a {
         font-size: 1.05rem;
-        color: #070d22;
+        color: #203c97;
         transition: color 250ms ease-in-out; }
         .products .container .card .card-body .card-title a:hover {
           color: #0e1b43; }
@@ -434,58 +434,26 @@ header {
       .products .container .card .card-body .price span {
         font-weight: 600; }
 
-.prod-desc-section .container {
+.prod_details .container {
   display: flex;
   align-items: normal;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap; }
-  .prod-desc-section .container .prod-image {
+  .prod_details .container .prod_details-images {
     flex-basis: 40%; }
-    .prod-desc-section .container .prod-image .prod-img {
-      width: 100%;
-      background: #352c1c; }
-  .prod-desc-section .container .prod-details {
+  .prod_details .container .prod_details-desc {
     flex-basis: 40%; }
-
-/* product single page */
-.slick-slide {
-  outline: 0; }
-
-.slick-arrow {
-  position: absolute;
-  z-index: 1;
-  border: 0;
-  transition: all linear 0.2s;
-  background: transparent;
-  bottom: -50px; }
-  .slick-arrow.prevArrow {
-    left: calc(50% - 50px); }
-  .slick-arrow.nextArrow {
-    right: calc(50% - 50px); }
-
-.product-slider .slick-list {
-  border: 1px solid #9b8055;
-  margin-bottom: 10px;
-  border-radius: 5px; }
-
-.product-slider .slick-dots {
-  margin-top: 10px;
-  padding-left: 0;
-  display: flex; }
-  .product-slider .slick-dots li {
-    list-style-type: none;
-    border: 1px solid #9b8055;
-    margin: 10px;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer; }
-    .product-slider .slick-dots li:first-child {
-      margin-left: 0; }
-    .product-slider .slick-dots li:last-child {
-      margin-right: 0; }
-    .product-slider .slick-dots li img {
-      height: auto;
-      max-width: 100%; }
+    .prod_details .container .prod_details-desc .prod_details-desc--header h1 {
+      font-weight: 500;
+      font-size: 2.5rem;
+      letter-spacing: 1.5;
+      color: #203c97; }
+    .prod_details .container .prod_details-desc .prod_details-desc--header .price span {
+      font-size: 1.5rem;
+      color: #203c97;
+      font-weight: 500; }
+    .prod_details .container .prod_details-desc .prod_details-desc--content p {
+      color: #172b6d; }
 
 .testimonials {
   background-color: #c5b396; }
@@ -548,72 +516,18 @@ header {
     min-width: 25%;
     padding: 2rem; } }
 
-.portfolio_section {
-  padding: 30px 0;
-  color: #333;
-  padding-top: 15vh; }
-  .portfolio_section .top-side {
-    text-align: center; }
-    .portfolio_section .top-side .title {
-      font-weight: 500;
-      font-size: 15px;
-      display: inline-block; }
-      .portfolio_section .top-side .title::after {
-        content: '';
-        display: block;
-        width: 50%;
-        border-bottom: 1px solid #494949;
-        margin: 8px auto; }
-    .portfolio_section .top-side h2 {
-      font-weight: 700; }
-  .portfolio_section.portfolio .filters {
-    text-align: center;
-    margin-top: 50px; }
-    .portfolio_section.portfolio .filters ul {
-      padding: 0; }
-      .portfolio_section.portfolio .filters ul li {
-        list-style: none;
-        display: inline-block;
-        padding: 20px 30px;
-        cursor: pointer;
-        position: relative; }
-        .portfolio_section.portfolio .filters ul li::after {
-          content: '';
-          display: block;
-          width: calc(0% - 60px);
-          position: absolute;
-          height: 2px;
-          background: #333;
-          transition: width 350ms ease-out; }
-          .portfolio_section.portfolio .filters ul li::after:hover::after {
-            width: calc(100% - 60px);
-            transition: width 350ms ease-out; }
-          .portfolio_section.portfolio .filters ul li::after.active::after {
-            width: calc(100% - 60px); }
-    .portfolio_section.portfolio .filters .filters-content {
-      margin-top: 50px; }
-      .portfolio_section.portfolio .filters .filters-content .show {
-        opacity: 1;
-        visibility: visible;
-        transition: all 350ms; }
-      .portfolio_section.portfolio .filters .filters-content .hide {
-        opacity: 0;
-        visibility: hidden;
-        transition: all 350ms; }
-      .portfolio_section.portfolio .filters .filters-content .item {
-        text-align: center;
-        cursor: pointer;
-        margin-bottom: 30px; }
-        .portfolio_section.portfolio .filters .filters-content .item .p-inner {
-          padding: 20px 30px;
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
-          .portfolio_section.portfolio .filters .filters-content .item .p-inner h5 {
-            font-size: 15px; }
-          .portfolio_section.portfolio .filters .filters-content .item .p-inner .cat {
-            font-size: 13px; }
-        .portfolio_section.portfolio .filters .filters-content .item img {
-          width: 100%; }
-
 @media (min-width: 768px) {
   .content {
     margin-top: 0; } }
+
+.page_title {
+  height: 70vh;
+  background: #c3b192 url(/images/slider/home_storage-Jute_bags-4.jpg) center no-repeat fixed;
+  background-size: cover;
+  display: grid;
+  place-items: center; }
+  .page_title .container {
+    display: grid;
+    place-items: center; }
+    .page_title .container .content h2 {
+      font-size: 2.5rem; }

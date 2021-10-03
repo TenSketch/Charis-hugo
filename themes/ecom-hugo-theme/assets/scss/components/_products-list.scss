@@ -2,8 +2,8 @@
   //   background: $clr-primary-600--hsla;
 
   .container {
-    @include flex(normal, space-between, wrap);
-    // @extend .gap-1;
+    @include flex(normal, center, wrap);
+    @extend .gap-1;
     max-width: 90%;
     h2 {
       flex-basis: 100%;
@@ -46,7 +46,7 @@
         min-height: 10rem;
         flex: 20%;
         // background-color: hotpink;
-        @include flex(normal, center, nowrap);
+        @include flex(center, center, nowrap);
         @extend .flex-col;
         .card-title {
           // height: 100%;

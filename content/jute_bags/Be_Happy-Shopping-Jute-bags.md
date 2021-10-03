@@ -23,12 +23,12 @@ type: "jute_bags"
 # first image will be shown in the product page
 images:
   - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-4.png"
-  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-5.jpg"
-  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-6.jpg"
+  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-5.png"
+  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-6.png"
   - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-7.png"
-  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-1.png"
-  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-2.png"
-  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-3.png"
+  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-1.jpg"
+  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-2.jpg"
+  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-3.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea

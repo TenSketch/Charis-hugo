@@ -150,7 +150,7 @@ section {
   margin-top: 4em;
 }
 .mb-1 {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 .p-1 {
   padding: 1em;
@@ -159,10 +159,9 @@ section {
 @import "components/homePage";
 @import "components/products-list";
 @import "components/products_single";
-@import "components/about";
 @import "components/testimonials";
 @import "components/footer";
-@import "components/portfolio";
+
 
 .content {
   @extend .mt-4;
@@ -173,5 +172,24 @@ section {
   h3,
   p {
     @extend .my-1;
+  }
+}
+.page_title{
+  height: 70vh;
+  background: $clr-primary-light url(/images/slider/home_storage-Jute_bags-4.jpg) center no-repeat fixed;
+  background-size: cover;
+  // background-blend-mode:soft-light;
+
+  display: grid;
+  place-items: center;
+
+  .container{
+    display: grid;
+    place-items: center;
+    .content{
+      h2{
+        font-size: 2.5rem;
+      }
+    }
   }
 }

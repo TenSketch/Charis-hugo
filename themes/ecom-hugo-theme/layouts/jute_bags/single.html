@@ -2,28 +2,31 @@
 
 {{ partial "page-title.html" . }}
 
-<section class="prod-desc-section">
+<section class="prod_details">
   <div class="container">
-    <div class="prod-image">
-      <div class="product-slider">
-        {{ range .Params.images }}
-        <div data-image="{{ .image | absURL }}">
-          <img class="prod-img" src="{{ .image | absURL }}" alt="{{ .image }}">
-        </div>
-        {{ end }}
-      </div>
+    <!-- prod img thumbnail slider -->
+    <div class="prod_details-images">
+
+      <img id="featured" src="/images/Organic/Organic-Jute-bags-1.jpg" alt="">
+
+      {{ range .Params.images }}
+
+      {{ end }}
     </div>
 
-    <div class="prod-details">
-      <div class="prod-head">
-        <h4>{{ .Title }}</h4>
+
+
+    <div class="prod_details-desc">
+      <div class="prod_details-desc--header">
+        <h1>{{ .Title }}</h1>
         <!-- rating star -->
         {{ if site.Params.rating.enable }}
         <div class="rw-ui-container"></div>
         {{ end }}
         {{ partial "partials/products/price.html" . }}
       </div>
-      <div class="prod-desc">
+
+      <div class="prod_details-desc--content">
         <p>{{ .Params.ShortDescription | markdownify }}</p>
         {{ partial "partials/products/add-to-cart-btn.html" . }}
 
@@ -34,7 +37,7 @@
 
 </section>
 
-{{ partial "cta.html" . }}
+<!-- {{ partial "cta.html" . }} -->
 
 
 

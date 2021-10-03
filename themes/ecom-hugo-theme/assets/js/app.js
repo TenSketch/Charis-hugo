@@ -48,20 +48,3 @@ var swiper = new Swiper('.swiper-container', {
 
 // Initialize Animate on scroll
 AOS.init();
-
-// product carousel
-(function ($) {
-  'use strict';
-
-  $('.product-slider').slick({
-    autoplay: false,
-    infinite: true,
-    arrows: true,
-    dots: true,
-    customPaging: function (slider, i) {
-      var image = $(slider.$slides[i]).data('image');
-      return '<img class="prod-img" src="' + image + '" alt="Charis jute bag image">';
-    }
-  });
-
-})(jQuery);

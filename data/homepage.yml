@@ -14,7 +14,7 @@ banner:
   button:
     enable : true
     label : "Explore our bags"
-    link : "products"
+    link : "jute_bags"
   
 
 ########################## About ##############################
