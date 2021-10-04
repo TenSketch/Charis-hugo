@@ -363,11 +363,12 @@ header {
   .about .content {
     flex: 1; }
 
-#home_prod .card .btn {
-  transition: visibility 250ms ease-in-out;
-  visibility: hidden; }
+@media (min-width: 768px) {
+  #home_prod .card .btn {
+    transition: visibility 250ms ease-in-out;
+    visibility: hidden; } }
 
-#home_prod .card:hover .btn {
+#home_prod .card .btn:hover .btn {
   visibility: visible; }
 
 .advantage {

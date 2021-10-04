@@ -80,19 +80,18 @@
 
 #home_prod {
   .card {
-      .btn{
-      transition: visibility 250ms ease-in-out;
-
-          visibility: hidden;
+    .btn {
+      @media (min-width: 768px) {
+        transition: visibility 250ms ease-in-out;
+        visibility: hidden;
       }
-      &:hover{
-        .btn{
-            visibility: visible;
-        }   
+      &:hover {
+        .btn {
+          visibility: visible;
+        }
       }
-
-    
-}
+    }
+  }
 }
 
 .advantage {
