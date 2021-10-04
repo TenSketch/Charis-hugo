@@ -95,18 +95,18 @@ section {
 }
 
 .btn-teal {
-  --btn-clr: hsl(226, 65%, 16%);
+  --btn-clr: hsl(37, 29%, 47%);
   --transform-origin: bottom;
   @extend .flex-col;
   // width: 70%;
   // margin-inline: auto;
   // @extend .txt-center;
-  
 }
 
-.btn-purple {
-  --btn-clr: purple;
+.btn-accent {
+  --btn-clr: hsl(226, 65%, 16%);
   --transform-origin: top;
+  margin-left: 2em;
 }
 
 .btn-primary {
@@ -133,7 +133,7 @@ section {
 .btn:hover::after {
   transform: scale(1, 1);
 }
-.m-1{
+.m-1 {
   margin: 1em;
 }
 .my-1 {
@@ -164,10 +164,9 @@ section {
 @import "components/testimonials";
 @import "components/footer";
 
-
 .content {
   @extend .mt-4;
-  @media(min-width:768px){
+  @media (min-width: 768px) {
     margin-top: 0;
   }
   h2,
@@ -176,23 +175,15 @@ section {
     @extend .my-1;
   }
 }
-.page_title{
-  height: 70vh;
-  background: $clr-primary-light url(/images/slider/home_storage-Jute_bags-4.jpg) center no-repeat fixed;
-  background-size: cover;
-  // background-blend-mode:soft-light;
-
-  display: grid;
-  place-items: center;
-  .container{
-    display: grid;
-    place-items: center;
-  width: 100%;
-
-    .content{
-      h2{
-        font-size: 2.5rem;
-      }
+.page_title {
+  min-height: 40vh;
+  background: $clr-primary-light-opacity;
+  padding-bottom: 0;
+  .container {
+    @include flex(flex-end, normal, nowrap);
+    height: 40vh;
+    h2 {
+      font-size: 2.5rem;
     }
   }
 }

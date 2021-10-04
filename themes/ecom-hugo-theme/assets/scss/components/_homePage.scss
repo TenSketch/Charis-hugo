@@ -80,20 +80,24 @@
 
 #home_prod {
   .card {
-    .btn {
-      @media (min-width: 768px) {
-        transition: visibility 250ms ease-in-out;
-        visibility: hidden;
-      }
-      &:hover {
-        .btn {
-          visibility: visible;
-        }
+    .btn-teal {
+      transition: visibility 250ms ease-in-out;
+      visibility: hidden;
+    }
+    &:hover {
+      .btn-teal {
+        visibility: visible;
       }
     }
   }
 }
+@media (max-width: 768px) {
+  .btn-teal {
+    
+    visibility: visible!important;;
+  }
 
+}
 .advantage {
   color: $clr-light;
   background: $clr-primary-800--hsla

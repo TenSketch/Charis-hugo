@@ -22,11 +22,10 @@
         flex-basis: 100%;
 
         #featured {
-          cursor: crosshair;
-          // border: 1px solid $clr-primary-dark;
-          width: 80vw;
-          max-width: 500px;
-          max-height: 500px;
+          width: 500px;
+          height: 600px;
+          /* max-width: 500px; */
+          object-fit: cover;
           margin: 0 auto;
           object-fit: cover;
         }
@@ -43,7 +42,7 @@
           margin-left: 1em;
         }
         .arrow {
-          width: 2%;
+          width: 3%;
           cursor: pointer;
           display: inline;
           transition: all 250ms ease-in-out;
@@ -56,7 +55,7 @@
         #prod_slider {
           @include flex(center, center, nowrap);
           overflow-x: auto;
-          flex-basis: 85%;
+          // flex-basis: 85%;
           &::-webkit-scrollbar {
             width: 0;
             &-thumb {
@@ -68,11 +67,10 @@
           .thumbnail {
             cursor: pointer;
             object-fit: cover;
-            max-width: 20vw;
-            max-height: 12vh;
+            width: 100px;
+            height: 100px;
             opacity: 0.5;
-            // @extend .m-1;
-            margin: 0.25em;
+            margin: .15em;
             // border: 2px solid $clr-primary-dark;
             transition: opacity 250ms ease-in-out;
             &:hover {
@@ -98,13 +96,13 @@
           font-weight: 500;
           font-size: 2.5rem;
           letter-spacing: 1.5;
-          color: $clr-accent-400;
+          color: $clr-primary-dark;
         }
         .price {
           @extend .mb-1;
           span {
             font-size: 1.5rem;
-            color: $clr-accent-400;
+            color: $clr-accent;
             font-weight: 500;
           }
         }
@@ -112,7 +110,7 @@
       .prod_details-desc--content {
         p {
           @extend .mb-1;
-          color: $clr-accent-600;
+          color: $clr-primary-dark;
         }
       }
     }
