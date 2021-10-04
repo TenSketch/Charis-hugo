@@ -457,6 +457,8 @@ header {
       .prod_details .container .prod_details-images .wrapper-featured_img #featured {
         cursor: crosshair;
         width: 80vw;
+        max-width: 500px;
+        max-height: 500px;
         margin: 0 auto;
         object-fit: cover; }
     .prod_details .container .prod_details-images .wrapper-thumb_img {
