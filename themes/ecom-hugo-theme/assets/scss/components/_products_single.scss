@@ -1,12 +1,96 @@
+
+
+
+
 .prod_details {
   .container {
-    @include flex(normal, center, wrap);
-    @extend .gap-3;
+    @include flex(normal, space-between, wrap);
+    // @extend .gap-2;
+    // background: indigo;
+    // main child 1
     .prod_details-images {
-      flex-basis: 40%;
+      @include flex(center, center, wrap);
+      // background-color: hotpink;
+      // flex-basis: 100%;
+      max-width: 100%;
+
+      @media (min-width: 768px) {
+        flex-basis: 45%;
+      }
+      // Sub child1- wrapper-featured_img{
+      .wrapper-featured_img {
+        flex-basis: 100%;
+
+        #featured {
+          cursor: crosshair;
+          // border: 1px solid $clr-primary-dark;
+          width: 80vw;
+          margin: 0 auto;
+          object-fit: cover;
+        }
+      }
+
+      // Sub child2- wrapper-thumb_img
+      .wrapper-thumb_img {
+        @include flex(normal, center, nowrap);
+        @extend .mt-1;
+        #slideLeft{
+          margin-right: 1em;
+        }
+        #slideRight{
+          margin-left: 1em;
+        }
+        .arrow {
+          width: 2%;
+          cursor: pointer;
+          display: inline;
+          transition: all 250ms ease-in-out;
+          &:hover {
+            opacity: 0.5;
+            // width: 2.5%;
+          }
+        }
+
+        #prod_slider {
+          @include flex(center, center, nowrap);
+          overflow-x: auto;
+          flex-basis: 85%;
+          &::-webkit-scrollbar {
+            width: 0;
+            &-thumb {
+              display: none;
+              
+            }
+          }
+
+          .thumbnail {
+            cursor: pointer;
+            object-fit: cover;
+            max-width: 20vw;
+            max-height: 12vh;
+            opacity: 0.5;
+            // @extend .m-1;
+            margin: 0.25em;
+            // border: 2px solid $clr-primary-dark;
+            transition: opacity 250ms ease-in-out;
+            &:hover {
+              opacity: 1;
+            }
+            &.active {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      
     }
+
+    // main child 2
     .prod_details-desc {
-      flex-basis: 40%;
+      @media (min-width: 768px) {
+        flex-basis: 45%;
+      }
       .prod_details-desc--header {
         h1 {
           font-weight: 500;
@@ -24,10 +108,9 @@
         }
       }
       .prod_details-desc--content {
-        p{
+        p {
           @extend .mb-1;
           color: $clr-accent-600;
-
         }
       }
     }

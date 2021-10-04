@@ -42,8 +42,8 @@ section {
   padding-block: 8rem; }
 
 .container {
-  max-width: 85%;
-  width: 1100px;
+  max-width: 90%;
+  width: 1200px;
   margin: 0 auto;
   position: relative; }
 
@@ -62,7 +62,7 @@ section {
 .gap-2, .products .container .card {
   gap: 2em; }
 
-.gap-3, .prod_details .container {
+.gap-3 {
   gap: 3em; }
 
 .grid {
@@ -110,12 +110,15 @@ section {
 .btn:hover::after {
   transform: scale(1, 1); }
 
+.m-1 {
+  margin: 1em; }
+
 .my-1, .content h2,
 .content h3,
 .content p, .footer li, .testimonials .container .testimonials_card h4, .advantage .content ul li {
   margin-block: 1em; }
 
-.mt-1 {
+.mt-1, .prod_details .container .prod_details-images .wrapper-thumb_img {
   margin-top: 1em; }
 
 .mt-2 {
@@ -437,23 +440,77 @@ header {
 .prod_details .container {
   display: flex;
   align-items: normal;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap; }
   .prod_details .container .prod_details-images {
-    flex-basis: 40%; }
-  .prod_details .container .prod_details-desc {
-    flex-basis: 40%; }
-    .prod_details .container .prod_details-desc .prod_details-desc--header h1 {
-      font-weight: 500;
-      font-size: 2.5rem;
-      letter-spacing: 1.5;
-      color: #203c97; }
-    .prod_details .container .prod_details-desc .prod_details-desc--header .price span {
-      font-size: 1.5rem;
-      color: #203c97;
-      font-weight: 500; }
-    .prod_details .container .prod_details-desc .prod_details-desc--content p {
-      color: #172b6d; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%; }
+    @media (min-width: 768px) {
+      .prod_details .container .prod_details-images {
+        flex-basis: 45%; } }
+    .prod_details .container .prod_details-images .wrapper-featured_img {
+      flex-basis: 100%; }
+      .prod_details .container .prod_details-images .wrapper-featured_img #featured {
+        cursor: crosshair;
+        width: 80vw;
+        margin: 0 auto;
+        object-fit: cover; }
+    .prod_details .container .prod_details-images .wrapper-thumb_img {
+      display: flex;
+      align-items: normal;
+      justify-content: center;
+      flex-wrap: nowrap; }
+      .prod_details .container .prod_details-images .wrapper-thumb_img #slideLeft {
+        margin-right: 1em; }
+      .prod_details .container .prod_details-images .wrapper-thumb_img #slideRight {
+        margin-left: 1em; }
+      .prod_details .container .prod_details-images .wrapper-thumb_img .arrow {
+        width: 2%;
+        cursor: pointer;
+        display: inline;
+        transition: all 250ms ease-in-out; }
+        .prod_details .container .prod_details-images .wrapper-thumb_img .arrow:hover {
+          opacity: 0.5; }
+      .prod_details .container .prod_details-images .wrapper-thumb_img #prod_slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        flex-basis: 85%; }
+        .prod_details .container .prod_details-images .wrapper-thumb_img #prod_slider::-webkit-scrollbar {
+          width: 0; }
+          .prod_details .container .prod_details-images .wrapper-thumb_img #prod_slider::-webkit-scrollbar-thumb {
+            display: none; }
+        .prod_details .container .prod_details-images .wrapper-thumb_img #prod_slider .thumbnail {
+          cursor: pointer;
+          object-fit: cover;
+          max-width: 20vw;
+          max-height: 12vh;
+          opacity: 0.5;
+          margin: 0.25em;
+          transition: opacity 250ms ease-in-out; }
+          .prod_details .container .prod_details-images .wrapper-thumb_img #prod_slider .thumbnail:hover {
+            opacity: 1; }
+          .prod_details .container .prod_details-images .wrapper-thumb_img #prod_slider .thumbnail.active {
+            opacity: 1; }
+  @media (min-width: 768px) {
+    .prod_details .container .prod_details-desc {
+      flex-basis: 45%; } }
+  .prod_details .container .prod_details-desc .prod_details-desc--header h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    letter-spacing: 1.5;
+    color: #203c97; }
+  .prod_details .container .prod_details-desc .prod_details-desc--header .price span {
+    font-size: 1.5rem;
+    color: #203c97;
+    font-weight: 500; }
+  .prod_details .container .prod_details-desc .prod_details-desc--content p {
+    color: #172b6d; }
 
 .testimonials {
   background-color: #c5b396; }
@@ -528,6 +585,7 @@ header {
   place-items: center; }
   .page_title .container {
     display: grid;
-    place-items: center; }
+    place-items: center;
+    width: 100%; }
     .page_title .container .content h2 {
       font-size: 2.5rem; }
