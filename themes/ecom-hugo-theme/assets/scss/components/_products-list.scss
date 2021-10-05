@@ -4,7 +4,7 @@
   .container {
     @include flex(normal, center, wrap);
     @extend .gap-1;
-    max-width: 90%;
+    // max-width: 90%;
     h2 {
       flex-basis: 100%;
       @extend .txt-center;
@@ -13,9 +13,9 @@
     .card {
       // padding: 1em;
       // min-height: 20rem;
-      @include flex(center, center, nowrap);
-      @extend .flex-col;
-      @extend .gap-2;
+      // @include flex(center, center, nowrap);
+      // @extend .flex-col;
+      // @extend .gap-2;
       // border: 1px solid;
       flex: 35%;
       @media (min-width: 768px) {
@@ -24,35 +24,36 @@
 
       .card-head {
         // min-height: 5rem;
-        flex: 80%;
+        // flex: 80%;
         // background-color: greenyellow;
         // align-self: center;
-        img {
-          transition: transform 250ms ease-in;
-          &:hover {
-            transform: scale(1.2, 1.2);
+        a {
+          // height: 100%;
+          // display: block;
+          // margin: auto;
+          // display: flex;
+          // align-items: flex-end;
+          img {
+            transition: transform 250ms ease-in;
+            &:hover {
+              transform: scale(1.2, 1.2);
+            }
           }
         }
-
-        a {
-          height: 100%;
-          // display: block;
-          margin: auto;
-          display: flex;
-          align-items: flex-end;
-        }
+        
       }
       .card-body {
         min-height: 10rem;
-        flex: 20%;
+        // flex: 20%;
         // background-color: hotpink;
-        @include flex(center, center, nowrap);
+        @include flex(center, flex-end, nowrap);
         @extend .flex-col;
         .card-title {
           // height: 100%;
           // display: grid;
           // place-items: center;
-          @extend .mb-1;
+          // @extend .my-1;
+          margin-block: .5em;
           a {
             font-size: 1.2rem;
             color: $clr-accent;
