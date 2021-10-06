@@ -1,25 +1,23 @@
 .swiper-container {
   width: 100%;
   height: 100%;
-  // border-radius: 4px;
-  // border: 3px solid #000;
-  // padding-top: 1em;
-  //   box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
+  // border: 1px solid;
+  @extend .pt-4;
+  @media(min-width: 768px){
+    height: 100vh;
+  }
+ 
 }
 .swiper-slide {
   text-align: center;
-  // font-size: 32px;
   background: #fff;
   min-height: 90vh;
   cursor: grab;
-  /* Center slide text vertically */
-  // flex-shrink: 1;
-  // background: $clr-light;
+
 
   color: $clr-accent;
   @include flex(center, center, nowrap);
-  .image {
-  }
+
 }
 
 .swiper-pagination-bullet {
@@ -59,7 +57,6 @@
     }
   }
   .image {
-    // flex-basis: 40%;
     flex: 1;
     display: grid;
     place-items: center;
@@ -99,15 +96,16 @@
 .advantage {
   color: $clr-light;
   background-color: $clr-primary-800--hsla;
-  background: $clr-primary-800--hsla url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg);
+  background: $clr-primary-800--hsla
+    url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size:cover;
+  -webkit-background-size: cover;
   background-size: cover;
   background-blend-mode: multiply;
-  @media(min-width:768px){
+  @media (min-width: 768px) {
     -webkit-background-attachment: fixed;
-  background-attachment: fixed;
+    background-attachment: fixed;
   }
   .content {
     ul {
@@ -120,11 +118,10 @@
           position: absolute;
           content: "";
           background: url(/images/svg/hand-point-right-regular.svg);
-          -webkit-background-size:cover;
-          background-size: cover;
           background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-background-size:cover;
+          background-repeat: no-repeat;
+          -webkit-background-size: cover;
+          background-size: cover;
           top: 0;
           left: 0;
           display: inline-block;
