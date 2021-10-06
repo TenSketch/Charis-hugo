@@ -381,14 +381,16 @@ header {
 .advantage {
   color: #dccebc;
   background-color: rgba(33, 27, 18, 0.7);
-  background-image: url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg);
-  background-position: center;
-  -webkit-background-attachment: fixed;
-  background-attachment: fixed;
+  background: rgba(33, 27, 18, 0.7) url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  background-blend-mode: soft-light; }
+  background-blend-mode: multiply; }
+  @media (min-width: 768px) {
+    .advantage {
+      -webkit-background-attachment: fixed;
+      background-attachment: fixed; } }
   .advantage .content ul li {
     position: relative;
     padding-left: 1.5em; }

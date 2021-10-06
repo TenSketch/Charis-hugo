@@ -99,14 +99,16 @@
 .advantage {
   color: $clr-light;
   background-color: $clr-primary-800--hsla;
-  background-image: url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg);
-  background-position: center;
-  -webkit-background-attachment: fixed;
-  background-attachment: fixed;
+  background: $clr-primary-800--hsla url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size:cover;
   background-size: cover;
-  background-blend-mode: soft-light;
+  background-blend-mode: multiply;
+  @media(min-width:768px){
+    -webkit-background-attachment: fixed;
+  background-attachment: fixed;
+  }
   .content {
     ul {
       li {
