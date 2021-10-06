@@ -397,9 +397,12 @@ header {
     .advantage .content ul li::before {
       position: absolute;
       content: "";
-      background: url(/images/svg/hand-point-right-regular.svg) center no-repeat;
+      background: url(/images/svg/hand-point-right-regular.svg);
       -webkit-background-size: cover;
       background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
       top: 0;
       left: 0;
       display: inline-block;
