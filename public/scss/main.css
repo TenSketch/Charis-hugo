@@ -189,17 +189,19 @@ header {
       flex-basis: 70%;
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: nowrap; }
       header .container nav .nav_list {
         position: absolute;
-        width: 50vw;
+        width: 100%;
+        right: 0;
         padding-right: 1.5em;
-        transform: translateX(1000%);
+        transform: translateX(100%);
         top: 0;
         transition: all 400ms ease-in-out; }
         @media (min-width: 991px) {
           header .container nav .nav_list {
+            transform: translateX(0);
             position: relative;
             display: flex;
             align-items: center;
@@ -207,10 +209,9 @@ header {
             flex-wrap: nowrap;
             gap: 1.5em; } }
         header .container nav .nav_list.active {
-          transition: all 400ms ease-in-out;
           background-color: rgba(231, 224, 212, 0.95);
           height: 100vh;
-          transform: translateX(25%);
+          transform: translateX(0);
           top: 100%; }
           header .container nav .nav_list.active .nav_list--item {
             margin-block: 3em; }
@@ -227,6 +228,7 @@ header {
             flex-wrap: nowrap;
             gap: 0.5em; } }
       header .container nav .nav_icons {
+        min-width: fit-content;
         margin-left: auto;
         margin-right: 1.5em;
         z-index: 2; }

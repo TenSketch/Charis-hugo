@@ -35,29 +35,32 @@ header {
     }
     nav {
       flex-basis: 70%;
-      @include flex(center, space-around, nowrap);
+      @include flex(center, space-between, nowrap);
 
       .nav_list {
         position: absolute;
-        width: 50vw;
+        width: 100%;
+        right: 0;
         padding-right: 1.5em;
-        transform: translateX(1000%);
+        transform: translateX(100%);
         top: 0;
         transition: all 400ms ease-in-out;
         // transition: all 400ms linear;
 
         // box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
         @media (min-width: 991px) {
+        transform: translateX(0);
+
           position: relative;
           @include flex(center, flex-start, nowrap);
           gap: 1.5em;
         }
         &.active {
-        transition: all 400ms ease-in-out;
+        // transition: all 400ms ease-in-out;
 
           background-color: rgba(231, 224, 212, 0.95);
           height: 100vh;
-          transform: translateX(25%);
+          transform: translateX(0);
           top: 100%;
           .nav_list--item {
             margin-block: 3em;
@@ -79,6 +82,8 @@ header {
         }
       }
       .nav_icons {
+        // border: 1px solid;
+        min-width: fit-content;
         margin-left: auto;
         margin-right: 1.5em;
         z-index: 2;
