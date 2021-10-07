@@ -1,10 +1,10 @@
 ---
-title: "Gracefull"
+title: "graceful"
 date: 2021-09-14T08:22:16+06:00
 draft: false
 
 # meta description
-description: "Gracefull Womens jute bag desc"
+description: "graceful Womens jute bag desc"
 
 # product Price
 price: "200.00"
