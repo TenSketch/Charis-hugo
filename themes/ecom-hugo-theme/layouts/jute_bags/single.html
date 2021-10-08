@@ -48,8 +48,9 @@
 
       <div class="prod_details-desc--content">
         <p>{{ .Params.ShortDescription | markdownify }}</p>
-        {{ partial "partials/products/add-to-cart-btn.html" . }}
-        <button href="{{ .Page.Params.link }}" class="btn btn-accent">Buy Now</button>
+        {{ partial "partials/products/add_to_cart-btn.html" . }}
+        {{ partial "partials/products/buy_now-btn.html" . }}
+        <!-- <button href="{{ .Page.Params.link }}" class="btn btn-accent">Buy Now</button> -->
 
       </div>
 
