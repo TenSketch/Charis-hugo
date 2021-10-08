@@ -6,7 +6,6 @@ header {
   width: 100%;
   z-index: 10;
   background-color: transparent;
-  // transition: background-color 250ms; /* control how smooth the background changes */
   &.scrolled {
     background-color: $clr-primary-light-opacity !important;
     animation: fadeInDown 500ms linear both;
@@ -34,32 +33,29 @@ header {
       }
     }
     nav {
-      flex-basis: 70%;
+      flex-basis: 77%;
       @include flex(center, space-between, nowrap);
-
+      // border: 2px solid red;
       .nav_list {
         position: absolute;
         width: 100%;
         right: 0;
-        padding-right: 1.5em;
         transform: translateX(100%);
         top: 0;
         transition: all 400ms ease-in-out;
-        // transition: all 400ms linear;
-
-        // box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
         @media (min-width: 991px) {
-        transform: translateX(0);
-          flex-basis: 50%;
+          transform: translateX(0);
+          flex: 50%;
           position: relative;
-          @include flex(center, flex-start, nowrap);
+          @include flex(normal, normal, nowrap);
           gap: 1.5em;
         }
         &.active {
-        // transition: all 400ms ease-in-out;
-
+          // transition: all 400ms ease-in-out;
+          @include flex(normal, center, nowrap);
+          @extend .flex-col;
           background-color: rgba(231, 224, 212, 0.95);
-          height: 100vh;
+          // height: 100vh;
           transform: translateX(0);
           top: 100%;
           .nav_list--item {
@@ -67,36 +63,26 @@ header {
           }
         }
       }
-
       .nav_list--item {
+        font-size: 1.2rem;
         @extend .txt-center;
         @media (min-width: 991px) {
           text-align: unset;
-          // margin-block: 0;
-        }
-        .nav_link {
-          @media (min-width: 991px) {
-            @include flex(flex-start, normal, nowrap);
-            gap: 0.5em;
-          }
         }
       }
       .nav_icons {
         // border: 1px solid;
-        flex: 0 1 30%;
-        margin-left: auto;
-        // margin-right: 1.5em;
+        flex: 30%;
+        @include flex(center, flex-end, nowrap);
+        @extend .gap-1;
+        margin-right: 1em;
         z-index: 2;
         @media (min-width: 991px) {
           margin-right: 0 !important;
-          flex-grow: 1;
         }
-        .nav_list--item {
-          // margin-left: auto;
-          float: left;
-          + .nav_list--item {
-            margin-left: 1rem;
-          }
+        .nav_link {
+          @include flex(flex-start, normal, nowrap);
+          gap: 0.5em;
         }
         span {
           display: none;
@@ -105,15 +91,10 @@ header {
           }
         }
         .cart {
-          .nav_link {
-            img {
-              display: unset;
-            }
-            .price {
-              display: none;
-            }
+          transition: display 250ms ease-in;
+          .price {
+            display: none;
           }
-
           &:hover {
             .price {
               display: block;
@@ -123,13 +104,11 @@ header {
       }
     }
   }
-
   .svg-inline--fa {
     max-width: 30px;
-    aspect-ratio: 1;
     width: 17px;
+    display: unset;
   }
-
   .nav__toggle {
     display: block;
     position: absolute;

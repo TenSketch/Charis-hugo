@@ -50,13 +50,16 @@ section {
 .txt-center, .testimonials .container h2, .products .container h2, header .container nav .nav_list--item {
   text-align: center; }
 
-.flex-col, .products .container .card .card-body, .btn-teal {
+.flex-col, .products .container .card .card-body, header .container nav .nav_list.active, .btn-teal {
   flex-direction: column; }
 
 .flex-wrap {
   flex-wrap: wrap; }
 
-.gap-1, .products .container {
+.gap-half {
+  gap: .5em; }
+
+.gap-1, .products .container, header .container nav .nav_icons {
   gap: 1em; }
 
 .gap-2 {
@@ -186,7 +189,7 @@ header {
       header .container .logo img {
         min-width: 8rem; }
     header .container nav {
-      flex-basis: 70%;
+      flex-basis: 77%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -195,64 +198,66 @@ header {
         position: absolute;
         width: 100%;
         right: 0;
-        padding-right: 1.5em;
         transform: translateX(100%);
         top: 0;
         transition: all 400ms ease-in-out; }
         @media (min-width: 991px) {
           header .container nav .nav_list {
             transform: translateX(0);
-            flex-basis: 50%;
+            flex: 50%;
             position: relative;
             display: flex;
-            align-items: center;
-            justify-content: flex-start;
+            align-items: normal;
+            justify-content: normal;
             flex-wrap: nowrap;
             gap: 1.5em; } }
         header .container nav .nav_list.active {
+          display: flex;
+          align-items: normal;
+          justify-content: center;
+          flex-wrap: nowrap;
           background-color: rgba(231, 224, 212, 0.95);
-          height: 100vh;
           transform: translateX(0);
           top: 100%; }
           header .container nav .nav_list.active .nav_list--item {
             margin-block: 3em; }
-      @media (min-width: 991px) {
-        header .container nav .nav_list--item {
-          text-align: unset; } }
-      @media (min-width: 991px) {
-        header .container nav .nav_list--item .nav_link {
+      header .container nav .nav_list--item {
+        font-size: 1.2rem; }
+        @media (min-width: 991px) {
+          header .container nav .nav_list--item {
+            text-align: unset; } }
+      header .container nav .nav_icons {
+        flex: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        margin-right: 1em;
+        z-index: 2; }
+        @media (min-width: 991px) {
+          header .container nav .nav_icons {
+            margin-right: 0 !important; } }
+        header .container nav .nav_icons .nav_link {
           display: flex;
           align-items: flex-start;
           justify-content: normal;
           flex-wrap: nowrap;
-          gap: 0.5em; } }
-      header .container nav .nav_icons {
-        flex: 0 1 30%;
-        margin-left: auto;
-        z-index: 2; }
-        @media (min-width: 991px) {
-          header .container nav .nav_icons {
-            margin-right: 0 !important;
-            flex-grow: 1; } }
-        header .container nav .nav_icons .nav_list--item {
-          float: left; }
-          header .container nav .nav_icons .nav_list--item + .nav_list--item {
-            margin-left: 1rem; }
+          gap: 0.5em; }
         header .container nav .nav_icons span {
           display: none; }
           @media (min-width: 991px) {
             header .container nav .nav_icons span {
               display: inline-block; } }
-        header .container nav .nav_icons .cart .nav_link img {
-          display: unset; }
-        header .container nav .nav_icons .cart .nav_link .price {
-          display: none; }
-        header .container nav .nav_icons .cart:hover .price {
-          display: block; }
+        header .container nav .nav_icons .cart {
+          transition: display 250ms ease-in; }
+          header .container nav .nav_icons .cart .price {
+            display: none; }
+          header .container nav .nav_icons .cart:hover .price {
+            display: block; }
   header .svg-inline--fa {
     max-width: 30px;
-    aspect-ratio: 1;
-    width: 17px; }
+    width: 17px;
+    display: unset; }
   header .nav__toggle {
     display: block;
     position: absolute;

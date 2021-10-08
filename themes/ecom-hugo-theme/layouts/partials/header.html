@@ -1,12 +1,9 @@
 <header>
     <div class="container">
-
         <!-- child1 -->
-        
-            <a class="logo" href="{{ site.BaseURL }}">
-                <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}">
-            </a>
-        
+        <a class="logo" href="{{ site.BaseURL }}">
+            <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}">
+        </a>
         <!-- child2 -->
         <nav>
             <ul class="nav_list">
@@ -17,27 +14,24 @@
                 {{end}}
             </ul>
             <ul class="nav_icons">
-              
                 <li class="nav_list--item">
-                    <a class="nav_link" href="javascript:void(0)" id="show-login" class="snipcart-customer-signin">
+                    <a class="nav_link" href="tel:+919840166419">
+                        <img src="/images/svg/phone-icon.svg" class="svg-inline--fa" alt="">
+                        <span>9840166419</span>
+                    </a>
+                </li>
+                <li class="nav_list--item">
+                    <a class="nav_link snipcart-customer-signin" href="javascript:void(0)" id="show-login">
                         <img src="/images/svg/user-icon.svg" class="svg-inline--fa" alt="">
                         <span>Login</span>
                     </a>
                 </li>
-                <li class="nav_list--item">
-                    <a class="nav_link" href="tel:+919840166419">
-                        <img src="/images/svg/phone-icon.svg" class="svg-inline--fa" alt="">
-                        
-                        <span>9840166419</span>
-                    </a>
-                </li>
                 <li class="nav_list--item cart snipcart-summary">
                     <a href="#" class="nav_link snipcart-checkout">
-                        <img src="/images/svg/cart-icon.svg" class="svg-inline--fa" alt="">
-                       
+                        <img style="align-self: center;" src="/images/svg/cart-icon.svg" class="svg-inline--fa" alt="">
                         <span>Cart</span>
                         <sup class="snipcart-items-count">0</sup>
-                        <!-- <span class="price snipcart-total-price"></span> -->
+                        <span class="price snipcart-total-price"></span>
                     </a>
                 </li>
             </ul>
