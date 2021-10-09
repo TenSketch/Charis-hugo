@@ -3,36 +3,25 @@
 
   .container {
     @include flex(normal, flex-start, wrap);
-    // @extend .gap-1;
-    // max-width: 90%;
+    @extend .gap-2;
+    @media(min-width:768px) {
+      gap: 0;
+    }
     h2 {
       flex-basis: 100%;
       @extend .txt-center;
       font-size: 2rem;
     }
     .card {
-      // padding: 1em;
-      // min-height: 20rem;
-      // @include flex(center, center, nowrap);
-      // @extend .flex-col;
-      // @extend .gap-2;
-      // border: 1px solid;
-      // flex: 35%;
+
       @media (min-width: 600px) {
         flex: 0 25%;
       }
 
       .card-head {
-        // min-height: 5rem;
-        // flex: 80%;
-        // background-color: greenyellow;
-        // align-self: center;
+       
         a {
-          // height: 100%;
-          // display: block;
-          // margin: auto;
-          // display: flex;
-          // align-items: flex-end;
+
           img {
             transition: transform 250ms ease-in;
             &:hover {
@@ -43,16 +32,11 @@
         
       }
       .card-body {
-        // min-height: 10rem;
-        // flex: 20%;
-        // background-color: hotpink;
+        @extend .mt-1;
         @include flex(center, flex-end, nowrap);
         @extend .flex-col;
         .card-title {
-          // height: 100%;
-          // display: grid;
-          // place-items: center;
-          // @extend .my-1;
+
           margin-block: .5em;
           a {
             font-size: 1.2rem;
@@ -63,12 +47,7 @@
             }
           }
         }
-        // .card-desc {
-        //   height: 100%;
-        //   display: grid;
-        //   place-items: center;
-        //   font-family: "Petit Formal Script", cursive;
-        // }
+
         .price {
           @extend .mb-1;
           s {

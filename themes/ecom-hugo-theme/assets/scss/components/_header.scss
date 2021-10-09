@@ -1,13 +1,15 @@
 /* navbar */
 header {
   padding: 1em;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
-  background-color: transparent;
+  background-color: $clr-primary-light-opacity;
+  position: relative;
   &.scrolled {
-    background-color: $clr-primary-light-opacity !important;
+  position: fixed;
+
+    // background-color: $clr-primary-light-opacity !important;
     animation: fadeInDown 500ms linear both;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -27,7 +29,7 @@ header {
     @include flex(center, space-between, nowrap);
     position: static;
     .logo {
-      flex-basis: 20%;
+      flex-basis: 16%;
       img {
         min-width: 8rem;
       }
@@ -54,7 +56,7 @@ header {
           // transition: all 400ms ease-in-out;
           @include flex(normal, center, nowrap);
           @extend .flex-col;
-          background-color: rgba(231, 224, 212, 0.95);
+          background-color: $clr-primary-light-opacity;
           // height: 100vh;
           transform: translateX(0);
           top: 100%;
@@ -81,7 +83,7 @@ header {
           margin-right: 0 !important;
         }
         .nav_link {
-          @include flex(flex-start, normal, nowrap);
+          @include flex(center, normal, nowrap);
           gap: 0.5em;
         }
         span {

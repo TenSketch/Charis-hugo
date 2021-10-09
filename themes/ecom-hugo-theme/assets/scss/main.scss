@@ -11,6 +11,9 @@
   padding: 0;
 }
 // tag selectors
+html, body{
+  -webkit-font-smoothing: antialiased;    
+}
 html {
   scroll-behavior: smooth;
   font-size: 12px;
@@ -116,7 +119,7 @@ section {
 }
 
 .btn-primary {
-  --btn-clr: hsl(226, 65%, 16%);
+  --btn-clr:  hsl(36, 29%, 10%);
   // margin-bottom: 3em;
 }
 
@@ -138,6 +141,9 @@ section {
 
 .btn:hover::after {
   transform: scale(1, 1);
+}
+.m-0{
+  margin: 0;
 }
 .m-1 {
   margin: 1rem;
