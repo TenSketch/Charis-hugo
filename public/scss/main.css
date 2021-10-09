@@ -55,7 +55,7 @@ section {
 .txt-center, .testimonials .container h2, .products .container h2, header .container nav .nav_list--item {
   text-align: center; }
 
-.flex-col, .products .container .card .card-body, .swiper-slide .content, header .container nav .nav_list.active, .btn-teal {
+.flex-col, .products .container .card .card-body, .swiper-slide .content, .btn-teal {
   flex-direction: column; }
 
 .flex-wrap {
@@ -164,11 +164,14 @@ h2 {
 .pt-5 {
   padding-top: 5rem; }
 
+.py-1 {
+  padding-block: 1rem; }
+
 /* navbar */
 header {
   padding: 1em;
-  top: 0;
   width: 100%;
+  min-height: 8vh;
   z-index: 10;
   background-color: rgba(231, 224, 212, 0.95);
   position: relative; }
@@ -191,7 +194,8 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    position: static; }
+    position: static;
+    height: 100%; }
     header .container .logo {
       flex-basis: 16%; }
       header .container .logo img {
@@ -204,31 +208,30 @@ header {
       flex-wrap: nowrap; }
       header .container nav .nav_list {
         position: absolute;
+        right: -100%;
+        top: 8vh;
+        height: 80vh;
         width: 100%;
-        right: 0;
-        transform: translateX(100%);
-        top: 0;
         transition: all 400ms ease-in-out; }
         @media (min-width: 991px) {
           header .container nav .nav_list {
-            transform: translateX(0);
-            flex: 50%;
-            position: relative;
-            display: flex;
-            align-items: normal;
-            justify-content: normal;
-            flex-wrap: nowrap;
-            gap: 1.5em; } }
+            width: auto;
+            height: auto;
+            right: inherit;
+            top: 50%;
+            transform: translateY(-50%); } }
+        header .container nav .nav_list .nav_list--item {
+          margin-block: 3em; }
+          @media (min-width: 991px) {
+            header .container nav .nav_list .nav_list--item {
+              margin: auto 0;
+              display: inline-block; }
+              header .container nav .nav_list .nav_list--item + .nav_list--item {
+                margin-left: 1rem; } }
         header .container nav .nav_list.active {
-          display: flex;
-          align-items: normal;
-          justify-content: center;
-          flex-wrap: nowrap;
-          background-color: rgba(231, 224, 212, 0.95);
-          transform: translateX(0);
-          top: 100%; }
-          header .container nav .nav_list.active .nav_list--item {
-            margin-block: 3em; }
+          right: 0;
+          transition: all 400ms ease-in-out;
+          background-color: rgba(231, 224, 212, 0.95); }
       header .container nav .nav_list--item {
         font-size: 1.2rem; }
         @media (min-width: 991px) {
@@ -240,8 +243,7 @@ header {
         align-items: center;
         justify-content: flex-end;
         flex-wrap: nowrap;
-        margin-right: 1em;
-        z-index: 2; }
+        margin-right: 2em; }
         @media (min-width: 991px) {
           header .container nav .nav_icons {
             margin-right: 0 !important; } }
@@ -325,18 +327,26 @@ header {
     bottom: 5%;
     background-color: rgba(155, 128, 85, 0.7);
     width: 100%; }
-    .swiper-slide .content .btn, .swiper-slide .content p {
+    .swiper-slide .content .btn,
+    .swiper-slide .content p {
       display: none; }
     @media (min-width: 768px) {
       .swiper-slide .content {
+        top: 50%;
+        right: 5%;
         font-weight: 500;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        height: 60vmin;
+        width: 60vmin;
         background-repeat: no-repeat;
+        transform: translateY(-50%);
         box-shadow: 0 0 5rem #423624;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap; }
-        .swiper-slide .content .btn, .swiper-slide .content p {
+        .swiper-slide .content .btn,
+        .swiper-slide .content p {
           display: block; } }
 .swiper-pagination-bullet {
   background: #0e1b43;

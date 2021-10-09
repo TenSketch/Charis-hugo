@@ -1,6 +1,6 @@
 ############################ swiper slider ##########################
 slider:
-  enable : true
+  enable : true  
   # sliders item comes from "content/slider"
    
 ############################ banner ##########################

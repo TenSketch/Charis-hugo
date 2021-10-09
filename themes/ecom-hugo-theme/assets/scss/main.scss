@@ -184,7 +184,9 @@ section {
 .pt-5{
   padding-top: 5rem;
 }
-
+.py-1{
+  padding-block: 1rem;
+}
 
 @import "components/header";
 @import "components/homePage";
