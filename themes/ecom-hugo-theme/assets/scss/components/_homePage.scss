@@ -1,42 +1,77 @@
 .swiper-container {
   width: 100%;
-  height: 100%;
+  // min-height: 80vh;
   // border: 1px solid;
-  @extend .pt-4;
-  @media(min-width: 768px){
-    height: 100vh;
+  // @extend .pt-4;
+  @media (min-width: 768px) {
+    // height: 70vh;
   }
- 
 }
 .swiper-slide {
   text-align: center;
   background: #fff;
-  min-height: 90vh;
+  // min-height: 90vh;
   cursor: grab;
-
+  // min-height: 70vh;
 
   color: $clr-accent;
+  @include flex(flex-start, center, nowrap);
+  max-width: 100%;
+  position: relative;
+  img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+  .content {
+    position: absolute;
+    @extend .p-1;
+  @extend .flex-col;
+    bottom: 5%;
+    background-color: $clr-primary-200--hsla;
+    border-radius: 5px;
+    h1{
+      
+    }
+  @media(min-width:768px){
+    top: 50%;
+    right: 10%;
+    font-weight: 500;
+    // color: $clr-light;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 50vmin;
+    width: 60vmin;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    box-shadow: 0 0 5rem $clr-primary-600; 
   @include flex(center, center, nowrap);
+  }
 
+  }
 }
 
 .swiper-pagination-bullet {
-  background: #fff;
+  background: $clr-accent;
   opacity: 1;
-  border: 2px solid #000;
+  // border: 1px solid $clr-accent;
 }
 .swiper-pagination-bullet-active {
-  background: #000;
+  background: $clr-accent-light;
 }
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2027%2044%27%3E%3Cpath%20d%3D%27M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z%27%20fill%3D%27%23000%27%2F%3E%3C%2Fsvg%3E);
+  background-image: url(/images/svg/caret-left-solid.svg);
+  filter: opacity(0.7);
+
   left: 1.5rem;
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2027%2044%27%3E%3Cpath%20d%3D%27M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z%27%20fill%3D%27%23000%27%2F%3E%3C%2Fsvg%3E);
+  background-image: url(/images/svg/caret-right-solid.svg);
+  // background-color: $clr-accent;
+  // color: transparent;
+  filter: opacity(0.7);
   right: 1.5rem;
 }
 
@@ -127,7 +162,6 @@
           display: inline-block;
           height: 1.2em;
           // aspect-ratio: 1;
-          
 
           filter: invert(1);
         }

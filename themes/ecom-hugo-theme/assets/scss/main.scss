@@ -13,7 +13,10 @@
 // tag selectors
 html {
   scroll-behavior: smooth;
+  font-size: 12px;
+  @media(min-width: 768px){
   font-size: 14px;
+  }
 }
 body {
   font-family: $font-poppins;
@@ -158,7 +161,7 @@ section {
   margin-bottom: 1rem;
 }
 .p-1 {
-  padding: 1em;
+  padding: 1rem;
 }
 .pt-1{
   padding-top: 1rem;
