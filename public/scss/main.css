@@ -208,10 +208,11 @@ header {
       flex-wrap: nowrap; }
       header .container nav .nav_list {
         position: absolute;
-        right: -100%;
-        top: 8vh;
-        height: 80vh;
         width: 100%;
+        right: 0;
+        top: -100vh;
+        max-width: 100%;
+        overflow: hidden;
         transition: all 400ms ease-in-out; }
         @media (min-width: 991px) {
           header .container nav .nav_list {
@@ -229,7 +230,7 @@ header {
               header .container nav .nav_list .nav_list--item + .nav_list--item {
                 margin-left: 1rem; } }
         header .container nav .nav_list.active {
-          right: 0;
+          top: 8vh;
           transition: all 400ms ease-in-out;
           background-color: rgba(231, 224, 212, 0.95); }
       header .container nav .nav_list--item {

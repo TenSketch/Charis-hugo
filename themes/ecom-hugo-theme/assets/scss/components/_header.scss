@@ -45,12 +45,14 @@ header {
       // position: relative;
       .nav_list {
         position: absolute;
-        right: -100%;
-        top: 8vh;
-        height: 80vh;
         width: 100%;
+        right: 0;
+        top: -100vh;
+        // min-height: 80vh;
+        max-width: 100%;
+        overflow: hidden;
         transition: all 400ms ease-in-out;
-        // border: 1px solid red;
+        // outline: 1px solid red;
         @media (min-width: 991px) {
           width: auto;
           height: auto;
@@ -69,7 +71,8 @@ header {
           }
         }
         &.active {
-          right: 0;
+          // right: 0;
+          top: 8vh;
           transition: all 400ms ease-in-out;
           background-color: $clr-primary-light-opacity;
         }
