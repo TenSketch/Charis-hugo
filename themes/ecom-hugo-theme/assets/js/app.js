@@ -34,7 +34,7 @@ var swiper = new Swiper('.swiper-container', {
     enabled: true,
   },
   loop: true,
-  speed: 1000,
+  speed: 1200,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

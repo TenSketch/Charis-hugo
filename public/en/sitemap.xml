@@ -58,6 +58,22 @@
     <loc>/jute_bags/1-shine-womens-jute-bag/</loc>
     <lastmod>2021-09-14T11:22:16+06:00</lastmod>
   </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-09-14T11:22:16+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ae"
+                href="/ae/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+  </url><url>
+    <loc>/tags/women/</loc>
+    <lastmod>2021-09-14T11:22:16+06:00</lastmod>
+  </url><url>
     <loc>/jute_bags/2-gorgeous-womens-jute-bag/</loc>
     <lastmod>2021-09-14T10:22:16+06:00</lastmod>
   </url><url>
@@ -71,17 +87,5 @@
     <lastmod>2021-09-14T07:22:16+06:00</lastmod>
   </url><url>
     <loc>/about-us/</loc>
-  </url><url>
-    <loc>/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ae"
-                href="/ae/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
   </url>
 </urlset>

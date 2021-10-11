@@ -305,9 +305,13 @@ header {
   @media (min-width: 768px) {
     .swiper-container {
       height: 85vh; } }
+.swiper-wrapper {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; }
+
 .swiper-slide {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
   text-align: center;
   background: #fff;
   color: #211b12;

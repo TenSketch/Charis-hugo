@@ -19,6 +19,10 @@ productID: "1"
 # type must be "jute_bags"
 type: "jute_bags"
 
+# Category
+category: "Shopping bags"
+tags: "Women"
+
 # product Images
 # first image will be shown in the product page
 images:

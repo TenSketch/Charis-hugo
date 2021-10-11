@@ -6,9 +6,17 @@
     // margin-top: 7%;
   }
 }
+.swiper-wrapper{
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
 .swiper-slide {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  // -webkit-transform: translate3d(0, 0, 0);
+  // transform-style: preserve-3d;
+  // -webkit-transform-style: preserve-3d;
+  
   text-align: center;
   background: #fff;
   color: $clr-primary-800;
