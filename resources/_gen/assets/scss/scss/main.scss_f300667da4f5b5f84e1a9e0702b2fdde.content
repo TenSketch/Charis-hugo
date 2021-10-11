@@ -312,6 +312,7 @@ header {
   -webkit-backface-visibility: hidden; }
 
 .swiper-slide {
+  -webkit-transform: translate3d(0, 0, 0);
   text-align: center;
   background: #fff;
   color: #211b12;
