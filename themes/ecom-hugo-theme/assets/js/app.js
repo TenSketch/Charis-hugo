@@ -26,24 +26,6 @@ window.onscroll = function () {
   }
 }
 
-// Initialize Swiper 
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  keyboard: {
-    enabled: true,
-  },
-  loop: true,
-  speed: 1200,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
 
 
 // Initialize Animate on scroll

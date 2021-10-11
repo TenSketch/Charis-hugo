@@ -2,32 +2,23 @@
 
 <!-- Swiper slider  -->
 {{ if site.Data.homepage.slider.enable }}
-<div class="swiper-container">
-  <div class="swiper-wrapper">
+
+<div class="slider">
+  <div class="slide-ana">
     {{ range $index, $val := .Site.Taxonomies.categories.slider }}
-    <div class="swiper-slide">
-        <img src="{{.Page.Params.image}}" alt="{{.Name}}">
-        <div class="content">
-          <h1>{{ .Title }}</h1>
-          <p>{{ .Description }}</p>
-
-
-          <a href="{{ .Page.Params.link }}" class="btn btn-primary">{{ .Page.Params.button }}</a>
-
-
-
-        </div>
-      </div>
-   
+      <div style="background-image: url('{{.Page.Params.image}}')"><span class="title">{{ .Title }}</span></div>
     {{end}}
 
+      
+      
   </div>
-  <!-- Pagination -->
-  <div class="swiper-pagination"></div>
-  <!-- Arrows -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
+  <span class="icon-arrow_back" id="prev"></span>
+  <span class="icon-arrow_forward" id="next"></span>
 </div>
+
+
+{{- partial "sliderJS.html" . -}}
+
 
 {{end}}
 
