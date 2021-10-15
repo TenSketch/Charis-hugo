@@ -16,5 +16,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Shopping bags</title>
+      <link>/categories/shopping-bags/</link>
+      <pubDate>Tue, 14 Sep 2021 11:52:16 +0600</pubDate>
+      
+      <guid>/categories/shopping-bags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travel</title>
+      <link>/categories/travel/</link>
+      <pubDate>Tue, 14 Sep 2021 11:22:40 +0600</pubDate>
+      
+      <guid>/categories/travel/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

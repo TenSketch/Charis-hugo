@@ -4,7 +4,7 @@
   .container {
     @include flex(normal, flex-start, wrap);
     @extend .gap-2;
-    @media(min-width:768px) {
+    @media (min-width: 768px) {
       gap: 0;
     }
     h2 {
@@ -13,52 +13,97 @@
       font-size: 2rem;
     }
     .card {
-
       @media (min-width: 600px) {
         flex: 0 25%;
-      }
-
-      .card-head {
-       
-        a {
-
-          img {
-            transition: transform 250ms ease-in;
-            &:hover {
-              transform: scale(1.2, 1.2);
-            }
-          }
-        }
-        
-      }
-      .card-body {
-        @extend .mt-1;
-        @include flex(center, flex-end, nowrap);
-        @extend .flex-col;
-        .card-title {
-
-          margin-block: .5em;
-          a {
-            font-size: 1.2rem;
-            color: $clr-accent;
-            transition: color 250ms ease-in-out;
-            &:hover {
-              color: $clr-accent;
-            }
-          }
-        }
-
-        .price {
-          @extend .mb-1;
-          s {
-            font-size: smaller;
-          }
-          span {
-            font-weight: 600;
-            color: $clr-accent;
-          }
-        }
       }
     }
   }
 }
+#jute_bags {
+  .container {
+    @include flex(flex-start, flex-start, wrap);
+    .sidebar {
+      outline: 1px solid blue;
+      flex: 0 1 25%;
+
+    }
+    .content {
+      outline: 1px solid red;
+      flex: 0 1 75%;
+      @include flex(flex-start, flex-start, wrap);
+
+
+
+      .card {
+       
+      }
+    }
+    
+  }
+}
+
+
+
+// metisMenu
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar .metismenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .metismenu li + li {
+  margin-top: 5px;
+}
+
+.sidebar .metismenu li:first-child {
+  margin-top: 5px;
+}
+.sidebar .metismenu li:last-child {
+  margin-bottom: 5px;
+}
+
+.sidebar .metismenu > li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.sidebar .metismenu a {
+  position: relative;
+  display: block;
+  padding: 13px 15px;
+  color: #212529;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.sidebar .metismenu ul a {
+  padding: 10px 15px 10px 30px;
+}
+
+.sidebar .metismenu ul ul a {
+  padding: 10px 15px 10px 45px;
+}
+
+.sidebar .metismenu a:hover,
+.sidebar .metismenu a:focus,
+.sidebar .metismenu a:active,
+.sidebar .metismenu .mm-active > a {
+  color: #0c63e4;
+  text-decoration: none;
+}
+
+.sidebar .metismenu .mm-active > a {
+  background: #e7f1ff;
+  border-radius: 3px;
+}
+
+
+
+// vertical Menu hover
+

@@ -4,6 +4,8 @@
 
 .prod_details {
   .container {
+    // max-width: 95%;
+    width: 100%;
     @include flex(normal, space-between, wrap);
     // @extend .gap-2;
     // background: indigo;
@@ -19,15 +21,17 @@
       }
       // Sub child1- wrapper-featured_img{
       .wrapper-featured_img {
-        flex-basis: 100%;
-
+        // flex-basis: 100%;
+        width: 400px;
         #featured {
-          width: 500px;
-          height: 600px;
-          /* max-width: 500px; */
+          min-height: 400px;
           object-fit: cover;
-          margin: 0 auto;
-          object-fit: cover;
+      @media (min-width: 600px) {
+        width: 400px;
+        height: 500px;
+        margin: 0 auto;
+
+      }
         }
       }
 
@@ -53,6 +57,8 @@
         }
 
         #prod_slider {
+        width: 400px;
+
           @include flex(center, center, nowrap);
           overflow-x: auto;
           // flex-basis: 85%;
@@ -67,8 +73,8 @@
           .thumbnail {
             cursor: pointer;
             object-fit: cover;
-            width: 100px;
-            height: 100px;
+            width: 70px;
+            height: 70px;
             opacity: 0.5;
             margin: .15em;
             // border: 2px solid $clr-primary-dark;

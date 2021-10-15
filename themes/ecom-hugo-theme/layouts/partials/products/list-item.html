@@ -1,9 +1,9 @@
 <div class="card txt-center">
     <div class="card-head">
         <a href="{{ .Permalink }}">
-            {{ range first 1 .Params.Images }}
-            <img src="{{ .image | absURL }}" alt="{{ .Title }}">
-            {{ end }}
+            
+            <img src="{{ .Params.thumbnailImage | absURL }}" alt="{{ .Title }}">
+            
         </a>
     </div>
     <div class="card-body">
