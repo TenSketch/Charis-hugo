@@ -5,7 +5,7 @@
 
 <div class="slider">
   <div class="slide-ana">
-    {{ range $index, $val := .Site.Taxonomies.categories.slider }}
+    {{ range $index, $val := .Site.Taxonomies.tags.slider }}
       <div style="background-image: url('{{.Page.Params.image}}')"><span class="title">{{ .Title }}</span></div>
     {{end}}
 

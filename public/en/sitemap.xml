@@ -2,19 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ae"
-                href="/ae/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/"
-                />
-  </url><url>
     <loc>/</loc>
     <lastmod>2021-09-29T17:17:55+05:30</lastmod>
     <xhtml:link
@@ -40,20 +27,14 @@
     <loc>/slider/slider4/</loc>
     <lastmod>2021-09-29T17:17:55+05:30</lastmod>
   </url><url>
-    <loc>/categories/slider/</loc>
+    <loc>/tags/slider/</loc>
     <lastmod>2021-09-29T17:17:55+05:30</lastmod>
   </url><url>
     <loc>/slider/</loc>
     <lastmod>2021-09-29T17:17:55+05:30</lastmod>
   </url><url>
-    <loc>/jute_bags/</loc>
-    <lastmod>2021-09-14T11:52:16+06:00</lastmod>
-  </url><url>
-    <loc>/jute_bags/1-shine-womens-jute-bag/</loc>
-    <lastmod>2021-09-14T11:52:16+06:00</lastmod>
-  </url><url>
     <loc>/tags/</loc>
-    <lastmod>2021-09-14T11:52:16+06:00</lastmod>
+    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ae"
@@ -64,6 +45,25 @@
                 hreflang="en"
                 href="/tags/"
                 />
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2021-09-14T11:52:16+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ae"
+                href="/ae/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+  </url><url>
+    <loc>/jute_bags/</loc>
+    <lastmod>2021-09-14T11:52:16+06:00</lastmod>
+  </url><url>
+    <loc>/jute_bags/1-shine-womens-jute-bag/</loc>
+    <lastmod>2021-09-14T11:52:16+06:00</lastmod>
   </url><url>
     <loc>/tags/women/</loc>
     <lastmod>2021-09-14T11:52:16+06:00</lastmod>
