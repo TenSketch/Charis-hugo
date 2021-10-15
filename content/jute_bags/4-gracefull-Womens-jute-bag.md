@@ -21,7 +21,7 @@ productID: "5"
 
 # Category
 categories:
-  - "Shopping bags"
+  - "Women"
 
 # product Images
 # first image will be shown in the product page

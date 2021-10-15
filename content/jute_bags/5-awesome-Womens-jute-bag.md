@@ -21,7 +21,7 @@ productID: "1"
 
 # Category
 categories:
-  - "Travel"
+  - "Women"
 
 # product Images
 # first image will be shown in the product page

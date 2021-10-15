@@ -21,7 +21,7 @@ productID: "1"
 
 # Category
 categories:
-  - "Shopping bags"
+  - "Women"
 tags: "Women"
 
 # product Images
