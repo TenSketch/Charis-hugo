@@ -28,14 +28,16 @@
     @include flex(flex-start, flex-start, wrap);
     gap: 1em;
     .sidebar {
-      position: sticky;
-      top: 0;
+      // position: sticky;
+      // top: 0;
       flex: 1 1 100%;
       // outline: 1px solid blue;
       // border-right: 2px solid $clr-primary-light-opacity;
       border-radius: 10px;
       @extend .p-1;
       @media (min-width: 600px) {
+      position: sticky;
+      top: 0;
       box-shadow: 0.25rem 0 $clr-primary-light;
       flex: 1 1 20%;
       }
