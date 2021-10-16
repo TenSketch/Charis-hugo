@@ -463,10 +463,13 @@ header {
   flex-wrap: wrap;
   gap: 1em; }
   #jute_bags .container .sidebar {
+    position: sticky;
+    top: 0;
     flex: 1 1 100%;
-    box-shadow: inset 5px 0 10px #9b8055; }
+    border-radius: 10px; }
     @media (min-width: 600px) {
       #jute_bags .container .sidebar {
+        box-shadow: 0.25rem 0 #c3b192;
         flex: 1 1 20%; } }
     @media (min-width: 991px) {
       #jute_bags .container .sidebar {
