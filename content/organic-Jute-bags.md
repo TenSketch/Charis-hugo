@@ -1,6 +1,6 @@
 ---
 title: "Organic Jute bags"
-date: 2021-09-14T11:38:16+06:00
+date: 2021-09-08T11:38:16+06:00
 draft: false
 
 # meta description

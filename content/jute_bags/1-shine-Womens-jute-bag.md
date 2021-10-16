@@ -1,6 +1,6 @@
 ---
 title: "Shine"
-date: 2021-09-14T11:52:16+06:00
+date: 2021-10-16T12:40:16+06:00
 draft: false
 
 # meta description

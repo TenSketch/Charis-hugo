@@ -14,25 +14,43 @@
     }
     .card {
       @media (min-width: 600px) {
-        flex: 0 25%;
+        flex: 1 0 50%;
       }
+      @media (min-width: 991px) {
+        flex: 1 0 25%;
+      }
+      
     }
   }
 }
 #jute_bags {
   .container {
     @include flex(flex-start, flex-start, wrap);
+    gap: 1em;
     .sidebar {
-      outline: 1px solid blue;
-      flex: 0 1 25%;
+      flex: 1 1 100%;
+      // outline: 1px solid blue;
+      // border-right: 2px solid $clr-primary-light-opacity;
+      box-shadow: inset 5px 0 10px $clr-primary;
+      @extend .p-1;
+      @media (min-width: 600px) {
+        flex: 1 1 20%;
+      }
+      @media (min-width: 991px) {
+        flex: 0 0 25%;
+      }
 
     }
     .content {
-      outline: 1px solid red;
-      flex: 0 1 75%;
+      margin-top: 0;
+      // outline: 1px solid red;
+      flex: 1 1 75%;
       @include flex(flex-start, flex-start, wrap);
-
-
+      @media (min-width: 600px) {
+        flex: 1 1 40%
+  
+      }
+      
 
       .card {
        
@@ -72,12 +90,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  border-bottom: 1px solid $clr-primary-light-opacity;
 }
 .sidebar .metismenu a {
   position: relative;
   display: block;
   padding: 13px 15px;
-  color: #212529;
+  // color: #212529;
   transition: all 0.3s ease-out;
   text-decoration: none;
 }
@@ -94,12 +113,12 @@
 .sidebar .metismenu a:focus,
 .sidebar .metismenu a:active,
 .sidebar .metismenu .mm-active > a {
-  color: #0c63e4;
+  // color: #0c63e4;
   text-decoration: none;
 }
 
 .sidebar .metismenu .mm-active > a {
-  background: #e7f1ff;
+  // background: #e7f1ff;
   border-radius: 3px;
 }
 

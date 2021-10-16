@@ -1,6 +1,6 @@
 ---
 title: "Travel Jute bag"
-date: 2021-09-14T11:22:40+06:00
+date: 2021-09-08T11:22:40+06:00
 draft: false
 
 # meta description
@@ -22,7 +22,7 @@ productID: "2"
 # Category
 categories:
   - "Travel"
-  
+
 # product Images
 # first image will be shown in the product page
 
@@ -30,9 +30,9 @@ images:
   - image: "/images/Travel/Travel-jute-bags-1.jpg"
   - image: "/images/Travel/Travel-jute-bags-2.jpg"
   - image: "/images/Travel/Travel-jute-bags-3.jpg"
+  - image: "/images/Travel/Travel-jute-bags-4.jpg"
 
-thumbnailImage: "/images/Travel/Travel-jute-bags-3.jpg"
-
+thumbnailImage: "/images/Travel/Travel-jute-bags-1.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea

@@ -6,11 +6,11 @@
     <description>Recent content in Categories on Charis | Jute Bags | Buy high quality jute bags</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Sep 2021 11:52:16 +0600</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Oct 2021 12:40:16 +0600</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Women</title>
       <link>/categories/women/</link>
-      <pubDate>Tue, 14 Sep 2021 11:52:16 +0600</pubDate>
+      <pubDate>Sat, 16 Oct 2021 12:40:16 +0600</pubDate>
       
       <guid>/categories/women/</guid>
       <description></description>
@@ -19,9 +19,81 @@
     <item>
       <title>Shopping</title>
       <link>/categories/shopping/</link>
-      <pubDate>Tue, 14 Sep 2021 11:22:40 +0600</pubDate>
+      <pubDate>Sat, 16 Oct 2021 12:40:13 +0600</pubDate>
       
       <guid>/categories/shopping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Artistic</title>
+      <link>/categories/artistic/</link>
+      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
+      
+      <guid>/categories/artistic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gift or Giveaway</title>
+      <link>/categories/gift-or-giveaway/</link>
+      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
+      
+      <guid>/categories/gift-or-giveaway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laundry</title>
+      <link>/categories/laundry/</link>
+      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
+      
+      <guid>/categories/laundry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-colour</title>
+      <link>/categories/multi-colour/</link>
+      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
+      
+      <guid>/categories/multi-colour/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multipurpose Jute bags</title>
+      <link>/categories/multipurpose-jute-bags/</link>
+      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
+      
+      <guid>/categories/multipurpose-jute-bags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Office bags</title>
+      <link>/categories/office-bags/</link>
+      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
+      
+      <guid>/categories/office-bags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>School bags</title>
+      <link>/categories/school-bags/</link>
+      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
+      
+      <guid>/categories/school-bags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travel</title>
+      <link>/categories/travel/</link>
+      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
+      
+      <guid>/categories/travel/</guid>
       <description></description>
     </item>
     
