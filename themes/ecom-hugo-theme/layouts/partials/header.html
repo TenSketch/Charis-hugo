@@ -1,47 +1,60 @@
 <header>
-    <div class="container">
+
+    <div class="top_nav">
         <!-- child1 -->
         <a class="logo" href="{{ site.BaseURL }}">
             <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}">
         </a>
         <!-- child2 -->
-        <nav>
-            <!-- subChild1 -->
-            <ul class="nav_list">
-                {{ range site.Menus.main }}
-                <li class="nav_list--item">
-                    <a class="nav_link" href="{{ .URL | absURL }}">{{ .Name }}</a>
-                </li>
-                {{end}}
-            </ul>
-            <!-- subChild2 -->
-            <ul class="nav_icons">
-                <li class="nav_list--item">
-                    <a class="nav_link" href="tel:+919840166419">
-                        <img src="/images/svg/phone-icon.svg" class="svg-inline--fa" alt="">
-                        <span>9840166419</span>
-                    </a>
-                </li>
-                <li class="nav_list--item">
-                    <a class="nav_link snipcart-customer-signin" href="javascript:void(0)" id="show-login">
-                        <img src="/images/svg/user-icon.svg" class="svg-inline--fa" alt="">
-                        <span>Login</span>
-                    </a>
-                </li>
-                <li class="nav_list--item cart snipcart-summary">
-                    <a href="#" class="nav_link snipcart-checkout">
-                        <img style="align-self: center;" src="/images/svg/cart-icon.svg" class="svg-inline--fa" alt="">
-                        <span>Cart</span>
-                        <sup class="snipcart-items-count">0</sup>
-                        <span class="price snipcart-total-price"></span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        
+        <ul class="nav_icons">
+            <li class="nav_list--item">
+                <a class="nav_link" href="tel:+919840166419">
+                    <img src="/images/svg/phone-icon.svg" class="svg-inline--fa" alt="">
+                    <span>9840166419</span>
+                </a>
+            </li>
+            <li class="nav_list--item">
+                <a class="nav_link snipcart-customer-signin" href="javascript:void(0)" id="show-login">
+                    <img src="/images/svg/user-icon.svg" class="svg-inline--fa" alt="">
+                    <span>Login</span>
+                </a>
+            </li>
+            <li class="nav_list--item cart snipcart-summary">
+                <a href="#" class="nav_link snipcart-checkout">
+                    <img style="align-self: center;" src="/images/svg/cart-icon.svg" class="svg-inline--fa" alt="">
+                    <span>Cart</span>
+                    <sup class="snipcart-items-count">0</sup>
+                    <span class="price snipcart-total-price"></span>
+                </a>
+            </li>
+            {{ range site.Menus.top }}
+
+            <li class="nav_list--item">
+                <a class="nav_link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+
+            </li>
+            {{end}}
+
+        </ul>
+    </div>
+
+    <nav class="main_nav">
+
+        <ul class="nav_list">
+            {{ range site.Menus.main }}
+            <li class="nav_list--item">
+                <a class="nav_link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+            </li>
+            {{end}}
+        </ul>
         <button class="nav__toggle">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </button>
-    </div>
+
+    </nav>
+
+
 </header>

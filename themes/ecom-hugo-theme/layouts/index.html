@@ -2,24 +2,82 @@
 
 <!-- Swiper slider  -->
 {{ if site.Data.homepage.slider.enable }}
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
 
-<div class="slider">
-  <div class="slide-ana">
-    {{ range $index, $val := .Site.Taxonomies.tags.slider }}
-      <div style="background-image: url('{{.Page.Params.image}}')"><span class="title">{{ .Title }}</span></div>
-    {{end}}
+        <section class="banner">
+          <div class="container">
+            <div class="image">
+              <img src="images/slider/Gorgeous-Girl-jute_bag.png" alt="">
+            </div>
+            <div class="content">
+              <h1>Women 'N' Style</h1>
+              <h3>Gorgeous jute bags suitable for shopping, travel, storage and much more.</h3>
+              <a href="#" class="btn btn-primary">Shop Now</a>
+        
+            </div>
+          </div>
+        </section>
 
-      
-      
-  </div>
-  <span class="arrow" id="prev"></span>
-  <span class="arrow" id="next"></span>
-</div>
-
-
-{{- partial "sliderJS.html" . -}}
-
-
+      <div class="carousel__snapper">
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev"><img src="images/icons/left.png" alt="left arrow"> </a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
 {{end}}
 
 
@@ -31,27 +89,23 @@
 {{ with site.Data.homepage.banner }}
 <section class="banner">
   <div class="container">
-    <div class="image" data-aos="fade-down">
-      <img src="{{ .image_1 | absURL }}" alt="{{.label}}">
+    <div class="image">
+      <img src="images/slider/Gorgeous-Girl-jute_bag.png" alt="">
     </div>
-    <div class="content" data-aos="fade-left">
-      <h1>{{ .title }}</h1>
-      <p>{{ .content }}</p>
-      {{ if .button.enable }}
-      {{ with .button }}
-      <a href="{{ .link }}" class="btn btn-primary">{{ .label }}</a>
-      {{ end }}
-      {{ end }}
-      <!-- <img src="{{ .image_1 | absURL }}" alt="{{.label}}"> -->
+    <div class="content">
+      <h1>Women 'N' Style</h1>
+      <h3>Gorgeous jute bags suitable for shopping, travel, storage and much more.</h3>
+      <a href="{{ .link }}" class="btn btn-primary">Shop Now</a>
 
     </div>
-
   </div>
 </section>
+
+
 {{ end }}
 
 {{ end }}
-<!-- /banner -->
+<!-- banner -->
 
 <!-- products homepage -->
 {{ if site.Data.homepage.products.enable }}
@@ -132,7 +186,7 @@
   <div class="container">
     <div class="content">
       <h2>{{ .title | markdownify }}</h2>
-      <h3>{{ .subtitle | markdownify }}</h3>
+      <!-- <p>{{ .subtitle | markdownify }}</p> -->
       <ul>
         {{ range .advantageList }}
         <li>{{ .listItem }}</li>
