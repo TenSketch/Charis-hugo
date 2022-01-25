@@ -1,6 +1,8 @@
 {{ define "main" }}
 
-{{ partial "page-title.html" . }}
+<!-- {{ partial "page-title.html" . }} -->
+
+{{ partial "breadcrumbs.html" . }}
 
 <section class="prod_details">
   <div class="container">
@@ -9,25 +11,25 @@
     <div class="prod_details-images">
       <!-- sub child1 -->
       <div class="wrapper-featured_img">
-        <img id="featured" src="{{ (index .Params.images 0).image | absURL }}" alt="">
+        <img id="featured" src="{{ (index .Params.images 0).image | absURL }}" alt="{{.Name}}">
       </div>
 
       <!-- sub child2 -->
       <div class="wrapper-thumb_img">
-        <!-- <img id="slideLeft" id="slideLeft" class="arrow" src="/images/svg/caret-left-solid.svg" alt="left arrow"> -->
+        <img id="slideLeft" id="slideLeft" class="arrow" src="/images/icons/left.png" alt="left arrow">
 
         <div id="prod_slider">
           {{ range $index, $val:= .Params.images }}
-            {{if (eq $index 0)}}
-              <img class="thumbnail active" src="{{ .image | absURL }}" alt="">
-              {{else}}
-                <img class="thumbnail" src="{{ .image | absURL }}" alt="">
-              {{end}}
-            {{end}}
+          {{if (eq $index 0)}}
+          <img class="thumbnail active" src="{{ .image | absURL }}" alt="">
+          {{else}}
+          <img class="thumbnail" src="{{ .image | absURL }}" alt="">
+          {{end}}
+          {{end}}
 
         </div>
 
-        <!-- <img id="slideRight" id="slideRight" class="arrow" src="/images/svg/caret-right-solid.svg" alt="left arrow"> -->
+        <img id="slideRight" id="slideRight" class="arrow" src="/images/icons/right.png" alt="left arrow">
       </div>
 
     </div>
@@ -40,9 +42,9 @@
       <div class="prod_details-desc--header">
         <h1>{{ .Title }}</h1>
         <!-- rating star -->
-        {{ if site.Params.rating.enable }}
+        <!-- {{ if site.Params.rating.enable }} -->
         <div class="rw-ui-container"></div>
-        {{ end }}
+        <!-- {{ end }} -->
         {{ partial "partials/products/price.html" . }}
       </div>
 
@@ -53,8 +55,12 @@
         <!-- <button href="{{ .Page.Params.link }}" class="btn btn-accent">Buy Now</button> -->
 
       </div>
+      {{ partial "socialshare.html" . }}
+    
 
     </div>
+
+
   </div>
 
 </section>

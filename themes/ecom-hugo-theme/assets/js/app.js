@@ -63,3 +63,6 @@ buttonLeft.addEventListener('click', function () {
 buttonRight.addEventListener('click', function () {
   document.getElementById('prod_slider').scrollLeft += 180
 })
+
+
+  

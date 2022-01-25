@@ -3,6 +3,7 @@
 
 
 .prod_details {
+  padding-block: 4rem;
   .container {
     // max-width: 95%;
     width: 100%;
@@ -37,8 +38,9 @@
 
       // Sub child2- wrapper-thumb_img
       .wrapper-thumb_img {
-        @include flex(normal, center, nowrap);
+        @include flex(center, center, nowrap);
         @extend .mt-1;
+        overflow-x: scroll;
         #slideLeft{
           margin-right: 1em;
         }
@@ -46,12 +48,13 @@
           margin-left: 1em;
         }
         .arrow {
-          width: 3%;
+          // width: 3%;
+          height: 3rem;
           cursor: pointer;
           display: inline;
           transition: all 250ms ease-in-out;
           &:hover {
-            opacity: 0.5;
+            opacity: 0.8;
             // width: 2.5%;
           }
         }
@@ -102,7 +105,7 @@
           font-weight: 500;
           font-size: 2.5rem;
           letter-spacing: 1.5;
-          color: $clr-primary-dark;
+          // color: $clr-primary-dark;
         }
         .price {
           @extend .mb-1;
@@ -116,9 +119,12 @@
       .prod_details-desc--content {
         p {
           @extend .mb-1;
-          color: $clr-primary-dark;
+          // color: $clr-primary-dark;
         }
       }
     }
   }
+}
+.rw-ui-mobile-wrapper{
+  display: none;
 }

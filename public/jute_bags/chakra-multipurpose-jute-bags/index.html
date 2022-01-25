@@ -20,7 +20,7 @@
     
     <meta property="og:title" content="Chakra Jute bags">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/">
+    <meta property="og:url" content="">
 
     <meta property="og:description"
         content="Shopping and multipurpose jute bags desc">
@@ -31,8 +31,8 @@
     
     
     
-    <meta property="og:image" content="//images/ogimage.jpg" />
-    <meta property="og:image:secure_url" content="/images/ogimage.jpg" />
+    <meta property="og:image" content="/images/ogimage.jpg" />
+    <meta property="og:image:secure_url" content="images/ogimage.jpg" />
     
     
 
@@ -44,6 +44,11 @@
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   
+
+    <!-- Plugins -->
+    
+    <link rel="stylesheet" media="screen, projection" href="plugins/drift-zoom/drift-basic.min.css">
+    
     
     <!-- Main Stylesheet -->
     
@@ -53,101 +58,116 @@
 <body>
     <header>
 
-    <div class="top_nav">
+    <div class="container">
         
-        <a class="logo" href="/">
-            <img src="/images/Charis_CT-logo.png" alt="Charis | Jute Bags | Buy high quality jute bags">
+        <a class="logo" href="">
+            <img src="/images/logo.png" alt="Charis | Jute Bags | Buy high quality jute bags">
         </a>
         
         
-        <ul class="nav_icons">
+        <ul class="nav_list">
+            
+            
+          <li class="nav_list--item dropdown">
+            <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Jute bags <img src="/images/icons/arrow-up.png" alt="up">
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="nav_link" href="/categories/women/">Women&#39;s jute bags</a>
+              
+              <a class="nav_link" href="/categories/gift-or-giveaway/">Jute Gift bags</a>
+              
+              <a class="nav_link" href="/categories/shopping/">Cotton bags</a>
+              
+            </div>
+          </li>
+          
+            
+            
+          <li class="nav_list--item dropdown">
+            <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Household <img src="/images/icons/arrow-up.png" alt="up">
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="nav_link" href="/">Storage baskets</a>
+              
+              <a class="nav_link" href="/">Kitchen and Dining</a>
+              
+              <a class="nav_link" href="/">Decoration and Accessories</a>
+              
+            </div>
+          </li>
+          
+            
+            
             <li class="nav_list--item">
-                <a class="nav_link" href="tel:+919840166419">
-                    <img src="/images/svg/phone-icon.svg" class="svg-inline--fa" alt="">
-                    <span>9840166419</span>
-                </a>
+                <a class="nav_link" href="">About us</a>
             </li>
+            
+            
+        </ul>
+
+        <ul class="nav_icons">
+            
             <li class="nav_list--item">
                 <a class="nav_link snipcart-customer-signin" href="javascript:void(0)" id="show-login">
                     <img src="/images/svg/user-icon.svg" class="svg-inline--fa" alt="">
-                    <span>Login</span>
+                    
                 </a>
             </li>
             <li class="nav_list--item cart snipcart-summary">
                 <a href="#" class="nav_link snipcart-checkout">
                     <img style="align-self: center;" src="/images/svg/cart-icon.svg" class="svg-inline--fa" alt="">
-                    <span>Cart</span>
+                    
                     <sup class="snipcart-items-count">0</sup>
                     <span class="price snipcart-total-price"></span>
                 </a>
             </li>
-            
-
-            <li class="nav_list--item">
-                <a class="nav_link" href="/contact">Contact</a>
-
-            </li>
-            
 
         </ul>
+
+    
     </div>
 
-    <nav class="main_nav">
 
-        <ul class="nav_list">
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/jute_bags">Jute bags</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/categories/shopping">Shopping bags</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/categories/travel">Travel bags</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/categories/women">women_N_Style</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/hand_bags">Hand bags</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/gifts">Office bags</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/categories/school-bags">School bags</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/categories/gift-or-giveaway">Gifts</a>
-            </li>
-            
-        </ul>
-        <button class="nav__toggle">
+
+    <button class="nav__toggle">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </button>
 
-    </nav>
+
 
 
 </header>
 
-<section class="page_title">
-  <div class="container">
-    
-      <h2>Chakra Jute bags</h2>
-      
+
+
+<div class="page_title pb-0">
+    <div class="container">
+        <span style="flex: 1;">
+            <a href="/">Home</a>
+            
+                
+            
+                
+                    / <a href="/jute_bags">Jute bags</a>
+                
+            
+                
+                    / <a href="/chakra-multipurpose-jute-bags">Chakra multipurpose jute bags</a>
+                
+            
+                
+            
+        <hr class="mt-1">
+
+        </span>
     </div>
-  
-</section>
+</div>
 
 <section class="prod_details">
   <div class="container">
@@ -156,31 +176,31 @@
     <div class="prod_details-images">
       
       <div class="wrapper-featured_img">
-        <img id="featured" src="/images/Multipurpose-Jute-bags/Chakra/1.jpg" alt="">
+        <img id="featured" src="/images/Multipurpose-Jute-bags/Chakra/1.jpg" alt="Chakra Jute bags">
       </div>
 
       
       <div class="wrapper-thumb_img">
-        
+        <img id="slideLeft" id="slideLeft" class="arrow" src="/images/icons/left.png" alt="left arrow">
 
         <div id="prod_slider">
           
-            
-              <img class="thumbnail active" src="/images/Multipurpose-Jute-bags/Chakra/1.jpg" alt="">
-              
-            
-            
-                <img class="thumbnail" src="/images/Multipurpose-Jute-bags/Chakra/2.jpg" alt="">
-              
-            
-            
-                <img class="thumbnail" src="/images/Multipurpose-Jute-bags/Chakra/3.jpg" alt="">
-              
-            
+          
+          <img class="thumbnail active" src="/images/Multipurpose-Jute-bags/Chakra/1.jpg" alt="">
+          
+          
+          
+          <img class="thumbnail" src="/images/Multipurpose-Jute-bags/Chakra/2.jpg" alt="">
+          
+          
+          
+          <img class="thumbnail" src="/images/Multipurpose-Jute-bags/Chakra/3.jpg" alt="">
+          
+          
 
         </div>
 
-        
+        <img id="slideRight" id="slideRight" class="arrow" src="/images/icons/right.png" alt="left arrow">
       </div>
 
     </div>
@@ -194,7 +214,9 @@
         <h1>Chakra Jute bags</h1>
         
         
-        <div class="price">
+        <div class="rw-ui-container"></div>
+        
+        <div class="price mt-1">
     
     <span>Rs. 200.00</span>
 </div>
@@ -211,7 +233,7 @@
         data-item-price="200.00" 
         data-item-url="/jute_bags/chakra-multipurpose-jute-bags/" 
         data-item-description="Shopping and multipurpose jute bags desc">
-        Add to bag
+        Add to cart
 </button>
         <button class="snipcart-add-item buy-button snipcart-checkout btn btn-accent" 
         data-item-id="2"
@@ -227,8 +249,124 @@
         
 
       </div>
+      
+
+<style>
+  #share-buttons {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 2rem;
+  }
+  #share-buttons h3 {
+     
+    float: left;
+  }
+
+  #share-buttons:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  #share-buttons>div {
+    position: relative;
+    text-align: left;
+    height: 36px;
+    width: 32px;
+    float: left;
+    text-align: center;
+  }
+
+  #share-buttons>div>svg {
+    height: 16px;
+    fill: var(--clr-primary-800);
+     
+  }
+
+  #share-buttons>div:hover {
+    cursor: pointer;
+  }
+
+  #share-buttons>div.facebook:hover>svg {
+    fill: #3B5998;
+  }
+
+  #share-buttons>div.twitter:hover>svg {
+    fill: #55ACEE;
+  }
+
+  #share-buttons>div.linkedin:hover>svg {
+    fill: #0077b5;
+  }
+
+  #share-buttons>div.pinterest:hover>svg {
+    fill: #CB2027;
+  }
+
+  #share-buttons>div.mail:hover>svg {
+    fill: #7D7D7D;
+  }
+
+  #share-buttons>div.facebook>svg {
+    height: 18px;
+     
+  }
+
+  #share-buttons>div.twitter>svg {
+    height: 20px;
+     
+  }
+
+  #share-buttons>div.linkedin>svg {
+    height: 19px;
+     
+  }
+
+  #share-buttons>div.pinterest>svg {
+    height: 20px;
+     
+  }
+
+  #share-buttons>div.mail>svg {
+    height: 14px;
+     
+  }
+</style>
+
+<div id="share-buttons">
+<h3>Share on: </h3>
+
+  <div class="facebook" title="Share this on Facebook"
+    onclick="window.open('http://www.facebook.com/share.php?u=\/jute_bags\/chakra-multipurpose-jute-bags\/');"><svg viewBox="0 0 1792 1792"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" />
+    </svg>
+  </div>
+  <div class="twitter" title="Share this on Twitter"
+    onclick="window.open('http://twitter.com/intent/tweet?text=Chakra Jute bags&url=\/jute_bags\/chakra-multipurpose-jute-bags\/');"><svg
+      viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" />
+    </svg></div>
+  <div class="linkedin" title="Share this on Linkedin"
+    onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=\/jute_bags\/chakra-multipurpose-jute-bags\/&title=&summary=&source=');">
+    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z" />
+    </svg></div>
+  
+  <div class="mail" title="Share this through Email" onclick="window.open('mailto:?&body=\/jute_bags\/chakra-multipurpose-jute-bags\/');"><svg
+      viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z" />
+    </svg></div>
+</div>
+    
 
     </div>
+
+
   </div>
 
 </section>
@@ -286,6 +424,51 @@
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- JS Plugins -->
+
+<script src="plugins/drift-zoom/Drift.min.js"></script>
+
+<script>
+    
+  new Drift(document.querySelector(".drift-demo-trigger"), {
+    paneContainer: document.querySelector(".detail"),
+    inlinePane: 900,
+    inlineOffsetY: -85,
+    containInline: true,
+    hoverBoundingBox: true,
+  });
+  </script>
+
+
+<script>
+    
+
+  (function (d, t, e, m) {
+
+
+window.RW_Async_Init = function () {
+
+  RW.init({
+    huid: "479285",
+    uid: "459f43b8a472eef8a00e4c3a14ba102e",
+    options: { "style": "oxygen" }
+  });
+  RW.render();
+};
+
+var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+  l = d.location, ck = "Y" + t.getFullYear() +
+    "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+  f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+  a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+if (d.getElementById(id)) return;
+rw = d.createElement(e);
+rw.id = id; rw.async = true; rw.type = "text/javascript";
+rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+s.parentNode.insertBefore(rw, s);
+}(document, new Date(), "script", "rating-widget.com/"));
+</script>
 
 <!-- Main Script -->
 

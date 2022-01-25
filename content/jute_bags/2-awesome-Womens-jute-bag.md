@@ -1,5 +1,5 @@
 ---
-title: "Awesome"
+title: "Awesome Women's Jute Hand Bag"
 date: 2021-10-16T12:40:15+06:00
 draft: false
 
@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut."
 
 #product ID
 productID: "1"
@@ -34,6 +34,9 @@ images:
   - image: "/images/Women_and_Style/Awesome/Awesome-womens-Jute-bags-6.jpg"
 
 thumbnailImage: "/images/Women_and_Style/Awesome/Awesome-womens-Jute-bags-2.png"
+
+socialshare: true
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+

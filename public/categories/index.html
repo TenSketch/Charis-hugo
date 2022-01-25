@@ -20,7 +20,7 @@
     
     <meta property="og:title" content="Categories">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/">
+    <meta property="og:url" content="">
 
     <meta property="og:description"
         content="Charis Jute bags is a high quality multipurpose Jute bags manufacturers.">
@@ -31,8 +31,8 @@
     
     
     
-    <meta property="og:image" content="//images/ogimage.jpg" />
-    <meta property="og:image:secure_url" content="/images/ogimage.jpg" />
+    <meta property="og:image" content="/images/ogimage.jpg" />
+    <meta property="og:image:secure_url" content="images/ogimage.jpg" />
     
     
 
@@ -44,6 +44,11 @@
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   
+
+    <!-- Plugins -->
+    
+    <link rel="stylesheet" media="screen, projection" href="plugins/drift-zoom/drift-basic.min.css">
+    
     
     <!-- Main Stylesheet -->
     
@@ -53,89 +58,88 @@
 <body>
     <header>
 
-    <div class="top_nav">
+    <div class="container">
         
-        <a class="logo" href="/">
-            <img src="/images/Charis_CT-logo.png" alt="Charis | Jute Bags | Buy high quality jute bags">
+        <a class="logo" href="">
+            <img src="/images/logo.png" alt="Charis | Jute Bags | Buy high quality jute bags">
         </a>
         
         
-        <ul class="nav_icons">
+        <ul class="nav_list">
+            
+            
+          <li class="nav_list--item dropdown">
+            <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Jute bags <img src="/images/icons/arrow-up.png" alt="up">
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="nav_link" href="/categories/women/">Women&#39;s jute bags</a>
+              
+              <a class="nav_link" href="/categories/gift-or-giveaway/">Jute Gift bags</a>
+              
+              <a class="nav_link" href="/categories/shopping/">Cotton bags</a>
+              
+            </div>
+          </li>
+          
+            
+            
+          <li class="nav_list--item dropdown">
+            <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Household <img src="/images/icons/arrow-up.png" alt="up">
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="nav_link" href="/">Storage baskets</a>
+              
+              <a class="nav_link" href="/">Kitchen and Dining</a>
+              
+              <a class="nav_link" href="/">Decoration and Accessories</a>
+              
+            </div>
+          </li>
+          
+            
+            
             <li class="nav_list--item">
-                <a class="nav_link" href="tel:+919840166419">
-                    <img src="/images/svg/phone-icon.svg" class="svg-inline--fa" alt="">
-                    <span>9840166419</span>
-                </a>
+                <a class="nav_link" href="">About us</a>
             </li>
+            
+            
+        </ul>
+
+        <ul class="nav_icons">
+            
             <li class="nav_list--item">
                 <a class="nav_link snipcart-customer-signin" href="javascript:void(0)" id="show-login">
                     <img src="/images/svg/user-icon.svg" class="svg-inline--fa" alt="">
-                    <span>Login</span>
+                    
                 </a>
             </li>
             <li class="nav_list--item cart snipcart-summary">
                 <a href="#" class="nav_link snipcart-checkout">
                     <img style="align-self: center;" src="/images/svg/cart-icon.svg" class="svg-inline--fa" alt="">
-                    <span>Cart</span>
+                    
                     <sup class="snipcart-items-count">0</sup>
                     <span class="price snipcart-total-price"></span>
                 </a>
             </li>
-            
-
-            <li class="nav_list--item">
-                <a class="nav_link" href="/contact">Contact</a>
-
-            </li>
-            
 
         </ul>
+
+    
     </div>
 
-    <nav class="main_nav">
 
-        <ul class="nav_list">
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/jute_bags">Jute bags</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/categories/shopping">Shopping bags</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/categories/travel">Travel bags</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/categories/women">women_N_Style</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/hand_bags">Hand bags</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/gifts">Office bags</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/categories/school-bags">School bags</a>
-            </li>
-            
-            <li class="nav_list--item">
-                <a class="nav_link" href="/categories/gift-or-giveaway">Gifts</a>
-            </li>
-            
-        </ul>
-        <button class="nav__toggle">
+
+    <button class="nav__toggle">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </button>
 
-    </nav>
+
 
 
 </header>
@@ -163,7 +167,7 @@
       <h3 style="text-align: center;">Categories</h3>
       <ul class="metismenu" id="menu">
         <li class="">
-          <a href="/jute_bags/" aria-expanded="false">All</a>
+          <a href="jute_bags/" aria-expanded="false">All</a>
          
         </li>
         
@@ -239,7 +243,7 @@
     <div class="card-head">
         <a href="/categories/women/">
             
-            <img src="/" alt="Women">
+            <img src="" alt="Women">
             
         </a>
     </div>
@@ -248,7 +252,7 @@
             <a href="/categories/women/">Women</a>
         </div>
         
-        <div class="price">
+        <div class="price mt-1">
     
     <span>Rs. </span>
 </div>
@@ -256,12 +260,12 @@
         data-item-id=""
         data-item-name="Women" 
         
-        data-item-image="/"
+        data-item-image=""
         
         data-item-price="" 
         data-item-url="/categories/women/" 
         data-item-description="">
-        Add to bag
+        Add to cart
 </button>
     </div>
 </div>
@@ -270,7 +274,7 @@
     <div class="card-head">
         <a href="/categories/shopping/">
             
-            <img src="/" alt="Shopping">
+            <img src="" alt="Shopping">
             
         </a>
     </div>
@@ -279,7 +283,7 @@
             <a href="/categories/shopping/">Shopping</a>
         </div>
         
-        <div class="price">
+        <div class="price mt-1">
     
     <span>Rs. </span>
 </div>
@@ -287,12 +291,12 @@
         data-item-id=""
         data-item-name="Shopping" 
         
-        data-item-image="/"
+        data-item-image=""
         
         data-item-price="" 
         data-item-url="/categories/shopping/" 
         data-item-description="">
-        Add to bag
+        Add to cart
 </button>
     </div>
 </div>
@@ -301,7 +305,7 @@
     <div class="card-head">
         <a href="/categories/artistic/">
             
-            <img src="/" alt="Artistic">
+            <img src="" alt="Artistic">
             
         </a>
     </div>
@@ -310,7 +314,7 @@
             <a href="/categories/artistic/">Artistic</a>
         </div>
         
-        <div class="price">
+        <div class="price mt-1">
     
     <span>Rs. </span>
 </div>
@@ -318,12 +322,12 @@
         data-item-id=""
         data-item-name="Artistic" 
         
-        data-item-image="/"
+        data-item-image=""
         
         data-item-price="" 
         data-item-url="/categories/artistic/" 
         data-item-description="">
-        Add to bag
+        Add to cart
 </button>
     </div>
 </div>
@@ -332,7 +336,7 @@
     <div class="card-head">
         <a href="/categories/gift-or-giveaway/">
             
-            <img src="/" alt="Gift or Giveaway">
+            <img src="" alt="Gift or Giveaway">
             
         </a>
     </div>
@@ -341,7 +345,7 @@
             <a href="/categories/gift-or-giveaway/">Gift or Giveaway</a>
         </div>
         
-        <div class="price">
+        <div class="price mt-1">
     
     <span>Rs. </span>
 </div>
@@ -349,12 +353,12 @@
         data-item-id=""
         data-item-name="Gift or Giveaway" 
         
-        data-item-image="/"
+        data-item-image=""
         
         data-item-price="" 
         data-item-url="/categories/gift-or-giveaway/" 
         data-item-description="">
-        Add to bag
+        Add to cart
 </button>
     </div>
 </div>
@@ -363,7 +367,7 @@
     <div class="card-head">
         <a href="/categories/laundry/">
             
-            <img src="/" alt="Laundry">
+            <img src="" alt="Laundry">
             
         </a>
     </div>
@@ -372,7 +376,7 @@
             <a href="/categories/laundry/">Laundry</a>
         </div>
         
-        <div class="price">
+        <div class="price mt-1">
     
     <span>Rs. </span>
 </div>
@@ -380,12 +384,12 @@
         data-item-id=""
         data-item-name="Laundry" 
         
-        data-item-image="/"
+        data-item-image=""
         
         data-item-price="" 
         data-item-url="/categories/laundry/" 
         data-item-description="">
-        Add to bag
+        Add to cart
 </button>
     </div>
 </div>
@@ -394,7 +398,7 @@
     <div class="card-head">
         <a href="/categories/multi-colour/">
             
-            <img src="/" alt="Multi-colour">
+            <img src="" alt="Multi-colour">
             
         </a>
     </div>
@@ -403,7 +407,7 @@
             <a href="/categories/multi-colour/">Multi-colour</a>
         </div>
         
-        <div class="price">
+        <div class="price mt-1">
     
     <span>Rs. </span>
 </div>
@@ -411,12 +415,12 @@
         data-item-id=""
         data-item-name="Multi-colour" 
         
-        data-item-image="/"
+        data-item-image=""
         
         data-item-price="" 
         data-item-url="/categories/multi-colour/" 
         data-item-description="">
-        Add to bag
+        Add to cart
 </button>
     </div>
 </div>
@@ -425,7 +429,7 @@
     <div class="card-head">
         <a href="/categories/multipurpose-jute-bags/">
             
-            <img src="/" alt="Multipurpose Jute bags">
+            <img src="" alt="Multipurpose Jute bags">
             
         </a>
     </div>
@@ -434,7 +438,7 @@
             <a href="/categories/multipurpose-jute-bags/">Multipurpose Jute bags</a>
         </div>
         
-        <div class="price">
+        <div class="price mt-1">
     
     <span>Rs. </span>
 </div>
@@ -442,12 +446,12 @@
         data-item-id=""
         data-item-name="Multipurpose Jute bags" 
         
-        data-item-image="/"
+        data-item-image=""
         
         data-item-price="" 
         data-item-url="/categories/multipurpose-jute-bags/" 
         data-item-description="">
-        Add to bag
+        Add to cart
 </button>
     </div>
 </div>
@@ -456,7 +460,7 @@
     <div class="card-head">
         <a href="/categories/office-bags/">
             
-            <img src="/" alt="Office bags">
+            <img src="" alt="Office bags">
             
         </a>
     </div>
@@ -465,7 +469,7 @@
             <a href="/categories/office-bags/">Office bags</a>
         </div>
         
-        <div class="price">
+        <div class="price mt-1">
     
     <span>Rs. </span>
 </div>
@@ -473,12 +477,12 @@
         data-item-id=""
         data-item-name="Office bags" 
         
-        data-item-image="/"
+        data-item-image=""
         
         data-item-price="" 
         data-item-url="/categories/office-bags/" 
         data-item-description="">
-        Add to bag
+        Add to cart
 </button>
     </div>
 </div>
@@ -487,7 +491,7 @@
     <div class="card-head">
         <a href="/categories/school-bags/">
             
-            <img src="/" alt="School bags">
+            <img src="" alt="School bags">
             
         </a>
     </div>
@@ -496,7 +500,7 @@
             <a href="/categories/school-bags/">School bags</a>
         </div>
         
-        <div class="price">
+        <div class="price mt-1">
     
     <span>Rs. </span>
 </div>
@@ -504,12 +508,12 @@
         data-item-id=""
         data-item-name="School bags" 
         
-        data-item-image="/"
+        data-item-image=""
         
         data-item-price="" 
         data-item-url="/categories/school-bags/" 
         data-item-description="">
-        Add to bag
+        Add to cart
 </button>
     </div>
 </div>
@@ -518,7 +522,7 @@
     <div class="card-head">
         <a href="/categories/travel/">
             
-            <img src="/" alt="Travel">
+            <img src="" alt="Travel">
             
         </a>
     </div>
@@ -527,7 +531,7 @@
             <a href="/categories/travel/">Travel</a>
         </div>
         
-        <div class="price">
+        <div class="price mt-1">
     
     <span>Rs. </span>
 </div>
@@ -535,12 +539,12 @@
         data-item-id=""
         data-item-name="Travel" 
         
-        data-item-image="/"
+        data-item-image=""
         
         data-item-price="" 
         data-item-url="/categories/travel/" 
         data-item-description="">
-        Add to bag
+        Add to cart
 </button>
     </div>
 </div>
@@ -597,6 +601,51 @@
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- JS Plugins -->
+
+<script src="plugins/drift-zoom/Drift.min.js"></script>
+
+<script>
+    
+  new Drift(document.querySelector(".drift-demo-trigger"), {
+    paneContainer: document.querySelector(".detail"),
+    inlinePane: 900,
+    inlineOffsetY: -85,
+    containInline: true,
+    hoverBoundingBox: true,
+  });
+  </script>
+
+
+<script>
+    
+
+  (function (d, t, e, m) {
+
+
+window.RW_Async_Init = function () {
+
+  RW.init({
+    huid: "479285",
+    uid: "459f43b8a472eef8a00e4c3a14ba102e",
+    options: { "style": "oxygen" }
+  });
+  RW.render();
+};
+
+var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+  l = d.location, ck = "Y" + t.getFullYear() +
+    "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+  f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+  a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+if (d.getElementById(id)) return;
+rw = d.createElement(e);
+rw.id = id; rw.async = true; rw.type = "text/javascript";
+rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+s.parentNode.insertBefore(rw, s);
+}(document, new Date(), "script", "rating-widget.com/"));
+</script>
 
 <!-- Main Script -->
 
