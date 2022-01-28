@@ -2,82 +2,64 @@
 
 <!-- Swiper slider  -->
 {{ if site.Data.homepage.slider.enable }}
-<section class="carousel" aria-label="Gallery">
-  <ol class="carousel__viewport">
-    <li id="carousel__slide1"
-        tabindex="0"
-        class="carousel__slide">
 
-        <section class="banner">
-          <div class="container">
-            <div class="image">
-              <img src="images/slider/Gorgeous-Girl-jute_bag.png" alt="">
-            </div>
-            <div class="content">
-              <h1>Women 'N' Style</h1>
-              <h3>Gorgeous jute bags suitable for shopping, travel, storage and much more.</h3>
-              <a href="#" class="btn btn-primary">Shop Now</a>
-        
-            </div>
-          </div>
-        </section>
-
-      <div class="carousel__snapper">
-        <a href="#carousel__slide4"
-           class="carousel__prev">Go to last slide</a>
-        <a href="#carousel__slide2"
-           class="carousel__next">Go to next slide</a>
+<section class="slider">
+  <div class="container">
+    <div class="carouselContainer">
+      {{range $index, $val := .Site.Taxonomies.tags.slider}}
+      <div class="carouselImgs">
+        <img src="{{.Page.Params.image}}" alt="{{.Title}}">
+        <div class="content">
+          <h1>{{.Title}}</h1>
+          <h3>{{.Description}}</h3>
+          <a href="#" class="btn btn-primary">{{.Page.Params.link}}</a>
+        </div>
       </div>
-    </li>
-    <li id="carousel__slide2"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide1"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide3"
-         class="carousel__next">Go to next slide</a>
-    </li>
-    <li id="carousel__slide3"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide2"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide4"
-         class="carousel__next">Go to next slide</a>
-    </li>
-    <li id="carousel__slide4"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide3"
-         class="carousel__prev"><img src="images/icons/left.png" alt="left arrow"> </a>
-      <a href="#carousel__slide1"
-         class="carousel__next">Go to first slide</a>
-    </li>
-  </ol>
-  <aside class="carousel__navigation">
-    <ol class="carousel__navigation-list">
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide1"
-           class="carousel__navigation-button">Go to slide 1</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide2"
-           class="carousel__navigation-button">Go to slide 2</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide3"
-           class="carousel__navigation-button">Go to slide 3</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide4"
-           class="carousel__navigation-button">Go to slide 4</a>
-      </li>
-    </ol>
-  </aside>
+      {{end}}
+      <span class="prev" id="prev">
+        <img src="images/icons/left.png" alt="">
+      </span>
+          <span class="next" id="next">
+        <img src="images/icons/right.png" alt="">
+
+          </span>
+    </div>
+  </div>
 </section>
+
+<script>
+  var currentSlide = 1;
+
+
+function showSlide(slideIndex) {
+  const slides = document.getElementsByClassName('carouselImgs');
+  if (slideIndex > slides.length) { currentSlide = 1 }
+  if (slideIndex < 1) { currentSlide = slides.length }
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none'
+  }
+  slides[currentSlide - 1].style.display = 'flex'
+}
+
+
+function nextSlide() {
+  showSlide(currentSlide += 1);
+}
+
+function previousSlide() {
+  showSlide(currentSlide -= 1);
+}
+
+window.onload = function () {
+  showSlide(currentSlide);
+  document.getElementById('prev').addEventListener('click', function () {
+    previousSlide();
+  })
+  document.getElementById('next').addEventListener('click', function () {
+    nextSlide();
+  })
+}
+</script>
 {{end}}
 
 

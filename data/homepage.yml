@@ -1,11 +1,11 @@
 ############################ swiper slider ##########################
 slider:
-  enable : false  
+  enable : true  
   # sliders item comes from "content/slider"
    
 ############################ banner ##########################
 banner:
-  enable : true
+  enable : false
   title : "Charis Jute bags"
   content : "High quality jute bags for all needs- Shopping, travel, office, hand bags, school bags and much more!"
   image : "images/Charis_CT-logo.png"

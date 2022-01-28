@@ -42,7 +42,6 @@
     
     
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   
 
     <!-- Plugins -->
@@ -70,7 +69,7 @@
             
           <li class="nav_list--item dropdown">
             <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Jute bags <img src="/images/icons/arrow-up.png" alt="up">
+              Jute bags <img src="/images/icons/arrow-down.png" alt="down arrow">
             </a>
             <div class="dropdown-menu">
               
@@ -87,7 +86,7 @@
             
           <li class="nav_list--item dropdown">
             <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Household <img src="/images/icons/arrow-up.png" alt="up">
+              Household <img src="/images/icons/arrow-down.png" alt="down arrow">
             </a>
             <div class="dropdown-menu">
               
@@ -147,25 +146,85 @@
 
 
 
-
-
-
-
-
-
-
-<section class="banner">
+<section class="slider">
   <div class="container">
-    <div class="image">
-      <img src="images/slider/Gorgeous-Girl-jute_bag.png" alt="">
-    </div>
-    <div class="content">
-      <h1>Women 'N' Style</h1>
-      <h3>Gorgeous jute bags suitable for shopping, travel, storage and much more.</h3>
-      <a href="" class="btn btn-primary">Shop Now</a>
+    <div class="carouselContainer">
+      
+      <div class="carouselImgs">
+        <img src="images/slider/Gracefull-womens-Jute-bags-3.jpg" alt="Beauty Women N Style">
+        <div class="content">
+          <h1>Beauty Women N Style</h1>
+          <h3>Women&#39;s hand bag</h3>
+          <a href="#" class="btn btn-primary">jute_bags</a>
+        </div>
+      </div>
+      
+      <div class="carouselImgs">
+        <img src="images/slider/Gorgeous-womens-Jute-bags-5.jpg" alt="Graceful women N kids jute bag">
+        <div class="content">
+          <h1>Graceful women N kids jute bag</h1>
+          <h3>Space saving bulk storage jute bags for any use</h3>
+          <a href="#" class="btn btn-primary">jute_bags</a>
+        </div>
+      </div>
+      
+      <div class="carouselImgs">
+        <img src="images/slider/Beauty-womens-Jute-bags-3.jpg" alt="Women &#39;N&#39; Style">
+        <div class="content">
+          <h1>Women &#39;N&#39; Style</h1>
+          <h3>Gorgeous jute bags suitable for shopping, travel, storage and much more.</h3>
+          <a href="#" class="btn btn-primary">jute_bags</a>
+        </div>
+      </div>
+      
+      <span class="prev" id="prev">
+        <img src="images/icons/left.png" alt="">
+      </span>
+          <span class="next" id="next">
+        <img src="images/icons/right.png" alt="">
+
+          </span>
     </div>
   </div>
 </section>
+
+<script>
+  var currentSlide = 1;
+
+
+function showSlide(slideIndex) {
+  const slides = document.getElementsByClassName('carouselImgs');
+  if (slideIndex > slides.length) { currentSlide = 1 }
+  if (slideIndex < 1) { currentSlide = slides.length }
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none'
+  }
+  slides[currentSlide - 1].style.display = 'flex'
+}
+
+
+function nextSlide() {
+  showSlide(currentSlide += 1);
+}
+
+function previousSlide() {
+  showSlide(currentSlide -= 1);
+}
+
+window.onload = function () {
+  showSlide(currentSlide);
+  document.getElementById('prev').addEventListener('click', function () {
+    previousSlide();
+  })
+  document.getElementById('next').addEventListener('click', function () {
+    nextSlide();
+  })
+}
+</script>
+
+
+
+
 
 
 
@@ -613,7 +672,7 @@
 <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
 <div hidden id="snipcart" data-api-key="NjEzM2EwZWEtZjRkNC00MTkzLWJkMDUtOTQ4MTgxMTVhOTQ3NjM3Mzc1ODIwMjE1Mjg1NDE5" data-config-add-product-behavior="none" data-config-modal-style="side"></div>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
+
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
