@@ -69,7 +69,7 @@
             
           <li class="nav_list--item dropdown">
             <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Jute bags <img src="/images/icons/arrow-down.png" alt="down arrow">
+              Jute bags <img id="dropdown_arrow" src="/images/icons/arrow-down.png" alt="down arrow">
             </a>
             <div class="dropdown-menu">
               
@@ -86,7 +86,7 @@
             
           <li class="nav_list--item dropdown">
             <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Household <img src="/images/icons/arrow-down.png" alt="down arrow">
+              Household <img id="dropdown_arrow" src="/images/icons/arrow-down.png" alt="down arrow">
             </a>
             <div class="dropdown-menu">
               
@@ -142,6 +142,22 @@
 
 
 </header>
+
+
+
+<script>
+    let dropdownLink = document.querySelector('.dropdown');
+    let arrowImg = document.getElementById('dropdown_arrow');
+
+    
+    dropdownLink.addEventListener('mouseover', function(){
+        arrowImg.src="/images/icons/arrow-up.png"
+    })
+    dropdownLink.addEventListener('mouseout', function(){
+        arrowImg.src="/images/icons/arrow-down.png"
+    })
+
+</script>
   <section class="page_title">
   <div class="container">
     

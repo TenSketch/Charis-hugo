@@ -12,7 +12,7 @@
             {{ if .HasChildren }}
           <li class="nav_list--item dropdown">
             <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{ .Name }} <img src="/images/icons/arrow-down.png" alt="down arrow">
+              {{ .Name }} <img id="dropdown_arrow" src="/images/icons/arrow-down.png" alt="down arrow">
             </a>
             <div class="dropdown-menu">
               {{ range .Children }}
@@ -67,3 +67,19 @@
 
 
 </header>
+
+<!-- when u hover the dropdown, the arrow changes to up-arrow arrow -->
+
+<script>
+    let dropdownLink = document.querySelector('.dropdown');
+    let arrowImg = document.getElementById('dropdown_arrow');
+
+    //Now, we need to add an Event Listener to listen when the image gets mouse over.
+    dropdownLink.addEventListener('mouseover', function(){
+        arrowImg.src="/images/icons/arrow-up.png"
+    })
+    dropdownLink.addEventListener('mouseout', function(){
+        arrowImg.src="/images/icons/arrow-down.png"
+    })
+
+</script>
