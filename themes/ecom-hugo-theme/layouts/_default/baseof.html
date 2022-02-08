@@ -3,6 +3,15 @@
 {{ partial "head.html" . }}
 
 <body>
+    <section class="offer">
+        <div class="topBar">
+            <div class="container">
+        {{range $index, $val := .Site.Taxonomies.categories.topbar}}
+                {{.Content}}
+                {{end}}
+            </div>
+        </div>
+    </section>
     {{ partial "header.html" . }}
 
     {{- block "main" . }}{{- end }}

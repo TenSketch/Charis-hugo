@@ -26,13 +26,13 @@ categories:
 # product Images
 # first image will be shown in the product page
 images:
-  - image: "/images/Women_and_Style/Gracefull/Gracefull-womens-Jute-bags-1.png"
-  - image: "/images/Women_and_Style/Gracefull/Gracefull-womens-Jute-bags-2.png"
-  - image: "/images/Women_and_Style/Gracefull/Gracefull-womens-Jute-bags-3.jpg"
-  - image: "/images/Women_and_Style/Gracefull/Gracefull-womens-Jute-bags-4.jpg"
-  - image: "/images/Women_and_Style/Gracefull/Gracefull-womens-Jute-bags-5.jpg"
+  - image: "/img/Hand_Bags/Graceful/Graceful-Womens_Jute_hand_bag-1.png"
+  - image: "/img/Hand_Bags/Graceful/Graceful-Womens_Jute_hand_bag-2.png"
+  - image: "/img/Hand_Bags/Graceful/Graceful-Womens_Jute_hand_bag-3.jpg"
+  - image: "/img/Hand_Bags/Graceful/Graceful-Womens_Jute_hand_bag-4.jpg"
+  - image: "/img/Hand_Bags/Graceful/Graceful-Womens_Jute_hand_bag-5.jpg"
 
-thumbnailImage: "/images/Women_and_Style/Gracefull/Gracefull-womens-Jute-bags-1.png"
+thumbnailImage: "/img/Hand_Bags/Graceful/Graceful-Womens_Jute_hand_bag-1.png"
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea

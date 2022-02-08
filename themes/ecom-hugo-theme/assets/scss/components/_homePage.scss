@@ -1,7 +1,7 @@
 // slider
-.slider{
+.slider {
   padding-block: 0;
-  .container{
+  .container {
     // height: 80vh;
     // background-color: darkred;
     max-width: 100%;
@@ -9,24 +9,22 @@
     position: unset;
     margin: 0;
     @include flex(center, flex-start, nowrap);
-
   }
 }
 
-
 .carouselContainer {
   width: 100%;
-  height: 120vh;
+  height: 90vh;
   // margin: 0 auto;
   position: relative;
-  background-color: hsl(30, 30%, 86%);
+  // background-color: hsl(30, 30%, 86%);
   // border-radius: 1.5rem;
   overflow: hidden;
 }
 
 .carouselImgs {
   width: 100%;
-  max-height: 60%;
+  max-height: 100%;
   animation: fade 1.5s;
   display: none;
   // padding: 20px;
@@ -35,29 +33,67 @@
   // justify-items: center;
   justify-content: center;
   flex-direction: column;
-  img{
-    object-fit: cover;
-  }
-  .content{
-    flex: 100%;
-    padding-inline: 1rem;
-    h1{
-      font-size: 2rem;
-    // text-align: center;
+  background-color: hsl(0, 0%, 100%);
 
+  &:nth-child(1) {
+    background-color: hsla(353, 74%, 52%, .92);
+  }
+  &:nth-child(2) {
+    background-color: hsl(46, 100%, 76%);
+    .content{
+      h1{
+        color: #bd7013;
+      }
+    }
+  }
+  &:nth-child(3) {
+    background-color: hsla(146, 69%, 60%, .71);
+  }
+  &:nth-child(4) {
+    background-color: hsl(340, 85%, 81%);
+  }
+  &:nth-child(5) {
+    background-color: hsl(186, 77%, 76%);
+
+  }
+  // &:nth-child(6) {
+  //   background-color: hsl(30, 30%, 86%);
+  // }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
+  img {
+    // object-fit: cover;
+    max-width: 100%;
+    @media (min-width: 768px) {
+      max-width: 70%;
+
+    }
+  }
+  .content {
+    flex: 100%;
+    padding: 2rem;
+    h1 {
+      font-size: 3.5rem;
+      color: #fff;
+      // text-align: center;
+      
     }
   }
 }
 
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
   width: 3rem;
-@media(max-width:768px){
-  top: 70%;
-}
+  @media (max-width: 768px) {
+    top: 70%;
+    width: 1.5rem;
+  }
 }
 
 .prev {
@@ -77,6 +113,24 @@
   }
 }
 
+.carousel__nav {
+  // background-color: pink;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  .carousel__indicators {
+    border: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 0 0.25rem;
+    &.current-slide {
+      background: rgba(0, 0, 0, 0.75);
+    }
+  }
+}
+
 .banner {
   padding-block: 0;
   // position: relative;
@@ -91,48 +145,42 @@
   //   border-radius: 0% 100% 100% 0% / 56% 50% 50% 44% ;
   //   /* border-top-right-radius: 25% 50%;
   //    border-bottom-right-radius: 15% 40%; */
-  // 
+  //
 }
 
-  .container {
-    @media (min-width: 768px) {
-      @include flex(center, space-around, wrap);
-      text-align: left;
-      gap: 0;
-    }
-  }
-  .image {
-    @media (min-width: 768px) {
-      flex: 1;
-    }
-    img {
-      @media (min-width: 768px) {
-        max-width: 60%;
-        // margin-inline: 2rem;
-      }
-    }
-  }
-
-  .content {
+.image {
+  @media (min-width: 768px) {
     flex: 1;
-
-    h1 {
-      font-family: "Petit Formal Script", cursive;
-      font-size: 3.5rem;
-    }
-    h2 {
-      font-weight: 600;
-    }
-    h3 {
-      font-weight: normal;
-      font-size: 1.5rem;
-    }
-    .btn {
-      font-size: 1.5rem;
-      border-radius: 5px;
+  }
+  img {
+    border-radius: 10px;
+    @media (min-width: 768px) {
+      max-width: 100%;
+      // margin-inline: 2rem;
     }
   }
+}
 
+.content {
+  flex: 1;
+
+  h1 {
+    // font-family: "Petit Formal Script", cursive;
+    font-family: $font-heading;
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-weight: 600;
+  }
+  h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+    border-radius: 5px;
+  }
+}
 
 .about {
   text-align: center;
@@ -154,7 +202,7 @@
       // max-width: 50%;
       // margin: auto;
       @media (min-width: 768px) {
-        // max-width: 70%;
+        max-width: 90%;
         margin-left: 1rem;
       }
     }
@@ -173,8 +221,9 @@
       // border-radius: 10px;
     }
     h1 {
-      font-family: "Petit Formal Script", cursive;
-      font-size: 3.5rem;
+      // font-family: "Petit Formal Script", cursive;
+      font-family: $font-heading;
+      font-size: 2.5rem;
     }
     h2 {
       font-weight: 600;
@@ -191,9 +240,9 @@
 }
 
 .advantage {
-  color: $clr-light;
-  background-color: $clr-primary-800--hsla;
-  background: $clr-primary-800--hsla
+  // color: $clr-light;
+  // background-color: $clr-primary-800--hsla;
+  background: $clr-primary-light-opacity
     url(/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -211,22 +260,66 @@
         // list-style-image: url(/images/svg/hand-point-right-regular.svg);
         position: relative;
         padding-left: 1.5em;
-        // &::before {
-        //   position: absolute;
-        //   content: "";
-        //   background: url(/images/svg/hand-point-right-regular.svg);
-        //   background-position: center center;
-        //   background-repeat: no-repeat;
-        //   background-size: cover;
-        //   -webkit-background-size: cover;
-        //   top: 0;
-        //   left: 0;
-        //   display: inline-block;
-        //   height: 1.2em;
-        //   aspect-ratio: 1;
-        //   filter: invert(1);
-        // }
+       
       }
     }
   }
+}
+
+
+
+// #home_prod{
+
+//   .container{
+//     gap: .5rem;
+//     .card{
+//       // padding: .5rem;
+//       border: 1px solid lightgray;
+//       border-radius: 5px;
+//       flex-basis: 48%;
+//       @media(min-width:500px){
+//         flex-basis: 33%;
+//       }
+//       @media(min-width:768px){
+//         flex-basis: 25%;
+//       }
+//     }
+//   }
+// }
+
+
+
+
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(100px,1fr));
+  grid-gap: 10px;
+  grid-auto-rows: 0;
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    grid-template-columns: repeat(2, minmax(100px,1fr));
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    grid-template-columns: repeat(4, minmax(100px,1fr));
+  }
+}
+.masonry-item, .masonry-content {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.masonry-item {
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
+  transition: filter .25s ease-in-out;
+  border: 1px solid lightgrey;
+  background: #caab8975;
+}
+.masonry-item:hover {
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));
+}
+
+.masonry-title{
+  @extend .txt-center;
 }

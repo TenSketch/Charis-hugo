@@ -1,6 +1,6 @@
 ---
 title: "Blessed Shopping Jute bag"
-date: 2021-10-16T12:40:11+06:00
+date: 2021-07-16T12:40:11+06:00
 draft: false
 
 # meta description
@@ -21,8 +21,8 @@ productID: "2"
 
 # Category
 categories:
-  - "Shopping"
-  
+  - "shopping1"
+
 # product Images
 # first image will be shown in the product page
 
@@ -32,7 +32,6 @@ images:
   - image: "/images/Shopping/Blessed/Blessed-shopping-jute-bag-3.jpg"
 
 thumbnailImage: "/images/Shopping/Blessed/Blessed-shopping-jute-bag-3.jpg"
-
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea

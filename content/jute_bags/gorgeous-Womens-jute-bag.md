@@ -1,6 +1,6 @@
 ---
 title: "Gorgeous"
-date: 2021-05-15T10:50:16+06:00
+date: 2021-09-16T12:40:13+06:00
 draft: false
 
 # meta description
@@ -26,13 +26,15 @@ categories:
 # product Images
 # first image will be shown in the product page
 images:
-  - image: "/images/Women_and_Style/Gorgeous/Gorgeous-womens-Jute-bags-2.png"
-  - image: "/images/Women_and_Style/Gorgeous/Gorgeous-womens-Jute-bags-1.png"
-  - image: "/images/Women_and_Style/Gorgeous/Gorgeous-womens-Jute-bags-3.png"
-  - image: "/images/Women_and_Style/Gorgeous/Gorgeous-womens-Jute-bags-4.jpg"
-  - image: "/images/Women_and_Style/Gorgeous/Gorgeous-womens-Jute-bags-5.jpg"
+  - image: "/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-1.jpg"
+  - image: "/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-2.jpg"
+  - image: "/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-3.png"
+  - image: "/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-4.png"
+  - image: "/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-5.png"
+  - image: "/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-6.jpg"
+  - image: "/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-7.jpg"
 
-thumbnailImage: "/images/Women_and_Style/Gorgeous/Gorgeous-womens-Jute-bags-2.png"
+thumbnailImage: "/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-3.png"
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea

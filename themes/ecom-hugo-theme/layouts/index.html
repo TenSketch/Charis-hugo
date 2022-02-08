@@ -1,8 +1,6 @@
 {{ define "main" }}
-
 <!-- Swiper slider  -->
 {{ if site.Data.homepage.slider.enable }}
-
 <section class="slider">
   <div class="container">
     <div class="carouselContainer">
@@ -11,63 +9,55 @@
         <img src="{{.Page.Params.image}}" alt="{{.Title}}">
         <div class="content">
           <h1>{{.Title}}</h1>
-          <h3>{{.Description}}</h3>
-          <a href="#" class="btn btn-primary">{{.Page.Params.link}}</a>
+          <!-- <h3>{{.Description}}</h3> -->
+          <!-- <a href="#" class="btn btn-primary">{{.Page.Params.link}}</a> -->
         </div>
       </div>
       {{end}}
       <span class="prev" id="prev">
         <img src="images/icons/left.png" alt="">
       </span>
-          <span class="next" id="next">
+      <span class="next" id="next">
         <img src="images/icons/right.png" alt="">
-
-          </span>
+      </span>
+      <!-- <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div> -->
     </div>
   </div>
 </section>
-
 <script>
-  var currentSlide = 1;
-
-
-function showSlide(slideIndex) {
-  const slides = document.getElementsByClassName('carouselImgs');
-  if (slideIndex > slides.length) { currentSlide = 1 }
-  if (slideIndex < 1) { currentSlide = slides.length }
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none'
+  let currentSlide = 1;
+  function showSlide(slideIndex) {
+    const slides = document.getElementsByClassName('carouselImgs');
+    if (slideIndex > slides.length) { currentSlide = 1 }
+    if (slideIndex < 1) { currentSlide = slides.length }
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none'
+    }
+    slides[currentSlide - 1].style.display = 'flex'
   }
-  slides[currentSlide - 1].style.display = 'flex'
-}
-
-
-function nextSlide() {
-  showSlide(currentSlide += 1);
-}
-
-function previousSlide() {
-  showSlide(currentSlide -= 1);
-}
-
-window.onload = function () {
-  showSlide(currentSlide);
-  document.getElementById('prev').addEventListener('click', function () {
-    previousSlide();
-  })
-  document.getElementById('next').addEventListener('click', function () {
-    nextSlide();
-  })
-}
+  function nextSlide() {
+    showSlide(currentSlide += 1);
+  }
+  function previousSlide() {
+    showSlide(currentSlide -= 1);
+  }
+  window.onload = function () {
+    showSlide(currentSlide);
+    document.getElementById('prev').addEventListener('click', function () {
+      previousSlide();
+    })
+    document.getElementById('next').addEventListener('click', function () {
+      nextSlide();
+    })
+  }
 </script>
 {{end}}
-
-
-
-
 <!-- banner -->
 {{ if site.Data.homepage.banner.enable }}
-
 {{ with site.Data.homepage.banner }}
 <section class="banner">
   <div class="container">
@@ -82,13 +72,11 @@ window.onload = function () {
   </div>
 </section>
 {{ end }}
-
 {{ end }}
 <!-- banner -->
-
-<!-- products homepage -->
+<!--trending products homepage -->
 {{ if site.Data.homepage.products.enable }}
-<section id="home_prod" class="products">
+<section class="products">
   <div class="container">
     {{ with site.Data.homepage.products }}
     <h2>{{ .title | markdownify }}</h2>
@@ -98,13 +86,22 @@ window.onload = function () {
     {{ end }}
   </div>
 </section>
+
+<section class="products">
+  <div class="container">
+    {{ with site.Data.homepage.products }}
+    <h2>{{ .title1 | markdownify }}</h2>
+    {{ end }}
+    {{range $index, $val := .Site.Taxonomies.categories.shopping}}
+    {{ partial "partials/products/list-item.html" . }}
+    {{ end }}
+
+  </div>
+</section>
 {{ end }}
-<!-- /products -->
-
-
+<!--  products -->
 <!-- about -->
 {{ if site.Data.homepage.about.enable }}
-
 {{ with site.Data.homepage.about }}
 <section class="about">
   <div class="container">
@@ -119,15 +116,35 @@ window.onload = function () {
   </div>
 </section>
 {{ end }}
-
 {{ end }}
 <!-- /about -->
+<!-- masonry gallery -->
+{{ if site.Data.homepage.gallery.enable }}
+{{ with site.Data.homepage.gallery }}
+<!-- <section class="masonry_gallery"> -->
+<div class="container">
+  <h2>{{ .title | markdownify }}</h2>
+  <p>{{ .subtitle | markdownify }}</p>
 
+  <div class="masonry">
 
+    {{ range .galleryItem }}
+    <div class="masonry-item">
+      <div class="masonry-content">
+        <img src="{{ .image | absURL }}" alt="{{.Name}}">
+        <h3 class="masonry-title">{{ .title | markdownify }}</h3>
+        <!-- <p class="masonry-description">{{ .content }}</p> -->
+      </div>
+    </div>
+    {{end}}
 
+  </div>
+</div>
+<!-- </section> -->
+{{ end }}
+{{end}}
 <!-- material -->
 {{ if site.Data.homepage.material.enable }}
-
 {{ with site.Data.homepage.material }}
 <section class="section pb-0">
   <div class="container">
@@ -153,13 +170,10 @@ window.onload = function () {
   </div>
 </section>
 {{ end }}
-
 {{ end }}
 <!-- /material -->
-
 <!-- advantage -->
 {{ if site.Data.homepage.advantage.enable }}
-
 {{ with site.Data.homepage.advantage }}
 <section class="advantage">
   <div class="container">
@@ -178,14 +192,10 @@ window.onload = function () {
   </div>
 </section>
 {{ end }}
-
 {{ end }}
 <!-- /advantage -->
-
-
 <!-- testimonial -->
 {{ if site.Data.homepage.testimonial.enable }}
-
 {{ with site.Data.homepage.testimonial }}
 <section class="testimonials">
   <div class="container">
@@ -208,13 +218,9 @@ window.onload = function () {
   </div>
 </section>
 {{ end }}
-
 {{ end }}
 <!-- /testimonial -->
-
 {{ if site.Data.homepage.cta.enable }}
 {{ partial "cta.html" . }}
 {{ end }}
-
-
 {{ end }}

@@ -1,6 +1,6 @@
 ---
 title: "Multi-colour Jute bag"
-date: 2021-09-08T11:22:40+06:00
+date: 2021-09-16T12:40:13+06:00
 draft: false
 
 # meta description

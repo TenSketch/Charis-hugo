@@ -9,18 +9,22 @@ summaryLength = "20"
 [params]
 logo = "/images/logo.png"
 og_image = "images/ogimage.jpg"
-description = "Charis Jute bags is a high quality multipurpose Jute bags manufacturers."
+description = "Charis Jute bags is a high quality multipurpose Jute bags manufacturers. BagIt- a eco friendly Jute Bag from Charis can help you do your part to this environment in reducing using of plastic bags."
 keywords = "Jute bags, jute, organic bags, shopping jute bags, jute hand bags, mens hand bags, womens hand bag, fashionable hand bags"
 author = "TenSketch"
 
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
+
 # Contact Information
 mobile = "0124857985320"
 email = "info@charisjutebags.com"
 location = "Chennai, India"
+
+
 # copyright
 copyright = "| Copyright &copy; 2021 [Charis](https://charisjutebags.com) All Rights Reserved |"
+
 # Snipcart Credentials
 snipcartApiKey = "YourAPIkey"
 currencySymbol = "Rs. "
@@ -32,6 +36,18 @@ currencySymbol = "Rs. "
   websiteID = "444334"
   publicKey = "811cf0927332bf51f2e12f84608594ac"
 
+  # Social Site
+  [[params.social]]
+  icon = "/images/svg/facebook.svg"
+  link = "#"
+
+  [[params.social]]
+  icon = "/images/svg/instagram.svg"
+  link = "https://www.instagram.com/charis_jute/"
+
+  [[params.social]]
+  icon = "/images/svg/whatsapp.svg"
+  link = "#"
 
 [languages]
   [languages.en]
@@ -50,10 +66,18 @@ currencySymbol = "Rs. "
   # CSS Plugins
   [[params.plugins.css]]
   link = "plugins/drift-zoom/drift-basic.min.css"
+  [[params.plugins.css]]
+  link = "plugins/lightgallery/lightgallery-bundle.min.css"
 
   # JS Plugins
   [[params.plugins.js]]
   link = "plugins/drift-zoom/Drift.min.js"
+  [[params.plugins.js]]
+  link = "plugins/lightgallery/lightgallery.umd.js"
+  [[params.plugins.js]]
+  link = "plugins/lightgallery/lg-thumbnail.umd.js"
+  [[params.plugins.js]]
+  link = "plugins/lightgallery/lg-zoom.umd.js"
 
 
 ############################## navigation ###############################
@@ -119,3 +143,23 @@ currencySymbol = "Rs. "
   URL = "#"
   weight = 3
 
+############# footer menu #############
+  [[menu.footer]]
+  name = "Shop"
+  URL = "jute_bags"
+  weight = 1
+
+  [[menu.footer]]
+  name = "FAQ"
+  URL = "faq"
+  weight = 2
+
+  [[menu.footer]]
+  name = "Terms & Conditions"
+  URL = "terms_conditions"
+  weight = 3
+
+  [[menu.footer]]
+  name = "Privacy Policy"
+  URL = "privacy_policy"
+  weight = 4

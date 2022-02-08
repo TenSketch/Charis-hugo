@@ -1,127 +1,144 @@
-############################ swiper slider ##########################
+############################ slider ##########################
 slider:
-  enable : true  
+  enable: true
   # sliders item comes from "content/slider"
-   
+
 ############################ banner ##########################
 banner:
-  enable : false
-  title : "Charis Jute bags"
-  content : "High quality jute bags for all needs- Shopping, travel, office, hand bags, school bags and much more!"
-  image : "images/Charis_CT-logo.png"
-  image_1 : "images/Organic/Organic-Jute-bags-1.jpg"
+  enable: false
+  title: "Charis Jute bags"
+  content: "High quality jute bags for all needs- Shopping, travel, office, hand bags, school bags and much more!"
+  image: "images/Charis_CT-logo.png"
+  image_1: "images/Organic/Organic-Jute-bags-1.jpg"
   # button
   button:
-    enable : true
-    label : "Explore our bags"
-    link : "jute_bags"
-  
+    enable: true
+    label: "Explore our bags"
+    link: "jute_bags"
+
+########################## gallery ##############################
+gallery:
+  enable: false
+  title: "Charis jute bag gallery"
+  subtitle: "Our products are made from one of the finest jute material by our traditional craftsmen."
+  galleryItem:
+    # gallery item loop
+    - title: "Corporate bags"
+      image: "img/Corporate_bags/1.png"
+      content: "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
+
+    # gallery item loop
+    - title: "Gift bags"
+      image: "img/Gift_Bags/with_love/2.png"
+      content: "Original jute colour gift bags With love."
+
+    # gallery item loop
+    - title: "Sapling_Bags"
+      image: "img/Sapling_Bags/1/2.png"
+      content: "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
+
+    # gallery item loop
+    - title: "Laundry Toy Bags"
+      image: "img/Laundry_Toy_Bags/1/6.png"
+      content: "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
+
+      # gallery item loop
+    - title: "Shopping bags"
+      image: "img/Shopping_Bags/Be_happy/Be_Happy-shopping-jute-bag-1.jpg"
+      content: "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
+
+    # gallery item loop
+    - title: "Shopping bags"
+      image: "img/Shopping_Bags/Chakra/4.jpg"
+      content: "Original jute colour gift bags With love."
+
+    # gallery item loop
+    - title: "Sapling_Bags"
+      image: "img/Sapling_Bags/1/2.png"
+      content: "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
+
+    # gallery item loop
+    - title: "Laundry Toy Bags"
+      image: "img/Laundry_Toy_Bags/1/6.png"
+      content: "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
+
 
 ########################## About ##############################
 about:
-  enable : true
-  title : "About Charis"
-  content : "At Charis, we have been selling High quality Jute bags for personal and commercial purposes since 2020. Some of our jute bags are multipurpose shopping bags, hands bags, minimal art embedded bags, office bags, travel bags, purses, etc."
-  subtitle : "It is time to say NO to fake eco-friendly plastic bags."
-  image : "images/Organic/Organic-Jute-bags-2.jpg"
-
+  enable: true
+  title: "Who is Charis"
+  content: "Charis was started as a Jute material products manufacturer in the year 2020. This was the time when the world started to topple because of man-made disasters. We at Charis, a group of environment enthusiasts started to think about how we can become a part of the already changing eco-friendly thinking. For this, we travelled across the Globe to pick some of the best jute direct from the farm and sprinkled our creativity to create Charis Jute Bags and related products."
+  image: "images/Organic/Organic-Jute-bags-2.jpg"
 
 ###################### Call to action ########################
 cta:
-  enable : false
-  title : "Buy all in one jute bag package for just Rs 2500/- "
-  content : "A pack of 4 bags containing one for Shopping, travel, Hand and Offce use"
-  image : "images/cta.png"
-  overlayImage : "images/cta-overlay.png"
+  enable: false
+  title: "Buy all in one jute bag package for just Rs 2500/- "
+  content: "A pack of 4 bags containing one for Shopping, travel, Hand and Offce use"
+  image: "images/cta.png"
+  overlayImage: "images/cta-overlay.png"
   button:
-    label : "All Products"
-    link : "products"
-
-######################## raw material #######################
-material:
-  enable : false
-  title : "Ingredients Of Our Products"
-  subtitle : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dol."
-  materialItem:
-    # material item loop
-    - title : "Matcha Seeds"
-      image : "images/material/material-1.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
-      
-    # material item loop
-    - title : "Aloe Vera"
-      image : "images/material/material-2.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
-      
-    # material item loop
-    - title : "Turmeric"
-      image : "images/material/material-3.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
-      
-    # material item loop
-    - title : "Tulshi leaf"
-      image : "images/material/material-4.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
+    label: "All Products"
+    link: "products"
 
 ########################### Advantage #########################
 advantage:
-  enable : true
-  title : "Highlights of Charis Jute bags"
-  subtitle : "Our bags environmental friendly"
-  image : "images/advantage.png"
+  enable: true
+  title: "Highlights of Charis Jute bags"
+  subtitle: "Our bags environmental friendly"
+  image: "images/advantage.png"
   advantageList:
     # advantage list loop
-    - listItem : "Our bags environmental friendly"
-    - listItem : "Extremely durable"
-    - listItem : "Excellent quality"
-    - listItem : "Higher rope density"
-    - listItem : "Attractive design"
+    - listItem: "Our bags environmental friendly"
+    - listItem: "Extremely durable"
+    - listItem: "Excellent quality"
+    - listItem: "Higher rope density"
+    - listItem: "Attractive design"
     # - listItem : "Increasing Glow Of Face"
     # - listItem : "More Beautiful Face Skin"
 
-
 ######################## Products #############################
 products:
-  enable : true
-  title : "Our trending products"
+  enable: true
+  title: "Our trending products"
+  title1: "Shopping bags"
   # product item comes from "content/products"
 
   ######################## organic #############################
 organic:
-  enable : true
-  title : "Organic jute bags"
+  enable: true
+  title: "Organic jute bags"
   # product item comes from "content/products"
 
 ########################## Testimonial ########################
 testimonial:
-  enable : true
-  title : "What People Are Saying <br> About Our Product"
+  enable: true
+  title: "What People Are Saying <br> About Our Product"
   testimonialItem:
     # testimonial item loop
-    - name : "Richard Cooper"
-      image : "images/clients/client-1.jpg" # size 100px*100px
-      designation : "Marketing Analyst, Dialogue Broad Band"
-      content : "I am quite picky about my bags. When my friend told me about fashion bags from Charis Bags, I didn't pay much attention. Well, it was my birthday last night, and she gave me one of those bags as a gift. I can't explain how much I loved it. I thanked my friend a lot and now it's time to thank you too Charis Bags."
-      rating : "five" # rating star, one to five
-      
+    - name: "Richard Cooper"
+      image: "images/clients/client-1.jpg" # size 100px*100px
+      designation: "Marketing Analyst, Dialogue Broad Band"
+      content: "I am quite picky about my bags. When my friend told me about fashion bags from Charis Bags, I didn't pay much attention. Well, it was my birthday last night, and she gave me one of those bags as a gift. I can't explain how much I loved it. I thanked my friend a lot and now it's time to thank you too Charis Bags."
+      rating: "five" # rating star, one to five
+
     # testimonial item loop
-    - name : "Rachel Poehler"
-      image : "images/clients/client-2.jpg" # size 100px*100px
-      designation : "Teacher, Iluminate International School"
-      content : "I always prefer to have unique bags. Not all fashion bags are up to my taste, but I am glad to accept that I have fallen for Charis Bags. Their customized bags are simply marvelous. It’s eco-friendly, and so trendy.I can't explain how much I loved it. I thanked my friend a lot and now it's time to thank you too Charis Bags."
-      rating : "four" # rating star, one to five
-      
+    - name: "Rachel Poehler"
+      image: "images/clients/client-2.jpg" # size 100px*100px
+      designation: "Teacher, Iluminate International School"
+      content: "I always prefer to have unique bags. Not all fashion bags are up to my taste, but I am glad to accept that I have fallen for Charis Bags. Their customized bags are simply marvelous. It’s eco-friendly, and so trendy.I can't explain how much I loved it. I thanked my friend a lot and now it's time to thank you too Charis Bags."
+      rating: "four" # rating star, one to five
+
     # testimonial item loop
-    - name : "R Kavita Daga"
-      image : "images/clients/client-3.jpg" # size 100px*100px
-      designation : "Business Analyst, TenSketch"
-      content : "I love my planet earth and I am going to do anything for it. I do campaigns and write journals about greener and less toxic world. Jute bags are part of my life, but the bags from the Charis Bag's made me happy, because it’s not just eco-friendly but also stylish. I can't explain how much I loved it. I thanked my friend a lot."
-      rating : "five" # rating star, one to five
-      
+    - name: "R Kavita Daga"
+      image: "images/clients/client-3.jpg" # size 100px*100px
+      designation: "Business Analyst, TenSketch"
+      content: "I love my planet earth and I am going to do anything for it. I do campaigns and write journals about greener and less toxic world. Jute bags are part of my life, but the bags from the Charis Bag's made me happy, because it’s not just eco-friendly but also stylish. I can't explain how much I loved it. I thanked my friend a lot."
+      rating: "five" # rating star, one to five
+
     # testimonial item loop
-    - name : "Riya Ventila"
-      image : "images/clients/client-2.jpg" # size 100px*100px
-      designation : "CEO, Dialogue Broad Band"
-      content : "Lorem ipsum dolor sit amet, <br> consetetur sadipscing elitr, diam <br> nonumy eirmod tempor"
-      rating : "four" # rating star, one to five
+    - name: "Riya Ventila"
+      image: "images/clients/client-2.jpg" # size 100px*100px
+      designation: "CEO, Dialogue Broad Band"
+      content: "Lorem ipsum dolor sit amet, <br> consetetur sadipscing elitr, diam <br> nonumy eirmod tempor"
+      rating: "four" # rating star, one to five

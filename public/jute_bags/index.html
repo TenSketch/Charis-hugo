@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=egde">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Products</title>
+    <title>Jute bag products</title>
 
     
     
@@ -18,7 +18,7 @@
     <meta name="generator" content="Hugo 0.88.1" />
 
     
-    <meta property="og:title" content="Products">
+    <meta property="og:title" content="Jute bag products">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
 
@@ -40,13 +40,16 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
 
     
-    
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   
 
     <!-- Plugins -->
     
     <link rel="stylesheet" media="screen, projection" href="plugins/drift-zoom/drift-basic.min.css">
+    
+    <link rel="stylesheet" media="screen, projection" href="plugins/lightgallery/lightgallery-bundle.min.css">
     
     
     <!-- Main Stylesheet -->
@@ -55,6 +58,16 @@
 </head>
 
 <body>
+    <section class="offer">
+        <div class="topBar">
+            <div class="container">
+        
+                <p>Get upto 10% off on table runners!</p>
+
+                
+            </div>
+        </div>
+    </section>
     <header>
 
     <div class="container">
@@ -69,7 +82,7 @@
             
           <li class="nav_list--item dropdown">
             <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Jute bags <img id="dropdown_arrow" src="/images/icons/arrow-down.png" alt="down arrow">
+              Jute bags <img class="dropdown_arrow" src="/images/icons/arrow-down.png" alt="down arrow">
             </a>
             <div class="dropdown-menu">
               
@@ -86,7 +99,7 @@
             
           <li class="nav_list--item dropdown">
             <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Household <img id="dropdown_arrow" src="/images/icons/arrow-down.png" alt="down arrow">
+              Household <img class="dropdown_arrow" src="/images/icons/arrow-down.png" alt="down arrow">
             </a>
             <div class="dropdown-menu">
               
@@ -146,22 +159,34 @@
 
 
 <script>
-    let dropdownLink = document.querySelector('.dropdown');
-    let arrowImg = document.getElementById('dropdown_arrow');
+    
+    let dropdownLink = document.getElementsByClassName("dropdown");
+    let arrowImg = document.getElementsByClassName("dropdown_arrow");
 
     
-    dropdownLink.addEventListener('mouseover', function(){
-        arrowImg.src="/images/icons/arrow-up.png"
+
+    
+    dropdownLink[0].addEventListener('mouseover', function(e){
+        console.log(e.target)
+            arrowImg[0].src="/images/icons/arrow-up.png"
     })
-    dropdownLink.addEventListener('mouseout', function(){
-        arrowImg.src="/images/icons/arrow-down.png"
+    dropdownLink[0].addEventListener('mouseout', function(){
+            arrowImg[0].src="/images/icons/arrow-down.png"
+    })
+
+    
+    dropdownLink[1].addEventListener('mouseover', function(){
+            arrowImg[1].src="/images/icons/arrow-up.png"
+    })
+    dropdownLink[1].addEventListener('mouseout', function(){
+            arrowImg[1].src="/images/icons/arrow-down.png"
     })
 
 </script>
 <section class="page_title">
   <div class="container">
     
-      <h2>Products</h2>
+      <h2>Jute bag products</h2>
       
     </div>
   
@@ -188,19 +213,31 @@
         
 
         <li class="mm-active">
+          <a class="" href="/categories/topbar/" aria-expanded="true">Topbar</a>
+          
+        </li>
+        
+
+        <li class="mm-active">
           <a class="" href="/categories/women/" aria-expanded="true">Women</a>
           
         </li>
         
 
         <li class="mm-active">
-          <a class="" href="/categories/shopping/" aria-expanded="true">Shopping</a>
+          <a class="" href="/categories/artistic/" aria-expanded="true">Artistic</a>
           
         </li>
         
 
         <li class="mm-active">
-          <a class="" href="/categories/artistic/" aria-expanded="true">Artistic</a>
+          <a class="" href="/categories/multi-colour/" aria-expanded="true">Multi-Colour</a>
+          
+        </li>
+        
+
+        <li class="mm-active">
+          <a class="" href="/categories/shopping/" aria-expanded="true">Shopping</a>
           
         </li>
         
@@ -213,12 +250,6 @@
 
         <li class="mm-active">
           <a class="" href="/categories/laundry/" aria-expanded="true">Laundry</a>
-          
-        </li>
-        
-
-        <li class="mm-active">
-          <a class="" href="/categories/multi-colour/" aria-expanded="true">Multi-Colour</a>
           
         </li>
         
@@ -247,6 +278,12 @@
         </li>
         
 
+        <li class="mm-active">
+          <a class="" href="/categories/shopping1/" aria-expanded="true">Shopping1</a>
+          
+        </li>
+        
+
         
         
         </ul>
@@ -258,13 +295,13 @@
     <div class="card-head">
         <a href="/jute_bags/1-shine-womens-jute-bag/">
             
-            <img src="/images/Women_and_Style/Shine/Shine-womens-Jute-bags-2.png" alt="Shine">
+            <img src="/img/Hand_Bags/Shine/Shine-Womens_Jute_hand_bag-2.png" alt="Shine Women&#39;s Jute hand bag">
             
         </a>
     </div>
     <div class="card-body">
         <div class="card-title">
-            <a href="/jute_bags/1-shine-womens-jute-bag/">Shine</a>
+            <a href="/jute_bags/1-shine-womens-jute-bag/">Shine Women&#39;s Jute hand bag</a>
         </div>
         
         <div class="price mt-1">
@@ -273,13 +310,13 @@
 </div>
         <button class="snipcart-add-item btn btn-teal" 
         data-item-id="1"
-        data-item-name="Shine" 
+        data-item-name="Shine Women&#39;s Jute hand bag" 
         
-        data-item-image="/images/Women_and_Style/Shine/Shine-womens-Jute-bags-2.png"
+        data-item-image="/img/Hand_Bags/Shine/Shine-Womens_Jute_hand_bag-2.png"
         
         data-item-price="200.00" 
         data-item-url="/jute_bags/1-shine-womens-jute-bag/" 
-        data-item-description="Shine Womens jute bag desc">
+        data-item-description="Shine Women&#39;s Jute hand bag is an lovely yellow coloured shining bag with a plenty of storage space">
         Add to cart
 </button>
     </div>
@@ -289,7 +326,7 @@
     <div class="card-head">
         <a href="/jute_bags/2-awesome-womens-jute-bag/">
             
-            <img src="/images/Women_and_Style/Awesome/Awesome-womens-Jute-bags-2.png" alt="Awesome Women&#39;s Jute Hand Bag">
+            <img src="/img/Hand_Bags/Awesome/Awesome-Womens_Jute_hand_bag-4.png" alt="Awesome Women&#39;s Jute Hand Bag">
             
         </a>
     </div>
@@ -306,7 +343,7 @@
         data-item-id="1"
         data-item-name="Awesome Women&#39;s Jute Hand Bag" 
         
-        data-item-image="/images/Women_and_Style/Awesome/Awesome-womens-Jute-bags-2.png"
+        data-item-image="/img/Hand_Bags/Awesome/Awesome-Womens_Jute_hand_bag-4.png"
         
         data-item-price="200.00" 
         data-item-url="/jute_bags/2-awesome-womens-jute-bag/" 
@@ -320,7 +357,7 @@
     <div class="card-head">
         <a href="/jute_bags/3-beauty-womens-jute-bag/">
             
-            <img src="/images/Women_and_Style/Beauty/Beauty-womens-Jute-bags-4.png" alt="Beauty">
+            <img src="/img/Hand_Bags/Beauty/Beauty-Womens_Jute_hand_bag-5.png" alt="Beauty">
             
         </a>
     </div>
@@ -337,7 +374,7 @@
         data-item-id="3"
         data-item-name="Beauty" 
         
-        data-item-image="/images/Women_and_Style/Beauty/Beauty-womens-Jute-bags-4.png"
+        data-item-image="/img/Hand_Bags/Beauty/Beauty-Womens_Jute_hand_bag-5.png"
         
         data-item-price="200.00" 
         data-item-url="/jute_bags/3-beauty-womens-jute-bag/" 
@@ -351,7 +388,7 @@
     <div class="card-head">
         <a href="/jute_bags/3-gracefull-womens-jute-bag/">
             
-            <img src="/images/Women_and_Style/Gracefull/Gracefull-womens-Jute-bags-1.png" alt="graceful">
+            <img src="/img/Hand_Bags/Graceful/Graceful-Womens_Jute_hand_bag-1.png" alt="graceful">
             
         </a>
     </div>
@@ -368,7 +405,7 @@
         data-item-id="5"
         data-item-name="graceful" 
         
-        data-item-image="/images/Women_and_Style/Gracefull/Gracefull-womens-Jute-bags-1.png"
+        data-item-image="/img/Hand_Bags/Graceful/Graceful-Womens_Jute_hand_bag-1.png"
         
         data-item-price="200.00" 
         data-item-url="/jute_bags/3-gracefull-womens-jute-bag/" 
@@ -380,15 +417,15 @@
       
         <div class="card txt-center">
     <div class="card-head">
-        <a href="/jute_bags/4-be_happy-shopping-jute-bags/">
+        <a href="/jute_bags/table_runners/">
             
-            <img src="/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-4.png" alt="Be Happy Shopping Jute bag">
+            <img src="/img/Table_Runners-Decor/1.png" alt="Table_Runners-Decor">
             
         </a>
     </div>
     <div class="card-body">
         <div class="card-title">
-            <a href="/jute_bags/4-be_happy-shopping-jute-bags/">Be Happy Shopping Jute bag</a>
+            <a href="/jute_bags/table_runners/">Table_Runners-Decor</a>
         </div>
         
         <div class="price mt-1">
@@ -397,13 +434,13 @@
 </div>
         <button class="snipcart-add-item btn btn-teal" 
         data-item-id="2"
-        data-item-name="Be Happy Shopping Jute bag" 
+        data-item-name="Table_Runners-Decor" 
         
-        data-item-image="/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-4.png"
+        data-item-image="/img/Table_Runners-Decor/1.png"
         
         data-item-price="200.00" 
-        data-item-url="/jute_bags/4-be_happy-shopping-jute-bags/" 
-        data-item-description="Shopping and multipurpose jute bags desc">
+        data-item-url="/jute_bags/table_runners/" 
+        data-item-description="Table_Runners-Decor">
         Add to cart
 </button>
     </div>
@@ -411,15 +448,15 @@
       
         <div class="card txt-center">
     <div class="card-head">
-        <a href="/jute_bags/5-uni-colour-shopping-jute-bag-copy/">
+        <a href="/jute_bags/table_runners2/">
             
-            <img src="/images/Shopping/Shopping-jute-bag-8.png" alt="Uni-colour Shopping Jute bag">
+            <img src="/img/Table_Runners-Decor/3.png" alt="Table_Runners-Decor">
             
         </a>
     </div>
     <div class="card-body">
         <div class="card-title">
-            <a href="/jute_bags/5-uni-colour-shopping-jute-bag-copy/">Uni-colour Shopping Jute bag</a>
+            <a href="/jute_bags/table_runners2/">Table_Runners-Decor</a>
         </div>
         
         <div class="price mt-1">
@@ -428,13 +465,13 @@
 </div>
         <button class="snipcart-add-item btn btn-teal" 
         data-item-id="2"
-        data-item-name="Uni-colour Shopping Jute bag" 
+        data-item-name="Table_Runners-Decor" 
         
-        data-item-image="/images/Shopping/Shopping-jute-bag-8.png"
+        data-item-image="/img/Table_Runners-Decor/3.png"
         
         data-item-price="200.00" 
-        data-item-url="/jute_bags/5-uni-colour-shopping-jute-bag-copy/" 
-        data-item-description="Shopping and multipurpose jute bags desc">
+        data-item-url="/jute_bags/table_runners2/" 
+        data-item-description="Table_Runners-Decor">
         Add to cart
 </button>
     </div>
@@ -442,15 +479,15 @@
       
         <div class="card txt-center">
     <div class="card-head">
-        <a href="/jute_bags/6-blessed-shopping-jute-bags/">
+        <a href="/jute_bags/table_runners3/">
             
-            <img src="/images/Shopping/Blessed/Blessed-shopping-jute-bag-3.jpg" alt="Blessed Shopping Jute bag">
+            <img src="/img/Table_Runners-Decor/9.png" alt="Table_Runners-Decor">
             
         </a>
     </div>
     <div class="card-body">
         <div class="card-title">
-            <a href="/jute_bags/6-blessed-shopping-jute-bags/">Blessed Shopping Jute bag</a>
+            <a href="/jute_bags/table_runners3/">Table_Runners-Decor</a>
         </div>
         
         <div class="price mt-1">
@@ -459,13 +496,13 @@
 </div>
         <button class="snipcart-add-item btn btn-teal" 
         data-item-id="2"
-        data-item-name="Blessed Shopping Jute bag" 
+        data-item-name="Table_Runners-Decor" 
         
-        data-item-image="/images/Shopping/Blessed/Blessed-shopping-jute-bag-3.jpg"
+        data-item-image="/img/Table_Runners-Decor/9.png"
         
         data-item-price="200.00" 
-        data-item-url="/jute_bags/6-blessed-shopping-jute-bags/" 
-        data-item-description="Shopping and multipurpose jute bags desc">
+        data-item-url="/jute_bags/table_runners3/" 
+        data-item-description="Table_Runners-Decor">
         Add to cart
 </button>
     </div>
@@ -473,15 +510,15 @@
       
         <div class="card txt-center">
     <div class="card-head">
-        <a href="/jute_bags/7-checked-blue-colour-shopping-jute-bag/">
+        <a href="/jute_bags/table_runners4/">
             
-            <img src="/images/Shopping/Shopping-jute-bag-1.png" alt="Checked-blue-colour Shopping Jute bag">
+            <img src="/img/Table_Runners-Decor/4.png" alt="Table_Runners-Decor">
             
         </a>
     </div>
     <div class="card-body">
         <div class="card-title">
-            <a href="/jute_bags/7-checked-blue-colour-shopping-jute-bag/">Checked-blue-colour Shopping Jute bag</a>
+            <a href="/jute_bags/table_runners4/">Table_Runners-Decor</a>
         </div>
         
         <div class="price mt-1">
@@ -490,12 +527,74 @@
 </div>
         <button class="snipcart-add-item btn btn-teal" 
         data-item-id="2"
-        data-item-name="Checked-blue-colour Shopping Jute bag" 
+        data-item-name="Table_Runners-Decor" 
         
-        data-item-image="/images/Shopping/Shopping-jute-bag-1.png"
+        data-item-image="/img/Table_Runners-Decor/4.png"
         
         data-item-price="200.00" 
-        data-item-url="/jute_bags/7-checked-blue-colour-shopping-jute-bag/" 
+        data-item-url="/jute_bags/table_runners4/" 
+        data-item-description="Table_Runners-Decor">
+        Add to cart
+</button>
+    </div>
+</div>
+      
+        <div class="card txt-center">
+    <div class="card-head">
+        <a href="/jute_bags/gorgeous-womens-jute-bag/">
+            
+            <img src="/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-3.png" alt="Gorgeous">
+            
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <a href="/jute_bags/gorgeous-womens-jute-bag/">Gorgeous</a>
+        </div>
+        
+        <div class="price mt-1">
+    
+    <span>Rs. 200.00</span>
+</div>
+        <button class="snipcart-add-item btn btn-teal" 
+        data-item-id="4"
+        data-item-name="Gorgeous" 
+        
+        data-item-image="/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-3.png"
+        
+        data-item-price="200.00" 
+        data-item-url="/jute_bags/gorgeous-womens-jute-bag/" 
+        data-item-description="Gorgeous Womens jute bag desc">
+        Add to cart
+</button>
+    </div>
+</div>
+      
+        <div class="card txt-center">
+    <div class="card-head">
+        <a href="/jute_bags/multi-colour-jute-bags/">
+            
+            <img src="/images/Multi-colour-Jute-bags/1.jpg" alt="Multi-colour Jute bag">
+            
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <a href="/jute_bags/multi-colour-jute-bags/">Multi-colour Jute bag</a>
+        </div>
+        
+        <div class="price mt-1">
+    
+    <span>Rs. 200.00</span>
+</div>
+        <button class="snipcart-add-item btn btn-teal" 
+        data-item-id="2"
+        data-item-name="Multi-colour Jute bag" 
+        
+        data-item-image="/images/Multi-colour-Jute-bags/1.jpg"
+        
+        data-item-price="200.00" 
+        data-item-url="/jute_bags/multi-colour-jute-bags/" 
         data-item-description="Shopping and multipurpose jute bags desc">
         Add to cart
 </button>
@@ -506,7 +605,7 @@
     <div class="card-head">
         <a href="/jute_bags/chakra-multipurpose-jute-bags/">
             
-            <img src="/images/Multipurpose-Jute-bags/Chakra/3.jpg" alt="Chakra Jute bags">
+            <img src="/img/Shopping_Bags/Chakra/3.png" alt="Chakra Jute bags">
             
         </a>
     </div>
@@ -523,10 +622,103 @@
         data-item-id="2"
         data-item-name="Chakra Jute bags" 
         
-        data-item-image="/images/Multipurpose-Jute-bags/Chakra/3.jpg"
+        data-item-image="/img/Shopping_Bags/Chakra/3.png"
         
         data-item-price="200.00" 
         data-item-url="/jute_bags/chakra-multipurpose-jute-bags/" 
+        data-item-description="Shopping and multipurpose jute bags desc">
+        Add to cart
+</button>
+    </div>
+</div>
+      
+        <div class="card txt-center">
+    <div class="card-head">
+        <a href="/jute_bags/4-be_happy-shopping-jute-bags/">
+            
+            <img src="/img/Shopping_Bags/Be_happy/Be_Happy-shopping-jute-bag-4.png" alt="Be Happy Shopping Jute bag">
+            
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <a href="/jute_bags/4-be_happy-shopping-jute-bags/">Be Happy Shopping Jute bag</a>
+        </div>
+        
+        <div class="price mt-1">
+    
+    <span>Rs. 200.00</span>
+</div>
+        <button class="snipcart-add-item btn btn-teal" 
+        data-item-id="2"
+        data-item-name="Be Happy Shopping Jute bag" 
+        
+        data-item-image="/img/Shopping_Bags/Be_happy/Be_Happy-shopping-jute-bag-4.png"
+        
+        data-item-price="200.00" 
+        data-item-url="/jute_bags/4-be_happy-shopping-jute-bags/" 
+        data-item-description="Shopping and multipurpose jute bags desc">
+        Add to cart
+</button>
+    </div>
+</div>
+      
+        <div class="card txt-center">
+    <div class="card-head">
+        <a href="/jute_bags/classic-shopping-bags/">
+            
+            <img src="/img/Shopping_Bags/Classic/1.png" alt="Classic style">
+            
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <a href="/jute_bags/classic-shopping-bags/">Classic style</a>
+        </div>
+        
+        <div class="price mt-1">
+    
+    <span>Rs. 200.00</span>
+</div>
+        <button class="snipcart-add-item btn btn-teal" 
+        data-item-id="2"
+        data-item-name="Classic style" 
+        
+        data-item-image="/img/Shopping_Bags/Classic/1.png"
+        
+        data-item-price="200.00" 
+        data-item-url="/jute_bags/classic-shopping-bags/" 
+        data-item-description="Shopping and multipurpose jute bags desc">
+        Add to cart
+</button>
+    </div>
+</div>
+      
+        <div class="card txt-center">
+    <div class="card-head">
+        <a href="/jute_bags/anchor-shopping-bags/">
+            
+            <img src="/img/Shopping_Bags/Anchor/1.png" alt="Mini Anchor">
+            
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <a href="/jute_bags/anchor-shopping-bags/">Mini Anchor</a>
+        </div>
+        
+        <div class="price mt-1">
+    
+    <span>Rs. 200.00</span>
+</div>
+        <button class="snipcart-add-item btn btn-teal" 
+        data-item-id="2"
+        data-item-name="Mini Anchor" 
+        
+        data-item-image="/img/Shopping_Bags/Anchor/1.png"
+        
+        data-item-price="200.00" 
+        data-item-url="/jute_bags/anchor-shopping-bags/" 
         data-item-description="Shopping and multipurpose jute bags desc">
         Add to cart
 </button>
@@ -783,37 +975,6 @@
       
         <div class="card txt-center">
     <div class="card-head">
-        <a href="/jute_bags/multi-colour-jute-bags/">
-            
-            <img src="/images/Multi-colour-Jute-bags/1.jpg" alt="Multi-colour Jute bag">
-            
-        </a>
-    </div>
-    <div class="card-body">
-        <div class="card-title">
-            <a href="/jute_bags/multi-colour-jute-bags/">Multi-colour Jute bag</a>
-        </div>
-        
-        <div class="price mt-1">
-    
-    <span>Rs. 200.00</span>
-</div>
-        <button class="snipcart-add-item btn btn-teal" 
-        data-item-id="2"
-        data-item-name="Multi-colour Jute bag" 
-        
-        data-item-image="/images/Multi-colour-Jute-bags/1.jpg"
-        
-        data-item-price="200.00" 
-        data-item-url="/jute_bags/multi-colour-jute-bags/" 
-        data-item-description="Shopping and multipurpose jute bags desc">
-        Add to cart
-</button>
-    </div>
-</div>
-      
-        <div class="card txt-center">
-    <div class="card-head">
         <a href="/jute_bags/office-jute-bags/">
             
             <img src="/images/Office-Jute-bags/2.jpg" alt="Office Jute bag">
@@ -938,15 +1099,15 @@
       
         <div class="card txt-center">
     <div class="card-head">
-        <a href="/jute_bags/gorgeous-womens-jute-bag/">
+        <a href="/jute_bags/5-uni-colour-shopping-jute-bag-copy/">
             
-            <img src="/images/Women_and_Style/Gorgeous/Gorgeous-womens-Jute-bags-2.png" alt="Gorgeous">
+            <img src="/images/Shopping/Shopping-jute-bag-8.png" alt="Uni-colour Shopping Jute bag">
             
         </a>
     </div>
     <div class="card-body">
         <div class="card-title">
-            <a href="/jute_bags/gorgeous-womens-jute-bag/">Gorgeous</a>
+            <a href="/jute_bags/5-uni-colour-shopping-jute-bag-copy/">Uni-colour Shopping Jute bag</a>
         </div>
         
         <div class="price mt-1">
@@ -954,14 +1115,76 @@
     <span>Rs. 200.00</span>
 </div>
         <button class="snipcart-add-item btn btn-teal" 
-        data-item-id="4"
-        data-item-name="Gorgeous" 
+        data-item-id="2"
+        data-item-name="Uni-colour Shopping Jute bag" 
         
-        data-item-image="/images/Women_and_Style/Gorgeous/Gorgeous-womens-Jute-bags-2.png"
+        data-item-image="/images/Shopping/Shopping-jute-bag-8.png"
         
         data-item-price="200.00" 
-        data-item-url="/jute_bags/gorgeous-womens-jute-bag/" 
-        data-item-description="Gorgeous Womens jute bag desc">
+        data-item-url="/jute_bags/5-uni-colour-shopping-jute-bag-copy/" 
+        data-item-description="Shopping and multipurpose jute bags desc">
+        Add to cart
+</button>
+    </div>
+</div>
+      
+        <div class="card txt-center">
+    <div class="card-head">
+        <a href="/jute_bags/6-blessed-shopping-jute-bags/">
+            
+            <img src="/images/Shopping/Blessed/Blessed-shopping-jute-bag-3.jpg" alt="Blessed Shopping Jute bag">
+            
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <a href="/jute_bags/6-blessed-shopping-jute-bags/">Blessed Shopping Jute bag</a>
+        </div>
+        
+        <div class="price mt-1">
+    
+    <span>Rs. 200.00</span>
+</div>
+        <button class="snipcart-add-item btn btn-teal" 
+        data-item-id="2"
+        data-item-name="Blessed Shopping Jute bag" 
+        
+        data-item-image="/images/Shopping/Blessed/Blessed-shopping-jute-bag-3.jpg"
+        
+        data-item-price="200.00" 
+        data-item-url="/jute_bags/6-blessed-shopping-jute-bags/" 
+        data-item-description="Shopping and multipurpose jute bags desc">
+        Add to cart
+</button>
+    </div>
+</div>
+      
+        <div class="card txt-center">
+    <div class="card-head">
+        <a href="/jute_bags/7-checked-blue-colour-shopping-jute-bag/">
+            
+            <img src="/images/Shopping/Shopping-jute-bag-1.png" alt="Checked-blue-colour Shopping Jute bag">
+            
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <a href="/jute_bags/7-checked-blue-colour-shopping-jute-bag/">Checked-blue-colour Shopping Jute bag</a>
+        </div>
+        
+        <div class="price mt-1">
+    
+    <span>Rs. 200.00</span>
+</div>
+        <button class="snipcart-add-item btn btn-teal" 
+        data-item-id="2"
+        data-item-name="Checked-blue-colour Shopping Jute bag" 
+        
+        data-item-image="/images/Shopping/Shopping-jute-bag-1.png"
+        
+        data-item-price="200.00" 
+        data-item-url="/jute_bags/7-checked-blue-colour-shopping-jute-bag/" 
+        data-item-description="Shopping and multipurpose jute bags desc">
         Add to cart
 </button>
     </div>
@@ -970,53 +1193,168 @@
     </div>
   </div>
 </section>
-<section class="footer">
+<footer>
     <div class="container">
-        <div class="col col-1">
-            <h3>Information</h3>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Testimonials</a></li>
-        </ul>
+        <div class="about">
+            
+
+            <h3>Why buy from us</h3>
+            <p>Charis Jute bags is a high quality multipurpose Jute bags manufacturers. BagIt- a eco friendly Jute Bag from Charis can help you do your part to this environment in reducing using of plastic bags.</p>
         </div>
-        <div class="col col-2">
-                <h3>Why buy from us</h3>
-                <p>BagIt- a eco friendly Jute Bag from Charis can help you do your part to this environment in reducing using of plastic bags.</p>
+        <div class="links">
+            <h3>Important links</h3>
+            <ul>
+                <li>
+                    <a class="logo" href="">Home</a>
+                </li>
+                
+                <li>
+                    <a href="jute_bags">Shop</a>
+                </li>
+                
+                <li>
+                    <a href="faq">FAQ</a>
+                </li>
+                
+                <li>
+                    <a href="terms_conditions">Terms &amp; Conditions</a>
+                </li>
+                
+                <li>
+                    <a href="privacy_policy">Privacy Policy</a>
+                </li>
+                
+            </ul>
         </div>
-        <div class="col col-3">
-            <h3>Address</h3>
-            <p>Charis Jute bags
-                Century Park East Suite 803,
-                Los Angeles,
-                +44 (0) 207 543 5478</p>
+
+        <div class="contact">
+            <h3>Contact information</h3>
+            <ul>
+                <li>
+                    <a href="tel:0124857985320"><img src="/images/svg/phone.svg" alt="">0124857985320</a>
+                </li>
+                <li>
+                    <a href="tel:info@charisjutebags.com"><img src="/images/svg/envelope.svg" alt="">info@charisjutebags.com</a>
+                </li>
+                <li>
+                    <img src="/images/svg/map.svg" alt=""> Chennai, India
+                </li>
+
+            </ul>
+           
         </div>
-        <div class="col Follow us">
-            <div class="social-links">
-                <h3>Share At</h3>
-                <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-pinterest"></i>
-                </a>
-            </div>
+        <div class="contact_form">
+            <h3>Reach us</h3>
+
+            <form action="">
+                <div class="form_group">
+                    <label for="name">Name</label>
+                    <input type="text" name="Name" id="" required aria-label="Name" placeholder="Enter your full Name">
+                </div>
+                <div class="form_group">
+                    <label for="email">Email ID</label>
+                    <input type="email" name="Email" id="" required aria-label="Name" placeholder="abc@email.com">
+                </div>
+                <div class="form_group">
+                    <label for="tel">Name</label>
+                    <input type="tel" name="Mobile" id="" required aria-label="Name"
+                        placeholder="your 10 digit mobile number">
+                </div>
+                <div class="form_group">
+                    <label for="tel">Name</label>
+                    <textarea name="Message" id="" cols="30" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button class="btn btn-teal" type="submit">SUBMIT</button>
+            </form>
+
+        </div>
+        <div class="social">
+            <ul>
+                
+                <li>
+                    <a href="#"><img src="/images/svg/facebook.svg" alt=""></a>
+                </li>
+                
+                <li>
+                    <a href="https://www.instagram.com/charis_jute/"><img src="/images/svg/instagram.svg" alt=""></a>
+                </li>
+                
+                <li>
+                    <a href="#"><img src="/images/svg/whatsapp.svg" alt=""></a>
+                </li>
+                
+            </ul>
         </div>
     </div>
-</section>
+</footer>
 <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
 <div hidden id="snipcart" data-api-key="NjEzM2EwZWEtZjRkNC00MTkzLWJkMDUtOTQ4MTgxMTVhOTQ3NjM3Mzc1ODIwMjE1Mjg1NDE5" data-config-add-product-behavior="none" data-config-modal-style="side"></div>
 
 
+<script src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script>
+  
 
+  function resizeMasonryItem(item) {
+     
+    var grid = document.getElementsByClassName('masonry')[0];
+    if (grid) {
+      var rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap')),
+        rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows')),
+        gridImagesAsContent = item.querySelector('img.masonry-content');
+
+      
+
+      var rowSpan = Math.ceil((item.querySelector('.masonry-content').getBoundingClientRect().height + rowGap) / (rowHeight + rowGap));
+
+       
+      item.style.gridRowEnd = 'span ' + rowSpan;
+      if (gridImagesAsContent) {
+        item.querySelector('img.masonry-content').style.height = item.getBoundingClientRect().height + "px";
+      }
+    }
+  }
+
+  
+
+  function resizeAllMasonryItems() {
+    
+    var allItems = document.querySelectorAll('.masonry-item');
+
+    
+
+    if (allItems) {
+      for (var i = 0; i > allItems.length; i++) {
+        resizeMasonryItem(allItems[i]);
+      }
+    }
+  }
+
+  
+
+  function waitForImages() {
+    
+    var allItems = document.querySelectorAll('.masonry-item');
+    if (allItems) {
+      for (var i = 0; i < allItems.length; i++) {
+        imagesLoaded(allItems[i], function (instance) {
+          var item = instance.elements[0];
+          resizeMasonryItem(item);
+          console.log("Waiting for Images");
+        });
+      }
+    }
+  }
+
+   
+  var masonryEvents = ['load', 'resize'];
+  masonryEvents.forEach(function (event) {
+    window.addEventListener(event, resizeAllMasonryItems);
+  });
+
+   
+  waitForImages();  
+</script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -1024,7 +1362,23 @@
 
 <script src="plugins/drift-zoom/Drift.min.js"></script>
 
+<script src="plugins/lightgallery/lightgallery.umd.js"></script>
+
+<script src="plugins/lightgallery/lg-thumbnail.umd.js"></script>
+
+<script src="plugins/lightgallery/lg-zoom.umd.js"></script>
+
+<script type="text/javascript">
+  lightGallery(document.getElementById('lightgallery'), {
+      plugins: [lgZoom, lgThumbnail],
+      speed: 500,
+      
+      
+  });
+</script>
+
 <script>
+  
     
   new Drift(document.querySelector(".drift-demo-trigger"), {
     paneContainer: document.querySelector(".detail"),

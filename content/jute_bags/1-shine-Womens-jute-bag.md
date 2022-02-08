@@ -1,17 +1,17 @@
 ---
-title: "Shine"
+title: "Shine Women's Jute hand bag"
 date: 2021-10-16T12:40:16+06:00
 draft: false
 
 # meta description
-description: "Shine Womens jute bag desc"
+description: "Shine Women's Jute hand bag is an lovely yellow coloured shining bag with a plenty of storage space"
 
 # product Price
 price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Shine Women's Jute hand bag is an lovely yellow coloured shining bag with a plenty of storage space"
 
 #product ID
 productID: "1"
@@ -27,15 +27,13 @@ tags: "Women"
 # product Images
 # first image will be shown in the product page
 images:
-  - image: "/images/Women_and_Style/Shine/Shine-womens-Jute-bags-2.png"
-  - image: "/images/Women_and_Style/Shine/Shine-womens-Jute-bags-1.png"
-  - image: "/images/Women_and_Style/Shine/Shine-womens-Jute-bags-3.jpg"
-  - image: "/images/Women_and_Style/Shine/Shine-womens-Jute-bags-4.jpg"
-  - image: "/images/Women_and_Style/Shine/Shine-womens-Jute-bags-5.jpg"
-  - image: "/images/Women_and_Style/Shine/Shine-womens-Jute-bags-6.jpg"
+  - image: "/img/Hand_Bags/Shine/Shine-Womens_Jute_hand_bag-1.png"
+  - image: "/img/Hand_Bags/Shine/Shine-Womens_Jute_hand_bag-2.png"
+  - image: "/img/Hand_Bags/Shine/Shine-Womens_Jute_hand_bag-3.jpg"
+  - image: "/img/Hand_Bags/Shine/Shine-Womens_Jute_hand_bag-4.jpg"
+  - image: "/img/Hand_Bags/Shine/Shine-Womens_Jute_hand_bag-5.jpg"
 
-thumbnailImage: "/images/Women_and_Style/Shine/Shine-womens-Jute-bags-2.png"
-
+thumbnailImage: "/img/Hand_Bags/Shine/Shine-Womens_Jute_hand_bag-2.png"
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea

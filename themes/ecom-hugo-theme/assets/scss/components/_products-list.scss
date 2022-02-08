@@ -2,10 +2,11 @@
   //   background: $clr-primary-600--hsla;
 
   .container {
-    @include flex(normal, flex-start, wrap);
-    @extend .gap-2;
+    @include flex(normal, center, wrap);
+    // @extend .gap-2;
+    gap: .5rem;
     @media (min-width: 768px) {
-      gap: 0;
+      // gap: 0;
     }
     h2 {
       flex-basis: 100%;
@@ -13,11 +14,15 @@
       font-size: 2rem;
     }
     .card {
+      padding-inline: 1rem;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      flex: 1 0 48%;
       @media (min-width: 600px) {
-        flex: 1 0 50%;
+        flex: 1 0 30%;
       }
       @media (min-width: 991px) {
-        flex: 1 0 25%;
+        flex: 1 0 20%;
       }
       
     }

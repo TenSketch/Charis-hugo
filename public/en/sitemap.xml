@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/categories/</loc>
-    <lastmod>2021-10-16T12:40:16+06:00</lastmod>
+    <lastmod>2022-02-07T23:54:41+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ae"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>/</loc>
-    <lastmod>2021-10-16T12:40:16+06:00</lastmod>
+    <lastmod>2022-02-07T23:54:41+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ae"
@@ -27,6 +27,15 @@
                 hreflang="en"
                 href="/"
                 />
+  </url><url>
+    <loc>/promotion/offer1/</loc>
+    <lastmod>2022-02-07T23:54:41+05:30</lastmod>
+  </url><url>
+    <loc>/promotion/</loc>
+    <lastmod>2022-02-07T23:54:41+05:30</lastmod>
+  </url><url>
+    <loc>/categories/topbar/</loc>
+    <lastmod>2022-02-07T23:54:41+05:30</lastmod>
   </url><url>
     <loc>/jute_bags/</loc>
     <lastmod>2021-10-16T12:40:16+06:00</lastmod>
@@ -62,44 +71,68 @@
     <loc>/jute_bags/3-gracefull-womens-jute-bag/</loc>
     <lastmod>2021-10-16T12:40:14+06:00</lastmod>
   </url><url>
-    <loc>/jute_bags/4-be_happy-shopping-jute-bags/</loc>
-    <lastmod>2021-10-16T12:40:13+06:00</lastmod>
+    <loc>/categories/artistic/</loc>
+    <lastmod>2021-10-16T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>/categories/shopping/</loc>
-    <lastmod>2021-10-16T12:40:13+06:00</lastmod>
+    <loc>/jute_bags/table_runners/</loc>
+    <lastmod>2021-10-16T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>/jute_bags/5-uni-colour-shopping-jute-bag-copy/</loc>
-    <lastmod>2021-10-16T12:40:12+06:00</lastmod>
+    <loc>/jute_bags/table_runners2/</loc>
+    <lastmod>2021-10-15T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>/jute_bags/6-blessed-shopping-jute-bags/</loc>
-    <lastmod>2021-10-16T12:40:11+06:00</lastmod>
+    <loc>/jute_bags/table_runners3/</loc>
+    <lastmod>2021-10-14T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>/jute_bags/7-checked-blue-colour-shopping-jute-bag/</loc>
-    <lastmod>2021-10-16T12:40:10+06:00</lastmod>
-  </url><url>
-    <loc>/slider/slider3/</loc>
-    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
-  </url><url>
-    <loc>/slider/slider2/</loc>
-    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
-  </url><url>
-    <loc>/tags/slider/</loc>
-    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
-  </url><url>
-    <loc>/slider/</loc>
-    <lastmod>2021-09-29T17:17:55+05:30</lastmod>
+    <loc>/jute_bags/table_runners4/</loc>
+    <lastmod>2021-10-13T12:39:14+06:00</lastmod>
   </url><url>
     <loc>/slider/slider1/</loc>
+    <lastmod>2021-09-29T17:20:55+05:30</lastmod>
+  </url><url>
+    <loc>/tags/slider/</loc>
+    <lastmod>2021-09-29T17:20:55+05:30</lastmod>
+  </url><url>
+    <loc>/slider/</loc>
+    <lastmod>2021-09-29T17:20:55+05:30</lastmod>
+  </url><url>
+    <loc>/slider/slider2/</loc>
+    <lastmod>2021-09-29T17:19:55+05:30</lastmod>
+  </url><url>
+    <loc>/slider/slider3/</loc>
+    <lastmod>2021-09-29T17:18:55+05:30</lastmod>
+  </url><url>
+    <loc>/slider/slider4/</loc>
     <lastmod>2021-09-29T17:17:55+05:30</lastmod>
+  </url><url>
+    <loc>/slider/slider5/</loc>
+    <lastmod>2021-09-29T17:16:55+05:30</lastmod>
+  </url><url>
+    <loc>/jute_bags/gorgeous-womens-jute-bag/</loc>
+    <lastmod>2021-09-16T12:40:13+06:00</lastmod>
+  </url><url>
+    <loc>/categories/multi-colour/</loc>
+    <lastmod>2021-09-16T12:40:13+06:00</lastmod>
+  </url><url>
+    <loc>/jute_bags/multi-colour-jute-bags/</loc>
+    <lastmod>2021-09-16T12:40:13+06:00</lastmod>
+  </url><url>
+    <loc>/jute_bags/chakra-multipurpose-jute-bags/</loc>
+    <lastmod>2021-09-16T12:40:12+06:00</lastmod>
+  </url><url>
+    <loc>/categories/shopping/</loc>
+    <lastmod>2021-09-16T12:40:12+06:00</lastmod>
+  </url><url>
+    <loc>/jute_bags/4-be_happy-shopping-jute-bags/</loc>
+    <lastmod>2021-09-16T12:20:13+06:00</lastmod>
+  </url><url>
+    <loc>/jute_bags/classic-shopping-bags/</loc>
+    <lastmod>2021-09-16T12:20:13+06:00</lastmod>
+  </url><url>
+    <loc>/jute_bags/anchor-shopping-bags/</loc>
+    <lastmod>2021-09-16T12:20:13+06:00</lastmod>
   </url><url>
     <loc>/organic-jute-bags/</loc>
     <lastmod>2021-09-08T11:38:16+06:00</lastmod>
-  </url><url>
-    <loc>/categories/artistic/</loc>
-    <lastmod>2021-09-08T11:22:40+06:00</lastmod>
-  </url><url>
-    <loc>/jute_bags/chakra-multipurpose-jute-bags/</loc>
-    <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
     <loc>/jute_bags/expandable_bags-multipurpose-jute-bags/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
@@ -131,12 +164,6 @@
     <loc>/jute_bags/minimal-artistic_jute_bags/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>/categories/multi-colour/</loc>
-    <lastmod>2021-09-08T11:22:40+06:00</lastmod>
-  </url><url>
-    <loc>/jute_bags/multi-colour-jute-bags/</loc>
-    <lastmod>2021-09-08T11:22:40+06:00</lastmod>
-  </url><url>
     <loc>/categories/multipurpose-jute-bags/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
@@ -161,8 +188,17 @@
     <loc>/jute_bags/violet_art-jute_bag-artistic_jute_bags/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>/jute_bags/gorgeous-womens-jute-bag/</loc>
-    <lastmod>2021-05-15T10:50:16+06:00</lastmod>
+    <loc>/categories/shopping1/</loc>
+    <lastmod>2021-08-16T12:40:12+06:00</lastmod>
+  </url><url>
+    <loc>/jute_bags/5-uni-colour-shopping-jute-bag-copy/</loc>
+    <lastmod>2021-08-16T12:40:12+06:00</lastmod>
+  </url><url>
+    <loc>/jute_bags/6-blessed-shopping-jute-bags/</loc>
+    <lastmod>2021-07-16T12:40:11+06:00</lastmod>
+  </url><url>
+    <loc>/jute_bags/7-checked-blue-colour-shopping-jute-bag/</loc>
+    <lastmod>2021-06-16T12:40:10+06:00</lastmod>
   </url><url>
     <loc>/tags/about/</loc>
   </url><url>

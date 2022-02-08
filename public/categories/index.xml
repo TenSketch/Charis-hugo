@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Charis | Jute Bags | Buy high quality jute bags</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Oct 2021 12:40:16 +0600</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Feb 2022 23:54:41 +0530</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>topbar</title>
+      <link>/categories/topbar/</link>
+      <pubDate>Mon, 07 Feb 2022 23:54:41 +0530</pubDate>
+      
+      <guid>/categories/topbar/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Women</title>
       <link>/categories/women/</link>
@@ -17,20 +26,29 @@
     </item>
     
     <item>
-      <title>Shopping</title>
-      <link>/categories/shopping/</link>
-      <pubDate>Sat, 16 Oct 2021 12:40:13 +0600</pubDate>
+      <title>Artistic</title>
+      <link>/categories/artistic/</link>
+      <pubDate>Sat, 16 Oct 2021 12:39:14 +0600</pubDate>
       
-      <guid>/categories/shopping/</guid>
+      <guid>/categories/artistic/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Artistic</title>
-      <link>/categories/artistic/</link>
-      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
+      <title>Multi-colour</title>
+      <link>/categories/multi-colour/</link>
+      <pubDate>Thu, 16 Sep 2021 12:40:13 +0600</pubDate>
       
-      <guid>/categories/artistic/</guid>
+      <guid>/categories/multi-colour/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shopping</title>
+      <link>/categories/shopping/</link>
+      <pubDate>Thu, 16 Sep 2021 12:40:12 +0600</pubDate>
+      
+      <guid>/categories/shopping/</guid>
       <description></description>
     </item>
     
@@ -49,15 +67,6 @@
       <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
       
       <guid>/categories/laundry/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Multi-colour</title>
-      <link>/categories/multi-colour/</link>
-      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
-      
-      <guid>/categories/multi-colour/</guid>
       <description></description>
     </item>
     
@@ -94,6 +103,15 @@
       <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
       
       <guid>/categories/travel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shopping1</title>
+      <link>/categories/shopping1/</link>
+      <pubDate>Mon, 16 Aug 2021 12:40:12 +0600</pubDate>
+      
+      <guid>/categories/shopping1/</guid>
       <description></description>
     </item>
     

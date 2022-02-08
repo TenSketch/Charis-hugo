@@ -1,6 +1,6 @@
 ---
 title: "Be Happy Shopping Jute bag"
-date: 2021-10-16T12:40:13+06:00
+date: 2021-09-16T12:20:13+06:00
 draft: false
 
 # meta description
@@ -21,22 +21,21 @@ productID: "2"
 
 # Category
 categories:
-  - "Shopping"
-  
+  - "shopping"
+
 # product Images
 # first image will be shown in the product page
 
 images:
-  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-4.png"
-  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-5.png"
-  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-6.png"
-  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-7.png"
-  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-1.jpg"
-  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-2.jpg"
-  - image: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-3.jpg"
+  - image: "/img/Shopping_Bags/Be_happy/Be_Happy-shopping-jute-bag-4.png"
+  - image: "/img/Shopping_Bags/Be_happy/Be_Happy-shopping-jute-bag-5.png"
+  - image: "/img/Shopping_Bags/Be_happy/Be_Happy-shopping-jute-bag-6.png"
+  - image: "/img/Shopping_Bags/Be_happy/Be_Happy-shopping-jute-bag-7.png"
+  - image: "/img/Shopping_Bags/Be_happy/Be_Happy-shopping-jute-bag-1.jpg"
+  - image: "/img/Shopping_Bags/Be_happy/Be_Happy-shopping-jute-bag-2.jpg"
+  - image: "/img/Shopping_Bags/Be_happy/Be_Happy-shopping-jute-bag-3.jpg"
 
-thumbnailImage: "/images/Shopping/Be_Happy/Be_Happy-shopping-jute-bag-4.png"
-
+thumbnailImage: "/img/Shopping_Bags/Be_happy/Be_Happy-shopping-jute-bag-4.png"
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
