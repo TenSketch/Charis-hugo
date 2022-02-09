@@ -185,92 +185,71 @@
 </script>
 
 
-<section class="slider">
-  <div class="container">
-    <div class="carouselContainer">
+
+
+
+
+
+    
+    <div class="swiper-container">
+      <di class="swiper-wrapper">
       
-      <div class="carouselImgs">
-        <img src="images/slider/Beauty-Womens_Jute_hand_bag-1.jpg" alt="Beauty">
-        <div class="content">
-          <h1>Beauty</h1>
-          
+        
+        <div class="swiper-slide">
+          <img src="images/slider/Beauty-Womens_Jute_hand_bag-1.jpg" alt="Beauty">
           
         </div>
-      </div>
-      
-      <div class="carouselImgs">
-        <img src="images/slider/Shine-Womens_Jute_hand_bag-5.jpg" alt="Shine like a diamond with our bags">
-        <div class="content">
-          <h1>Shine like a diamond with our bags</h1>
-          
+        
+        
+        <div class="swiper-slide">
+          <img src="images/slider/Shine-Womens_Jute_hand_bag-5.jpg" alt="Shine like a diamond with our bags">
           
         </div>
-      </div>
-      
-      <div class="carouselImgs">
-        <img src="images/slider/Awesome-Womens_Jute_hand_bag-2.jpg" alt="Awesome">
-        <div class="content">
-          <h1>Awesome</h1>
-          
+        
+        
+        <div class="swiper-slide">
+          <img src="images/slider/Awesome-Womens_Jute_hand_bag-2.jpg" alt="Awesome">
           
         </div>
-      </div>
-      
-      <div class="carouselImgs">
-        <img src="images/slider/Gracefull-womens-Jute-bags-3.jpg" alt="Graceful">
-        <div class="content">
-          <h1>Graceful</h1>
-          
+        
+        
+        <div class="swiper-slide">
+          <img src="images/slider/Gracefull-womens-Jute-bags-3.jpg" alt="Graceful">
           
         </div>
-      </div>
-      
-      <div class="carouselImgs">
-        <img src="images/slider/Gorgeous-Womens_Jute_hand_bag-6.jpg" alt="Gorgeous">
-        <div class="content">
-          <h1>Gorgeous</h1>
-          
+        
+        
+        <div class="swiper-slide">
+          <img src="images/slider/Gorgeous-Womens_Jute_hand_bag-6.jpg" alt="Gorgeous">
           
         </div>
-      </div>
-      
-      <span class="prev" id="prev">
-        <img src="images/icons/left.png" alt="">
-      </span>
-      <span class="next" id="next">
-        <img src="images/icons/right.png" alt="">
-      </span>
-      
+        
+      </di>
+      <div class="swiper-plugin-pagination"></div>
     </div>
-  </div>
-</section>
-<script>
-  let currentSlide = 1;
-  function showSlide(slideIndex) {
-    const slides = document.getElementsByClassName('carouselImgs');
-    if (slideIndex > slides.length) { currentSlide = 1 }
-    if (slideIndex < 1) { currentSlide = slides.length }
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none'
-    }
-    slides[currentSlide - 1].style.display = 'flex'
-  }
-  function nextSlide() {
-    showSlide(currentSlide += 1);
-  }
-  function previousSlide() {
-    showSlide(currentSlide -= 1);
-  }
-  window.onload = function () {
-    showSlide(currentSlide);
-    document.getElementById('prev').addEventListener('click', function () {
-      previousSlide();
-    })
-    document.getElementById('next').addEventListener('click', function () {
-      nextSlide();
-    })
-  }
-</script>
+
+    
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/pagination.min.js"></script>
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/keyboardControl.min.js"></script>
+    
+    <script>
+      
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-plugin-pagination",
+          clickable: true,
+          bulletClass: "swiper-plugin-pagination__item",
+          bulletActiveClass: "is-active"
+        },
+        keyboard: {
+          enabled: true
+        },
+        plugins: [SwiperPluginPagination, SwiperPluginKeyboardControl]
+        
+      });
+    </script>
+
 
 
 
@@ -531,6 +510,130 @@
     </div>
 </div>
     
+    <div class="card txt-center">
+    <div class="card-head">
+        <a href="/jute_bags/home_storage-copy-3/">
+            
+            <img src="/images/Multipurpose/Home_Storage/6.jpg" alt="Multipurpose bags">
+            
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <a href="/jute_bags/home_storage-copy-3/">Multipurpose bags</a>
+        </div>
+        
+        <div class="price mt-1">
+    
+    <span>Rs. 200.00</span>
+</div>
+        <button class="snipcart-add-item btn btn-teal" 
+        data-item-id="2"
+        data-item-name="Multipurpose bags" 
+        
+        data-item-image="/images/Multipurpose/Home_Storage/6.jpg"
+        
+        data-item-price="200.00" 
+        data-item-url="/jute_bags/home_storage-copy-3/" 
+        data-item-description="Multipurpose bags used for toys, laundry and storage">
+        Add to cart
+</button>
+    </div>
+</div>
+    
+    <div class="card txt-center">
+    <div class="card-head">
+        <a href="/jute_bags/home_storage-copy/">
+            
+            <img src="/images/Multipurpose/Home_Storage/3.jpg" alt="Multipurpose bags">
+            
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <a href="/jute_bags/home_storage-copy/">Multipurpose bags</a>
+        </div>
+        
+        <div class="price mt-1">
+    
+    <span>Rs. 200.00</span>
+</div>
+        <button class="snipcart-add-item btn btn-teal" 
+        data-item-id="2"
+        data-item-name="Multipurpose bags" 
+        
+        data-item-image="/images/Multipurpose/Home_Storage/3.jpg"
+        
+        data-item-price="200.00" 
+        data-item-url="/jute_bags/home_storage-copy/" 
+        data-item-description="Multipurpose bags used for toys, laundry and storage">
+        Add to cart
+</button>
+    </div>
+</div>
+    
+    <div class="card txt-center">
+    <div class="card-head">
+        <a href="/jute_bags/home_storage-copy-2/">
+            
+            <img src="/images/Multipurpose/Home_Storage/5.jpg" alt="Multipurpose bags">
+            
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <a href="/jute_bags/home_storage-copy-2/">Multipurpose bags</a>
+        </div>
+        
+        <div class="price mt-1">
+    
+    <span>Rs. 200.00</span>
+</div>
+        <button class="snipcart-add-item btn btn-teal" 
+        data-item-id="2"
+        data-item-name="Multipurpose bags" 
+        
+        data-item-image="/images/Multipurpose/Home_Storage/5.jpg"
+        
+        data-item-price="200.00" 
+        data-item-url="/jute_bags/home_storage-copy-2/" 
+        data-item-description="Multipurpose bags used for toys, laundry and storage">
+        Add to cart
+</button>
+    </div>
+</div>
+    
+    <div class="card txt-center">
+    <div class="card-head">
+        <a href="/jute_bags/home_storage/">
+            
+            <img src="/images/Multipurpose/Home_Storage/1.jpg" alt="Multipurpose bags">
+            
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <a href="/jute_bags/home_storage/">Multipurpose bags</a>
+        </div>
+        
+        <div class="price mt-1">
+    
+    <span>Rs. 200.00</span>
+</div>
+        <button class="snipcart-add-item btn btn-teal" 
+        data-item-id="2"
+        data-item-name="Multipurpose bags" 
+        
+        data-item-image="/images/Multipurpose/Home_Storage/1.jpg"
+        
+        data-item-price="200.00" 
+        data-item-url="/jute_bags/home_storage/" 
+        data-item-description="Multipurpose bags used for toys, laundry and storage">
+        Add to cart
+</button>
+    </div>
+</div>
+    
   </div>
 </section>
 
@@ -665,8 +768,11 @@
 </div>
     
 
+    
+
   </div>
 </section>
+
 
 
 
@@ -866,6 +972,7 @@
             </form>
 
         </div>
+        
         <div class="social">
             <ul>
                 
@@ -882,6 +989,10 @@
                 </li>
                 
             </ul>
+        </div>
+        <div class="copyright">
+        <p>© <a href="https://charisjutebags.com">Charis</a> 2021. All Rights Reserved.</p>
+
         </div>
     </div>
 </footer>
@@ -966,6 +1077,8 @@
 
 <script src="plugins/lightgallery/lg-zoom.umd.js"></script>
 
+
+
 <script type="text/javascript">
   lightGallery(document.getElementById('lightgallery'), {
       plugins: [lgZoom, lgThumbnail],
@@ -1019,6 +1132,8 @@ s.parentNode.insertBefore(rw, s);
 
 <!-- Main Script -->
 
-<script src="/js/app.js"></script></body>
+<script src="/js/app.js"></script>
+
+</body>
 
 </html>

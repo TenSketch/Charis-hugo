@@ -7,7 +7,7 @@
     @include flex(normal, space-around, wrap);
     // main child 1
     .prod_details-images {
-      border: 2px solid blue;
+      // border: 2px solid blue;
       @include flex(center, space-around, nowrap);
       @media (min-width: 768px) {
         flex-basis: 70%;
@@ -90,7 +90,7 @@
 
     // main child 2
     .prod_details-desc {
-      border: 2px solid red;
+      // border: 2px solid red;
       @media (min-width: 768px) {
         flex-basis: 30%;
       }

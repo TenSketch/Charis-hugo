@@ -106,6 +106,8 @@
 {{ range site.Params.plugins.js}}
 <script src="{{ .link | absURL }}"></script>
 {{ end }}
+
+
 <script type="text/javascript">
   lightGallery(document.getElementById('lightgallery'), {
       plugins: [lgZoom, lgThumbnail],
@@ -160,3 +162,4 @@ s.parentNode.insertBefore(rw, s);
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/app.js" }}
 <script src="{{ $script.Permalink }}"></script>
+

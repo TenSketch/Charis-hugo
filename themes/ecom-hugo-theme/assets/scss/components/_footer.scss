@@ -4,7 +4,7 @@ footer {
     @extend .mb-1;
   }
   img {
-    display: inline-block;
+    display: unset;
   }
   li {
     margin-bottom: 1rem;
@@ -86,15 +86,47 @@ footer {
         @extend .W_100-PC;
       }
     }
-    .contact,
-    .social {
+    .contact {
       img {
         max-width: 1rem;
         margin-right: 0.5rem;
       }
     }
     .social {
-      flex: 1 0 100%;
+      flex-basis: 100%;
+      position: relative;
+      // z-index: 2;
+      img{
+        width: 2rem;
+
+      }
+      ul{
+        @include flex (center, center, nowrap);
+        @extend .gap-2;
+        @extend .mt-2;
+
+        li{
+          display: inline-block;
+          margin: 0;
+        }
+      }
+      &::before{
+        position: absolute;
+        content: '';
+        width: 60%;
+        height: 3px;
+        border-radius: 5px;
+        background: $clr-primary-200--hsla;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+      }
     }
+  }
+}
+.copyright{
+  flex-basis: 100%;
+  p{
+    @extend .txt-center;
   }
 }

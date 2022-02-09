@@ -63,6 +63,7 @@
             </form>
 
         </div>
+        
         <div class="social">
             <ul>
                 {{ range site.Params.social }}
@@ -71,6 +72,10 @@
                 </li>
                 {{ end }}
             </ul>
+        </div>
+        <div class="copyright">
+        <p>{{ site.Params.copyright | markdownify  }}</p>
+
         </div>
     </div>
 </footer>

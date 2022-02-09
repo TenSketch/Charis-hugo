@@ -56,6 +56,52 @@
   }
 </script>
 {{end}}
+
+
+<!-- swiper -->
+
+{{ if site.Data.homepage.swiper.enable }}
+    <!-- Tiny-Swiper -->
+    <div class="swiper-container">
+      <di class="swiper-wrapper">
+      {{range $index, $val := .Site.Taxonomies.tags.slider}}
+        
+        <div class="swiper-slide">
+          <img src="{{.Page.Params.image}}" alt="{{.Title}}">
+          <!-- <div class="swiper-slide--content">
+            <h1>{{.Title}}</h1>
+            <h3>{{.Description}}</h3>
+            <a href="#" class="btn btn-primary">{{.Page.Params.link}}</a>
+          </div> -->
+        </div>
+        {{end}}
+      </di>
+      <div class="swiper-plugin-pagination"></div>
+    </div>
+
+    <!-- Tiny-Swiper JS -->
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/pagination.min.js"></script>
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/keyboardControl.min.js"></script>
+    <!-- Initialize Tiny-Swiper -->
+    <script>
+      
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-plugin-pagination",
+          clickable: true,
+          bulletClass: "swiper-plugin-pagination__item",
+          bulletActiveClass: "is-active"
+        },
+        keyboard: {
+          enabled: true
+        },
+        plugins: [SwiperPluginPagination, SwiperPluginKeyboardControl]
+        
+      });
+    </script>
+{{end}}
+
 <!-- banner -->
 {{ if site.Data.homepage.banner.enable }}
 {{ with site.Data.homepage.banner }}
@@ -81,7 +127,7 @@
     {{ with site.Data.homepage.products }}
     <h2>{{ .title | markdownify }}</h2>
     {{ end }}
-    {{ range first 8 (where site.RegularPages "Type" "jute_bags") }}
+    {{ range first 12 (where site.RegularPages "Type" "jute_bags") }}
     {{ partial "partials/products/list-item.html" . }}
     {{ end }}
   </div>
@@ -96,8 +142,11 @@
     {{ partial "partials/products/list-item.html" . }}
     {{ end }}
 
+    
+
   </div>
 </section>
+
 {{ end }}
 <!--  products -->
 <!-- about -->

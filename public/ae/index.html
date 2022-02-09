@@ -182,47 +182,41 @@
 </script>
 
 
-<section class="slider">
-  <div class="container">
-    <div class="carouselContainer">
+
+
+
+
+
+    
+    <div class="swiper-container">
+      <di class="swiper-wrapper">
       
-      <span class="prev" id="prev">
-        <img src="images/icons/left.png" alt="">
-      </span>
-      <span class="next" id="next">
-        <img src="images/icons/right.png" alt="">
-      </span>
-      
+      </di>
+      <div class="swiper-plugin-pagination"></div>
     </div>
-  </div>
-</section>
-<script>
-  let currentSlide = 1;
-  function showSlide(slideIndex) {
-    const slides = document.getElementsByClassName('carouselImgs');
-    if (slideIndex > slides.length) { currentSlide = 1 }
-    if (slideIndex < 1) { currentSlide = slides.length }
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none'
-    }
-    slides[currentSlide - 1].style.display = 'flex'
-  }
-  function nextSlide() {
-    showSlide(currentSlide += 1);
-  }
-  function previousSlide() {
-    showSlide(currentSlide -= 1);
-  }
-  window.onload = function () {
-    showSlide(currentSlide);
-    document.getElementById('prev').addEventListener('click', function () {
-      previousSlide();
-    })
-    document.getElementById('next').addEventListener('click', function () {
-      nextSlide();
-    })
-  }
-</script>
+
+    
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/pagination.min.js"></script>
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/keyboardControl.min.js"></script>
+    
+    <script>
+      
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-plugin-pagination",
+          clickable: true,
+          bulletClass: "swiper-plugin-pagination__item",
+          bulletActiveClass: "is-active"
+        },
+        keyboard: {
+          enabled: true
+        },
+        plugins: [SwiperPluginPagination, SwiperPluginKeyboardControl]
+        
+      });
+    </script>
+
 
 
 
@@ -245,8 +239,11 @@
     
     
 
+    
+
   </div>
 </section>
+
 
 
 
@@ -446,6 +443,7 @@
             </form>
 
         </div>
+        
         <div class="social">
             <ul>
                 
@@ -462,6 +460,10 @@
                 </li>
                 
             </ul>
+        </div>
+        <div class="copyright">
+        <p>© <a href="https://charisjutebags.com">Charis</a> 2021. All Rights Reserved.</p>
+
         </div>
     </div>
 </footer>
@@ -546,6 +548,8 @@
 
 <script src="plugins/lightgallery/lg-zoom.umd.js"></script>
 
+
+
 <script type="text/javascript">
   lightGallery(document.getElementById('lightgallery'), {
       plugins: [lgZoom, lgThumbnail],
@@ -599,6 +603,8 @@ s.parentNode.insertBefore(rw, s);
 
 <!-- Main Script -->
 
-<script src="/js/app.js"></script></body>
+<script src="/js/app.js"></script>
+
+</body>
 
 </html>

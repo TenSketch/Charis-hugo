@@ -1,5 +1,10 @@
 ############################ slider ##########################
 slider:
+  enable: false
+  # sliders item comes from "content/slider"
+
+############################ slider ##########################
+swiper:
   enable: true
   # sliders item comes from "content/slider"
 
