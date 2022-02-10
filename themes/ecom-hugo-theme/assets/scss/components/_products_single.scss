@@ -21,6 +21,9 @@
           // min-height: 400px;
           height: 90%;
           object-fit: cover;
+          &:hover{
+            transform: scale(1.5);
+          }
           @media (min-width: 600px) {
             // width: 400px;
             // height: 500px;
@@ -122,3 +125,4 @@
 .rw-ui-mobile-wrapper {
   display: none;
 }
+

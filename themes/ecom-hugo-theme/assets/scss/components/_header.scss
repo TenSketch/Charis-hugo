@@ -7,11 +7,11 @@ header {
   position: relative;
   .container {
     @include flex(center, space-around, nowrap);
-    @extend .p-1;
+    padding: 0.5rem 1rem;
     position: static;
     // child1
     .logo {
-      flex: 1;
+      // flex: 1;
       // outline: blue 1px solid;
       img {
         min-width: 8rem;
@@ -20,17 +20,19 @@ header {
       }
     }
 
-    .cart {
-      transition: display 250ms ease-in;
+ 
       .price {
         display: none;
+        position: absolute;
+        left: 2rem;
+        top: 10px;
       }
       &:hover {
         .price {
           display: block;
         }
       }
-    }
+    
   }
 }
 
@@ -90,12 +92,12 @@ header {
     // font-size: 16px;
     // border: none;
     position: relative;
-    img{
+    img {
       max-width: 1.2rem;
       display: unset;
       position: absolute;
       bottom: 0;
-      margin-left: .5rem;
+      margin-left: 0.5rem;
     }
   }
   .dropdown-menu {
@@ -118,15 +120,8 @@ header {
     }
   }
   &:hover {
-
     .dropdown-menu {
       display: block;
-    }
-    .dropdown-toggle {
-      // background-color: $clr-primary-light;
-      &:hover{
-        
-      }
     }
   }
 }
@@ -136,6 +131,10 @@ header {
   flex: 1;
   @include flex(center, flex-end, nowrap);
   @extend .gap-1;
+  .nav_link {
+    display: flex;
+    position: relative;
+  }
 }
 
 .svg-inline--fa {
@@ -180,4 +179,9 @@ header {
   @media (min-width: 991px) {
     display: none;
   }
+}
+.snipcart-items-count {
+  position: absolute;
+  top: -10px;
+  left: 2rem;
 }

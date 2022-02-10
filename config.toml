@@ -137,11 +137,67 @@ currencySymbol = "Rs. "
   parent = "Household"
   weight = 3
 
-
   [[menu.main]]
   name = "About us"
   URL = "#"
   weight = 3
+
+############################## sidebar ###############################
+
+  [[menu.sidebar]]
+  identifier = "Jute bags"
+  name = "Jute bags"
+  URL = "jute_bags"
+  weight = 1
+
+  [[menu.sidebar]]
+  identifier = "Women's jute bags"
+  name = "Women's jute bags"
+  URL = "/categories/women/"
+  parent = "Jute bags"
+  weight = 1
+
+  [[menu.sidebar]]
+  identifier = "Jute gift bags"
+  name = "Jute Gift bags"
+  URL = "/categories/gift-or-giveaway/"
+  parent = "Jute bags"
+  weight = 2
+
+  [[menu.sidebar]]
+  identifier = "Cotton bags"
+  name = "Cotton bags"
+  URL = "/categories/shopping/"
+  parent = "Jute bags"
+  weight = 3
+
+  [[menu.sidebar]]
+  identifier = "Household"
+  name = "Household"
+  URL = "/"
+  weight = 2
+
+  [[menu.sidebar]]
+  identifier = "Storage baskets"
+  name = "Storage baskets"
+  URL = "/"
+  parent = "Household"
+  weight = 1
+
+  [[menu.sidebar]]
+  identifier = "Kitchen and Dining room"
+  name = "Kitchen and Dining"
+  URL = "/"
+  parent = "Household"
+  weight = 2
+
+  [[menu.sidebar]]
+  identifier = "Decoration and Accessories"
+  name = "Decoration and Accessories"
+  URL = "/"
+  parent = "Household"
+  weight = 3
+
 
 ############# footer menu #############
   [[menu.footer]]

@@ -21,7 +21,7 @@ productID: "2"
 
 # Category
 categories:
-  - "shopping1"
+  - "shopping"
 
 # product Images
 # first image will be shown in the product page

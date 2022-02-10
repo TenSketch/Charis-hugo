@@ -11,7 +11,7 @@
     <div class="prod_details-images">
       <!-- sub child1 -->
       <div class="wrapper-featured_img">
-        <img id="featured" src="{{ (index .Params.images 0).image | absURL }}" alt="{{.Name}}">
+        <img id="featured" data-zoom="{{ (index .Params.images 0).image | absURL }}" src="{{ (index .Params.images 0).image | absURL }}" alt="{{.Name}}">
       </div>
 
       <!-- sub child2 -->

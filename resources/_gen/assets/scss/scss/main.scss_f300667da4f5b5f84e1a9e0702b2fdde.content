@@ -26,7 +26,7 @@ body {
   font-weight: 300;
   line-height: 1.5;
   overflow-x: hidden;
-  padding-top: calc(5vh + 1rem); }
+  padding-top: 7vh; }
 
 a {
   text-decoration: none;
@@ -54,7 +54,7 @@ section {
   margin: 0 auto;
   position: relative; }
 
-.txt-center, .offer .topBar p, .copyright p, .testimonials .container h2, .products .container h2, .masonry-title {
+.txt-center, .offer p, .copyright p, .testimonials .container h2, .products .container h2, .masonry-title {
   text-align: center; }
 
 .flex-col, .prod_details .container .prod_details-images .wrapper-thumb_img #prod_slider, .prod_details .container .prod_details-images .wrapper-thumb_img, .card .card-body, .products .container .card, .btn-teal {
@@ -167,7 +167,7 @@ h2 {
 .mb-4 {
   margin-bottom: 4rem; }
 
-.p-1, #jute_bags .container .sidebar, header .container {
+.p-1, #jute_bags .container .sidebar {
   padding: 1rem; }
 
 .pt-1 {
@@ -204,19 +204,19 @@ header {
     align-items: center;
     justify-content: space-around;
     flex-wrap: nowrap;
+    padding: 0.5rem 1rem;
     position: static; }
-    header .container .logo {
-      flex: 1; }
-      header .container .logo img {
-        min-width: 8rem;
-        width: 10rem;
-        margin-left: 1rem; }
-    header .container .cart {
-      transition: display 250ms ease-in; }
-      header .container .cart .price {
-        display: none; }
-      header .container .cart:hover .price {
-        display: block; }
+    header .container .logo img {
+      min-width: 8rem;
+      width: 10rem;
+      margin-left: 1rem; }
+    header .container .price {
+      display: none;
+      position: absolute;
+      left: 2rem;
+      top: 10px; }
+    header .container:hover .price {
+      display: block; }
 
 .nav_list {
   flex: 2;
@@ -260,7 +260,7 @@ header {
       display: unset;
       position: absolute;
       bottom: 0;
-      margin-left: .5rem; }
+      margin-left: 0.5rem; }
   .dropdown .dropdown-menu {
     display: none;
     position: absolute;
@@ -284,6 +284,9 @@ header {
   align-items: center;
   justify-content: flex-end;
   flex-wrap: nowrap; }
+  .nav_icons .nav_link {
+    display: flex;
+    position: relative; }
 
 .svg-inline--fa {
   max-width: 30px;
@@ -323,6 +326,11 @@ header {
   @media (min-width: 991px) {
     .nav__toggle {
       display: none; } }
+.snipcart-items-count {
+  position: absolute;
+  top: -10px;
+  left: 2rem; }
+
 .slider {
   padding-block: 0; }
   .slider .container {
@@ -507,13 +515,14 @@ header {
   .masonry {
     grid-template-columns: repeat(4, minmax(100px, 1fr)); } }
 
-.masonry-item, .masonry-content {
+.masonry-item,
+.masonry-content {
   border-radius: 4px;
   overflow: hidden; }
 
 .masonry-item {
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
-  transition: filter .25s ease-in-out;
+  transition: filter 0.25s ease-in-out;
   border: 1px solid lightgrey;
   background: #caab8975; }
 
@@ -537,7 +546,7 @@ header {
   display: flex;
   flex-shrink: 0;
   justify-content: center;
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   font-size: 18px;
   align-items: center;
@@ -548,26 +557,46 @@ header {
     height: 100%;
     object-fit: cover;
     object-position: top; }
+  .swiper-slide .swiper-slide--content {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    padding-block: 2rem; }
+    .swiper-slide .swiper-slide--content h1 {
+      display: inline-block;
+      padding: 20px;
+      text-transform: uppercase;
+      background: #fff;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text; }
 
 /* plugin pagination */
 .swiper-plugin-pagination {
-  display: block;
+  display: flex;
   position: absolute;
-  top: 50%;
-  right: 2.2rem;
-  width: 0.5rem;
-  transform: translateY(-50%); }
+  top: 90%;
+  left: 50%;
+  /* width: 10%; */
+  transform: translateX(-50%);
+  /* justify-content: space-around; */
+  /* height: 100%; */ }
   .swiper-plugin-pagination__item {
-    display: block;
-    margin: 100% 0;
-    width: 100%;
-    padding-top: 100%;
-    height: 0;
+    /* display: inline-block; */
+    margin-inline: 5px;
+    width: 10px;
+    /* padding-top: 100%; */
+    height: 10px;
     border-radius: 50% !important;
     border: none;
     background: #fff;
-    transition: background ease 0.2s;
-    cursor: pointer; }
+    transition: background ease 250ms;
+    cursor: pointer;
+    /* flex-basis: 100%; */ }
   .swiper-plugin-pagination__item.is-active {
     background: #333; }
 
@@ -642,13 +671,11 @@ header {
   flex-wrap: wrap;
   gap: 1em; }
   #jute_bags .container .sidebar {
-    flex: 1 1 100%;
-    border-radius: 10px; }
+    flex: 1 1 100%; }
     @media (min-width: 600px) {
       #jute_bags .container .sidebar {
         position: sticky;
         top: 0;
-        box-shadow: 0.25rem 0 #c3b192;
         flex: 1 1 20%; } }
     @media (min-width: 991px) {
       #jute_bags .container .sidebar {
@@ -663,6 +690,9 @@ header {
     @media (min-width: 600px) {
       #jute_bags .container .content {
         flex: 1 1 40%; } }
+    #jute_bags .container .content .card {
+      border: none; }
+
 .sidebar ul {
   padding: 0;
   margin: 0;
@@ -764,6 +794,8 @@ header {
         .prod_details .container .prod_details-images .wrapper-featured_img #featured {
           height: 90%;
           object-fit: cover; }
+          .prod_details .container .prod_details-images .wrapper-featured_img #featured:hover {
+            transform: scale(1.5); }
           @media (min-width: 600px) {
             .prod_details .container .prod_details-images .wrapper-featured_img #featured {
               margin: 0 auto; } }
@@ -970,14 +1002,14 @@ footer {
   top: 0;
   padding-block: 0;
   width: 100%;
-  height: 5vh; }
-  .offer .topBar {
-    padding-block: 1rem;
-    background-color: #9b8055;
-    position: relative; }
-    .offer .topBar p {
-      margin: 0;
-      color: #fff;
-      position: relative;
-      font-size: 1.5rem;
-      font-family: "Kaushan Script", cursive; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #9b8055;
+  min-height: 7vh; }
+  .offer p {
+    margin: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Kaushan Script", cursive; }

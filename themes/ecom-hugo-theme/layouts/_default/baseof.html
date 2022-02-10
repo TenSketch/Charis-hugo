@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" lang="{{ .Language }}">
 {{ partial "head.html" . }}
-
 <body>
     <section class="offer">
-        <div class="topBar">
-            <div class="container">
         {{range $index, $val := .Site.Taxonomies.categories.topbar}}
-                {{.Content}}
-                {{end}}
-            </div>
-        </div>
+        {{.Content}}
+        {{end}}
     </section>
     {{ partial "header.html" . }}
-
     {{- block "main" . }}{{- end }}
-   
     {{- partial "footer.html" . -}}
     {{- partial "scripts.html" . -}}
-
 </body>
-
 </html>

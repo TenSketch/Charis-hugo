@@ -27,11 +27,6 @@ window.onscroll = function () {
 }
 
 
-
-// Initialize Animate on scroll
-AOS.init();
-
-
 // product images thumbnail slider 
 let thumbnails = document.getElementsByClassName('thumbnail')
 

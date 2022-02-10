@@ -3,7 +3,7 @@
 
 ## changes:
 - image change on hover
-- single navbar
+<!-- - single navbar -->
 - qty change in prod page
 - product zoom on hover
 - social media share buttons
@@ -19,7 +19,7 @@
 - search- expandable search
 
 # footer
-- contact us - to footer
+<!-- - contact us - to footer -->
 
 
 
