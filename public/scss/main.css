@@ -529,18 +529,19 @@ header {
 .masonry-item:hover {
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3)); }
 
-.swiper-container,
-.swiper-wrapper {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%; }
-
 /* basic */
 .swiper-container {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  height: auto; }
 
+.swiper-container,
+.swiper-wrapper {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .swiper-container,
+    .swiper-wrapper {
+      height: 100%; } }
 .swiper-slide {
   position: relative;
   display: flex;
@@ -549,26 +550,26 @@ header {
   width: 100% !important;
   height: 100%;
   font-size: 18px;
-  align-items: center;
+  align-items: flex-start;
   cursor: grab; }
   .swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover; }
+    height: 50%;
+    object-fit: cover;
+    object-position: top; }
+    @media (min-width: 768px) {
+      .swiper-slide img {
+        height: 100%; } }
   .swiper-slide .swiper-slide--content {
-    background: rgba(87, 87, 87, 0.4);
+    background: rgba(235, 225, 225, 0.4);
+    border-radius: 10px;
     position: absolute;
-    bottom: 0; }
+    bottom: 10%;
+    width: fit-content;
+    padding-inline: 1rem; }
     .swiper-slide .swiper-slide--content h1 {
-      display: inline-block;
-      font-size: 3rem;
-      padding: 20px;
-      font-family: "Kaushan Script", cursive;
-      background: #fff;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text; }
+      font-family: "Kaushan Script", cursive; }
 
 /* plugin pagination */
 .swiper-plugin-pagination {
