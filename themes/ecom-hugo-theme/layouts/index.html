@@ -61,45 +61,81 @@
 <!-- swiper -->
 
 {{ if site.Data.homepage.swiper.enable }}
-    <!-- Tiny-Swiper -->
-    <div class="swiper-container">
-      <di class="swiper-wrapper">
-      {{range $index, $val := .Site.Taxonomies.tags.slider}}
-        
-        <div class="swiper-slide">
-          <img src="{{.Page.Params.image}}" alt="{{.Title}}">
-          <div class="swiper-slide--content">
-            <h1>{{.Title}}</h1>
-            <!-- <h3>{{.Description}}</h3>
-            <a href="#" class="btn btn-primary">{{.Page.Params.link}}</a> -->
-          </div>
-        </div>
-        {{end}}
-      </di>
-      <div class="swiper-plugin-pagination"></div>
-    </div>
+<!-- Tiny-Swiper -->
+<div class="swiper-container">
+  <di class="swiper-wrapper">
+    {{range $index, $val := .Site.Taxonomies.tags.slider}}
 
-    <!-- Tiny-Swiper JS -->
-    <script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
-    <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/pagination.min.js"></script>
-    <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/keyboardControl.min.js"></script>
-    <!-- Initialize Tiny-Swiper -->
-    <script>
-      
-      var swiper = new Swiper(".swiper-container", {
-        pagination: {
-          el: ".swiper-plugin-pagination",
-          clickable: true,
-          bulletClass: "swiper-plugin-pagination__item",
-          bulletActiveClass: "is-active"
-        },
-        keyboard: {
-          enabled: true
-        },
-        plugins: [SwiperPluginPagination, SwiperPluginKeyboardControl]
-        
-      });
-    </script>
+    <div class="swiper-slide">
+      <img src="{{.Page.Params.image}}" alt="{{.Title}}">
+      <div class="swiper-slide--content">
+        <h1>{{.Title}}</h1>
+        <!-- <h3>{{.Description}}</h3>
+            <a href="#" class="btn btn-primary">{{.Page.Params.link}}</a> -->
+      </div>
+    </div>
+    {{end}}
+  </di>
+  <div class="swiper-plugin-pagination"></div>
+</div>
+
+<!-- Tiny-Swiper JS -->
+<script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
+<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/pagination.min.js"></script>
+<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/keyboardControl.min.js"></script>
+<!-- Initialize Tiny-Swiper -->
+<script>
+
+  var swiper = new Swiper(".swiper-container", {
+    pagination: {
+      el: ".swiper-plugin-pagination",
+      clickable: true,
+      bulletClass: "swiper-plugin-pagination__item",
+      bulletActiveClass: "is-active"
+    },
+    keyboard: {
+      enabled: true
+    },
+    plugins: [SwiperPluginPagination, SwiperPluginKeyboardControl]
+
+  });
+</script>
+{{end}}
+
+{{ if site.Data.homepage.slick.enable }}
+
+
+<div class="slick_slider">
+  {{range $index, $val := .Site.Taxonomies.tags.slider}}
+  <div class="slick_slider--content">
+    <img src="{{.Page.Params.image}}" alt="{{.Title}}">
+    <div class="text">
+      <h1>{{.Title}}</h1>
+      <!-- <h3>{{.Description}}</h3> -->
+      <!-- <a href="#" class="btn btn-primary">{{.Page.Params.link}}</a> -->
+    </div>
+  </div>
+  {{end}}
+</div>
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.slick_slider').slick({
+      // setting-name: setting-value
+      // autoplay: true,
+      // autoplaySpeed: 2000,
+      arrows: true,
+        dots: true,
+    });
+  });
+</script>
 {{end}}
 
 <!-- banner -->
@@ -142,7 +178,7 @@
     {{ partial "partials/products/list-item.html" . }}
     {{ end }}
 
-    
+
 
   </div>
 </section>
