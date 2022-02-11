@@ -63,21 +63,7 @@ currencySymbol = "Rs. "
 ############################# Plugins ##############################
 [params.plugins]
 
-  # CSS Plugins
-  [[params.plugins.css]]
-  link = "plugins/drift-zoom/drift-basic.min.css"
-  [[params.plugins.css]]
-  link = "plugins/lightgallery/lightgallery-bundle.min.css"
-
-  # JS Plugins
-  [[params.plugins.js]]
-  link = "plugins/drift-zoom/Drift.min.js"
-  [[params.plugins.js]]
-  link = "plugins/lightgallery/lightgallery.umd.js"
-  [[params.plugins.js]]
-  link = "plugins/lightgallery/lg-thumbnail.umd.js"
-  [[params.plugins.js]]
-  link = "plugins/lightgallery/lg-zoom.umd.js"
+  
 
 
 ############################## navigation ###############################

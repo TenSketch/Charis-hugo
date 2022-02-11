@@ -194,8 +194,7 @@
 </div>
 
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
   integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -204,10 +203,9 @@
   $(document).ready(function () {
     $('.slick_slider').slick({
       
-      
-      
-      arrows: true,
-        dots: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: true
     });
   });
 </script>
@@ -466,82 +464,8 @@
 <div hidden id="snipcart" data-api-key="NjEzM2EwZWEtZjRkNC00MTkzLWJkMDUtOTQ4MTgxMTVhOTQ3NjM3Mzc1ODIwMjE1Mjg1NDE5" data-config-add-product-behavior="none" data-config-modal-style="side"></div>
 
 
-<script src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<script>
-  
-
-  function resizeMasonryItem(item) {
-     
-    var grid = document.getElementsByClassName('masonry')[0];
-    if (grid) {
-      var rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap')),
-        rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows')),
-        gridImagesAsContent = item.querySelector('img.masonry-content');
-
-      
-
-      var rowSpan = Math.ceil((item.querySelector('.masonry-content').getBoundingClientRect().height + rowGap) / (rowHeight + rowGap));
-
-       
-      item.style.gridRowEnd = 'span ' + rowSpan;
-      if (gridImagesAsContent) {
-        item.querySelector('img.masonry-content').style.height = item.getBoundingClientRect().height + "px";
-      }
-    }
-  }
-
-  
-
-  function resizeAllMasonryItems() {
-    
-    var allItems = document.querySelectorAll('.masonry-item');
-
-    
-
-    if (allItems) {
-      for (var i = 0; i > allItems.length; i++) {
-        resizeMasonryItem(allItems[i]);
-      }
-    }
-  }
-
-  
-
-  function waitForImages() {
-    
-    var allItems = document.querySelectorAll('.masonry-item');
-    if (allItems) {
-      for (var i = 0; i < allItems.length; i++) {
-        imagesLoaded(allItems[i], function (instance) {
-          var item = instance.elements[0];
-          resizeMasonryItem(item);
-          console.log("Waiting for Images");
-        });
-      }
-    }
-  }
-
-   
-  var masonryEvents = ['load', 'resize'];
-  masonryEvents.forEach(function (event) {
-    window.addEventListener(event, resizeAllMasonryItems);
-  });
-
-   
-  waitForImages();  
-</script>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- JS Plugins -->
-
-<script src="plugins/drift-zoom/Drift.min.js"></script>
-
-<script src="plugins/lightgallery/lightgallery.umd.js"></script>
-
-<script src="plugins/lightgallery/lg-thumbnail.umd.js"></script>
-
-<script src="plugins/lightgallery/lg-zoom.umd.js"></script>
 
 
 
