@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Designed with multiple compartments of different sizes & comfortable to carry handles, it's never been easier to collocate the daily used items."
 
 #product ID
 productID: "2"

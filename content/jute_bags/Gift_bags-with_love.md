@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "“With Love” gift bags are a one-stop solution for all your gift packing hustles. Perfectly pack your gifts in our most elegant, multifunctional, & eco-friendly classics."
 
 #product ID
 productID: "2"

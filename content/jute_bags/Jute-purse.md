@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Shiny bast fiber spun into coarse of flair & sophistication. Made by 100% sustainable jute makers this jute purse is pet-friendly and cruelty-free."
 
 #product ID
 productID: "2"

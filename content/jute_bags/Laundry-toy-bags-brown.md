@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Chores of laundry don't have to be boring anymore. With your cute laundry bags, make the task less of a chore to be conquered."
 
 #product ID
 productID: "2"

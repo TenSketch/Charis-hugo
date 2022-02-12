@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Cute jute sapling bags: the safest option for your plants. These adorable love bags are perfect to nurture your little finds of nature."
 
 #product ID
 productID: "2"

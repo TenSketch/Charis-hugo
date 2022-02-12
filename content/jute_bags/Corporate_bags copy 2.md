@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Say hello to your new work friend. Made from 100% biodegradable raw materials, this finest shoulder bag is your multi-level office organizer."
 
 #product ID
 productID: "2"

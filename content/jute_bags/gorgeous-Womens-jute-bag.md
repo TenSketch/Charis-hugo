@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "These gorgeous blue jute side bags never fail to rescue fashion & function with their ecological flair. Feel more alive than ever!"
 
 #product ID
 productID: "4"

@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Look stunningly fabulous wearing this shoulder bag. Crafted in quality jute, this spacious piece is the ultimate choice to carry your essentials like a pro."
 
 #product ID
 productID: "2"

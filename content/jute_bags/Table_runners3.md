@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Celebrate a green and eco-friendly Christmas with our trendy jute stocking collection. Dyed in the classic Christmas colors and some in their natural tone these stockings are an ideal decor for your Christmas preparations."
 
 #product ID
 productID: "2"

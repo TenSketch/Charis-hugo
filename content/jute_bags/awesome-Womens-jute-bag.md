@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut."
+shortDescription: "The spacious body & sturdy handles distribute weight equally on a larger surface making it easier to carry.  Change your daily task to less of a chore with our “Awesome” shopping bag."
 
 #product ID
 productID: "1"

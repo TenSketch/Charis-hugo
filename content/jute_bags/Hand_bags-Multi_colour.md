@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Match your dress while we match your run. This multicolored handbag finished with high rounded sturdy handles is a ready-to-carry comfort bag on the move."
 
 #product ID
 productID: "5"

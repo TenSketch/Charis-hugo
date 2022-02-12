@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Talk about versatility - then it’s Black!  This trendy pick makes it a great companion to take around with you on a busy workday or a relaxing trip for two."
 
 #product ID
 productID: "2"

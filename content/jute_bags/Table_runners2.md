@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Made from natural jute fiber, it is extremely easy to get these table runners squeaky clean. These easy maintenance table runners are fashion recreators both indoors & outdoors."
 
 #product ID
 productID: "2"

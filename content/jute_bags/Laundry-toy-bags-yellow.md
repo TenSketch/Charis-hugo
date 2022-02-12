@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Storing toys to collecting scattered bobs around the house, these flamboyant multiutility bags in vivid colors exquisitely match your decor and do everything."
 
 #product ID
 productID: "2"

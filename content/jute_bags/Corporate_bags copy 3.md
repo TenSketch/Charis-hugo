@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Our easy-to-clean highly durable jute corporate bags are a must-have. With all bestrew safely tucked inside our classic, carry around essentials clutter-free."
 
 #product ID
 productID: "2"

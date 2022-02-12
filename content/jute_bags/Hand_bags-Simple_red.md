@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Handwoven by our skillful artisans, don’t miss to make a fashion impression anywhere & everywhere you go with our everyday quintessential handbag."
 
 #product ID
 productID: "2"
