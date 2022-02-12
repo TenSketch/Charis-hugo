@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Buying groceries to housewarming parties - reuse them as many times you like. Our handmade jute bags with padded handles flawlessly fit into all occasions."
 
 #product ID
 productID: "2"

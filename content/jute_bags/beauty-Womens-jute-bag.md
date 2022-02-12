@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Want to make an environment-friendly fashion statement among your peer group? Flaunt your versatility with this striking red beauty."
 
 #product ID
 productID: "3"

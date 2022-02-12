@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "This masterpiece is rendered in exclusive materials to portray graceful finesse with its refined look, bold fonts, and solid-colored handles - BE HAPPY!"
 
 #product ID
 productID: "2"

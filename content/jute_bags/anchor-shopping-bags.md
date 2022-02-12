@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Simple with a playful touch, this daily styling shoulder bag matches all your looks just like that. Its voluminous compartment with multiple pockets serves the purpose."
 
 #product ID
 productID: "2"

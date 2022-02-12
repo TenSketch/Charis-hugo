@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Have to take a run to the laundry? Do it in a cool eco-friendly way! This jute storage with handle is the greenest and most fashionable way to carry your laundry."
 
 #product ID
 productID: "2"

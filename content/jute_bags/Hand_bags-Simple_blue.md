@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Elegant blue spun with shiny bast of fiber in square base design with tapering sides - Satisfy your utility needs by increasing the bag's volume dramatically."
 
 #product ID
 productID: "2"

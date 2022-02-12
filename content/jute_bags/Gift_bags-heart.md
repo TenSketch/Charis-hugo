@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Go eco-friendly with our multifunctional, trendy jute gift bags. Note: Available in two different sizes but the quality and cuteness remain the same."
 
 #product ID
 productID: "2"

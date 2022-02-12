@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "This elegant jute basket is a trendy solution to all your storage needs. Simply use it for laundry, toys, clean towels, or anything you like to store."
 
 #product ID
 productID: "2"

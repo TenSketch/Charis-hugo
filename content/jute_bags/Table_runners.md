@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Make your dinner experience more sophisticated and eco-conscious. Having company over? Our artistry table runners could be the easiest solution to upgrade your dining aesthetics."
 
 #product ID
 productID: "2"

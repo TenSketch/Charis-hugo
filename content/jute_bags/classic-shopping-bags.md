@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Crafted meticulously using high-quality fiber for a stylish look, this is a proudly Indian, 100% Biodegradable product with a Stylish Floral Pattern."
 
 #product ID
 productID: "2"

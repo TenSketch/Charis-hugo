@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "From market to mall, this graceful pink handbag is a sustainable infusion. It is sturdy and stylish enough to carry anything anywhere."
 
 #product ID
 productID: "5"

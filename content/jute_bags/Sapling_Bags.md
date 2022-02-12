@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Free your plants from plastic black covers into these cute compostable jute sapling bags. Nurture the seedlings in grace in nature’s way."
 
 #product ID
 productID: "2"
