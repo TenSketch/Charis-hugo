@@ -30,8 +30,6 @@ images:
   # - image: "/img/Corporate_bags/1.png"
   - image: "/img/Corporate_bags/2.png"
 
-
-
 thumbnailImage: "/img/Corporate_bags/2.png"
 ---
 

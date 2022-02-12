@@ -11,9 +11,9 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Shine Women's Jute hand bag is an lovely yellow coloured shining bag with a plenty of storage space"
+shortDescription: "From market to mall, this graceful pink handbag is a sustainable infusion. It is sturdy and stylish enough to carry anything anywhere."
 
-#product ID
+#product IDShine Women's Jute hand bag is an lovely yellow coloured shining bag with a plenty of storage space
 productID: "1"
 
 # type must be "jute_bags"
