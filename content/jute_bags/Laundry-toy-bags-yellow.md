@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "588.00"
+priceBefore: "876.00"
 
 # Product Short Description
 shortDescription: "Storing toys to collecting scattered bobs around the house, these flamboyant multiutility bags in vivid colors exquisitely match your decor and do everything."

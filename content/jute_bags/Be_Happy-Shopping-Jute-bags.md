@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "186.00"
+priceBefore: "277.00"
 
 # Product Short Description
 shortDescription: "This masterpiece is rendered in exclusive materials to portray graceful finesse with its refined look, bold fonts, and solid-colored handles - BE HAPPY!"

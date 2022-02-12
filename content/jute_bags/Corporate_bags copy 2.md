@@ -7,8 +7,8 @@ draft: false
 description: "Corporate_bags"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "270.00"
+priceBefore: "402.00"
 
 # Product Short Description
 shortDescription: "Say hello to your new work friend. Made from 100% biodegradable raw materials, this finest shoulder bag is your multi-level office organizer."

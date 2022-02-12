@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "588.00"
+priceBefore: "876.00"
 
 # Product Short Description
 shortDescription: "Have to take a run to the laundry? Do it in a cool eco-friendly way! This jute storage with handle is the greenest and most fashionable way to carry your laundry."

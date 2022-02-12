@@ -7,8 +7,8 @@ draft: false
 description: "Corporate_bags"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "270.00"
+priceBefore: "402.00"
 
 # Product Short Description
 shortDescription: "Talk about versatility - then it’s Black!  This trendy pick makes it a great companion to take around with you on a busy workday or a relaxing trip for two."

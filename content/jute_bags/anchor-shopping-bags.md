@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "308.00"
+priceBefore: "458.00"
 
 # Product Short Description
 shortDescription: "Simple with a playful touch, this daily styling shoulder bag matches all your looks just like that. Its voluminous compartment with multiple pockets serves the purpose."

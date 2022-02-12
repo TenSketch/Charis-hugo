@@ -7,8 +7,8 @@ draft: false
 description: "Corporate_bags"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "270.00"
+priceBefore: "402.00"
 
 # Product Short Description
 shortDescription: "Designed with multiple compartments of different sizes & comfortable to carry handles, it's never been easier to collocate the daily used items."

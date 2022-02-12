@@ -7,8 +7,8 @@ draft: false
 description: "Shine Women's Jute hand bag is an lovely yellow coloured shining bag with a plenty of storage space"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "305.00"
+priceBefore: "454.00"
 
 # Product Short Description
 shortDescription: "Shopping bag or storage basket, Shine is both. Say bye-bye to mold & mildew in veggie bags with your new robust multifunctional handbag."

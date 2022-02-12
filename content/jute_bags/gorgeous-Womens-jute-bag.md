@@ -7,8 +7,8 @@ draft: false
 description: "Gorgeous Womens jute bag desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "305.00"
+priceBefore: "454.00"
 
 # Product Short Description
 shortDescription: "These gorgeous blue jute side bags never fail to rescue fashion & function with their ecological flair. Feel more alive than ever!"
