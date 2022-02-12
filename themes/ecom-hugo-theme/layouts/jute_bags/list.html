@@ -16,7 +16,7 @@
       <h3 style="text-align: center;">Categories</h3>
       <ul class="metismenu" id="menu">
         <li class="">
-          <a href="{{ "jute_bags/" | absURL }}" aria-expanded="false">All</a>
+          <a href="{{ "jute_bags/" | relURL }}" aria-expanded="false">All</a>
          
         </li>
         {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
