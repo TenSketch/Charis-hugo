@@ -19,9 +19,12 @@ productID: "2"
 # type must be "jute_bags"
 # # type: "jute_bags"
 
+# tags
+tags:
+  - "laundry"
+
 # Category
 categories:
-  - "laundry"
   - "Laundry & toy bags"
 
 # product Images

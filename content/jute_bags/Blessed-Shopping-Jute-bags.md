@@ -1,7 +1,7 @@
 ---
 title: "Blessed Shopping Jute bag"
 date: 2021-07-16T12:40:11+06:00
-draft: false
+draft: true
 
 # meta description
 description: "Shopping and multipurpose jute bags desc"
@@ -21,7 +21,7 @@ productID: "2"
 
 # Category
 categories:
-  - ""
+  # - ""
 
 # product Images
 # first image will be shown in the product page

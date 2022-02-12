@@ -198,7 +198,7 @@
 <section class="products">
   <div class="container">
     <h2>Laundry bags</h2>
-    {{range $index, $val := .Site.Taxonomies.categories.laundry}}
+    {{range $index, $val := .Site.Taxonomies.tags.laundry}}
     {{ partial "partials/products/list-item.html" . }}
     {{ end }}
   </div>
@@ -210,7 +210,7 @@
 <!-- about -->
 {{ if site.Data.homepage.about.enable }}
 {{ with site.Data.homepage.about }}
-<section class="about">
+<section class="about" id="about">
   <div class="container">
     <div class="image">
       <img src="{{ .image | absURL }}" alt="">

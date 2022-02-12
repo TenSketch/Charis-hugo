@@ -9,8 +9,12 @@
     .prod_details-images {
       // border: 2px solid blue;
       @include flex(center, space-around, nowrap);
+      @extend .flex-col;
+      height: 600px;
       @media (min-width: 768px) {
         flex-basis: 70%;
+        flex-direction: row;
+        // flex-wrap: nowrap;
       }
       // Sub child1- wrapper-featured_img{
       .wrapper-featured_img {
@@ -19,9 +23,11 @@
         height: 50rem;
         #featured {
           // min-height: 400px;
-          height: 90%;
+          // height: 90%;
+          height: 100%;
+
           object-fit: cover;
-          &:hover{
+          &:hover {
             // transform: scale(1.5);
           }
           @media (min-width: 600px) {
@@ -35,35 +41,24 @@
       // Sub child2- wrapper-thumb_img
       .wrapper-thumb_img {
         @include flex(center, center, wrap);
-        @extend .flex-col;
+        // @extend .flex-col;
         flex-basis: 10%;
-        // @extend .mt-1;
-        // overflow-x: scroll;
-        #slideLeft {
-          // margin-right: 1em;
+        @media (max-width: 767px) {
+          flex-basis: 100%;
+          width: 500px;
         }
-        #slideRight {
-          // margin-left: 1em;
-        }
-        .arrow {
-          // width: 3%;
-          height: 3rem;
-          cursor: pointer;
-          display: inline;
-          transition: all 250ms ease-in-out;
-          &:hover {
-            opacity: 0.8;
-            // width: 2.5%;
-          }
-        }
-
         #prod_slider {
           // width: 400px;
-
           @include flex(center, center, wrap);
           @extend .flex-col;
           // overflow-x: auto;
           // flex-basis: 85%;
+          @media (max-width: 767px) {
+            flex-direction: row;
+            height: 100px;
+            overflow-x: scroll;
+            width: 90%;
+          }
           &::-webkit-scrollbar {
             width: 0;
             &-thumb {
@@ -80,6 +75,8 @@
             margin: 0.15em;
             // border: 2px solid $clr-primary-dark;
             transition: opacity 250ms ease-in-out;
+            display: inline-block;
+
             &:hover {
               opacity: 1;
             }
@@ -125,4 +122,3 @@
 .rw-ui-mobile-wrapper {
   display: none;
 }
-

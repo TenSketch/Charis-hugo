@@ -125,7 +125,7 @@ currencySymbol = "Rs. "
 
   [[menu.main]]
   name = "About us"
-  URL = "#"
+  URL = "about-us"
   weight = 3
 
   [[menu.main]]

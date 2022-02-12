@@ -1,7 +1,7 @@
 ---
 title: "Uni-colour Shopping Jute bag"
 date: 2021-08-16T12:40:12+06:00
-draft: false
+draft: true
 
 # meta description
 description: "Shopping and multipurpose jute bags desc"

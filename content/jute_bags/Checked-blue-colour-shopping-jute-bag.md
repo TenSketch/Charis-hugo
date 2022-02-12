@@ -1,7 +1,7 @@
 ---
 title: "Checked-blue-colour Shopping Jute bag"
 date: 2021-06-16T12:40:10+06:00
-draft: false
+draft: true
 
 # meta description
 description: "Shopping and multipurpose jute bags desc"

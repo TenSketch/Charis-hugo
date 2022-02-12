@@ -11,7 +11,7 @@ price: "200.00"
 priceBefore: "250.00"
 
 # Product Short Description
-shortDescription: "Chores of laundry don't have to be boring anymore. With your cute laundry bags, make the task less of a chore to be conquered."
+shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
 
 #product ID
 productID: "2"
@@ -19,9 +19,12 @@ productID: "2"
 # type must be "jute_bags"
 # # type: "jute_bags"
 
+# tags
+tags:
+  - "laundry"
+
 # Category
 categories:
-  - "laundry"
   - "Laundry & toy bags"
 
 # product Images
