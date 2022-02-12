@@ -128,6 +128,12 @@ currencySymbol = "Rs. "
   URL = "#"
   weight = 3
 
+  [[menu.main]]
+  identifier = "Shop"
+  name = "Shop"
+  URL = "jute_bags"
+  weight = 4
+
 ############################## sidebar ###############################
 
   [[menu.sidebar]]

@@ -1,5 +1,5 @@
 .testimonials {
-  background-color: hsl(37, 29%, 68%);
+  background-color: #F8F5F2;
   
   .container {
     /* flex-direction: column; */
@@ -15,9 +15,10 @@
       .testimonials_card {
         padding: 1.5em;
         border-radius: 10px;
-        background: #c5b396;
-        box-shadow: 20px -20px 60px #a79880, -20px 20px 60px #e3cead;
-        /* margin-top: 2em; */
+        border-radius: 20px;
+        background: #F8F5F2;
+        box-shadow:  23px 23px 50px #636261,
+                     -23px -23px 50px #ffffff;
         @media(min-width:768px){
             flex-basis: 40%;
     

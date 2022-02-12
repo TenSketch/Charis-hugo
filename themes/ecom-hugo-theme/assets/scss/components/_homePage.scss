@@ -174,7 +174,7 @@
     font-size: 1.5rem;
   }
   .btn {
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
     border-radius: 5px;
   }
 }
@@ -230,7 +230,7 @@
       font-size: 1.5rem;
     }
     .btn {
-      font-size: 1.5rem;
+      // font-size: 1.5rem;
       border-radius: 5px;
     }
   }
@@ -516,6 +516,7 @@
     @media (min-width: 768px) {
       max-width: 70%;
       height: 100%;
+      border-radius: 0% 100% 100% 0% / 50% 50% 50% 50%;
     }
   }
   .text {
@@ -531,7 +532,7 @@
 
 .slick-prev,
 .slick-next {
-  z-index: 10;
+  z-index: 1;
   opacity: 1;
   &::before {
     content: "";
@@ -542,9 +543,9 @@
     display: inline-block;
     background-color: #fff;
     border-radius: 50%;
-    @media (max-width: 768px) {
-      display: none;
-    }
+    // @media (max-width: 768px) {
+    //   display: none;
+    // }
   }
 }
 .slick-prev {
@@ -568,7 +569,7 @@
 }
 
 .slick-dots {
-  bottom: 10%;
+  bottom: 5%;
   li {
     button {
       &::before {

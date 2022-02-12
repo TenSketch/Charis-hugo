@@ -21,7 +21,7 @@ productID: "2"
 
 # Category
 categories:
-  - "Multi-colour"
+  # - ""
 
 # product Images
 # first image will be shown in the product page

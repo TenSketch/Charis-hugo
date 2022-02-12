@@ -13,18 +13,36 @@ menuToggle.onclick = function () {
   bar3.classList.toggle('change')
 }
 
-// navbar change color on scroll down
-var navbar = document.querySelector('header')
+// navbar appear on scroll up 
+const body = document.body;
+const header = document.querySelector("header");
+const main = document.querySelector("main");
+const headerHeight = document.querySelector("header").offsetHeight;
 
-window.onscroll = function () {
+main.style.top = headerHeight + "px";
 
-  // pageYOffset or scrollY
-  if (window.pageYOffset > 0) {
-    navbar.classList.add('scrolled')
-  } else {
-    navbar.classList.remove('scrolled')
-  }
-}
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+    let currentScroll = window.pageYOffset;
+
+    // console.log("current: ", currentScroll);
+    // console.log("last: ", lastScroll);
+
+    if (currentScroll - lastScroll > 0) {
+        // scrolled down -- header hide
+        header.classList.add("scroll-down");
+        header.classList.remove("scroll-up");
+    } else {
+        // scrolled up -- header show
+        header.classList.add("scroll-up");
+        header.classList.remove("scroll-down");
+    }
+
+    lastScroll = currentScroll;
+    // console.log("last: ", lastScroll);
+
+})
 
 
 // product images thumbnail slider 

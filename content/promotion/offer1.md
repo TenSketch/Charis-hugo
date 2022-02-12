@@ -2,7 +2,7 @@
 title: "Offer1"
 date: 2022-02-07T23:54:41+05:30
 image: images/.jpg
-categories:
+tags:
   - "topbar"
 draft: false
 ---

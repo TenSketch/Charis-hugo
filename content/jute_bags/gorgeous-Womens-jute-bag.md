@@ -22,6 +22,7 @@ productID: "4"
 # Category
 categories:
   - "Women"
+  - "Hand bags"
 
 # product Images
 # first image will be shown in the product page
@@ -34,7 +35,7 @@ images:
   - image: "/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-6.jpg"
   - image: "/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-7.jpg"
 
-thumbnailImage: "/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-3.png"
+thumbnailImage: "/img/Hand_Bags/Gorgeous/Gorgeous-Womens_Jute_hand_bag-4.png"
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea

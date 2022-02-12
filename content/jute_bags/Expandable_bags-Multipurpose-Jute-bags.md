@@ -21,7 +21,7 @@ productID: "2"
 
 # Category
 categories:
-  - "Multipurpose Jute bags"
+  - ""
 
 # product Images
 # first image will be shown in the product page

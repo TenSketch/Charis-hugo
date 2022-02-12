@@ -8,6 +8,28 @@ slick:
   enable: true
   # sliders item comes from "content/slider"
 
+############################ slider ##########################
+slick_thumbnail:
+  enable: false
+  title: "Home Storage bags"
+  description: "Store toys, bunch of things, clothes, etc and quickly clear a space"
+  thumbnail_item:
+    - image: "/images/Multipurpose/Home_Storage/1.jpg"
+    - image: "/images/Multipurpose/Home_Storage/2.jpg"
+    - image: "/images/Multipurpose/Home_Storage/3.jpg"
+    - image: "/images/Multipurpose/Home_Storage/4.jpg"
+    - image: "/images/Multipurpose/Home_Storage/5.jpg"
+    - image: "/images/Multipurpose/Home_Storage/6.jpg"
+    - image: "/images/Multipurpose/Home_Storage/7.jpg"
+    - image: "/images/Multipurpose/Home_Storage/8.jpg"
+    - image: "/images/Multipurpose/Home_Storage/9.jpg"
+    - image: "/images/Multipurpose/Home_Storage/10.jpg"
+    - image: "/images/Multipurpose/Home_Storage/11.jpg"
+    - image: "/images/Multipurpose/Home_Storage/2.jpg"
+    - image: "/images/Multipurpose/Home_Storage/13.jpg"
+    
+  # sliders item comes from "content/slider"
+
 ############################ banner ##########################
 banner:
   enable: false

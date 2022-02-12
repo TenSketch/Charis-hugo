@@ -21,7 +21,7 @@ productID: "2"
 
 # Category
 categories:
-  - "School bags"
+  # - ""
 
 # product Images
 # first image will be shown in the product page
