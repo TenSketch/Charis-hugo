@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://example.org/"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 title = "Charis | Jute Bags | Buy high quality jute bags"
@@ -7,7 +7,7 @@ theme= "ecom-hugo-theme"
 summaryLength = "20"
 
 [params]
-logo = "/images/logo.png"
+logo = "/images/logo-75.png"
 og_image = "images/ogimage.jpg"
 description = "Charis Jute bags is a high quality multipurpose Jute bags manufacturers. BagIt- a eco friendly Jute Bag from Charis can help you do your part to this environment in reducing using of plastic bags."
 keywords = "Jute bags, jute, organic bags, shopping jute bags, jute hand bags, mens hand bags, womens hand bag, fashionable hand bags"

@@ -2,89 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Charis | Jute Bags | Buy high quality jute bags</title>
-    <link>http://example.org/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Charis | Jute Bags | Buy high quality jute bags</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Oct 2021 12:40:16 +0600</lastBuildDate><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Oct 2021 12:40:16 +0600</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hand bags</title>
-      <link>http://example.org/categories/hand-bags/</link>
+      <link>http://localhost:1313/categories/hand-bags/</link>
       <pubDate>Sat, 16 Oct 2021 12:40:16 +0600</pubDate>
       
-      <guid>http://example.org/categories/hand-bags/</guid>
+      <guid>http://localhost:1313/categories/hand-bags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Women</title>
-      <link>http://example.org/categories/women/</link>
+      <link>http://localhost:1313/categories/women/</link>
       <pubDate>Sat, 16 Oct 2021 12:40:16 +0600</pubDate>
       
-      <guid>http://example.org/categories/women/</guid>
+      <guid>http://localhost:1313/categories/women/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Table_runners</title>
-      <link>http://example.org/categories/table_runners/</link>
+      <link>http://localhost:1313/categories/table_runners/</link>
       <pubDate>Sat, 16 Oct 2021 12:39:14 +0600</pubDate>
       
-      <guid>http://example.org/categories/table_runners/</guid>
+      <guid>http://localhost:1313/categories/table_runners/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shopping</title>
-      <link>http://example.org/categories/shopping/</link>
+      <link>http://localhost:1313/categories/shopping/</link>
       <pubDate>Thu, 16 Sep 2021 12:40:12 +0600</pubDate>
       
-      <guid>http://example.org/categories/shopping/</guid>
+      <guid>http://localhost:1313/categories/shopping/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Corporate_bags</title>
-      <link>http://example.org/categories/corporate_bags/</link>
+      <link>http://localhost:1313/categories/corporate_bags/</link>
       <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
       
-      <guid>http://example.org/categories/corporate_bags/</guid>
+      <guid>http://localhost:1313/categories/corporate_bags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gift bags</title>
-      <link>http://example.org/categories/gift-bags/</link>
+      <link>http://localhost:1313/categories/gift-bags/</link>
       <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
       
-      <guid>http://example.org/categories/gift-bags/</guid>
+      <guid>http://localhost:1313/categories/gift-bags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Laundry &amp; toy bags</title>
-      <link>http://example.org/categories/laundry-toy-bags/</link>
+      <link>http://localhost:1313/categories/laundry-toy-bags/</link>
       <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
       
-      <guid>http://example.org/categories/laundry-toy-bags/</guid>
+      <guid>http://localhost:1313/categories/laundry-toy-bags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jute purse</title>
-      <link>http://example.org/categories/jute-purse/</link>
+      <link>http://localhost:1313/categories/jute-purse/</link>
       <pubDate>Thu, 13 May 2021 12:40:14 +0600</pubDate>
       
-      <guid>http://example.org/categories/jute-purse/</guid>
+      <guid>http://localhost:1313/categories/jute-purse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sapling_Bags</title>
-      <link>http://example.org/categories/sapling_bags/</link>
+      <link>http://localhost:1313/categories/sapling_bags/</link>
       <pubDate>Wed, 12 May 2021 12:40:14 +0600</pubDate>
       
-      <guid>http://example.org/categories/sapling_bags/</guid>
+      <guid>http://localhost:1313/categories/sapling_bags/</guid>
       <description></description>
     </item>
     

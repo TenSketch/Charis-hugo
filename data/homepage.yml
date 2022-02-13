@@ -113,7 +113,7 @@ advantage:
   enable: true
   title: "Highlights of Charis Jute bags"
   subtitle: "Our bags environmental friendly"
-  image: "images/advantage.png"
+  # image: "images/advantage.png"
   advantageList:
     # advantage list loop
     - listItem: "Our bags environmental friendly"

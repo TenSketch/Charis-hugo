@@ -64,18 +64,3 @@ for (var i = 0; i < thumbnails.length; i++) {
     document.getElementById('featured').src = this.src
   })
 }
-
-
-// let buttonRight = document.getElementById('slideRight');
-// let buttonLeft = document.getElementById('slideLeft');
-
-// buttonLeft.addEventListener('click', function () {
-//   document.getElementById('prod_slider').scrollLeft -= 180
-// })
-
-// buttonRight.addEventListener('click', function () {
-//   document.getElementById('prod_slider').scrollLeft += 180
-// })
-
-
-  

@@ -2,224 +2,224 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2022-02-07T23:54:41+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ae"
-                href="http://example.org/ae/"
+                href="http://localhost:1313/ae/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/"
+                href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://example.org/promotion/offer1/</loc>
+    <loc>http://localhost:1313/promotion/offer1/</loc>
     <lastmod>2022-02-07T23:54:41+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/promotion/</loc>
+    <loc>http://localhost:1313/promotion/</loc>
     <lastmod>2022-02-07T23:54:41+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2022-02-07T23:54:41+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ae"
-                href="http://example.org/ae/tags/"
+                href="http://localhost:1313/ae/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/tags/"
+                href="http://localhost:1313/tags/"
                 />
   </url><url>
-    <loc>http://example.org/tags/topbar/</loc>
+    <loc>http://localhost:1313/tags/topbar/</loc>
     <lastmod>2022-02-07T23:54:41+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2021-10-16T12:40:16+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ae"
-                href="http://example.org/ae/categories/"
+                href="http://localhost:1313/ae/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/categories/"
+                href="http://localhost:1313/categories/"
                 />
   </url><url>
-    <loc>http://example.org/categories/hand-bags/</loc>
+    <loc>http://localhost:1313/categories/hand-bags/</loc>
     <lastmod>2021-10-16T12:40:16+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/</loc>
+    <loc>http://localhost:1313/jute_bags/</loc>
     <lastmod>2021-10-16T12:40:16+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/shine-womens-jute-bag/</loc>
+    <loc>http://localhost:1313/jute_bags/shine-womens-jute-bag/</loc>
     <lastmod>2021-10-16T12:40:16+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/women/</loc>
+    <loc>http://localhost:1313/tags/women/</loc>
     <lastmod>2021-10-16T12:40:16+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/women/</loc>
+    <loc>http://localhost:1313/categories/women/</loc>
     <lastmod>2021-10-16T12:40:16+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/awesome-womens-jute-bag/</loc>
+    <loc>http://localhost:1313/jute_bags/awesome-womens-jute-bag/</loc>
     <lastmod>2021-10-16T12:40:15+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/beauty-womens-jute-bag/</loc>
+    <loc>http://localhost:1313/jute_bags/beauty-womens-jute-bag/</loc>
     <lastmod>2021-10-16T12:40:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/gracefull-womens-jute-bag-copy/</loc>
+    <loc>http://localhost:1313/jute_bags/gracefull-womens-jute-bag-copy/</loc>
     <lastmod>2021-10-16T12:40:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/table_runners/</loc>
+    <loc>http://localhost:1313/categories/table_runners/</loc>
     <lastmod>2021-10-16T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/table_runners/</loc>
+    <loc>http://localhost:1313/jute_bags/table_runners/</loc>
     <lastmod>2021-10-16T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/table_runners2/</loc>
+    <loc>http://localhost:1313/jute_bags/table_runners2/</loc>
     <lastmod>2021-10-15T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/table_runners3/</loc>
+    <loc>http://localhost:1313/jute_bags/table_runners3/</loc>
     <lastmod>2021-10-14T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/table_runners4/</loc>
+    <loc>http://localhost:1313/jute_bags/table_runners4/</loc>
     <lastmod>2021-10-13T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/table_runners5/</loc>
+    <loc>http://localhost:1313/jute_bags/table_runners5/</loc>
     <lastmod>2021-10-13T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/table_runners6/</loc>
+    <loc>http://localhost:1313/jute_bags/table_runners6/</loc>
     <lastmod>2021-10-13T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/table_runners7/</loc>
+    <loc>http://localhost:1313/jute_bags/table_runners7/</loc>
     <lastmod>2021-10-13T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/table_runners8/</loc>
+    <loc>http://localhost:1313/jute_bags/table_runners8/</loc>
     <lastmod>2021-10-13T12:39:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/home_storage/</loc>
+    <loc>http://localhost:1313/jute_bags/home_storage/</loc>
     <lastmod>2021-10-13T12:39:11+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/slider/beauty/</loc>
+    <loc>http://localhost:1313/slider/beauty/</loc>
     <lastmod>2021-09-29T17:20:55+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/slider/</loc>
+    <loc>http://localhost:1313/tags/slider/</loc>
     <lastmod>2021-09-29T17:20:55+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/slider/</loc>
+    <loc>http://localhost:1313/slider/</loc>
     <lastmod>2021-09-29T17:20:55+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/slider/shine/</loc>
+    <loc>http://localhost:1313/slider/shine/</loc>
     <lastmod>2021-09-29T17:19:55+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/slider/awesome/</loc>
+    <loc>http://localhost:1313/slider/awesome/</loc>
     <lastmod>2021-09-29T17:18:55+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/slider/graceful/</loc>
+    <loc>http://localhost:1313/slider/graceful/</loc>
     <lastmod>2021-09-29T17:17:55+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/slider/gorgeous/</loc>
+    <loc>http://localhost:1313/slider/gorgeous/</loc>
     <lastmod>2021-09-29T17:16:55+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/gorgeous-womens-jute-bag/</loc>
+    <loc>http://localhost:1313/jute_bags/gorgeous-womens-jute-bag/</loc>
     <lastmod>2021-09-16T12:40:13+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/chakra-multipurpose-jute-bags/</loc>
+    <loc>http://localhost:1313/jute_bags/chakra-multipurpose-jute-bags/</loc>
     <lastmod>2021-09-16T12:40:12+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/shopping/</loc>
+    <loc>http://localhost:1313/categories/shopping/</loc>
     <lastmod>2021-09-16T12:40:12+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/be_happy-shopping-jute-bags/</loc>
+    <loc>http://localhost:1313/jute_bags/be_happy-shopping-jute-bags/</loc>
     <lastmod>2021-09-16T12:20:13+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/classic-shopping-bags/</loc>
+    <loc>http://localhost:1313/jute_bags/classic-shopping-bags/</loc>
     <lastmod>2021-09-16T12:20:13+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/anchor-shopping-bags/</loc>
+    <loc>http://localhost:1313/jute_bags/anchor-shopping-bags/</loc>
     <lastmod>2021-09-16T12:20:13+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/organic-jute-bags/</loc>
+    <loc>http://localhost:1313/organic-jute-bags/</loc>
     <lastmod>2021-09-08T11:38:16+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/corporate_bags-copy-2/</loc>
+    <loc>http://localhost:1313/jute_bags/corporate_bags-copy-2/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/corporate_bags-copy-3/</loc>
+    <loc>http://localhost:1313/jute_bags/corporate_bags-copy-3/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/corporate_bags-copy-4/</loc>
+    <loc>http://localhost:1313/jute_bags/corporate_bags-copy-4/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/corporate_bags-copy/</loc>
+    <loc>http://localhost:1313/jute_bags/corporate_bags-copy/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/corporate_bags/</loc>
+    <loc>http://localhost:1313/categories/corporate_bags/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/gift-bags/</loc>
+    <loc>http://localhost:1313/categories/gift-bags/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/gift_bags-blue_mini/</loc>
+    <loc>http://localhost:1313/jute_bags/gift_bags-blue_mini/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/gift_bags-gift-1/</loc>
+    <loc>http://localhost:1313/jute_bags/gift_bags-gift-1/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/gift_bags-heart/</loc>
+    <loc>http://localhost:1313/jute_bags/gift_bags-heart/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/gift_bags-with_love/</loc>
+    <loc>http://localhost:1313/jute_bags/gift_bags-with_love/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/laundry/</loc>
+    <loc>http://localhost:1313/tags/laundry/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/laundry-toy-bags/</loc>
+    <loc>http://localhost:1313/categories/laundry-toy-bags/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/laundry-toy-bags-brown/</loc>
+    <loc>http://localhost:1313/jute_bags/laundry-toy-bags-brown/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/laundry-toy-bags-dark_blue/</loc>
+    <loc>http://localhost:1313/jute_bags/laundry-toy-bags-dark_blue/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/laundry-toy-bags-grey/</loc>
+    <loc>http://localhost:1313/jute_bags/laundry-toy-bags-grey/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/laundry-toy-bags-yellow/</loc>
+    <loc>http://localhost:1313/jute_bags/laundry-toy-bags-yellow/</loc>
     <lastmod>2021-09-08T11:22:40+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/hand_bags-multi_colour/</loc>
+    <loc>http://localhost:1313/jute_bags/hand_bags-multi_colour/</loc>
     <lastmod>2021-05-16T12:40:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/hand_bags-simple_blue/</loc>
+    <loc>http://localhost:1313/jute_bags/hand_bags-simple_blue/</loc>
     <lastmod>2021-05-15T12:40:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/hand_bags-simple_red/</loc>
+    <loc>http://localhost:1313/jute_bags/hand_bags-simple_red/</loc>
     <lastmod>2021-05-14T12:40:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/jute-purse/</loc>
+    <loc>http://localhost:1313/categories/jute-purse/</loc>
     <lastmod>2021-05-13T12:40:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/jute-purse/</loc>
+    <loc>http://localhost:1313/jute_bags/jute-purse/</loc>
     <lastmod>2021-05-13T12:40:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/sapling_bags/</loc>
+    <loc>http://localhost:1313/categories/sapling_bags/</loc>
     <lastmod>2021-05-12T12:40:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/sapling_bags/</loc>
+    <loc>http://localhost:1313/jute_bags/sapling_bags/</loc>
     <lastmod>2021-05-12T12:40:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/jute_bags/sapling_bags-2/</loc>
+    <loc>http://localhost:1313/jute_bags/sapling_bags-2/</loc>
     <lastmod>2021-05-11T12:40:14+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/about/</loc>
+    <loc>http://localhost:1313/tags/about/</loc>
   </url><url>
-    <loc>http://example.org/about-us/</loc>
+    <loc>http://localhost:1313/about-us/</loc>
   </url>
 </urlset>
