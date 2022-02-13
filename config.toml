@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://localhost:1313/"
+baseURL = ""
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 title = "Charis | Jute Bags | Buy high quality jute bags"
