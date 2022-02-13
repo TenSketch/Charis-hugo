@@ -1,5 +1,5 @@
 ---
-title: "Graceful"
+title: "Keep the swag. Live Graceful"
 tags: ["slider"]
 description: "Graceful jute hand bag for Women"
 date: 2021-09-29T17:17:55+05:30

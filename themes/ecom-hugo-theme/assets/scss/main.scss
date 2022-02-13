@@ -34,6 +34,9 @@ body {
   overflow-x: hidden;
   padding-top: 17vh;
   // position: relative;
+  @media(max-width:768px){
+    padding-top: 15vh;
+  }
 }
 a {
   text-decoration: none;

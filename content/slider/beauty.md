@@ -1,5 +1,5 @@
 ---
-title: "Beauty"
+title: "Art of stylofy begins with Beauty"
 tags: ["slider"]
 description: "Beautiful jute bags for women."
 date: 2021-09-29T17:20:55+05:30

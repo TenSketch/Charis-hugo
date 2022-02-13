@@ -1,5 +1,5 @@
 ---
-title: "Shine like a diamond with our bags"
+title: "Love Shopping? Do it with Shine"
 tags: ["slider"]
 description: "Shining jute bags for women"
 date: 2021-09-29T17:19:55+05:30
