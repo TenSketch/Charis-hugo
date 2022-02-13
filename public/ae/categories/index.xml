@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Charis | Jute Bags | Buy high quality jute bags</title>
-    <link>/ae/categories/</link>
+    <link>http://example.org/ae/categories/</link>
     <description>Recent content in Categories on Charis | Jute Bags | Buy high quality jute bags</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ae</language><atom:link href="/ae/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>ae</language><atom:link href="http://example.org/ae/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

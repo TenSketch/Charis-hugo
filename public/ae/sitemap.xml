@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/ae/categories/</loc>
+    <loc>http://example.org/ae/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="http://example.org/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ae"
-                href="/ae/categories/"
+                href="http://example.org/ae/categories/"
                 />
   </url><url>
-    <loc>/ae/</loc>
+    <loc>http://example.org/ae/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="http://example.org/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ae"
-                href="/ae/"
+                href="http://example.org/ae/"
                 />
   </url><url>
-    <loc>/ae/tags/</loc>
+    <loc>http://example.org/ae/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="http://example.org/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ae"
-                href="/ae/tags/"
+                href="http://example.org/ae/tags/"
                 />
   </url>
 </urlset>

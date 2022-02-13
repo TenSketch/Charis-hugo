@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gift bags on Charis | Jute Bags | Buy high quality jute bags</title>
-    <link>/categories/gift-bags/</link>
+    <link>http://example.org/categories/gift-bags/</link>
     <description>Recent content in Gift bags on Charis | Jute Bags | Buy high quality jute bags</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Sep 2021 11:22:40 +0600</lastBuildDate><atom:link href="/categories/gift-bags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Sep 2021 11:22:40 +0600</lastBuildDate><atom:link href="http://example.org/categories/gift-bags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gift or Giveaway</title>
-      <link>/jute_bags/gift_bags-blue_mini/</link>
+      <link>http://example.org/jute_bags/gift_bags-blue_mini/</link>
       <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
       
-      <guid>/jute_bags/gift_bags-blue_mini/</guid>
+      <guid>http://example.org/jute_bags/gift_bags-blue_mini/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
     
     <item>
       <title>Gift or Giveaway</title>
-      <link>/jute_bags/gift_bags-gift-1/</link>
+      <link>http://example.org/jute_bags/gift_bags-gift-1/</link>
       <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
       
-      <guid>/jute_bags/gift_bags-gift-1/</guid>
+      <guid>http://example.org/jute_bags/gift_bags-gift-1/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
     
     <item>
       <title>Gift or Giveaway</title>
-      <link>/jute_bags/gift_bags-heart/</link>
+      <link>http://example.org/jute_bags/gift_bags-heart/</link>
       <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
       
-      <guid>/jute_bags/gift_bags-heart/</guid>
+      <guid>http://example.org/jute_bags/gift_bags-heart/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
     
     <item>
       <title>Gift or Giveaway</title>
-      <link>/jute_bags/gift_bags-with_love/</link>
+      <link>http://example.org/jute_bags/gift_bags-with_love/</link>
       <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
       
-      <guid>/jute_bags/gift_bags-with_love/</guid>
+      <guid>http://example.org/jute_bags/gift_bags-with_love/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
     

@@ -2,7 +2,7 @@
 .prod_details {
   padding-block: 4rem;
   .container {
-    max-width: 95%;
+    // max-width: 95%;
     @media(min-width:768px){
       @include flex(flex-start, space-between, nowrap);
 
@@ -33,6 +33,7 @@
       #prod_slider {
         @include flex(center, normal, nowrap);
         overflow-x: scroll;     
+        @extend .mt-2;
         @media(min-width:768px){
           justify-content: center;
         }
@@ -60,8 +61,10 @@
     // main child 2
     .prod_details-desc {
       // border: 2px solid red;
+      @extend .mt-1;
       @media (min-width: 768px) {
         flex-basis: 30%;
+        margin-top: 0;
       }
       .prod_details-desc--header {
         h1 {

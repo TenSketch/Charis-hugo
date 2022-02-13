@@ -1,4 +1,5 @@
 .card {
+  padding-block: 1rem;
   .card-head {
     a {
       img {
@@ -28,10 +29,11 @@
     .price {
       @extend .mb-1;
       s {
-        font-size: smaller;
+        font-size: 1rem
       }
       span {
         font-weight: 600;
+        font-size: 1.2rem;
         color: $clr-accent;
       }
     }
