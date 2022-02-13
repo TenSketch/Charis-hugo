@@ -7,11 +7,11 @@ draft: true
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "303.00"
+priceBefore: "451.00"
 
 # Product Short Description
-shortDescription: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+shortDescription: "Match your dress while we match your run. This multicolored handbag finished with high rounded sturdy handles is a ready-to-carry comfort bag on the move."
 
 #product ID
 productID: "2"

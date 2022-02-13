@@ -7,8 +7,8 @@ draft: false
 description: "graceful Womens jute bag desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "303.00"
+priceBefore: "451.00"
 
 # Product Short Description
 shortDescription: "Match your dress while we match your run. This multicolored handbag finished with high rounded sturdy handles is a ready-to-carry comfort bag on the move."

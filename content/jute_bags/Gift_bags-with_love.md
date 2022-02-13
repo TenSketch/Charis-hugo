@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "0.00"
+priceBefore: "0.00"
 
 # Product Short Description
 shortDescription: "“With Love” gift bags are a one-stop solution for all your gift packing hustles. Perfectly pack your gifts in our most elegant, multifunctional, & eco-friendly classics."

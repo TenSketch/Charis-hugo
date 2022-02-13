@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+pprice: "228.00"
+priceBefore: "340.00"
 
 # Product Short Description
 shortDescription: "Handwoven by our skillful artisans, don’t miss to make a fashion impression anywhere & everywhere you go with our everyday quintessential handbag."
