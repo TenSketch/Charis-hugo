@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "588.00"
+priceBefore: "876.00"
 
 # Product Short Description
 shortDescription: "This elegant jute basket is a trendy solution to all your storage needs. Simply use it for laundry, toys, clean towels, or anything you like to store."

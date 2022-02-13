@@ -7,8 +7,8 @@ draft: false
 description: "Corporate_bags"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "270.00"
+priceBefore: "402.00"
 
 # Product Short Description
 shortDescription: "Our easy-to-clean highly durable jute corporate bags are a must-have. With all bestrew safely tucked inside our classic, carry around essentials clutter-free."

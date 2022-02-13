@@ -7,8 +7,8 @@ draft: false
 description: "graceful Womens jute bag desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "305.00"
+priceBefore: "454.00"
 
 # Product Short Description
 shortDescription: "From market to mall, this graceful pink handbag is a sustainable infusion. It is sturdy and stylish enough to carry anything anywhere."

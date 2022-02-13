@@ -7,8 +7,8 @@ draft: false
 description: "Awesome jute bag for women desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "305.00"
+priceBefore: "454.00"
 
 # Product Short Description
 shortDescription: "The spacious body & sturdy handles distribute weight equally on a larger surface making it easier to carry.  Change your daily task to less of a chore with our “Awesome” shopping bag."

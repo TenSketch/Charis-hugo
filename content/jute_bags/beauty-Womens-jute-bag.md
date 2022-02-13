@@ -7,8 +7,8 @@ draft: false
 description: "beauty syle Womens jute bag des"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "305.00"
+priceBefore: "454.00"
 
 # Product Short Description
 shortDescription: "Want to make an environment-friendly fashion statement among your peer group? Flaunt your versatility with this striking red beauty."

@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "450.00"
+priceBefore: "671.00"
 
 # Product Short Description
 shortDescription: "Crafted meticulously using high-quality fiber for a stylish look, this is a proudly Indian, 100% Biodegradable product with a Stylish Floral Pattern."
