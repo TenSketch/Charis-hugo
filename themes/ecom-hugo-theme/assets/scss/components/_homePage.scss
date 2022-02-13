@@ -474,7 +474,7 @@
   // min-height: 80vh;
 }
 .slick-list {
-  overflow: unset;
+  overflow-x: hidden;
 }
 .slick-initialized .slick-slide {
   display: flex;
