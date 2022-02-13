@@ -1,9 +1,4 @@
 ############################ slider ##########################
-slider:
-  enable: false
-  # sliders item comes from "content/slider"
-
-############################ slider ##########################
 slick:
   enable: true
   # sliders item comes from "content/slider"
@@ -129,6 +124,7 @@ products:
   enable: true
   title: "Our trending products"
   title1: "Shopping bags"
+  title2: "Laundry bags"
   # product item comes from "content/products"
 
   ######################## organic #############################
