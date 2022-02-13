@@ -2,7 +2,7 @@
 
     <div class="container">
         <!-- child1 -->
-        <a class="logo" href="{{ .Site.BaseURL }}">
+        <a class="logo" href="{{ site.BaseURL | absURL }}">
             <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}">
         </a>
         
