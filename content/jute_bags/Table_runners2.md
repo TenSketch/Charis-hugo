@@ -7,8 +7,8 @@ draft: false
 description: "Table_Runners-Decor"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "0.00"
+priceBefore: "0.00"
 
 # Product Short Description
 shortDescription: "Made from natural jute fiber, it is extremely easy to get these table runners squeaky clean. These easy maintenance table runners are fashion recreators both indoors & outdoors."

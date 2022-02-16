@@ -7,8 +7,8 @@ draft: false
 description: "Table_Runners-Decor"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "315.00"
+priceBefore: "469.00"
 
 # Product Short Description
 shortDescription: "Make your dinner experience more sophisticated and eco-conscious. Having company over? Our artistry table runners could be the easiest solution to upgrade your dining aesthetics."

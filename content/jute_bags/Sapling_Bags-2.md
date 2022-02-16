@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "0.00"
+priceBefore: "0.00"
 
 # Product Short Description
 shortDescription: "Cute jute sapling bags: the safest option for your plants. These adorable love bags are perfect to nurture your little finds of nature."

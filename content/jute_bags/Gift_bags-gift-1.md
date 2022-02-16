@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "0.00"
+priceBefore: "0.00"
 
 # Product Short Description
 shortDescription: "Buying groceries to housewarming parties - reuse them as many times you like. Our handmade jute bags with padded handles flawlessly fit into all occasions."

@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "0.00"
+priceBefore: "0.00"
 
 # Product Short Description
 shortDescription: "Look stunningly fabulous wearing this shoulder bag. Crafted in quality jute, this spacious piece is the ultimate choice to carry your essentials like a pro."

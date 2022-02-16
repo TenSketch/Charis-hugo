@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "105.00"
+priceBefore: "156.00"
 
 # Product Short Description
 shortDescription: "Shiny bast fiber spun into coarse of flair & sophistication. Made by 100% sustainable jute makers this jute purse is pet-friendly and cruelty-free."

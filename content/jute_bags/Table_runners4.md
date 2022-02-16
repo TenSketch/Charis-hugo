@@ -7,8 +7,8 @@ draft: false
 description: "Table_Runners-Decor"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "33.00"
+priceBefore: "49.00"
 
 # Product Short Description
 shortDescription: "Our elegant Jute Table Runners are a traditional,  eco-friendly collection that adds class to your dining as well as keeps your family eco-conscious."

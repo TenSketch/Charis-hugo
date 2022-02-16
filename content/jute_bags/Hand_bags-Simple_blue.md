@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "228.00"
+priceBefore: "340.00"
 
 # Product Short Description
 shortDescription: "Elegant blue spun with shiny bast of fiber in square base design with tapering sides - Satisfy your utility needs by increasing the bag's volume dramatically."

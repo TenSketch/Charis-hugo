@@ -7,8 +7,8 @@ draft: false
 description: "Shopping and multipurpose jute bags desc"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "0.00"
+priceBefore: "0.00"
 
 # Product Short Description
 shortDescription: "Go eco-friendly with our multifunctional, trendy jute gift bags. Note: Available in two different sizes but the quality and cuteness remain the same."

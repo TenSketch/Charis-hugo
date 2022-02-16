@@ -7,8 +7,8 @@ draft: false
 description: "Table_Runners-Decor"
 
 # product Price
-price: "200.00"
-priceBefore: "250.00"
+price: "0.00"
+priceBefore: "0.00"
 
 # Product Short Description
 shortDescription: "Celebrate a green and eco-friendly Christmas with our trendy jute stocking collection. Dyed in the classic Christmas colors and some in their natural tone these stockings are an ideal decor for your Christmas preparations."
