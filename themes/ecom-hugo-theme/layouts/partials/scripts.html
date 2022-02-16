@@ -1,7 +1,26 @@
+<div hidden id="snipcart" data-api-key="NjEzM2EwZWEtZjRkNC00MTkzLWJkMDUtOTQ4MTgxMTVhOTQ3NjM3Mzc1ODIwMjE1Mjg1NDE5"
+  data-config-add-product-behavior="none" data-config-modal-style="side" data-cuurenncy="INR"></div>
 
-<script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
-<div hidden id="snipcart" data-api-key="NjEzM2EwZWEtZjRkNC00MTkzLWJkMDUtOTQ4MTgxMTVhOTQ3NjM3Mzc1ODIwMjE1Mjg1NDE5" data-config-add-product-behavior="none" data-config-modal-style="side"></div>
+<script async src="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.js"></script>
+<!-- <script>
+  document.addEventListener('snipcart.ready', () => {
+    const select = document.getElementById('currencies');
 
+    select.addEventListener('change', () => {
+      Snipcart.api.session.setCurrency(select.value);
+    });
+    Snipcart.store.subscribe(updateSelectedCurrency);
+
+  });
+
+  function updateSelectedCurrency() {
+    const state = Snipcart.store.getState();
+    const currency = state.cart.currency;
+
+    document.getElementById('currencies').value = currency;
+
+  }
+</script> -->
 
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
@@ -12,35 +31,34 @@
 
 <!-- ratting widget -->
 <script>
-    // rating widget
+  // rating widget
 
   (function (d, t, e, m) {
 
-// Async Rating-Widget initialization.
-window.RW_Async_Init = function () {
+    // Async Rating-Widget initialization.
+    window.RW_Async_Init = function () {
 
-  RW.init({
-    huid: "479285",
-    uid: "459f43b8a472eef8a00e4c3a14ba102e",
-    options: { "style": "oxygen" }
-  });
-  RW.render();
-};
-// Append Rating-Widget JavaScript library.
-var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
-  l = d.location, ck = "Y" + t.getFullYear() +
-    "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
-  f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
-  a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
-if (d.getElementById(id)) return;
-rw = d.createElement(e);
-rw.id = id; rw.async = true; rw.type = "text/javascript";
-rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
-s.parentNode.insertBefore(rw, s);
-}(document, new Date(), "script", "rating-widget.com/"));
+      RW.init({
+        huid: "479285",
+        uid: "459f43b8a472eef8a00e4c3a14ba102e",
+        options: { "style": "oxygen" }
+      });
+      RW.render();
+    };
+    // Append Rating-Widget JavaScript library.
+    var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+      l = d.location, ck = "Y" + t.getFullYear() +
+        "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+      f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+      a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+    if (d.getElementById(id)) return;
+    rw = d.createElement(e);
+    rw.id = id; rw.async = true; rw.type = "text/javascript";
+    rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+    s.parentNode.insertBefore(rw, s);
+  }(document, new Date(), "script", "rating-widget.com/"));
 </script>
 
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/app.js" }}
 <script src="{{ $script.Permalink }}"></script>
-

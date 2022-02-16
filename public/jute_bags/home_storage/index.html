@@ -38,7 +38,10 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
 
     
-    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
+    <link rel="preconnect" href="https://app.snipcart.com" />
+    <link rel="preconnect" href="https://cdn.snipcart.com" />
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.css" />
+
     
 
     
@@ -124,14 +127,16 @@
                     
                 </a>
             </li>
-            <li class="nav_list--item cart snipcart-summary">
+         
+            <li class="nav_list--item snipcart-summary">
                 <a href="#" class="nav_link snipcart-checkout">
                     <img style="align-self: center;" src="/images/svg/cart-icon.svg" class="svg-inline--fa" alt="">
                     
-                    <sup class="snipcart-items-count">0</sup>
-                    <span class="price snipcart-total-price"></span>
+                    <span class="snipcart-total-price"></span>
+                    (<span class="snipcart-items-count">0</span>)
                 </a>
             </li>
+            
 
         </ul>
 
@@ -151,33 +156,6 @@
 
 </header>
 
-
-
-<script>
-    
-    let dropdownLink = document.getElementsByClassName("dropdown");
-    let arrowImg = document.getElementsByClassName("dropdown_arrow");
-
-    
-
-    
-    dropdownLink[0].addEventListener('mouseover', function(e){
-        console.log(e.target)
-            arrowImg[0].src="/images/icons/arrow-up.png"
-    })
-    dropdownLink[0].addEventListener('mouseout', function(){
-            arrowImg[0].src="/images/icons/arrow-down.png"
-    })
-
-    
-    dropdownLink[1].addEventListener('mouseover', function(){
-            arrowImg[1].src="/images/icons/arrow-up.png"
-    })
-    dropdownLink[1].addEventListener('mouseout', function(){
-            arrowImg[1].src="/images/icons/arrow-down.png"
-    })
-
-</script>
     <main>
 
 <div class="page_title pb-0">
@@ -282,9 +260,9 @@
         
         <div class="price mt-1">
     
-    <s>Rs. 250.00</s>
+    <s>₹ 250.00</s>
     
-    <span>Rs. 200.00</span>
+    <span>₹ 200.00</span>
 </div>
       </div>
       <div class="prod_details-desc--content">
@@ -527,9 +505,10 @@
 
         </div>
     </div>
-</footer>
-<script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
-<div hidden id="snipcart" data-api-key="NjEzM2EwZWEtZjRkNC00MTkzLWJkMDUtOTQ4MTgxMTVhOTQ3NjM3Mzc1ODIwMjE1Mjg1NDE5" data-config-add-product-behavior="none" data-config-modal-style="side"></div>
+</footer><div hidden id="snipcart" data-api-key="NjEzM2EwZWEtZjRkNC00MTkzLWJkMDUtOTQ4MTgxMTVhOTQ3NjM3Mzc1ODIwMjE1Mjg1NDE5"
+  data-config-add-product-behavior="none" data-config-modal-style="side" data-cuurenncy="INR"></div>
+
+<script async src="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.js"></script>
 
 
 
@@ -539,37 +518,35 @@
 
 
 <script>
-    
+  
 
   (function (d, t, e, m) {
 
+    
+    window.RW_Async_Init = function () {
 
-window.RW_Async_Init = function () {
-
-  RW.init({
-    huid: "479285",
-    uid: "459f43b8a472eef8a00e4c3a14ba102e",
-    options: { "style": "oxygen" }
-  });
-  RW.render();
-};
-
-var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
-  l = d.location, ck = "Y" + t.getFullYear() +
-    "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
-  f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
-  a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
-if (d.getElementById(id)) return;
-rw = d.createElement(e);
-rw.id = id; rw.async = true; rw.type = "text/javascript";
-rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
-s.parentNode.insertBefore(rw, s);
-}(document, new Date(), "script", "rating-widget.com/"));
+      RW.init({
+        huid: "479285",
+        uid: "459f43b8a472eef8a00e4c3a14ba102e",
+        options: { "style": "oxygen" }
+      });
+      RW.render();
+    };
+    
+    var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+      l = d.location, ck = "Y" + t.getFullYear() +
+        "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+      f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+      a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+    if (d.getElementById(id)) return;
+    rw = d.createElement(e);
+    rw.id = id; rw.async = true; rw.type = "text/javascript";
+    rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+    s.parentNode.insertBefore(rw, s);
+  }(document, new Date(), "script", "rating-widget.com/"));
 </script>
 
 <!-- Main Script -->
 
-<script src="/js/app.js"></script>
-
-</body>
+<script src="/js/app.js"></script></body>
 </html>

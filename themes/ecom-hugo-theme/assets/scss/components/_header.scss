@@ -78,16 +78,17 @@ header {
 // dropdown menu
 .dropdown {
   position: relative;
-  transition: 250ms all ease-in-out;
+  
   .dropdown-toggle {
     position: relative;
-    img {
-      max-width: 1.2rem;
+    .dropdown_arrow {
+      max-width: 1rem;
       display: unset;
       position: absolute;
-      top: 50%;
+      top: 5px;
       margin-left: 0.12rem;
-      transform: translateY(-50%);
+      // transform: translateY(-50%);
+      transition: transform 250ms ease;
     }
   }
   .dropdown-menu {
@@ -109,6 +110,9 @@ header {
     }
   }
   &:hover {
+    .dropdown_arrow {
+      transform: rotate(180deg);
+    }
     .dropdown-menu {
       display: block;
     }
@@ -124,14 +128,14 @@ header {
     display: flex;
     position: relative;
     .price {
-      display: none;
-      position: absolute;
-      left: 2rem;
-      top: 10px;
+      // display: none;
+      // position: absolute;
+      // left: 2rem;
+      // top: 10px;
     }
     &:hover {
       .price {
-        display: block;
+        // display: block;
       }
     }
   }
@@ -182,7 +186,12 @@ header {
   }
 }
 .snipcart-items-count {
-  position: absolute;
-  top: -10px;
-  left: 2rem;
+  // position: absolute;
+  // top: -10px;
+  // left: 2rem;
+}
+.snipcart-checkout{
+  img{
+    margin-right: .25rem;
+  }
 }

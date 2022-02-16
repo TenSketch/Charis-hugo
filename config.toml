@@ -27,7 +27,7 @@ copyright = "&copy; [Charis](https://charisjutebags.com) 2021. All Rights Reserv
 
 # Snipcart Credentials
 snipcartApiKey = "YourAPIkey"
-currencySymbol = "Rs. "
+currencySymbol = "₹ "
 
   # Product Rating
   # it works with https://rating-widget.com/ , you will get the ID and publicKey after creating your account there.

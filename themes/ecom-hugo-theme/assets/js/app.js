@@ -14,12 +14,12 @@ menuToggle.onclick = function () {
 }
 
 // close menu mob when clicked outside
-menuToggle.addEventListener('focusout', (event) => {
-  navigation.classList.remove('active')
-  bar1.classList.toggle('change')
-  bar2.classList.toggle('change')
-  bar3.classList.toggle('change')
-});
+// menuToggle.addEventListener('focusout', (event) => {
+//   navigation.classList.remove('active')
+//   bar1.classList.toggle('change')
+//   bar2.classList.toggle('change')
+//   bar3.classList.toggle('change')
+// });
 
 
 // navbar appear on scroll up 

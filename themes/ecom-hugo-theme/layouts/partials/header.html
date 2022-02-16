@@ -41,14 +41,22 @@
                     <!-- <span>Login</span> -->
                 </a>
             </li>
-            <li class="nav_list--item cart snipcart-summary">
+         
+            <li class="nav_list--item snipcart-summary">
                 <a href="#" class="nav_link snipcart-checkout">
                     <img style="align-self: center;" src="/images/svg/cart-icon.svg" class="svg-inline--fa" alt="">
                     <!-- <span>Cart</span> -->
-                    <sup class="snipcart-items-count">0</sup>
-                    <span class="price snipcart-total-price"></span>
+                    <span class="snipcart-total-price"></span>
+                    (<span class="snipcart-items-count">0</span>)
                 </a>
             </li>
+            <!-- <li class="nav_list--item support_currencies">
+                <select name="" id="currencies">
+                    <option value="inr">INR</option>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                </select>
+            </li> -->
 
         </ul>
 
@@ -67,31 +75,3 @@
 
 
 </header>
-
-<!-- when u hover the dropdown, the arrow changes to up-arrow arrow -->
-
-<script>
-    // let dropdownLink = document.querySelector('.dropdown');
-    let dropdownLink = document.getElementsByClassName("dropdown");
-    let arrowImg = document.getElementsByClassName("dropdown_arrow");
-
-    //Now, we need to add an Event Listener to listen when the image gets mouse over.
-
-    //first drop down
-    dropdownLink[0].addEventListener('mouseover', function(e){
-        console.log(e.target)
-            arrowImg[0].src="/images/icons/arrow-up.png"
-    })
-    dropdownLink[0].addEventListener('mouseout', function(){
-            arrowImg[0].src="/images/icons/arrow-down.png"
-    })
-
-    //second drop dwon
-    dropdownLink[1].addEventListener('mouseover', function(){
-            arrowImg[1].src="/images/icons/arrow-up.png"
-    })
-    dropdownLink[1].addEventListener('mouseout', function(){
-            arrowImg[1].src="/images/icons/arrow-down.png"
-    })
-
-</script>

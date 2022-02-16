@@ -4,7 +4,7 @@
   .container {
     @include flex(normal, center, wrap);
     // @extend .gap-2;
-    gap: .5rem;
+    gap: 0.5rem;
     @media (min-width: 768px) {
       // gap: 0;
     }
@@ -14,19 +14,18 @@
       font-size: 2rem;
     }
     .card {
-    @include flex(center, space-between, wrap);
-@extend .flex-col;
+      @include flex(center, space-between, wrap);
+      @extend .flex-col;
       padding-inline: 1rem;
       border: 1px solid lightgray;
       border-radius: 5px;
       flex: 1 0 48%;
-      @media (min-width: 600px) {
-        flex: 1 0 30%;
+      @media (min-width: 768px) {
+        flex: 1 0 20%;
       }
       @media (min-width: 991px) {
-        flex: 1 0 25%;
+        // flex: 1 0 25%;
       }
-      
     }
   }
 }
@@ -43,16 +42,14 @@
       // border-radius: 10px;
       @extend .p-1;
       @media (min-width: 600px) {
-      position: sticky;
-      top: 0;
-      // box-shadow: 0.25rem .15rem $clr-primary-light;
-      flex: 1 1 20%;
+        position: sticky;
+        top: 0;
+        // box-shadow: 0.25rem .15rem $clr-primary-light;
+        flex: 1 1 20%;
       }
       @media (min-width: 991px) {
         flex: 0 0 25%;
-
       }
-
     }
     .content {
       margin-top: 0;
@@ -60,20 +57,15 @@
       flex: 1 1 75%;
       @include flex(flex-start, flex-start, wrap);
       @media (min-width: 600px) {
-        flex: 1 1 40%
-  
+        flex: 1 1 40%;
       }
-      
 
       .card {
-       border: none;
+        border: none;
       }
     }
-    
   }
 }
-
-
 
 // metisMenu
 
@@ -135,7 +127,4 @@
   border-radius: 3px;
 }
 
-
-
 // vertical Menu hover
-

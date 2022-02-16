@@ -262,17 +262,16 @@ header {
     background-color: #f8f5f2; }
 
 .dropdown {
-  position: relative;
-  transition: 250ms all ease-in-out; }
+  position: relative; }
   .dropdown .dropdown-toggle {
     position: relative; }
-    .dropdown .dropdown-toggle img {
-      max-width: 1.2rem;
+    .dropdown .dropdown-toggle .dropdown_arrow {
+      max-width: 1rem;
       display: unset;
       position: absolute;
-      top: 50%;
+      top: 5px;
       margin-left: 0.12rem;
-      transform: translateY(-50%); }
+      transition: transform 250ms ease; }
   .dropdown .dropdown-menu {
     display: none;
     position: absolute;
@@ -287,6 +286,8 @@ header {
       display: block; }
       .dropdown .dropdown-menu .nav_link:hover {
         background-color: #ddd; }
+  .dropdown:hover .dropdown_arrow {
+    transform: rotate(180deg); }
   .dropdown:hover .dropdown-menu {
     display: block; }
 
@@ -299,13 +300,6 @@ header {
   .nav_icons .nav_link {
     display: flex;
     position: relative; }
-    .nav_icons .nav_link .price {
-      display: none;
-      position: absolute;
-      left: 2rem;
-      top: 10px; }
-    .nav_icons .nav_link:hover .price {
-      display: block; }
 
 .svg-inline--fa {
   max-width: 30px;
@@ -346,10 +340,8 @@ header {
   @media (min-width: 991px) {
     .nav__toggle {
       display: none; } }
-.snipcart-items-count {
-  position: absolute;
-  top: -10px;
-  left: 2rem; }
+.snipcart-checkout img {
+  margin-right: .25rem; }
 
 @media (min-width: 768px) {
   .image {
@@ -503,7 +495,7 @@ header {
   align-items: normal;
   justify-content: center;
   flex-wrap: wrap;
-  gap: .5rem; }
+  gap: 0.5rem; }
   .products .container h2 {
     flex-basis: 100%;
     font-size: 2rem; }
@@ -516,12 +508,9 @@ header {
     border: 1px solid lightgray;
     border-radius: 5px;
     flex: 1 0 48%; }
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
       .products .container .card {
-        flex: 1 0 30%; } }
-    @media (min-width: 991px) {
-      .products .container .card {
-        flex: 1 0 25%; } }
+        flex: 1 0 20%; } }
 #jute_bags .container {
   display: flex;
   align-items: flex-start;
