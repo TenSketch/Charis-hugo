@@ -22,7 +22,8 @@
           </li>
           {{ else }}
             <li class="nav_list--item">
-                <a class="nav_link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                {{ range .Site.Menus.main }}
+                {{ if .HasChildren }} <a class="nav_link" href="{{ .URL | absURL }}">{{ .Name }}</a>
             </li>
             {{end}}
             {{end}}
