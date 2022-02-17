@@ -1,0 +1,54 @@
+.card {
+  padding-block: 1rem;
+  .card-head {
+    a {
+      img {
+        transition: transform 250ms ease-in;
+        &:hover {
+          transform: scale(1.2, 1.2);
+        }
+      }
+    }
+  }
+  .card-body {
+    @extend .mt-1;
+    @include flex(center, flex-end, nowrap);
+    @extend .flex-col;
+    .card-title {
+      margin-block: 0.5em;
+      a {
+        font-size: 1.2rem;
+        color: $clr-accent;
+        transition: color 250ms ease-in-out;
+        &:hover {
+          color: $clr-accent;
+        }
+      }
+    }
+
+    .price {
+      @extend .mb-1;
+      s {
+        font-size: 1rem
+      }
+      span {
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: $clr-accent;
+      }
+    }
+    .btn-teal {
+        transition: visibility 250ms ease-in-out;
+        visibility: hidden;
+        @media (max-width: 768px) {
+          visibility: visible !important;
+        }
+      }
+      &:hover {
+        .btn-teal {
+          visibility: visible;
+          
+        }
+      }
+  }
+}

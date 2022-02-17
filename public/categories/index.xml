@@ -1,35 +1,90 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Charis | Jute Bags</title>
+    <title>Categories on Charis | Jute Bags | Buy high quality jute bags</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on Charis | Jute Bags</description>
+    <description>Recent content in Categories on Charis | Jute Bags | Buy high quality jute bags</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Oct 2021 12:40:16 +0600</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>customized_hand_bags</title>
-      <link>/categories/customized_hand_bags/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Hand bags</title>
+      <link>/categories/hand-bags/</link>
+      <pubDate>Sat, 16 Oct 2021 12:40:16 +0600</pubDate>
       
-      <guid>/categories/customized_hand_bags/</guid>
+      <guid>/categories/hand-bags/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>multipurpose_jute_bags</title>
-      <link>/categories/multipurpose_jute_bags/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Women</title>
+      <link>/categories/women/</link>
+      <pubDate>Sat, 16 Oct 2021 12:40:16 +0600</pubDate>
       
-      <guid>/categories/multipurpose_jute_bags/</guid>
+      <guid>/categories/women/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>women_n_style</title>
-      <link>/categories/women_n_style/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Table_runners</title>
+      <link>/categories/table_runners/</link>
+      <pubDate>Sat, 16 Oct 2021 12:39:14 +0600</pubDate>
       
-      <guid>/categories/women_n_style/</guid>
+      <guid>/categories/table_runners/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shopping</title>
+      <link>/categories/shopping/</link>
+      <pubDate>Thu, 16 Sep 2021 12:40:12 +0600</pubDate>
+      
+      <guid>/categories/shopping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Corporate_bags</title>
+      <link>/categories/corporate_bags/</link>
+      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
+      
+      <guid>/categories/corporate_bags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gift bags</title>
+      <link>/categories/gift-bags/</link>
+      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
+      
+      <guid>/categories/gift-bags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laundry &amp; toy bags</title>
+      <link>/categories/laundry-toy-bags/</link>
+      <pubDate>Wed, 08 Sep 2021 11:22:40 +0600</pubDate>
+      
+      <guid>/categories/laundry-toy-bags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jute purse</title>
+      <link>/categories/jute-purse/</link>
+      <pubDate>Thu, 13 May 2021 12:40:14 +0600</pubDate>
+      
+      <guid>/categories/jute-purse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sapling_Bags</title>
+      <link>/categories/sapling_bags/</link>
+      <pubDate>Wed, 12 May 2021 12:40:14 +0600</pubDate>
+      
+      <guid>/categories/sapling_bags/</guid>
       <description></description>
     </item>
     

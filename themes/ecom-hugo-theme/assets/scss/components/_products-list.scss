@@ -1,0 +1,130 @@
+.products {
+  //   background: $clr-primary-600--hsla;
+
+  .container {
+    @include flex(normal, center, wrap);
+    // @extend .gap-2;
+    gap: 0.5rem;
+    @media (min-width: 768px) {
+      // gap: 0;
+    }
+    h2 {
+      flex-basis: 100%;
+      @extend .txt-center;
+      font-size: 2rem;
+    }
+    .card {
+      @include flex(center, space-between, wrap);
+      @extend .flex-col;
+      padding-inline: 1rem;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      flex: 1 0 48%;
+      @media (min-width: 768px) {
+        flex: 1 0 20%;
+      }
+      @media (min-width: 991px) {
+        // flex: 1 0 25%;
+      }
+    }
+  }
+}
+#jute_bags {
+  .container {
+    @include flex(flex-start, flex-start, wrap);
+    gap: 1em;
+    .sidebar {
+      // position: sticky;
+      // top: 0;
+      flex: 1 1 100%;
+      // outline: 1px solid blue;
+      // border-right: 2px solid $clr-primary-light-opacity;
+      // border-radius: 10px;
+      @extend .p-1;
+      @media (min-width: 600px) {
+        position: sticky;
+        top: 0;
+        // box-shadow: 0.25rem .15rem $clr-primary-light;
+        flex: 1 1 20%;
+      }
+      @media (min-width: 991px) {
+        flex: 0 0 25%;
+      }
+    }
+    .content {
+      margin-top: 0;
+      // outline: 1px solid red;
+      flex: 1 1 75%;
+      @include flex(flex-start, flex-start, wrap);
+      @media (min-width: 600px) {
+        flex: 1 1 40%;
+      }
+
+      .card {
+        border: none;
+      }
+    }
+  }
+}
+
+// metisMenu
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar .metismenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .metismenu li + li {
+  margin-top: 5px;
+}
+
+.sidebar .metismenu li:first-child {
+  margin-top: 5px;
+}
+.sidebar .metismenu li:last-child {
+  margin-bottom: 5px;
+}
+
+.sidebar .metismenu > li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-bottom: 1px solid $clr-primary-light-opacity;
+}
+.sidebar .metismenu a {
+  position: relative;
+  display: block;
+  padding: 13px 15px;
+  // color: #212529;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.sidebar .metismenu ul a {
+  padding: 10px 15px 10px 30px;
+}
+
+.sidebar .metismenu ul ul a {
+  padding: 10px 15px 10px 45px;
+}
+
+.sidebar .metismenu a:hover,
+.sidebar .metismenu a:focus,
+.sidebar .metismenu a:active,
+.sidebar .metismenu .mm-active > a {
+  // color: #0c63e4;
+  text-decoration: none;
+}
+
+.sidebar .metismenu .mm-active > a {
+  // background: #e7f1ff;
+  border-radius: 3px;
+}
+
+// vertical Menu hover

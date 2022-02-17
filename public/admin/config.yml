@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: hugo-new-struct # Branch to update (optional; defaults to master)
+media_folder: static/img
+public_folder: /img
+collections:
+  - name: 'products' # Used in routes, e.g., /admin/collections/products
+    label: 'All Jute Bags' # Used in the UI of the CMS
+    folder: 'content/jute_bags' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
+      - { label: 'Price', name: 'price', widget: 'boolean', default: false, required: false }
+      - { label: 'Categories', name: 'categories', widget: 'list', required: true }

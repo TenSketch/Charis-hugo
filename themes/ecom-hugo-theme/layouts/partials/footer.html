@@ -1,42 +1,81 @@
-<section class="footer">
+<footer>
     <div class="container">
-        <div class="col col-1">
-            <h3>Information</h3>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Testimonials</a></li>
-        </ul>
+        <div class="about">
+            <!-- <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}"> -->
+
+            <h3>Why buy from us</h3>
+            <p>{{ site.Params.description }}</p>
         </div>
-        <div class="col col-2">
-                <h3>Why buy from us</h3>
-                <p>BagIt- a eco friendly Jute Bag from Charis can help you do your part to this environment in reducing using of plastic bags.</p>
+        <div class="links">
+            <h3>Important links</h3>
+            <ul>
+                <li>
+                    <a class="logo" href="{{.Site.BaseURL }}">Home</a>
+                </li>
+                {{ range site.Menus.footer }}
+                <li>
+                    <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
         </div>
-        <div class="col col-3">
-            <h3>Address</h3>
-            <p>Charis Jute bags
-                Century Park East Suite 803,
-                Los Angeles,
-                +44 (0) 207 543 5478</p>
+
+        <div class="contact">
+            <h3>Contact information</h3>
+            <ul>
+                <li>
+                    <a href="tel:{{ site.Params.mobile }}"><img src="/images/svg/phone.svg" alt="">{{ site.Params.mobile
+                        }}</a>
+                </li>
+                <li>
+                    <a href="tel:{{ site.Params.email }}"><img src="/images/svg/envelope.svg" alt="">{{
+                        site.Params.email }}</a>
+                </li>
+                <li>
+                    <img src="/images/svg/map.svg" alt=""> {{ site.Params.location }}
+                </li>
+
+            </ul>
+           
         </div>
-        <div class="col Follow us">
-            <div class="social-links">
-                <h3>Share At</h3>
-                <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-pinterest"></i>
-                </a>
-            </div>
+        <div class="contact_form">
+            <h3>Reach us</h3>
+
+            <form action="">
+                <div class="form_group">
+                    <label for="name">Name</label>
+                    <input type="text" name="Name" id="" required aria-label="Name" placeholder="Enter your full Name">
+                </div>
+                <div class="form_group">
+                    <label for="email">Email ID</label>
+                    <input type="email" name="Email" id="" required aria-label="Name" placeholder="abc@email.com">
+                </div>
+                <div class="form_group">
+                    <label for="tel">Name</label>
+                    <input type="tel" name="Mobile" id="" required aria-label="Name"
+                        placeholder="your 10 digit mobile number">
+                </div>
+                <div class="form_group">
+                    <label for="tel">Name</label>
+                    <textarea name="Message" id="" cols="30" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button class="btn btn-teal" type="submit">SUBMIT</button>
+            </form>
+
+        </div>
+        
+        <div class="social">
+            <ul>
+                {{ range site.Params.social }}
+                <li>
+                    <a href="{{ .link | safeURL }}"><img src="{{ .icon }}" alt="{{.Name}}"></a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="copyright">
+        <p>{{ site.Params.copyright | markdownify  }}</p>
+
         </div>
     </div>
-</section>
+</footer>

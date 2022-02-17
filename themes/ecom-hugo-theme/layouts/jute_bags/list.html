@@ -1,0 +1,59 @@
+{{ define "main" }}
+{{ partial "page-title.html" . }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/metismenujs/dist/metismenujs.min.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/metismenujs/dist/metismenujs.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+  new MetisMenu('#menu');
+});
+</script>
+
+<section class="products" id="jute_bags">
+  <div class="container">
+    <div class="sidebar">
+      <h3 style="text-align: center;">Categories</h3>
+      <ul class="metismenu" id="menu">
+        <li class="">
+          <a href="{{ "jute_bags/" | absURL }}" aria-expanded="false">All</a>
+         
+        </li>
+        {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+
+        <li class="mm-active">
+          <a class="" href="{{ .Permalink }}" aria-expanded="true">{{ .Title | title }}</a>
+          <!-- <ul>
+            <li><a href="#">Be_Happy</a></li>
+            <li><a href="#">Blessed</a></li>
+            
+          </ul> -->
+        </li>
+        {{ end }}
+
+        <!-- <li>
+          <a class="has-arrow" href="#" aria-expanded="false">Multipurpose </a>
+          <ul>
+            <li><a href="#">Chakra</a></li>
+            <li><a href="#">Home storage</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="has-arrow" href="#" aria-expanded="false">Jute Hand bags</a>
+          <ul>
+            <li><a href="#">Women's hand bags</a></li>
+            <li><a href="#">Men's hand bag</a></li>
+          </ul>
+        </li> -->
+        
+        </ul>
+        
+    </div>
+    <div class="content">
+      {{ range .Data.Pages }}
+        {{ partial "partials/products/list-item.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

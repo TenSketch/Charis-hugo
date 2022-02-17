@@ -1,0 +1,11 @@
+<button class="snipcart-add-item btn btn-teal" 
+        data-item-id="{{ .Params.ProductID }}"
+        data-item-name="{{ .Title }}" 
+        
+        data-item-image="{{ .Params.thumbnailImage | absURL }}"
+        
+        data-item-price="{{ .Params.Price }}" 
+        data-item-url="{{ .Permalink }}" 
+        data-item-description="{{ .Description }}">
+        Add to cart
+</button>

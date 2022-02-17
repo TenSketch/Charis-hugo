@@ -1,0 +1,149 @@
+{{ define "main" }}
+
+
+{{ if site.Data.homepage.slick.enable }}
+
+
+<div class="slick_slider">
+  {{range $index, $val := .Site.Taxonomies.tags.slider}}
+  <div class="slick_slider--content">
+    <img src="{{.Page.Params.image}}" alt="{{.Title}}">
+    <div class="text">
+      <h1>{{.Title}}</h1>
+      <!-- <h3>{{.Description}}</h3> -->
+      <!-- <a href="#" class="btn btn-primary">{{.Page.Params.link}}</a> -->
+    </div>
+  </div>
+  {{end}}
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.slick_slider').slick({
+      // setting-name: setting-value
+      // autoplay: true,
+      // autoplaySpeed: 2000,
+      arrows: true,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false
+          }
+        }
+      ]
+    });
+  });
+</script>
+{{end}}
+
+
+<!--trending products homepage -->
+{{ if site.Data.homepage.products.enable }}
+<section class="products">
+  <div class="container">
+    {{ with site.Data.homepage.products }}
+    <h2>{{ .title | markdownify }}</h2>
+    {{ end }}
+    {{ range first 8 (where site.RegularPages "Type" "jute_bags") }}
+    {{ partial "partials/products/list-item.html" . }}
+    {{ end }}
+
+
+    <!-- shopping bags -->
+    {{ with site.Data.homepage.products }}
+    <h2 class="mt-4">{{ .title1 | markdownify }}</h2>
+    {{ end }}
+    {{range $index, $val := .Site.Taxonomies.categories.shopping}}
+    {{ partial "partials/products/list-item.html" . }}
+    {{ end }}
+
+    <!-- laundry bags -->
+    {{ with site.Data.homepage.products }}
+    <h2 class="mt-4">{{ .title2 | markdownify }}</h2>
+    {{ end }}
+    {{range $index, $val := .Site.Taxonomies.tags.laundry}}
+    {{ partial "partials/products/list-item.html" . }}
+    {{ end }}
+  </div>
+</section>
+
+
+{{ end }}
+
+
+<!-- about -->
+{{ if site.Data.homepage.about.enable }}
+{{ with site.Data.homepage.about }}
+<section class="about" id="about">
+  <div class="container">
+    <div class="image">
+      <img src="{{ .image | absURL }}" alt="">
+    </div>
+    <div class="content">
+      <h2>{{ .title }}</h2>
+      <p>{{ .content }}</p>
+      <h4>{{ .subtitle }} </h4>
+    <a class="btn btn-teal" href="https://buy.stripe.com/5kAg0HcNBcz21gs3cd">Buy sample</a>
+
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- advantage -->
+{{ if site.Data.homepage.advantage.enable }}
+{{ with site.Data.homepage.advantage }}
+<section class="advantage">
+  <div class="container">
+    <div class="content">
+      <h2>{{ .title | markdownify }}</h2>
+      <!-- <p>{{ .subtitle | markdownify }}</p> -->
+      <ul>
+        {{ range .advantageList }}
+        <li>{{ .listItem }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="image">
+      <img src="{{ .image | absURL}}" alt="{{ .Name }}">
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- testimonial -->
+{{ if site.Data.homepage.testimonial.enable }}
+{{ with site.Data.homepage.testimonial }}
+<section class="testimonials">
+  <div class="container">
+    <h2>{{ .title | markdownify }}</h2>
+    {{ range .testimonialItem }}
+    <div class="testimonials_card txt-center">
+      <!-- <img src="{{ .image | absURL }}" class="client-img" alt="{{ .name | markdownify }}"> -->
+      <p class="quoted">{{ .content | markdownify }}</p>
+      <h4>{{ .name | markdownify }}</h4>
+      <small>{{ .designation | markdownify }}</small>
+    
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /testimonial -->
+{{ if site.Data.homepage.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,96 @@
+// main section
+.prod_details {
+  padding-block: 4rem;
+  .container {
+    // max-width: 95%;
+    @media(min-width:768px){
+      @include flex(flex-start, space-between, nowrap);
+
+    }
+    // main child 1
+    .prod_details-images {
+      // border: 2px solid blue;
+      
+      @media (min-width: 768px) {
+        flex-basis: 60%;
+        
+      }
+      // Sub child1- wrapper-featured_img{
+      .wrapper-featured_img {
+        display: grid;
+        place-items: center;
+        #featured {
+          height: 500px;
+          object-fit: cover;
+    
+           @media (min-width: 600px) {
+            margin: 0 auto;
+          }
+        }
+      }
+
+      // Sub child2- wrapper-thumb_img
+      #prod_slider {
+        @include flex(center, normal, nowrap);
+        overflow-x: scroll;     
+        @extend .mt-2;
+        @media(min-width:768px){
+          justify-content: center;
+        }
+        .thumbnail {
+          cursor: pointer;
+          object-fit: cover;
+          width: 70px;
+          height: 70px;
+          opacity: 0.5;
+          margin: 0.15em;
+          // border: 2px solid $clr-primary-dark;
+          transition: opacity 250ms ease-in-out;
+          display: inline-block;
+
+          &:hover {
+            opacity: 1;
+          }
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    // main child 2
+    .prod_details-desc {
+      // border: 2px solid red;
+      @extend .mt-1;
+      @media (min-width: 768px) {
+        flex-basis: 30%;
+        margin-top: 0;
+      }
+      .prod_details-desc--header {
+        h1 {
+          font-weight: 500;
+          font-size: 2.5rem;
+          letter-spacing: 1.5;
+          // color: $clr-primary-dark;
+        }
+        .price {
+          @extend .mb-1;
+          span {
+            font-size: 1.5rem;
+            color: $clr-accent;
+            font-weight: 500;
+          }
+        }
+      }
+      .prod_details-desc--content {
+        p {
+          @extend .mb-1;
+          // color: $clr-primary-dark;
+        }
+      }
+    }
+  }
+}
+.rw-ui-mobile-wrapper {
+  display: none;
+}

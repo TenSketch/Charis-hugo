@@ -1,0 +1,48 @@
+{{ define "main" }}
+<!-- {{ partial "page-title.html" . }} -->
+{{ partial "breadcrumbs.html" . }}
+<section class="prod_details">
+  <div class="container">
+
+    <!-- Main child 1 -->
+    <div class="prod_details-images">
+      <!-- sub child1 -->
+      <div class="wrapper-featured_img">
+        <img id="featured" data-zoom="{{ (index .Params.images 0).image | absURL }}"
+          src="{{ (index .Params.images 0).image | absURL }}" alt="{{.Name}}">
+      </div>
+      <!-- <div class="wrapper-thumb_img"> -->
+      <!-- sub child2 -->
+      <div id="prod_slider">
+        {{ range $index, $val:= .Params.images }}
+        {{if (eq $index 0)}}
+        <img class="thumbnail active" src="{{ .image | absURL }}" alt="">
+        {{else}}
+        <img class="thumbnail" src="{{ .image | absURL }}" alt="">
+        {{end}}
+        {{end}}
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <!-- Main child 2 -->
+    <div class="prod_details-desc">
+      <div class="prod_details-desc--header">
+        <h1>{{ .Title }}</h1>
+        <!-- rating star -->
+        <!-- {{ if site.Params.rating.enable }} -->
+        <div class="rw-ui-container"></div>
+        <!-- {{ end }} -->
+        {{ partial "partials/products/price.html" . }}
+      </div>
+      <div class="prod_details-desc--content">
+        <p>{{ .Params.ShortDescription | markdownify }}</p>
+        {{ partial "partials/products/add_to_cart-btn.html" . }}
+        {{ partial "partials/products/buy_now-btn.html" . }}
+        <!-- <button href="{{ .Page.Params.link }}" class="btn btn-accent">Buy Now</button> -->
+      </div>
+      {{ partial "socialshare.html" . }}
+    </div>
+  </div>
+</section>
+{{ end }}
