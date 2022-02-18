@@ -1,0 +1,39 @@
+{{ define "main" }}
+<style>
+    .privacy_header{
+        background: url('/images/Multipurpose/Home_Storage/6.jpg')fixed no-repeat center;
+        background-size: cover;
+        /* background-position: 50% 24%; */
+        /* width: 100%; */
+        /* background-size: 100% auto; */
+        /* padding-block: 20rem; */
+        /* height: 100vh; */
+        
+    }
+    .infoPage .container{
+        max-width: 70%;
+        /* width: 600px; */
+        
+    }
+    h1, h2, h3{
+        font-family: 'Noto Serif', serif!important;
+    }
+    .infoPage h3{
+        margin: 1.5rem 0 .5rem;
+    }
+
+</style>
+
+<section class="privacy_header">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint eius nam asperiores pariatur ratione minus possimus blanditiis maxime eligendi consectetur ducimus, illum explicabo recusandae sit quibusdam assumenda? Vel ipsam magnam, culpa aliquid saepe in quos ipsa doloremque illo explicabo eligendi quaerat ad error dolorum? Accusantium aut, repudiandae corporis doloribus repellendus voluptatibus maxime beatae, quod possimus, ratione ducimus! Repudiandae, quod pariatur, aliquam saepe animi nemo temporibus ab eligendi corporis quam omnis sapiente! Dignissimos libero adipisci, debitis molestiae doloribus facere nesciunt ab vel vitae enim delectus. Qui, quibusdam eos illum nemo iste ab, reprehenderit praesentium odio blanditiis aut, exercitationem id atque aliquam!</p>
+</section>
+
+<section class="infoPage">
+    <div class="container">
+        <!-- <h1>{{.Title}} </h1> -->
+    
+        {{.Content}}
+    </div>
+</section>
+
+{{ end }}
