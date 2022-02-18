@@ -72,56 +72,50 @@ currencySymbol = "₹ "
   [[menu.main]]
   identifier = "Jute bags"
   name = "Jute bags"
-  URL = "jute_bags"
+  URL = "#"
   weight = 1
 
   [[menu.main]]
   identifier = "Women's jute bags"
   name = "Women's jute bags"
-  URL = "/categories/women/"
+  URL = "categories/women"
   parent = "Jute bags"
   weight = 1
 
   [[menu.main]]
   identifier = "Jute gift bags"
   name = "Jute Gift bags"
-  URL = "/categories/gift-or-giveaway/"
+  URL = "categories/gift-bags"
   parent = "Jute bags"
   weight = 2
 
   [[menu.main]]
-  identifier = "Cotton bags"
-  name = "Cotton bags"
-  URL = "/categories/shopping/"
+  identifier = "Shopping bags"
+  name = "Shopping bags"
+  URL = "categories/shopping"
   parent = "Jute bags"
   weight = 3
 
   [[menu.main]]
   identifier = "Household"
   name = "Household"
-  URL = "/"
+  URL = "#"
   weight = 2
 
   [[menu.main]]
   identifier = "Storage baskets"
   name = "Storage baskets"
-  URL = "/"
+  URL = "categories/laundry-toy-bags"
   parent = "Household"
   weight = 1
 
   [[menu.main]]
   identifier = "Kitchen and Dining room"
   name = "Kitchen and Dining"
-  URL = "/"
+  URL = "categories/table_runners"
   parent = "Household"
   weight = 2
 
-  [[menu.main]]
-  identifier = "Decoration and Accessories"
-  name = "Decoration and Accessories"
-  URL = "/"
-  parent = "Household"
-  weight = 3
 
   [[menu.main]]
   name = "About us"
@@ -145,21 +139,21 @@ currencySymbol = "₹ "
   [[menu.sidebar]]
   identifier = "Women's jute bags"
   name = "Women's jute bags"
-  URL = "/categories/women/"
+  URL = "categories/women/"
   parent = "Jute bags"
   weight = 1
 
   [[menu.sidebar]]
   identifier = "Jute gift bags"
   name = "Jute Gift bags"
-  URL = "/categories/gift-or-giveaway/"
+  URL = "categories/gift-or-giveaway/"
   parent = "Jute bags"
   weight = 2
 
   [[menu.sidebar]]
   identifier = "Cotton bags"
   name = "Cotton bags"
-  URL = "/categories/shopping/"
+  URL = "categories/shopping/"
   parent = "Jute bags"
   weight = 3
 
@@ -203,8 +197,8 @@ currencySymbol = "₹ "
   weight = 2
 
   [[menu.footer]]
-  name = "Terms & Conditions"
-  URL = "terms_conditions"
+  name = "Terms and Conditions"
+  URL = "terms_and_conditions"
   weight = 3
 
   [[menu.footer]]

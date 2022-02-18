@@ -1,0 +1,38 @@
+{{ define "main" }}
+<style>
+    .header{
+        background: url(/images/Multipurpose/Home_Storage/6.jpg) fixed no-repeat;
+        background-position: 50% 24%;
+        width: 100%;
+        background-size: 100% auto;
+        /* padding-block: 20rem; */
+        height: 100vh;
+    }
+    .infoPage .container{
+        max-width: 70%;
+        width: 800px;
+        
+    }
+    h1, h2, h3{
+        font-family: 'Noto Serif', serif!important;
+        margin: 1.5rem 0 .5rem;
+
+    }
+    p strong{
+        margin-block: 1rem;
+    }
+</style>
+
+<section class="header">
+    
+</section>
+
+<section class="infoPage">
+    <div class="container">
+        <!-- <h1>{{.Title}} </h1> -->
+    
+        {{.Content}}
+    </div>
+</section>
+
+{{ end }}

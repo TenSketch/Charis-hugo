@@ -1,10 +1,28 @@
 {{ define "main" }}
+<style>
+    .header{
+        background: url('/images/Multipurpose/Home_Storage/7.jpg')hsl(37, 29%, 67%) fixed no-repeat center;
+        background-blend-mode: multiply;
+        background-size: cover;
+    }
+    .infoPage .container{
+        max-width: 70%;
+        width: 800px;
+        color: #fff;
+    }
+
+</style>
+
+<section class="header">
     
+</section>
 
-<div class="container">
-    <h1>{{.Title}} </h1>
-
-    {{.Content}}
-</div>
+<section class="infoPage">
+    <div class="container">
+        <h1>{{.Title}} </h1>
+    
+        {{.Content}}
+    </div>
+</section>
 
 {{ end }}
