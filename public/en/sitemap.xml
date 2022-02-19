@@ -143,7 +143,7 @@
     <loc>/jute_bags/anchor-shopping-bags/</loc>
     <lastmod>2021-09-16T12:20:13+06:00</lastmod>
   </url><url>
-    <loc>/organic-jute-bags/</loc>
+    <loc>/jute_bags/organic-jute-bags/</loc>
     <lastmod>2021-09-08T11:38:16+06:00</lastmod>
   </url><url>
     <loc>/jute_bags/corporate_bags-copy-2/</loc>
@@ -219,6 +219,18 @@
     <lastmod>2021-05-11T12:40:14+06:00</lastmod>
   </url><url>
     <loc>/tags/about/</loc>
+  </url><url>
+    <loc>/faq/</loc>
+  </url><url>
+    <loc>/tags/faq/</loc>
+  </url><url>
+    <loc>/tags/privacy/</loc>
+  </url><url>
+    <loc>/privacy_policy/</loc>
+  </url><url>
+    <loc>/tags/terms/</loc>
+  </url><url>
+    <loc>/terms_and_conditions/</loc>
   </url><url>
     <loc>/about-us/</loc>
   </url>

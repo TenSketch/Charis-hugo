@@ -49,3 +49,11 @@
 <!-- rgb(255 226 133) -->
 
 <!-- rgb(148 231 241) -->
+
+
+  [[menu.main]]
+  identifier = "Decoration and Accessories"
+  name = "Decoration and Accessories"
+  URL = "/"
+  parent = "Household"
+  weight = 3
