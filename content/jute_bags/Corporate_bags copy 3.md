@@ -1,5 +1,5 @@
 ---
-title: "Corporate bags"
+title: "Upbeat Stylish Sling Bag - Casual & Formal"
 date: 2021-09-08T11:22:40+06:00
 draft: false
 

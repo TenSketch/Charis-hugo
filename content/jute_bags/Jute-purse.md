@@ -1,5 +1,5 @@
 ---
-title: "Jute purse"
+title: "Handcrafted Jute Clutch in Natural colors"
 date: 2021-05-13T12:40:14+06:00
 draft: false
 

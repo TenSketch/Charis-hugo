@@ -1,5 +1,5 @@
 ---
-title: "Be Happy Shopping Jute bag"
+title: "“Be Happy” Beige Jute Shopper"
 date: 2021-09-16T12:20:13+06:00
 draft: false
 

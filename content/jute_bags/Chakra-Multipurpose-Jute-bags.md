@@ -1,5 +1,5 @@
 ---
-title: "Chakra Jute bags"
+title: "Jute Shopper Bags with Vintage Prints - Large"
 date: 2021-09-16T12:40:12+06:00
 draft: false
 

@@ -1,5 +1,5 @@
 ---
-title: "Classic style"
+title: "Floral Jute Handbag for Women"
 date: 2021-09-16T12:20:13+06:00
 draft: false
 

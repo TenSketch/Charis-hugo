@@ -1,5 +1,5 @@
 ---
-title: "Multi-colour Jute bag"
+title: "Four Quadrant Jute Tote Bag with Rope Handle"
 date: 2021-09-16T12:40:13+06:00
 draft: true
 
