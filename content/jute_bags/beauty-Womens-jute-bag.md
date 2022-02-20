@@ -1,5 +1,5 @@
 ---
-title: "Beauty"
+title: "Glowic Red Oversized Shopper Tote Bag"
 date: 2021-10-16T12:40:14+06:00
 draft: false
 

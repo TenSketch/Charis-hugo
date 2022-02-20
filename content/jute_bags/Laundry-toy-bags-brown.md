@@ -1,5 +1,5 @@
 ---
-title: "Laundry toy bags"
+title: "Animal patterned Jute Laundry Bag with handle"
 date: 2021-09-08T11:22:40+06:00
 draft: false
 

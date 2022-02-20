@@ -1,5 +1,5 @@
 ---
-title: "Table_Runners-Decor"
+title: "Printed Jute Table Runners"
 date: 2021-10-15T12:39:14+06:00
 draft: false
 

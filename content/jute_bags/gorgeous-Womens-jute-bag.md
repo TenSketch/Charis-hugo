@@ -1,5 +1,5 @@
 ---
-title: "Gorgeous"
+title: "Solid Blue Shopper Jute Tote Bag"
 date: 2021-09-16T12:40:13+06:00
 draft: false
 

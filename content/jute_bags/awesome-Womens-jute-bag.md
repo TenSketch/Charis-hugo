@@ -1,5 +1,5 @@
 ---
-title: "Awesome Women's Jute Hand Bag"
+title: "“Awesome” Women Tote Bag with Handles"
 date: 2021-10-16T12:40:15+06:00
 draft: false
 

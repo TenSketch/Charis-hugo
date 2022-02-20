@@ -1,5 +1,5 @@
 ---
-title: "Shine Women's Jute hand bag"
+title: "Trendy Yellow Fatty Tote Bag"
 date: 2021-10-16T12:40:16+06:00
 draft: false
 

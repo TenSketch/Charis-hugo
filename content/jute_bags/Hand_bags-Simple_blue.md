@@ -1,5 +1,5 @@
 ---
-title: "Simple blue"
+title: "Blue & Beige Tote Bag for Girls - Jute College Collection"
 date: 2021-05-15T12:40:14+06:00
 draft: false
 
