@@ -1,34 +1,46 @@
 /* navbar */
 header {
-  // padding: 1em;
-  // margin-top: 5%;
   width: 100%;
   background-color: $clr-primary-light1;
   position: fixed;
   top: 7vh;
-  left: 0;
   z-index: 1;
   transition: transform 300ms ease-in-out;
+  padding: 0.5rem 3rem;
   &.scroll-down {
     transform: translateY(-100%);
   }
   &.scroll-up {
     transform: translateY(0);
   }
-  .container {
-    @include flex(center, space-around, nowrap);
-    padding-block: 0.5rem;
-    position: static;
-    // child1
-    .logo {
-      // flex: 1;
-      // outline: blue 1px solid;
-      img {
-        min-width: 8rem;
-        width: 10rem;
-        @media (max-width: 600px) {
-          margin-left: 2.5rem;
-        }
+  @include flex(center, space-between, nowrap);
+  @media(min-width: 768px){
+    
+  }
+  // child1
+  .logo {
+    // outline: blue 1px solid;
+    // border: 1px solid;
+    position: relative;
+    img {
+      width: 120px;
+      min-width: 100px;
+      @media (max-width: 600px) {
+        margin-left: 10px;
+      }
+    }
+  }
+  .nav_icons {
+    // outline: 1px solid brown;
+    .nav_list--item{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .nav_link {
+      position: relative;
+      .snipcart-checkout {
+        position: relative;
+  
       }
     }
   }
@@ -40,17 +52,13 @@ header {
   width: 50%;
   height: 100vh;
   left: -100%;
-  top: 6vh;
+  top: 9vh;
   z-index: 3;
-  // max-width: 100%;
-  // overflow: hidden;
   transition: all 400ms ease-in-out;
   padding-left: 1rem;
   @media (min-width: 991px) {
-    flex: 2;
     width: auto;
     height: auto;
-    right: inherit;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -78,7 +86,7 @@ header {
 // dropdown menu
 .dropdown {
   position: relative;
-  
+
   .dropdown-toggle {
     position: relative;
     .dropdown_arrow {
@@ -87,7 +95,6 @@ header {
       position: absolute;
       top: 5px;
       margin-left: 0.12rem;
-      // transform: translateY(-50%);
       transition: transform 250ms ease;
     }
   }
@@ -119,27 +126,7 @@ header {
   }
 }
 
-.nav_icons {
-  // outline: 1px solid brown;
-  flex: 1;
-  @include flex(center, flex-end, nowrap);
-  @extend .gap-1;
-  .nav_link {
-    display: flex;
-    position: relative;
-    .price {
-      // display: none;
-      // position: absolute;
-      // left: 2rem;
-      // top: 10px;
-    }
-    &:hover {
-      .price {
-        // display: block;
-      }
-    }
-  }
-}
+
 
 .svg-inline--fa {
   max-width: 30px;
@@ -183,15 +170,5 @@ header {
   }
   @media (min-width: 991px) {
     display: none;
-  }
-}
-.snipcart-items-count {
-  // position: absolute;
-  // top: -10px;
-  // left: 2rem;
-}
-.snipcart-checkout{
-  img{
-    margin-right: .25rem;
   }
 }

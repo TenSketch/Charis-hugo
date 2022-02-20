@@ -1,44 +1,60 @@
 {{ define "main" }}
 <style>
-    .header{
-        background: url('/images/Multipurpose/Home_Storage/6.jpg')fixed no-repeat;
-        background-position: 50% 24%;
-        /* width: 100%; */
-        background-size: 100% auto;
-        /* padding-block: 20rem; */
+    .header {
+        background: url('/images/Multipurpose/Home_Storage/6.jpg')fixed no-repeat center 30%;
+        background-size: contain;
+        /* background-position: 50% 24%; */
         height: 100vh;
 
+
     }
-    .infoPage .container{
+
+    .infoPage .container {
         max-width: 70%;
         width: 600px;
-        
+
     }
-    .infoPage .container ul, .infoPage .container ol{
-       padding-left: 2rem
+
+    .infoPage .container ul,
+    .infoPage .container ol {
+        padding-left: 2rem
     }
-    .infoPage .container ul, .infoPage .container ol, .infoPage .container li{
+
+    .infoPage .container ul,
+    .infoPage .container ol,
+    .infoPage .container li {
         list-style: unset;
         /* text-transform: lowercase!important; */
-        
+
     }
-    
-    h1, h2, h3{
-        font-family: 'Noto Serif', serif!important;
-    }
-    h2{
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Noto Serif', serif !important;
         margin-top: 2rem;
+
+    }
+
+    @media(max-width: 768px) {
+        .header {
+            height: 50vh;
+            background-position: center 25%;
+
+        }
+
+        .infoPage {
+            padding-top: 1.5rem;
+        }
     }
 </style>
 
-<section class="header">
-    
-</section>
+<div class="header"></div>
 
 <section class="infoPage">
     <div class="container">
         <h1>{{.Title}} </h1>
-    
+
         {{.Content}}
     </div>
 </section>

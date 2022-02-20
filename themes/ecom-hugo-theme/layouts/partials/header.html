@@ -1,12 +1,10 @@
 <header>
 
-    <div class="container">
         <!-- child1 -->
         <a class="logo" href="{{.Site.BaseURL | absURL}}">
             <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}">
         </a>
         
-        <!-- child2 -->
         <ul class="nav_list">
             {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
@@ -28,6 +26,7 @@
             {{end}}
         </ul>
 
+        <!-- child2 -->
         <ul class="nav_icons">
             <!-- <li class="nav_list--item">
                 <a class="nav_link" href="tel:+919840166419">
@@ -61,10 +60,6 @@
         </ul>
 
     
-    </div>
-
-
-
     <button class="nav__toggle">
             <div class="bar1"></div>
             <div class="bar2"></div>
