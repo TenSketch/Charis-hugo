@@ -7,26 +7,26 @@ tags :
 - terms
 ---
 
-# TERMS AND CONDITIONS
+## TERMS AND CONDITIONS
 
-*Last updated February 17, 2022*
+## *Last updated February 17, 2022*
 
 ### TABLE OF CONTENTS
 
- 1.  AGREEMENT TO TERMS
- 2.  INTELLECTUAL PROPERTY RIGHTS 
- 3.  USER REPRESENTATIONS 
- 4.  USER REGISTRATION 
- 5.  PRODUCTS 
- 6.  PURCHASES AND PAYMENT 
- 7.  RETURN POLICY 
- 8.  PROHIBITED ACTIVITIES 
- 9.  USER GENERATED CONTRIBUTIONS 
- 10. CONTRIBUTION LICENSE 
- 11. GUIDELINES FOR REVIEWS 
- 12. SOCIAL MEDIA 
- 13. SUBMISSIONS 
- 14. THIRD-PARTY WEBSITE AND CONTENT 
+ 1. AGREEMENT TO TERMS
+ 2. INTELLECTUAL PROPERTY RIGHTS
+ 3. USER REPRESENTATIONS
+ 4. USER REGISTRATION
+ 5. PRODUCTS
+ 6. PURCHASES AND PAYMENT
+ 7. RETURN POLICY
+ 8. PROHIBITED ACTIVITIES
+ 9. USER GENERATED CONTRIBUTIONS
+ 10. CONTRIBUTION LICENSE
+ 11. GUIDELINES FOR REVIEWS
+ 12. SOCIAL MEDIA
+ 13. SUBMISSIONS
+ 14. THIRD-PARTY WEBSITE AND CONTENT
  15. SITE MANAGEMENT
  16. PRIVACY POLICY
  17. COPYRIGHT INFRINGEMENTS
@@ -42,7 +42,6 @@ tags :
  27. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
  28. MISCELLANEOUS
  29. CONTACT US  
- 
 
 ## 1. AGREEMENT TO TERMS
 
@@ -50,7 +49,7 @@ These Terms of Use constitute a legally binding agreement made between
 you, whether personally or on behalf of an entity ("you") and Charis
 Jute Bags , doing business as Charis (\" Charis ", "we", "us", or
 "our"), concerning your access to and use of the
-https://charis-jute-bags-ecommerce.netlify.app/ website as well as any
+<https://charis-jute-bags-ecommerce.netlify.app/> website as well as any
 other media form, media channel, mobile website or mobile application
 related, linked, or otherwise connected thereto (collectively, the
 "Site"). We are registered in India and have our registered office at
@@ -157,16 +156,16 @@ products are subject to change.
 
 **We accept the following forms of payment:**
 
--   Visa
--   Mastercard
--   American Express
--   Discover
--   PayPal
--   UPI Payments
--   Google Pay
--   PayTM
--   Amazon Pay
--   Net Banking
+- Visa
+- Mastercard
+- American Express
+- Discover
+- PayPal
+- UPI Payments
+- Google Pay
+- PayTM
+- Amazon Pay
+- Net Banking
 
 You agree to provide current, complete, and accurate purchase and
 account information for all purchases made via the Site. You further
@@ -491,17 +490,8 @@ Offerings.
 
 ## 16. PRIVACY POLICY
 
-We care about data privacy and security. Please review our Privacy
-Policy: https://charis-jute-bags-ecommerce.netlify.app/privacy\_policy .
-By using the Site or the Marketplace Offerings, you agree to be bound by
-our Privacy Policy, which is incorporated into these Terms of Use.
-Please be advised the Site and the Marketplace Offerings are hosted in
-India . If you access the Site or the Marketplace Offerings from any
-other region of the world with laws or other requirements governing
-personal data collection, use, or disclosure that differ from applicable
-laws in India , then through your continued use of the Site, you are
-transferring your data to India , and you expressly consent to have your
-data transferred to and processed in India .
+We care about data privacy and security. Please review our Privacy Policy. By using the Site or the Marketplace Offerings, you agree to be bound by
+our Privacy Policy, which is incorporated into these Terms of Use. Please be advised the Site and the Marketplace Offerings are hosted in India. If you access the Site or the Marketplace Offerings from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in India, then through your continued use of the Site, you are transferring your data to India, and you expressly consent to have your data transferred to and processed in India .
 
 ## 17. COPYRIGHT INFRINGEMENTS
 

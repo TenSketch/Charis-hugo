@@ -75,7 +75,7 @@ section {
 .gap-half {
   gap: 0.5em; }
 
-.gap-1, .nav_icons {
+.gap-1 {
   gap: 1em; }
 
 .gap-2, footer .container .social ul, footer .container {
@@ -209,41 +209,46 @@ header {
   background-color: #f8f5f2;
   position: fixed;
   top: 7vh;
-  left: 0;
   z-index: 1;
-  transition: transform 300ms ease-in-out; }
+  transition: transform 300ms ease-in-out;
+  padding: 0.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; }
   header.scroll-down {
     transform: translateY(-100%); }
   header.scroll-up {
     transform: translateY(0); }
-  header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    padding-block: 0.5rem;
-    position: static; }
-    header .container .logo img {
-      min-width: 8rem;
-      width: 10rem; }
+  header .logo {
+    position: relative; }
+    header .logo img {
+      width: 120px;
+      min-width: 100px; }
       @media (max-width: 600px) {
-        header .container .logo img {
-          margin-left: 2.5rem; } }
+        header .logo img {
+          margin-left: 10px; } }
+  header .nav_icons .nav_list--item {
+    display: inline-block;
+    vertical-align: middle; }
+  header .nav_icons .nav_link {
+    position: relative; }
+    header .nav_icons .nav_link .snipcart-checkout {
+      position: relative; }
+
 .nav_list {
   position: absolute;
   width: 50%;
   height: 100vh;
   left: -100%;
-  top: 6vh;
+  top: 9vh;
   z-index: 3;
   transition: all 400ms ease-in-out;
   padding-left: 1rem; }
   @media (min-width: 991px) {
     .nav_list {
-      flex: 2;
       width: auto;
       height: auto;
-      right: inherit;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); } }
@@ -291,16 +296,6 @@ header {
   .dropdown:hover .dropdown-menu {
     display: block; }
 
-.nav_icons {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: nowrap; }
-  .nav_icons .nav_link {
-    display: flex;
-    position: relative; }
-
 .svg-inline--fa {
   max-width: 30px;
   width: 17px;
@@ -340,9 +335,6 @@ header {
   @media (min-width: 991px) {
     .nav__toggle {
       display: none; } }
-.snipcart-checkout img {
-  margin-right: .25rem; }
-
 @media (min-width: 768px) {
   .image {
     flex: 1; } }
