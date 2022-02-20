@@ -1,73 +1,51 @@
 <header>
-
-        <!-- child1 -->
-        <a class="logo" href="{{.Site.BaseURL | absURL}}">
-            <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}">
-        </a>
-        
-        <ul class="nav_list">
-            {{ range .Site.Menus.main }}
-            {{ if .HasChildren }}
-          <li class="nav_list--item dropdown">
-            <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{ .Name }} <img class="dropdown_arrow" src="/images/icons/arrow-down.png" alt="down arrow">
+    <!-- child1 -->
+    <a class="logo" href="{{.Site.BaseURL | absURL}}">
+        <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}">
+    </a>
+    <ul class="nav_list">
+        {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+        <li class="nav_list--item dropdown">
+            <a class="nav_link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                {{ .Name }} <img class="dropdown_arrow" src="/images/icons/arrow-down.png" alt="down arrow">
             </a>
             <div class="dropdown-menu">
-              {{ range .Children }}
-              <a class="nav_link" href="{{ .URL | absURL }}">{{ .Name }}</a>
-              {{ end }}
+                {{ range .Children }}
+                <a class="nav_link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                {{ end }}
             </div>
-          </li>
-          {{ else }}
-            <li class="nav_list--item">
-                {{ range .Site.Menus.main }}
-                {{ if .HasChildren }} <a class="nav_link" href="{{ .URL | absURL }}">{{ .Name }}</a>
-            </li>
-            {{end}}
-            {{end}}
-        </ul>
+        </li>
+        {{ else }}
+        <li class="nav_list--item">
+            <a class="nav_link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+        {{ end }}
+    </ul>
+    <!-- child2 -->
+    <ul class="nav_icons">
+       
+        <li class="nav_list--item">
+            <a class="nav_link snipcart-customer-signin" href="javascript:void(0)" id="show-login">
+                <img src="/images/svg/user-icon.svg" class="svg-inline--fa" alt="">
+                <!-- <span>Login</span> -->
+            </a>
+        </li>
+        <li class="nav_list--item snipcart-summary">
+            <a href="#" class="nav_link snipcart-checkout">
+                <img style="align-self: center;" src="/images/svg/cart-icon.svg" class="svg-inline--fa" alt="">
+                <!-- <span>Cart</span> -->
+                <span class="snipcart-total-price"></span>
+                (<span class="snipcart-items-count">0</span>)
+            </a>
+        </li>
 
-        <!-- child2 -->
-        <ul class="nav_icons">
-            <!-- <li class="nav_list--item">
-                <a class="nav_link" href="tel:+919840166419">
-                    <img src="/images/svg/phone-icon.svg" class="svg-inline--fa" alt="">
-                    <span>9840166419</span>
-                </a>
-            </li> -->
-            <li class="nav_list--item">
-                <a class="nav_link snipcart-customer-signin" href="javascript:void(0)" id="show-login">
-                    <img src="/images/svg/user-icon.svg" class="svg-inline--fa" alt="">
-                    <!-- <span>Login</span> -->
-                </a>
-            </li>
-         
-            <li class="nav_list--item snipcart-summary">
-                <a href="#" class="nav_link snipcart-checkout">
-                    <img style="align-self: center;" src="/images/svg/cart-icon.svg" class="svg-inline--fa" alt="">
-                    <!-- <span>Cart</span> -->
-                    <span class="snipcart-total-price"></span>
-                    (<span class="snipcart-items-count">0</span>)
-                </a>
-            </li>
-            <!-- <li class="nav_list--item support_currencies">
-                <select name="" id="currencies">
-                    <option value="inr">INR</option>
-                    <option value="usd">USD</option>
-                    <option value="eur">EUR</option>
-                </select>
-            </li> -->
-
-        </ul>
-
-    
+    </ul>
     <button class="nav__toggle">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </button>
-
-
-
-
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </button>
 </header>
